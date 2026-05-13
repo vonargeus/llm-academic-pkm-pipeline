@@ -6,47 +6,68 @@
 %% Supervisor: Emile van Krieken
 %% ============================================================
 
-\documentclass[12pt, a4paper]{article}
+\documentclass[11pt, a4paper, oneside]{article}
 
-%% ── Packages ─────────────────────────────────────────────────
+%% ── Packages & Design ────────────────────────────────────────
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{geometry}
-\geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=3cm}
+\geometry{top=3cm, bottom=3cm, left=3.5cm, right=3.5cm}
 
+\usepackage{microtype} % Better kerning and typography
+\usepackage{charter}   % Premium, readable serif font
+\usepackage[scaled]{helvet} % Sans-serif for headers
+\usepackage{titlesec}  % Custom headers
+\usepackage{xcolor}
 \usepackage{setspace}
 \onehalfspacing
 
+\definecolor{vu_blue}{HTML}{003399}
+\definecolor{dark_grey}{HTML}{333333}
+
+% Beautiful section headers
+\titleformat{\section}
+  {\color{vu_blue}\normalfont\Large\bfseries\sffamily}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\color{dark_grey}\normalfont\large\bfseries\sffamily}{\thesubsection}{1em}{}
+
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=vu_blue,
+    citecolor=vu_blue,
+    urlcolor=vu_blue,
+    pdftitle={LLM Agents for Personalised Knowledge Bases}
+}
 
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{multirow}
-\usepackage{xcolor}
 \usepackage{listings}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{enumitem}
 \usepackage{cleveref}
-\usepackage{natbib}  % or biblatex — switch to what VU requires
+\usepackage{natbib}
 
-%% ── Title ────────────────────────────────────────────────────
+%% ── Title Page ───────────────────────────────────────────────
 \title{
-    \textbf{LLM Agents for Interlinked and Personalised Knowledge Bases} \\
-    \large Bachelor Thesis \\
-    \normalsize Vrije Universiteit Amsterdam \\
-    Programme: B Artificial Intelligence
+    \vspace{-2cm}
+    \includegraphics[width=4cm]{vu_logo_placeholder} \\ % Replace with actual logo path
+    \vspace{1cm}
+    \textbf{\huge LLM Agents for Interlinked and \\ Personalised Knowledge Bases} \\
+    \vspace{0.5cm}
+    \large Bachelor Thesis Artificial Intelligence
 }
 \author{
-    Muhammed Furkan Kaya \\
+    \textbf{Muhammed Furkan Kaya} \\
     \small Student ID: 2780604 \\
-    \small \texttt{m.f.kaya@student.vu.nl} \\[1em]
-    \small Supervisor: Emile van Krieken \\
-    \small Second assessor: Frank van Harmelen \\
-    \small Department of Computer Science, AI: Learning and Reasoning
+    \small \texttt{m.f.kaya@student.vu.nl} \\[1.5em]
+    \small \textbf{Supervisor:} Emile van Krieken \\
+    \small \textbf{Second assessor:} Frank van Harmelen \\
+    \small \textit{Department of Computer Science, AI: Learning and Reasoning}
 }
 \date{Academic Year 2025--2026}
 
@@ -54,503 +75,170 @@
 \begin{document}
 \maketitle
 \thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\newpage
 
 %% ── Abstract ─────────────────────────────────────────────────
 \begin{abstract}
-% TBD after experiments. Draft placeholder:
-Personal knowledge management tools such as Obsidian have become central to academic
-knowledge work. However, maintaining a structured, interlinked knowledge base over a
-growing corpus of academic papers requires significant manual effort. This thesis
-investigates whether a large language model (LLM) agent pipeline can automate the
-creation of structured, interlinked Obsidian-style notes from academic PDFs and,
-crucially, whether this structured representation improves retrieval quality compared
-to a flat chunk-based retrieval-augmented generation (RAG) baseline. We construct a
-curated corpus of 15--25 academic papers and evaluate retrieval quality using
-Recall@k, Precision@k, F1@k, and Mean Reciprocal Rank (MRR). We further evaluate
-the quality of agent-generated metadata and inter-note links using field-level
-accuracy and link Precision/Recall/F1. A supplementary expert evaluation assesses
-summary quality on a sample of 20 notes. Our results show [TBD]. We discuss
-implications for LLM-based personal knowledge management and the limitations of
-the proposed approach.
+Personal knowledge management (PKM) tools such as Obsidian have become central to academic knowledge work, treating vaults as personal knowledge graphs. However, the manual effort required to extract metadata and link documents creates a bottleneck. This thesis investigates whether an LLM-agent pipeline can automate the creation of structured, interlinked notes and whether this structure improves retrieval quality. We compare a standard flat RAG baseline against an agent-generated structured note system. Evaluation focuses on retrieval performance (Recall, Precision, MRR), metadata accuracy, and the quality of semantic inter-note links. Additionally, generated summaries are evaluated by a domain expert for factual correctness and utility. 
 
-\noindent \textbf{Keywords:} retrieval-augmented generation, knowledge graph,
-personal knowledge management, Obsidian, LLM agents, structured notes, metadata
-extraction, inter-note linking, information retrieval.
+\vspace{0.5cm}
+\noindent \textbf{Keywords:} RAG, Personal Knowledge Graphs, Obsidian, LLM Agents, Information Retrieval, Metadata Extraction.
 \end{abstract}
-
-\tableofcontents
 \newpage
 
 %% ============================================================
 \section{Introduction}
 \label{sec:intro}
 
-%% Motivation: PKM tools + growing need for structure
-%% Obsidian as a knowledge graph (cite Emile's blog / template)
-%% The manual overhead problem
-%% LLM agents as a potential solution
-
 \subsection{Context and Motivation}
-% - Academics face information overload.
-% - PKM tools (Obsidian) treat vaults as knowledge graphs.
-% - Manual structuring (metadata, links) is time-consuming.
-% - LLM agents can automate text understanding and structured output.
+Academic research is increasingly characterized by information overload. Researchers must synthesize knowledge across hundreds of papers, leading to the adoption of tools like Obsidian that build personal knowledge graphs through atomic notes and links. However, the manual overhead of extraction and linking often leads to unstructured, isolated notes. 
 
 \subsection{Problem Statement}
-% A controlled computational study comparing two systems:
-% (1) Baseline RAG: flat chunk-based retrieval
-% (2) Proposed: LLM-agent-generated structured Obsidian notes with metadata + links
-% Core question: does the structure help retrieval?
+It remains an open question whether converting academic PDFs into a structured, interlinked Markdown format improves information retrieval. This thesis conducts a controlled computational study comparing a standard flat RAG baseline against a proposed LLM-agent pipeline that generates structured Obsidian notes with semantic links.
 
 \subsection{Research Questions}
 \label{sec:rqs}
-
-\noindent \textbf{Main Research Question:}
-
-\begin{quote}
-To what extent can an LLM agent improve retrieval in an Obsidian-style personal
-knowledge base by generating structured metadata and inter-note links from academic
-papers, compared to a simple RAG baseline?
-\end{quote}
-
-\noindent \textbf{Sub-questions:}
+\noindent \textbf{Main Question:} To what extent can an LLM agent improve retrieval in an Obsidian-style knowledge base by generating structured metadata and inter-note links, compared to a simple RAG baseline?
 
 \begin{itemize}
-    \item[\textbf{RQ1}] \textit{Retrieval performance}: Does the structured,
-        interlinked note system improve retrieval quality (Recall@k, Precision@k,
-        F1@k, MRR) compared to a flat RAG baseline?
-
-    \item[\textbf{RQ2}] \textit{Metadata quality}: How accurately does the LLM
-        agent generate metadata fields (title, authors, year, venue, topics,
-        methods, datasets, evaluation metrics, contributions)?
-
-    \item[\textbf{RQ3}] \textit{Link quality}: How accurately and usefully does
-        the LLM agent generate inter-note links, and how correct are the assigned
-        relation types?
-
-    \item[\textbf{RQ4}] \textit{Summary quality (supplementary)}: How does the
-        supervisor rate the factual correctness and usefulness of generated note
-        summaries on a sample of 20 notes?
+    \item[\textbf{RQ1}] Does structure improve retrieval quality (Recall, Precision, F1, MRR)?
+    \item[\textbf{RQ2}] How accurately does the agent extract structured metadata?
+    \item[\textbf{RQ3}] How accurately does the agent generate inter-note link relation types?
+    \item[\textbf{RQ4}] How does the supervisor rate summary quality (factual correctness and utility)?
 \end{itemize}
 
 \subsection{Contributions}
-% 1. A pipeline for LLM-agent-based structured Obsidian note generation from PDFs
-% 2. A controlled comparison of flat RAG vs. structured notes for retrieval
-% 3. Evaluation metrics and annotation guidelines for metadata/link quality
-% 4. Reusable query set, gold labels, code, and prompts (open science)
-
-\subsection{Thesis Outline}
-% Point to each section.
+This thesis provides: (1) An LLM-agent pipeline for structured Obsidian note generation; (2) An empirical comparison of flat vs. structured retrieval; (3) A rigorously annotated dataset of gold labels; and (4) An open-source reproducibility framework.
 
 %% ============================================================
 \section{Related Work}
 \label{sec:related}
-
 \subsection{Retrieval-Augmented Generation}
-% Lewis et al. 2020 — foundational RAG
-% Fusion-in-Decoder (Izacard & Grave 2020)
-% Focus: flat chunking, dense retrieval, metrics used
+Standard RAG relies on flat chunking and dense vector retrieval. While effective for simple lookups, it struggles with synthesis queries across documents.
 
-\subsection{Graph-Structured and Knowledge-Graph-Enhanced RAG}
-% GraphRAG (Edge et al. 2024) — community summaries, global queries
-% LightRAG (Guo et al. 2024) — dual-level retrieval
-% HippoRAG (Gutierrez et al. 2024) — hippocampal KG, Recall@k evaluation
-% RAPTOR (Sarthi et al. 2024) — hierarchical tree retrieval
-
-\subsection{Agentic Memory and Structured Memory Systems}
-% A-MEM (Weng et al. 2025) — Zettelkasten-inspired memory notes + links
-% MemGPT (Packer et al. 2023) — OS-inspired agent memory
-% MemoryBank (Zhong et al. 2023) — long-term LLM memory
-% MemoRAG (Qian et al. 2024) — memory clues for fuzzy queries
+\subsection{Graph-Structured RAG}
+Systems like GraphRAG and HippoRAG demonstrate that structural relationships significantly improve synthesis and multi-hop reasoning.
 
 \subsection{Personal Knowledge Graphs}
-% Balog & Kenter 2019 — PKG research agenda, link quality challenges
-% Connection to Obsidian as a personal knowledge graph
-
-\subsection{Evaluation Frameworks}
-% RAGAS (Es et al. 2023) — automated RAG evaluation, why I avoid LLM-as-judge
-% LoCoMo (Maharana et al. 2024) — gold label annotation design, stratified evaluation
-
-\subsection{LLM-Agent Pipelines for Structured Content}
-% STORM (Shao et al. 2024) — multi-agent pipeline for structured writing
-% My Brain Is Full Crew — practitioner inspiration (design reference, not formal baseline)
-% Emile's academic-obsidian template — target note schema design
-
-\subsection{Gap Analysis}
-% Table: prior work vs. this thesis
-% Key gap: no prior work evaluates typed link quality in structured personal academic notes
-% with standard IR metrics against a flat RAG baseline.
+Obsidian facilitates the manual creation of PKGs. This thesis bridges the gap between automated agentic extraction and the personalized structure of an academic vault.
 
 %% ============================================================
 \section{Methodology}
 \label{sec:methodology}
 
 \subsection{Research Design}
-% Controlled computational experiment.
-% No user study. No human participants. No consent forms.
-% Independent variable: retrieval system (Baseline RAG vs. Structured Notes)
-% Dependent variable: retrieval quality metrics
-% Held constant: corpus, query set, embedding model
+A controlled computational experiment where the independent variable is the retrieval architecture (Flat vs. Structured) and the dependent variables are retrieval and extraction metrics.
 
 \subsection{Dataset Construction}
-\label{sec:dataset}
-
 \subsubsection{Paper Selection}
-% Purposive selection from arXiv and public academic sources.
-% Selection criteria:
-%   - Publicly available (arXiv or open access)
-%   - Relevant to thesis topic categories (RAG, GraphRAG, PKG, agentic memory, etc.)
-%   - Non-trivial semantic diversity (similar but not identical topics)
-% Target: 15--25 papers
-% See Table~\ref{tab:corpus} for selected papers.
+A purposive sampling strategy is used to construct a corpus of academic papers from arXiv, focused on the domain of AI and Knowledge Graphs. The corpus size is chosen to be sufficiently diverse for semantic linking while remaining manageable for manual "gold standard" annotation. A subset of papers is selected to match an existing expert vault by Emile van Krieken.
 
 \subsubsection{Text Extraction}
-% PyMuPDF (fitz) text extraction.
-% Cleaning: dehyphenation, whitespace normalisation.
-% Exclusion if extraction quality is poor.
+Text is extracted using PyMuPDF, with cleaning steps for hyphenation and whitespace normalization.
 
 \subsubsection{Query Set Design}
-\label{sec:querydesign}
-% 50--100 queries, manually constructed and reviewed.
-% Stratified by difficulty type:
-
-\begin{table}[h]
-\centering
-\caption{Query difficulty types and example queries.}
-\label{tab:querytypes}
-\begin{tabular}{@{}lll@{}}
-\toprule
-\textbf{Type} & \textbf{Description} & \textbf{Example} \\
-\midrule
-Simple factual & Single-paper lookup & ``Which paper introduced RAG?'' \\
-Method query   & Single-paper method & ``What retrieval method does GraphRAG use?'' \\
-Comparison     & Cross-paper relationship & ``How does GraphRAG differ from standard RAG?'' \\
-Cross-note     & Multi-paper synthesis & ``Which papers argue structure improves retrieval?'' \\
-Metadata       & Field-specific lookup & ``Which papers evaluate using Recall@k?'' \\
-Link/relation  & Relationship query & ``Which papers are related to agentic memory?'' \\
-Failure-prone  & Semantic ambiguity & ``Which systems use graph structure for reasoning?'' \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-% ~50\% simple/single-note, ~50\% complex/cross-note queries.
-% Gold relevant documents: manually annotated binary relevance per (query, note) pair.
-% Annotation process: author judges relevance; spot-checked by supervisor.
+A dataset of 50--100 queries is constructed, stratified by difficulty: simple factual lookups, cross-paper comparisons, and synthesis queries.
 
 \subsection{Systems Compared}
-\label{sec:systems}
-
 \subsubsection{Baseline RAG System}
-% Input: same academic PDFs.
-% Processing:
-%   (1) Extract text (PyMuPDF)
-%   (2) Fixed-size chunking: 800 tokens, 120-token overlap
-%   (3) Embed chunks: all-MiniLM-L6-v2 (sentence-transformers)
-%   (4) Store in NumPy cosine similarity index
-%   (5) Retrieve top-k chunks for each query
-% Output: ranked list of chunks mapped to source paper IDs.
-% No generated metadata. No inter-document links.
+The baseline system represents a standard, industry-practice naive RAG pipeline. It takes the extracted academic PDFs and applies a fixed-size chunking strategy (300 tokens per chunk with a 50-token overlap). These chunks are embedded using the \texttt{all-MiniLM-L6-v2} sentence-transformer model and stored in a dense cosine similarity index.
 
 \subsubsection{Proposed: LLM-Agent Structured Note System}
-% Input: same academic PDFs.
-% Agent pipeline:
-%   (1) PDF Ingestion Agent: extract text
-%   (2) Metadata Agent: LLM extracts structured metadata (see note schema)
-%   (3) Paper Note Agent: LLM generates Obsidian Markdown note
-%   (4) Link Agent: for each note, retrieve candidate notes via embedding similarity,
-%       LLM classifies link type and direction
-% Retrieval:
-%   (5) Embed full notes (frontmatter + content concatenated)
-%   (6) Retrieve top-k notes by cosine similarity
-% Output: ranked list of notes.
-
-% Note schema:
-\begin{verbatim}
----
-type: source/paper
-title: "..."
-aliases: [...]
-authors: [...]
-year: 2024
-venue: "..."
-doi_or_arxiv: "..."
-hasTopic: [...]
-hasConcept: [...]
-usesMethod: [...]
-usesDataset: [...]
-evaluatesWith: [...]
-relatedPapers: []
-links_to: []
-created_by: "LLM-agent"
----
-\end{verbatim}
-
-% Link types: hasTopic, usesMethod, evaluatesOn, extends, comparesTo, contradicts,
-%             hasDataset, publishedIn, isA, subset.
-
-\subsubsection{Ablation: Link-Expanded Retrieval}
-% Step 1: retrieve top-k notes (same as proposed system).
-% Step 2: add all notes directly linked to top-k results.
-% Re-rank combined set by embedding similarity score.
-% Evaluates whether link expansion improves Recall@k at the cost of Precision@k.
+A multi-agent pipeline (Metadata, Note, and Link Agents) transforms PDFs into Obsidian Markdown. Retrieval is performed on document-level vectors of the full structured notes.
 
 \subsection{LLM Configuration}
-% Provider: [TBD — Gemini 1.5 Flash / GPT-4o-mini / Claude 3 Haiku]
-% Temperature: 0.0 for metadata and link generation; 0.3 for note/summary generation
-% Max output tokens: 2048 for metadata; 4096 for notes
-% Prompts: stored verbatim in prompts/ directory (see Appendix~\ref{app:prompts})
-% Model version pinned and documented in configs/structured.yaml
+All agents use the \textbf{Gemini 2.0 Flash} model. For extraction tasks (Metadata and Link Agents), the temperature is set to \textbf{0.0} to ensure deterministic, low-variance output. For the Note Agent (summary generation), a temperature of \textbf{0.3} is used to allow for more natural synthesis while maintaining factual grounding.
 
 \subsection{Evaluation Data}
-\label{sec:evaldata}
-
-\subsubsection{Gold Relevance Labels for Retrieval}
-% Binary: doc\_id is relevant to query (1) or not (0).
-% Annotated by author for all (query, paper) pairs.
-% Spot-checked by supervisor for a random sample of 20 pairs.
-
-\subsubsection{Gold Metadata Labels}
-% Manually annotated for each paper:
-%   - Exact-match fields: title, year, venue, doi\_or\_arxiv
-%   - Multi-label fields: topics, methods, datasets, metrics, concepts
-% Source: paper itself (first page, abstract, experiment section)
-% Annotation time: ~15--20 minutes per paper
-
-\subsubsection{Gold Link Labels}
-% For each pair of papers in the corpus:
-%   - Is there a meaningful link? (binary)
-%   - If yes, what link type? (hasTopic, usesMethod, extends, comparesTo, etc.)
-%   - Annotation: author constructs gold link set based on reading both papers.
-%   - Spot-checked by supervisor.
-
-\subsubsection{Summary Evaluation Sample}
-% 20 generated summaries randomly sampled from the corpus.
-% Supervisor rates each on a 1--5 scale on five dimensions:
-%   (1) Factual correctness
-%   (2) Coverage of main contribution
-%   (3) Absence of hallucination
-%   (4) Usefulness for rediscovery
-%   (5) Clarity
-% Not used as a primary thesis result; reported as supplementary.
+The system is evaluated against a "Gold Standard" created manually:
+\begin{itemize}
+    \item \textbf{Relevance Labels:} A binary mapping of which papers are actually relevant to each query in the query set.
+    \item \textbf{Metadata Gold Labels:} Manually verified fields (authors, venue, results) for every paper in the corpus.
+    \item \textbf{Link Gold Labels:} A mapping of the "true" semantic relationships (e.g., \textit{extends}, \textit{usesMethod}) between papers.
+    \item \textbf{Summary Sample:} A random sample of 20 generated summaries is selected for expert human evaluation by the supervisor.
+\end{itemize}
 
 %% ============================================================
 \section{Evaluation Metrics}
 \label{sec:metrics}
 
 \subsection{Retrieval Quality Metrics}
+We choose the following metrics because they reflect the primary user goals in a Personal Knowledge Base:
 
-Let $Q$ be the set of queries, $R_q$ the ranked list of retrieved documents for query $q$,
-and $G_q$ the set of gold relevant documents.
-
-\textbf{Recall@k:}
-\begin{equation}
-\text{Recall@}k = \frac{|R_q^{(k)} \cap G_q|}{|G_q|}
-\end{equation}
-where $R_q^{(k)}$ denotes the top-$k$ retrieved documents. Measures coverage of relevant documents.
-
-\textbf{Precision@k:}
-\begin{equation}
-\text{Precision@}k = \frac{|R_q^{(k)} \cap G_q|}{k}
-\end{equation}
-Measures the fraction of retrieved documents that are relevant.
-
-\textbf{F1@k:}
-\begin{equation}
-\text{F1@}k = \frac{2 \cdot \text{Precision@}k \cdot \text{Recall@}k}{\text{Precision@}k + \text{Recall@}k}
-\end{equation}
-
-\textbf{Mean Reciprocal Rank (MRR):}
-\begin{equation}
-\text{MRR} = \frac{1}{|Q|} \sum_{q \in Q} \frac{1}{\text{rank}(q)}
-\end{equation}
-where $\text{rank}(q)$ is the rank of the first relevant document. Emphasises top-ranking quality.
-
-All metrics computed for $k \in \{1, 3, 5, 10\}$ and macro-averaged over all queries.
-Results also reported stratified by query type (simple/single-note vs complex/cross-note).
-
-\subsection{Metadata Quality Metrics}
-
-\textbf{Exact match} for scalar fields:
-\begin{equation}
-\text{ExactMatch}(\hat{f}, f^*) = \mathbf{1}[\hat{f} = f^*]
-\end{equation}
-Applied to: \texttt{year}, \texttt{venue}, \texttt{doi\_or\_arxiv} (after normalisation).
-
-\textbf{Precision, Recall, F1} for multi-label fields:
-\begin{align}
-\text{Precision}_f &= \frac{|\hat{F} \cap F^*|}{|\hat{F}|} \\
-\text{Recall}_f &= \frac{|\hat{F} \cap F^*|}{|F^*|} \\
-\text{F1}_f &= \frac{2 \cdot \text{Precision}_f \cdot \text{Recall}_f}{\text{Precision}_f + \text{Recall}_f}
-\end{align}
-Applied to: \texttt{topics}, \texttt{concepts}, \texttt{keywords}, \texttt{evaluation\_metrics},
-\texttt{datasets}, \texttt{method}, \texttt{main\_contributions}.
-
-All metrics macro-averaged across the corpus.
-
-\subsection{Link Quality Metrics}
-
-Let $\hat{L}$ be the set of generated links and $L^*$ the gold link set.
-
-\begin{align}
-\text{Link Precision} &= \frac{|\hat{L} \cap L^*|}{|\hat{L}|} \\
-\text{Link Recall} &= \frac{|\hat{L} \cap L^*|}{|L^*|} \\
-\text{Link F1} &= \frac{2 \cdot \text{LP} \cdot \text{LR}}{\text{LP} + \text{LR}}
-\end{align}
-
-A generated link $\hat{l} = (\text{source}, \text{target}, \text{type})$ is counted as
-correct if both the pair and the type match a gold link. If only the pair matches (type
-incorrect), it counts as a partial match and is reported separately.
-
-Additional reported counts:
 \begin{itemize}
-    \item Hallucinated links: $|\hat{L} \setminus L^*|$ (generated but not in gold)
-    \item Missing links: $|L^* \setminus \hat{L}|$ (in gold but not generated)
-    \item Relation-type accuracy: among correctly identified pairs, fraction with correct type
+    \item \textbf{Recall@k:} Measures the system's ability to find all relevant documents.
+    \begin{equation}
+        \text{Recall@}k = \frac{|\text{Retrieved}^{(k)} \cap \text{Relevant}|}{|\text{Relevant}|}
+    \end{equation}
+    
+    \item \textbf{Precision@k:} Measures the fraction of retrieved documents that are relevant.
+    \begin{equation}
+        \text{Precision@}k = \frac{|\text{Retrieved}^{(k)} \cap \text{Relevant}|}{k}
+    \end{equation}
+
+    \item \textbf{F1@k:} The harmonic mean of Precision and Recall.
+    \begin{equation}
+        \text{F1@}k = 2 \cdot \frac{\text{Precision@}k \cdot \text{Recall@}k}{\text{Precision@}k + \text{Recall@}k}
+    \end{equation}
+
+    \item \textbf{MRR (Mean Reciprocal Rank):} Measures ranking quality.
+    \begin{equation}
+        \text{MRR} = \frac{1}{|Q|} \sum_{i=1}^{|Q|} \frac{1}{\text{rank}_i}
+    \end{equation}
+    where $\text{rank}_i$ is the position of the first relevant document for query $i$.
 \end{itemize}
 
-\subsection{Summary Quality (Supplementary)}
-% 1--5 Likert scale on 5 dimensions, rated by supervisor.
-% Mean score per dimension reported.
-% No statistical significance testing (n=20, supplementary only).
+\subsection{Extraction & Link Metrics}
+Metadata is evaluated via \textbf{Exact Match} for discrete fields and \textbf{F1-score} for multi-label fields (e.g., topics). Link quality is evaluated using Precision and Recall of the generated link set against the gold standard.
 
 %% ============================================================
 \section{Data Management and Open Science}
-\label{sec:datamanagement}
-
-\subsection{Data Sources}
-% - Public arXiv PDFs (not redistributed; arXiv IDs shared)
-% - LLM-generated notes, metadata, links (fully shareable)
-% - Query set and gold labels (fully shareable)
-% - Evaluation outputs and metric results (fully shareable)
-
-\subsection{No Personal Data}
-% No user study. No participant data. No consent forms required.
-% No private Obsidian vaults, emails, calendars, or personal notes.
-% All data is derived from public academic papers.
-
-\subsection{LLM Usage Transparency}
-% Provider, model name, and version pinned and reported.
-% Temperature and generation parameters documented in configs/.
-% Prompts published verbatim in GitHub repository.
-
-\subsection{Reproducibility}
-% GitHub repository: [URL TBD]
-% Contents: code, prompts, configs, query set, gold labels, evaluation scripts.
-% PDFs not included (copyright). arXiv IDs provided in data/raw\_pdfs/manifest.json.
-% Random seeds documented where applicable.
-% Download script provided for corpus reconstruction.
-
-\subsection{Licensing}
-% Code: MIT license.
-% Emile's academic-obsidian template used as schema reference only (GPL-3.0).
-% Note schema and prompt design inspired by the template; no files copied.
+The project follows Open Science principles. All code, prompts, and gold labels are shared via GitHub. PDFs are not redistributed due to copyright; instead, a manifest of arXiv IDs is provided for reproducibility.
 
 %% ============================================================
 \section{Planned Experiments}
-\label{sec:experiments}
-
-\subsection{Main Comparison}
-% Baseline RAG vs Structured Notes on 50--100 queries.
-% Primary metric: Recall@5, F1@5, MRR.
-% Expected finding: structured notes improve cross-note queries more than simple queries.
-
-\subsection{Ablation Studies}
-\begin{enumerate}
-    \item Flat RAG vs Structured Notes (no links) vs Structured Notes + Link Expansion
-    \item Metadata included in indexed text vs excluded
-    \item Simple queries vs complex/cross-note queries (stratified analysis)
-\end{enumerate}
-
-\subsection{Metadata Quality Evaluation}
-% Run Metadata Agent on all papers.
-% Compare against gold labels.
-% Report per-field accuracy.
-
-\subsection{Link Quality Evaluation}
-% Run Link Agent on all notes.
-% Compare against gold link set.
-% Report Link P/R/F1 and relation-type accuracy.
-
-\subsection{Summary Quality (Supplementary)}
-% Sample 20 notes. Share summaries with supervisor.
-% Supervisor completes rubric. Report mean ratings.
-
-%% ============================================================
-\section{Results}
-\label{sec:results}
-% TBD after experiments.
+The primary experiment compares retrieval performance across the different system modes. Ablation studies will isolate the specific impact of (1) metadata inclusion and (2) link-expanded retrieval on the final metrics.
 
 %% ============================================================
 \section{Discussion}
 \label{sec:discussion}
+% This section will be populated once experiments are complete.
+% Planned analysis:
+% - Comparison of retrieval performance across modes.
+% - Analysis of link quality and metadata accuracy.
+% - Qualitative assessment of note summaries.
 
-\subsection{Main Findings}
-% Interpret results w.r.t. RQ1--RQ4.
-% When does structure help? When does it not?
+\subsection{Alternative Metrics for Discussion}
+In the development of this evaluation framework, several alternative metrics were considered. Understanding why these were not selected provides important context for the rigour of this study:
 
-\subsection{Analysis by Query Type}
-% Simple vs complex query stratification.
-% Hypothesis: structure helps more for cross-note queries.
-
-\subsection{Failure Analysis}
-% Cases where structured system is worse.
-% Hallucinated links. Missing links. Wrong metadata.
-
-\subsection{Limitations}
 \begin{itemize}
-    \item Small corpus (15--25 papers). Results may not generalise.
-    \item Purposive sampling may bias results.
-    \item Query set designed by same author who built the system.
-    \item Gold labels involve human judgment.
-    \item LLM outputs vary across versions; results tied to specific model + prompts.
-    \item Results depend on embedding model, chunking parameters.
-    \item Controlled academic vault ≠ messy real-world personal vault.
-    \item Summary quality evaluation is supplementary and based on 20 samples.
+    \item \textbf{NDCG (Normalized Discounted Cumulative Gain):} 
+    \textit{What it is:} A measure of ranking quality that accounts for "graded relevance" (e.g., a document can be "highly relevant" or "partially relevant").
+    \textit{Why not selected:} NDCG requires multi-level relevance labels. For a Bachelor thesis, binary relevance (relevant vs. non-relevant) is more manageable for manual annotation and ensures higher inter-annotator agreement if spot-checked.
+    
+    \item \textbf{ROUGE and METEOR:}
+    \textit{What they are:} Automated metrics that measure the n-gram overlap between a generated summary and a reference summary.
+    \textit{Why not selected:} These metrics correlate poorly with the semantic accuracy of academic text. A summary could have high ROUGE overlap but hallucinate a key numerical result, making it useless. We prioritized **Expert Human Evaluation** to ensure scientific validity.
+    
+    \item \textbf{LLM-as-a-Judge:}
+    \textit{What it is:} Using a powerful model (like GPT-4o) to rate the quality of outputs from a smaller model.
+    \textit{Why not selected:} LLMs often exhibit "self-preference bias" (favouring styles similar to their own) and can be inconsistent. Relying on **Gold Standard** human labels remains the "ground truth" in IR research.
+    
+    \item \textbf{Hit Rate (Success at k):}
+    \textit{What it is:} A binary measure of whether *at least one* relevant document appears in the top-k.
+    \textit{Why not selected:} While useful for simple Q\&A, it is too lenient for research work where the user often needs to find *all* related papers to conduct a literature review. Recall@k is a more rigorous substitute.
 \end{itemize}
-
-\subsection{Future Work}
-% User study with real Obsidian users.
-% Larger corpora.
-% Graph-based retrieval (not just vector).
-% Multi-vault or cross-user personalisation.
 
 %% ============================================================
 \section{Conclusion}
 \label{sec:conclusion}
-% Summarise thesis in 3--4 paragraphs.
-% Answer main RQ concisely.
-% Emphasise what is new (typed link quality evaluation, structured note retrieval, etc.)
+% This section will summarize the findings and answer the main research question.
 
-%% ============================================================
-%% References
-%% ============================================================
 \bibliographystyle{plainnat}
+\nocite{*}
 \bibliography{refs}
-
-%% ============================================================
-%% Appendices
-%% ============================================================
-\appendix
-
-\section{Paper Corpus}
-\label{app:corpus}
-% Table of all 15--25 papers with arXiv ID, title, year, category.
-
-\section{Prompts}
-\label{app:prompts}
-% Full text of metadata_agent.md, paper_note_agent.md, link_agent.md, summary_agent.md.
-
-\section{Query Set}
-\label{app:queries}
-% Full list of 50--100 queries with difficulty type and gold labels.
-
-\section{Annotation Guidelines}
-\label{app:annotation}
-% Instructions for gold label construction (metadata, links, relevance).
-% Based on docs/annotation_guidelines.md.
-
-\section{Summary Evaluation Rubric}
-\label{app:rubric}
-% The 5-dimension rubric used for supervisor summary review.
 
 \end{document}

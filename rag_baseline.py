@@ -20,7 +20,7 @@ def extract_pdf_text(pdf_path: Path) -> str:
     return "\n".join(parts)
 
 
-def split_text(text: str, chunk_size: int = 800, overlap: int = 120):
+def split_text(text: str, chunk_size: int = 300, overlap: int = 50):
     text = re.sub(r"\s+", " ", text).strip()
     if not text:
         return []
