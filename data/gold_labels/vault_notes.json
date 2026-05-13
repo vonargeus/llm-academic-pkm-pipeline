@@ -1,0 +1,3456 @@
+[
+  {
+    "doc_id": "A semantic loss function for deep learning with symbolic knowledge",
+    "filename": "A semantic loss function for deep learning with symbolic knowledge.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "1711.11157",
+    "url": "https://arxiv.org/abs/1711.11157",
+    "year": 2018,
+    "aliases": [
+      "xu2018semanticlossfunctiondeep",
+      "Semantic Loss"
+    ],
+    "cite_key": "xu2018semanticlossfunctiondeep",
+    "frontmatter": {
+      "aliases": [
+        "xu2018semanticlossfunctiondeep",
+        "Semantic Loss"
+      ],
+      "year": 2018,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[probabilistic logics]]"
+      ],
+      "author": [
+        "[[Jingyi Xu]]",
+        "[[Zilu Zhang]]",
+        "[[Tal Friedman]]",
+        "[[Yitao Liang]]",
+        "[[Guy Van den Broeck]]"
+      ],
+      "project": [],
+      "publishedIn": "[[ICML]]",
+      "citeKey": "xu2018semanticlossfunctiondeep",
+      "zoteroUri": "zotero://select/items/@xu2018semanticlossfunctiondeep",
+      "url": "https://arxiv.org/abs/1711.11157"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic logics"
+      },
+      {
+        "field": "author",
+        "target": "Jingyi Xu"
+      },
+      {
+        "field": "author",
+        "target": "Zilu Zhang"
+      },
+      {
+        "field": "author",
+        "target": "Tal Friedman"
+      },
+      {
+        "field": "author",
+        "target": "Yitao Liang"
+      },
+      {
+        "field": "author",
+        "target": "Guy Van den Broeck"
+      },
+      {
+        "field": "publishedIn",
+        "target": "ICML"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "probabilistic logics",
+      "Jingyi Xu",
+      "Zilu Zhang",
+      "Tal Friedman",
+      "Yitao Liang",
+      "Guy Van den Broeck",
+      "ICML",
+      "probabilistic circuits",
+      "knowledge compilation"
+    ],
+    "body_preview": "How should you design a loss function to teach neural networks about background knowledge? This paper uses simple probabilistic logics to achieve this. Computationally this is hard, so they use [[probabilistic circuits]] where the structure is given by a [[knowledge compilation]] algorithm\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "filename": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2212.12393",
+    "url": "https://arxiv.org/abs/2212.12393",
+    "year": 2023,
+    "aliases": [
+      "vankrieken2023anesiscalableapproximatemethod"
+    ],
+    "cite_key": "vankrieken2023anesiscalableapproximatemethod",
+    "frontmatter": {
+      "aliases": [
+        "vankrieken2023anesiscalableapproximatemethod"
+      ],
+      "year": 2023,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[probabilistic logics]]",
+        "[[deep generative models]]"
+      ],
+      "author": [
+        "[[Emile van Krieken]]",
+        "[[Thiviyan Thanapalasingam]]",
+        "[[Jakub M. Tomczak]]",
+        "[[Frank van Harmelen]]",
+        "[[Annette ten Teije]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "vankrieken2023anesiscalableapproximatemethod",
+      "zoteroUri": "zotero://select/items/@vankrieken2023anesiscalableapproximatemethod",
+      "url": "https://arxiv.org/abs/2212.12393"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic logics"
+      },
+      {
+        "field": "hasTopic",
+        "target": "deep generative models"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Thiviyan Thanapalasingam"
+      },
+      {
+        "field": "author",
+        "target": "Jakub M. Tomczak"
+      },
+      {
+        "field": "author",
+        "target": "Frank van Harmelen"
+      },
+      {
+        "field": "author",
+        "target": "Annette ten Teije"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "probabilistic logics",
+      "deep generative models",
+      "Emile van Krieken",
+      "Thiviyan Thanapalasingam",
+      "Jakub M. Tomczak",
+      "Frank van Harmelen",
+      "Annette ten Teije",
+      "Neural probabilistic logic programming in DeepProbLog",
+      "Pasted image 20251028164309.png"
+    ],
+    "body_preview": "Current methods for neurosymbolic using [[probabilistic logics]] (eg [[Neural probabilistic logic programming in DeepProbLog|DeepProbLog]] rely on exact computation of the probabilities, but this is quite inefficient and often doesn't scale well. So use [[deep generative models]] which estimate the weighted model count used in probabilistic logics. \n![[Pasted image 20251028164309.png]]\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "AI Journal",
+    "filename": "AI Journal.md",
+    "note_type": "venue",
+    "tags": [
+      "venue/journal",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "Created": [
+        "[[17-10-2025]]"
+      ],
+      "subset": [
+        "[[venues]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "venues"
+      }
+    ],
+    "all_wikilinks": [
+      "17-10-2025",
+      "venues"
+    ],
+    "body_preview": "--- \n#venue/journal #topic"
+  },
+  {
+    "doc_id": "Analyzing differentiable fuzzy logic operators",
+    "filename": "Analyzing differentiable fuzzy logic operators.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370221001533",
+    "year": 2022,
+    "aliases": [
+      "VANKRIEKEN2022103602",
+      "differentiable fuzzy logic",
+      "DFL",
+      "Sigmoidal implication",
+      "differentiable logic"
+    ],
+    "cite_key": "VANKRIEKEN2022103602",
+    "frontmatter": {
+      "aliases": [
+        "VANKRIEKEN2022103602",
+        "differentiable fuzzy logic",
+        "DFL",
+        "Sigmoidal implication",
+        "differentiable logic"
+      ],
+      "year": 2022,
+      "hasTopic": [
+        "[[fuzzy logic]]",
+        "[[neurosymbolic learning]]"
+      ],
+      "author": [
+        "[[Emile van Krieken]]",
+        "[[Erman Acar]]",
+        "[[Frank van Harmelen]]"
+      ],
+      "project": [
+        "[[How to properly use fuzzy logics in Neurosymbolic AI]]"
+      ],
+      "publishedIn": "[[AI Journal]]",
+      "citeKey": "VANKRIEKEN2022103602",
+      "zoteroUri": "zotero://select/items/@VANKRIEKEN2022103602",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0004370221001533"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "fuzzy logic"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Erman Acar"
+      },
+      {
+        "field": "author",
+        "target": "Frank van Harmelen"
+      },
+      {
+        "field": "publishedIn",
+        "target": "AI Journal"
+      },
+      {
+        "field": "project",
+        "target": "How to properly use fuzzy logics in Neurosymbolic AI"
+      }
+    ],
+    "all_wikilinks": [
+      "fuzzy logic",
+      "neurosymbolic learning",
+      "Emile van Krieken",
+      "Erman Acar",
+      "Frank van Harmelen",
+      "How to properly use fuzzy logics in Neurosymbolic AI",
+      "AI Journal",
+      "product t-norm",
+      "Lukasiewicz t-norm",
+      "sigmoid"
+    ],
+    "body_preview": "> [!abstract]-\n> The AI community is increasingly putting its attention towards combining symbolic and neural approaches, as it is often argued that the strengths and weaknesses of these approaches are complementary. One recent trend in the literature is weakly supervised learning techniques that employ operators from fuzzy logics. In particular, these use prior background knowledge described in such logics to help the training of a neural network from unlabeled and noisy data. By interpreting l"
+  },
+  {
+    "doc_id": "Antonio Vergari",
+    "filename": "Antonio Vergari.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Edinburgh|UoE]]"
+      ],
+      "Created": "[[17-10-2025]]",
+      "subset": null
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Edinburgh",
+      "17-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "artificial intelligence",
+    "filename": "artificial intelligence.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "AI"
+    ],
+    "cite_key": "AI",
+    "frontmatter": {
+      "aliases": [
+        "AI"
+      ],
+      "subset": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "associative",
+    "filename": "associative.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "associativity"
+    ],
+    "cite_key": "associativity",
+    "frontmatter": {
+      "aliases": [
+        "associativity"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "15-01-2021"
+    ],
+    "body_preview": "$x+(y+z)=(x+y)+z$\n\n--- \n#concept \nCreated [[15-01-2021]] at 17:01"
+  },
+  {
+    "doc_id": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "filename": "BEARS make neuro-symbolic models aware of their reasoning shortcuts.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2402.12240",
+    "url": "https://arxiv.org/abs/2402.12240",
+    "year": 2024,
+    "aliases": [
+      "marconato2024bearsmakeneurosymbolicmodels",
+      "BEARS"
+    ],
+    "cite_key": "marconato2024bearsmakeneurosymbolicmodels",
+    "frontmatter": {
+      "aliases": [
+        "marconato2024bearsmakeneurosymbolicmodels",
+        "BEARS"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[reasoning shortcuts]]",
+        "[[uncertainty quantification]]",
+        "[[ensembles]]"
+      ],
+      "author": [
+        "[[Emanuele Marconato]]",
+        "[[Samuele Bortolotti]]",
+        "[[Emile Krieken]]",
+        "[[Antonio Vergari]]",
+        "[[Andrea Passerini]]",
+        "[[Stefano Teso]]"
+      ],
+      "project": [],
+      "publishedIn": "[[UAI]]",
+      "citeKey": "marconato2024bearsmakeneurosymbolicmodels",
+      "zoteroUri": "zotero://select/items/@marconato2024bearsmakeneurosymbolicmodels",
+      "url": "https://arxiv.org/abs/2402.12240"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "hasTopic",
+        "target": "uncertainty quantification"
+      },
+      {
+        "field": "hasTopic",
+        "target": "ensembles"
+      },
+      {
+        "field": "author",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "author",
+        "target": "Samuele Bortolotti"
+      },
+      {
+        "field": "author",
+        "target": "Emile Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "author",
+        "target": "Stefano Teso"
+      },
+      {
+        "field": "publishedIn",
+        "target": "UAI"
+      }
+    ],
+    "all_wikilinks": [
+      "reasoning shortcuts",
+      "uncertainty quantification",
+      "ensembles",
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Emile Krieken",
+      "Antonio Vergari",
+      "Andrea Passerini",
+      "Stefano Teso",
+      "UAI"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "commutative",
+    "filename": "commutative.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "commutativity"
+    ],
+    "cite_key": "commutativity",
+    "frontmatter": {
+      "aliases": [
+        "commutativity"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "15-01-2021"
+    ],
+    "body_preview": "$x+y=y+x$\n\n--- \n#concept \nCreated [[15-01-2021]] at 17:01"
+  },
+  {
+    "doc_id": "deep generative models",
+    "filename": "deep generative models.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "deep generative modeling",
+      "generative AI",
+      "Gen AI",
+      "DGM"
+    ],
+    "cite_key": "deep generative modeling",
+    "frontmatter": {
+      "aliases": [
+        "deep generative modeling",
+        "generative AI",
+        "Gen AI",
+        "DGM"
+      ],
+      "subset": [
+        "[[generative models]]",
+        "[[deep learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "generative models"
+      },
+      {
+        "field": "subset",
+        "target": "deep learning"
+      }
+    ],
+    "all_wikilinks": [
+      "generative models",
+      "deep learning",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "deep learning",
+    "filename": "deep learning.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[machine learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "machine learning"
+      }
+    ],
+    "all_wikilinks": [
+      "machine learning",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "diffusion models",
+    "filename": "diffusion models.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[deep generative models]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "deep generative models"
+      }
+    ],
+    "all_wikilinks": [
+      "deep generative models",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Discovering mathematical equations with diffusion language model",
+    "filename": "Discovering mathematical equations with diffusion language model.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": 2025,
+    "aliases": [
+      "Han2025ARXIV_Discovering_Mathematical_Equations"
+    ],
+    "cite_key": "Han2025ARXIV_Discovering_Mathematical_Equations",
+    "frontmatter": {
+      "aliases": [
+        "Han2025ARXIV_Discovering_Mathematical_Equations"
+      ],
+      "year": 2025,
+      "hasTopic": [],
+      "author": [
+        "[[Xiaoxu Han]]",
+        "[[Chengzhen Ning]]",
+        "[[Jinghui Zhong]]",
+        "[[Fubiao Yang]]",
+        "[[Yu Wang]]",
+        "[[Xin Mu]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "Han2025ARXIV_Discovering_Mathematical_Equations",
+      "zoteroUri": "zotero://select/items/@Han2025ARXIV_Discovering_Mathematical_Equations",
+      "url": null
+    },
+    "typed_links": [
+      {
+        "field": "author",
+        "target": "Xiaoxu Han"
+      },
+      {
+        "field": "author",
+        "target": "Chengzhen Ning"
+      },
+      {
+        "field": "author",
+        "target": "Jinghui Zhong"
+      },
+      {
+        "field": "author",
+        "target": "Fubiao Yang"
+      },
+      {
+        "field": "author",
+        "target": "Yu Wang"
+      },
+      {
+        "field": "author",
+        "target": "Xin Mu"
+      }
+    ],
+    "all_wikilinks": [
+      "Xiaoxu Han",
+      "Chengzhen Ning",
+      "Jinghui Zhong",
+      "Fubiao Yang",
+      "Yu Wang",
+      "Xin Mu"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "discrete diffusion models",
+    "filename": "discrete diffusion models.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "masked diffusion"
+    ],
+    "cite_key": "masked diffusion",
+    "frontmatter": {
+      "aliases": [
+        "masked diffusion"
+      ],
+      "subset": [
+        "[[diffusion models]]",
+        "[[masked models]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "diffusion models"
+      },
+      {
+        "field": "subset",
+        "target": "masked models"
+      }
+    ],
+    "all_wikilinks": [
+      "diffusion models",
+      "masked models",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Edoardo Ponti",
+    "filename": "Edoardo Ponti.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Edinburgh|UoE]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Edinburgh",
+      "17-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Emanuele Marconato",
+    "filename": "Emanuele Marconato.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Trento]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Trento",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Emile van Krieken",
+    "filename": "Emile van Krieken.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[Vrije Universiteit Amsterdam]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "Vrije Universiteit Amsterdam",
+      "17-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "ensembles",
+    "filename": "ensembles.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[machine learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "machine learning"
+      }
+    ],
+    "all_wikilinks": [
+      "machine learning",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Erman Acar",
+    "filename": "Erman Acar.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Amsterdam]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Amsterdam",
+      "17-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Expressiveness in Neurosymbolic Learning",
+    "filename": "Expressiveness in Neurosymbolic Learning.md",
+    "note_type": "project",
+    "tags": [
+      "project"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "Expressive NeSy"
+    ],
+    "cite_key": "Expressive NeSy",
+    "frontmatter": {
+      "aliases": [
+        "Expressive NeSy"
+      ],
+      "with": [
+        "[[Pasquale Minervini]]",
+        "[[Edoardo Ponti]]",
+        "[[Antonio Vergari]]"
+      ],
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[reasoning shortcuts]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "with",
+        "target": "Pasquale Minervini"
+      },
+      {
+        "field": "with",
+        "target": "Edoardo Ponti"
+      },
+      {
+        "field": "with",
+        "target": "Antonio Vergari"
+      }
+    ],
+    "all_wikilinks": [
+      "Pasquale Minervini",
+      "Edoardo Ponti",
+      "Antonio Vergari",
+      "neurosymbolic learning",
+      "reasoning shortcuts",
+      "17-10-2025",
+      "On the independence assumption in neurosymbolic learning",
+      "independence",
+      "uncertainty quantification",
+      "discrete diffusion models",
+      "deep generative models",
+      "Neurosymbolic Diffusion Models"
+    ],
+    "body_preview": "We showed in [[On the independence assumption in neurosymbolic learning]] that the common assumption in Neurosymbolic learning that concepts are [[independence|independent]] from each other given the input, can really impact [[uncertainty quantification]]. \n\nHow do we overcome this? One idea is using [[discrete diffusion models|masked diffusion]], a very expressive kind of [[deep generative models]]. This can result in [[Neurosymbolic Diffusion Models]]. \n\n--- \n#project"
+  },
+  {
+    "doc_id": "Frank van Harmelen",
+    "filename": "Frank van Harmelen.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[Vrije Universiteit Amsterdam|VU]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "Vrije Universiteit Amsterdam",
+      "17-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "function",
+    "filename": "function.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "hasTopic": [
+        "[[mathematics]]"
+      ],
+      "isA": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "mathematics"
+      }
+    ],
+    "all_wikilinks": [
+      "mathematics",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#concept"
+  },
+  {
+    "doc_id": "fuzzy logic",
+    "filename": "fuzzy logic.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[logic]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "logic"
+      }
+    ],
+    "all_wikilinks": [
+      "logic",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "generative models",
+    "filename": "generative models.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[machine learning]]",
+        "[[probability theory]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "machine learning"
+      },
+      {
+        "field": "subset",
+        "target": "probability theory"
+      }
+    ],
+    "all_wikilinks": [
+      "machine learning",
+      "probability theory",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Guy Van den Broeck",
+    "filename": "Guy Van den Broeck.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[UCLA]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "UCLA",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "filename": "How to properly use fuzzy logics in Neurosymbolic AI.md",
+    "note_type": "project",
+    "tags": [
+      "project/idea"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "with": [
+        "[[Erman Acar]]",
+        "[[Frank van Harmelen]]"
+      ],
+      "hasTopic": [
+        "[[fuzzy logic]]",
+        "[[neurosymbolic AI]]",
+        "[[neurosymbolic learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "fuzzy logic"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic AI"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "with",
+        "target": "Erman Acar"
+      },
+      {
+        "field": "with",
+        "target": "Frank van Harmelen"
+      }
+    ],
+    "all_wikilinks": [
+      "Erman Acar",
+      "Frank van Harmelen",
+      "fuzzy logic",
+      "neurosymbolic AI",
+      "neurosymbolic learning",
+      "17-10-2025",
+      "Logic tensor networks",
+      "product t-norm",
+      "Analyzing differentiable fuzzy logic operators"
+    ],
+    "body_preview": "Several people use fuzzy logics within NeSy, like in [[Logic tensor networks|LTN]]. But what does that really do? How do you choose what Fuzzy Logic to use (eg [[product t-norm]]? And do these gradients even make sense?\n\n2025: We did this in [[Analyzing differentiable fuzzy logic operators]]\n\n--- \n#project/idea"
+  },
+  {
+    "doc_id": "ICML",
+    "filename": "ICML.md",
+    "note_type": "venue",
+    "tags": [
+      "venue/conference",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "Created": [
+        "[[17-10-2025]]"
+      ],
+      "subset": [
+        "[[venues]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "venues"
+      }
+    ],
+    "all_wikilinks": [
+      "17-10-2025",
+      "venues"
+    ],
+    "body_preview": "--- \n#venue/conference #topic"
+  },
+  {
+    "doc_id": "identifiable",
+    "filename": "identifiable.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "identifiability"
+    ],
+    "cite_key": "identifiability",
+    "frontmatter": {
+      "aliases": [
+        "identifiability"
+      ],
+      "hasTopic": [
+        "[[probability theory]]"
+      ],
+      "isA": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "probability theory"
+      }
+    ],
+    "all_wikilinks": [
+      "probability theory",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#concept"
+  },
+  {
+    "doc_id": "independence",
+    "filename": "independence.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "independent"
+    ],
+    "cite_key": "independent",
+    "frontmatter": {
+      "aliases": [
+        "independent"
+      ],
+      "hasTopic": [
+        "[[probability theory]]"
+      ],
+      "isA": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "probability theory"
+      }
+    ],
+    "all_wikilinks": [
+      "probability theory",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#concept"
+  },
+  {
+    "doc_id": "institutions",
+    "filename": "institutions.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "28-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Journal version of Reasoning Shortcuts",
+    "filename": "Journal version of Reasoning Shortcuts.md",
+    "note_type": "project",
+    "tags": [
+      "project/idea"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "with": [
+        "[[Emanuele Marconato]]",
+        "[[Samuele Bortolotti]]",
+        "[[Paolo Morettin]]",
+        "[[Elena Umili]]",
+        "[[Antonio Vergari]]",
+        "[[Efthymia Tsamoura]]",
+        "[[Andrea Passerini]]",
+        "[[Stefano Teso]]"
+      ],
+      "hasTopic": [
+        "[[reasoning shortcuts]]"
+      ],
+      "score": "5",
+      "Created": [
+        "[[17-10-2025]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "with",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "with",
+        "target": "Samuele Bortolotti"
+      },
+      {
+        "field": "with",
+        "target": "Paolo Morettin"
+      },
+      {
+        "field": "with",
+        "target": "Elena Umili"
+      },
+      {
+        "field": "with",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "with",
+        "target": "Efthymia Tsamoura"
+      },
+      {
+        "field": "with",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "with",
+        "target": "Stefano Teso"
+      }
+    ],
+    "all_wikilinks": [
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Paolo Morettin",
+      "Elena Umili",
+      "Antonio Vergari",
+      "Efthymia Tsamoura",
+      "Andrea Passerini",
+      "Stefano Teso",
+      "reasoning shortcuts",
+      "17-10-2025",
+      "Neurosymbolic Diffusion Models",
+      "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+      "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts"
+    ],
+    "body_preview": "We should write a journal version to explain all the material of reasoning shortcuts collected over the years, including [[Neurosymbolic Diffusion Models|NeSyDMs]] and [[BEARS make neuro-symbolic models aware of their reasoning shortcuts|BEARS]]\n\nOct 2025: This paper is now finished, see [[Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts]]\n\n--- \n#project/idea"
+  },
+  {
+    "doc_id": "KU Leuven",
+    "filename": "KU Leuven.md",
+    "note_type": "institution",
+    "tags": [
+      "institution",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution #topic"
+  },
+  {
+    "doc_id": "Logic tensor networks",
+    "filename": "Logic tensor networks.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2021.10364",
+    "url": "http://dx.doi.org/10.1016/j.artint.2021.103649",
+    "year": 2022,
+    "aliases": [
+      "Badreddine_2022",
+      "LTN"
+    ],
+    "cite_key": "Badreddine_2022",
+    "frontmatter": {
+      "aliases": [
+        "Badreddine_2022",
+        "LTN"
+      ],
+      "year": 2022,
+      "hasTopic": [
+        "[[fuzzy logic]]",
+        "[[neurosymbolic learning]]"
+      ],
+      "author": [
+        "[[Samy Badreddine]]",
+        "[[Artur d’Avila Garcez]]",
+        "[[Luciano Serafini]]",
+        "[[Michael Spranger]]"
+      ],
+      "project": [
+        "[[How to properly use fuzzy logics in Neurosymbolic AI]]"
+      ],
+      "publishedIn": "[[AI Journal]]",
+      "citeKey": "Badreddine_2022",
+      "zoteroUri": "zotero://select/items/@Badreddine_2022",
+      "url": "http://dx.doi.org/10.1016/j.artint.2021.103649"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "fuzzy logic"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "author",
+        "target": "Samy Badreddine"
+      },
+      {
+        "field": "author",
+        "target": "Artur d’Avila Garcez"
+      },
+      {
+        "field": "author",
+        "target": "Luciano Serafini"
+      },
+      {
+        "field": "author",
+        "target": "Michael Spranger"
+      },
+      {
+        "field": "publishedIn",
+        "target": "AI Journal"
+      },
+      {
+        "field": "project",
+        "target": "How to properly use fuzzy logics in Neurosymbolic AI"
+      }
+    ],
+    "all_wikilinks": [
+      "fuzzy logic",
+      "neurosymbolic learning",
+      "Samy Badreddine",
+      "Artur d’Avila Garcez",
+      "Luciano Serafini",
+      "Michael Spranger",
+      "How to properly use fuzzy logics in Neurosymbolic AI",
+      "AI Journal"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "logic",
+    "filename": "logic.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Luc De Raedt",
+    "filename": "Luc De Raedt.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[KU Leuven]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "KU Leuven",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Luciano Serafini",
+    "filename": "Luciano Serafini.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Trento]]",
+        "[[FBK]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Trento",
+      "FBK",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Lukasiewicz t-norm",
+    "filename": "Lukasiewicz t-norm.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "Lukasiewicz t-conorm"
+    ],
+    "cite_key": "Lukasiewicz t-conorm",
+    "frontmatter": {
+      "aliases": [
+        "Lukasiewicz t-conorm"
+      ],
+      "isA": [
+        "[[t-norm]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "isA",
+        "target": "t-norm"
+      }
+    ],
+    "all_wikilinks": [
+      "t-norm",
+      "nilpotent",
+      "Pasted image 20251017110835.png"
+    ],
+    "body_preview": "A [[nilpotent]] t-norm\n\n![[Pasted image 20251017110835.png]]\n--- \n#concept"
+  },
+  {
+    "doc_id": "machine learning",
+    "filename": "machine learning.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[artificial intelligence]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "artificial intelligence"
+      }
+    ],
+    "all_wikilinks": [
+      "artificial intelligence",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "masked models",
+    "filename": "masked models.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[deep learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "deep learning"
+      }
+    ],
+    "all_wikilinks": [
+      "deep learning",
+      "17-10-2025",
+      "BERT"
+    ],
+    "body_preview": "Think models like [[BERT]], but also masked diffusion. \n\n--- \n#topic"
+  },
+  {
+    "doc_id": "mathematics",
+    "filename": "mathematics.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "monotone function",
+    "filename": "monotone function.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "strictly increasing",
+      "strictly decreasing",
+      "strictly monotone",
+      "monotonic",
+      "non-decreasing",
+      "non-increasing",
+      "increasing",
+      "decreasing",
+      "monotone",
+      "monotonicity"
+    ],
+    "cite_key": "strictly increasing",
+    "frontmatter": {
+      "Created": [
+        "[[02-03-2022]]"
+      ],
+      "aliases": [
+        "strictly increasing",
+        "strictly decreasing",
+        "strictly monotone",
+        "monotonic",
+        "non-decreasing",
+        "non-increasing",
+        "increasing",
+        "decreasing",
+        "monotone",
+        "monotonicity"
+      ],
+      "hasTopic": [
+        "[[mathematics]]"
+      ],
+      "isA": [
+        "[[function]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "mathematics"
+      },
+      {
+        "field": "isA",
+        "target": "function"
+      }
+    ],
+    "all_wikilinks": [
+      "02-03-2022",
+      "mathematics",
+      "function",
+      "partially ordered set"
+    ],
+    "body_preview": "## Definition\nA function $P\\rightarrow Q$ between two [[partially ordered set]]s (eg: numbers!) is monotone iff for all $a, b\\in P$, $a\\leq b$ implies $f(a)\\leq f(b)$. \n\n--- \n#concept"
+  },
+  {
+    "doc_id": "Neural probabilistic logic programming in DeepProbLog",
+    "filename": "Neural probabilistic logic programming in DeepProbLog.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370221000552",
+    "year": 2021,
+    "aliases": [
+      "MANHAEVE2021103504",
+      "DeepProbLog"
+    ],
+    "cite_key": "MANHAEVE2021103504",
+    "frontmatter": {
+      "aliases": [
+        "MANHAEVE2021103504",
+        "DeepProbLog"
+      ],
+      "year": 2021,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[probabilistic circuits]]",
+        "[[probabilistic logics]]"
+      ],
+      "author": [
+        "[[Robin Manhaeve]]",
+        "[[Sebastijan Dumančić]]",
+        "[[Angelika Kimmig]]",
+        "[[Thomas Demeester]]",
+        "[[Luc De Raedt]]"
+      ],
+      "project": [],
+      "publishedIn": "[[AI Journal]]",
+      "citeKey": "MANHAEVE2021103504",
+      "zoteroUri": "zotero://select/items/@MANHAEVE2021103504",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0004370221000552"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic circuits"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic logics"
+      },
+      {
+        "field": "author",
+        "target": "Robin Manhaeve"
+      },
+      {
+        "field": "author",
+        "target": "Sebastijan Dumančić"
+      },
+      {
+        "field": "author",
+        "target": "Angelika Kimmig"
+      },
+      {
+        "field": "author",
+        "target": "Thomas Demeester"
+      },
+      {
+        "field": "author",
+        "target": "Luc De Raedt"
+      },
+      {
+        "field": "publishedIn",
+        "target": "AI Journal"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "probabilistic circuits",
+      "probabilistic logics",
+      "Robin Manhaeve",
+      "Sebastijan Dumančić",
+      "Angelika Kimmig",
+      "Thomas Demeester",
+      "Luc De Raedt",
+      "AI Journal",
+      "logic program",
+      "Pasted image 20251028163856.png",
+      "Pasted image 20251028164004.png"
+    ],
+    "body_preview": "> [!abstract]-\n> We introduce DeepProbLog, a neural probabilistic logic programming language that incorporates deep learning by means of neural predicates. We show how existing inference and learning techniques of the underlying probabilistic logic programming language ProbLog can be adapted for the new language. We theoretically and experimentally demonstrate that DeepProbLog supports (i) both symbolic and subsymbolic representations and inference, (ii) program induction, (iii) probabilistic (l"
+  },
+  {
+    "doc_id": "NeurIPS",
+    "filename": "NeurIPS.md",
+    "note_type": "venue",
+    "tags": [
+      "venue/conference",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "Created": [
+        "[[17-10-2025]]"
+      ],
+      "subset": [
+        "[[venues]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "venues"
+      }
+    ],
+    "all_wikilinks": [
+      "17-10-2025",
+      "venues"
+    ],
+    "body_preview": "--- \n#venue/conference #topic"
+  },
+  {
+    "doc_id": "neurosymbolic AI",
+    "filename": "neurosymbolic AI.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "neural-symbolic",
+      "neuro-symbolic",
+      "neural-symbolic AI",
+      "NeSy",
+      "Learning and Reasoning",
+      "neuro-symbolic computing",
+      "neuro-symbolic integration"
+    ],
+    "cite_key": "neural-symbolic",
+    "frontmatter": {
+      "aliases": [
+        "neural-symbolic",
+        "neuro-symbolic",
+        "neural-symbolic AI",
+        "NeSy",
+        "Learning and Reasoning",
+        "neuro-symbolic computing",
+        "neuro-symbolic integration"
+      ],
+      "subset": [
+        "[[machine learning]]",
+        "[[symbolic AI]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "machine learning"
+      },
+      {
+        "field": "subset",
+        "target": "symbolic AI"
+      }
+    ],
+    "all_wikilinks": [
+      "machine learning",
+      "symbolic AI",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Neurosymbolic Diffusion Models",
+    "filename": "Neurosymbolic Diffusion Models.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2505.13138",
+    "url": "https://arxiv.org/abs/2505.13138",
+    "year": 2025,
+    "aliases": [
+      "vankriekenNeurosymbolicDiffusionModels2025",
+      "NeSyDM",
+      "NeSyDMs"
+    ],
+    "cite_key": "vankriekenNeurosymbolicDiffusionModels2025",
+    "frontmatter": {
+      "aliases": [
+        "vankriekenNeurosymbolicDiffusionModels2025",
+        "NeSyDM",
+        "NeSyDMs"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[discrete diffusion models|masked diffusion]]",
+        "[[reasoning shortcuts]]"
+      ],
+      "author": [
+        "[[Emile van Krieken]]",
+        "[[Pasquale Minervini]]",
+        "[[Edoardo Ponti]]",
+        "[[Antonio Vergari]]"
+      ],
+      "project": [
+        "[[Expressiveness in Neurosymbolic Learning|Expressive NeSy]]"
+      ],
+      "publishedIn": "[[NeurIPS]]",
+      "citeKey": "vankriekenNeurosymbolicDiffusionModels2025",
+      "zoteroUri": "zotero://select/items/@vankriekenNeurosymbolicDiffusionModels2025",
+      "url": "https://arxiv.org/abs/2505.13138"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "discrete diffusion models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Pasquale Minervini"
+      },
+      {
+        "field": "author",
+        "target": "Edoardo Ponti"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "publishedIn",
+        "target": "NeurIPS"
+      },
+      {
+        "field": "project",
+        "target": "Expressiveness in Neurosymbolic Learning"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "discrete diffusion models",
+      "reasoning shortcuts",
+      "Emile van Krieken",
+      "Pasquale Minervini",
+      "Edoardo Ponti",
+      "Antonio Vergari",
+      "Expressiveness in Neurosymbolic Learning",
+      "NeurIPS",
+      "Pasted image 20251028164327.png"
+    ],
+    "body_preview": "![[Pasted image 20251028164327.png]]\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "neurosymbolic learning",
+    "filename": "neurosymbolic learning.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[neurosymbolic AI]]",
+        "[[machine learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "neurosymbolic AI"
+      },
+      {
+        "field": "subset",
+        "target": "machine learning"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic AI",
+      "machine learning",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "filename": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2305.19951",
+    "url": "https://arxiv.org/abs/2305.19951",
+    "year": 2023,
+    "aliases": [
+      "marconato2023neurosymbolicconceptscreatedequal"
+    ],
+    "cite_key": "marconato2023neurosymbolicconceptscreatedequal",
+    "frontmatter": {
+      "aliases": [
+        "marconato2023neurosymbolicconceptscreatedequal"
+      ],
+      "year": 2023,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[reasoning shortcuts]]"
+      ],
+      "author": [
+        "[[Emanuele Marconato]]",
+        "[[Stefano Teso]]",
+        "[[Antonio Vergari]]",
+        "[[Andrea Passerini]]"
+      ],
+      "project": [
+        "[[Expressiveness in Neurosymbolic Learning|Expressive NeSy]]"
+      ],
+      "publishedIn": "[[NeurIPS]]",
+      "citeKey": "marconato2023neurosymbolicconceptscreatedequal",
+      "zoteroUri": "zotero://select/items/@marconato2023neurosymbolicconceptscreatedequal",
+      "url": "https://arxiv.org/abs/2305.19951"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "author",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "author",
+        "target": "Stefano Teso"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "publishedIn",
+        "target": "NeurIPS"
+      },
+      {
+        "field": "project",
+        "target": "Expressiveness in Neurosymbolic Learning"
+      }
+    ],
+    "all_wikilinks": [
+      "reasoning shortcuts",
+      "Emanuele Marconato",
+      "Stefano Teso",
+      "Antonio Vergari",
+      "Andrea Passerini",
+      "Expressiveness in Neurosymbolic Learning",
+      "NeurIPS",
+      "Pasted image 20251017113420.png"
+    ],
+    "body_preview": "![[Pasted image 20251017113420.png]]\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "On the independence assumption in neurosymbolic learning",
+    "filename": "On the independence assumption in neurosymbolic learning.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": 2024,
+    "aliases": [
+      "van2024independence"
+    ],
+    "cite_key": "van2024independence",
+    "frontmatter": {
+      "aliases": [
+        "van2024independence"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[A Semantic Loss Function for Deep Learning with Symbolic Knowledge]]"
+      ],
+      "author": [
+        "[[Emile Van Krieken]]",
+        "[[Pasquale Minervini]]",
+        "[[Antonio Vergari]]",
+        "[[Edoardo Ponti]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "van2024independence",
+      "zoteroUri": "zotero://select/items/@van2024independence",
+      "url": null
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge"
+      },
+      {
+        "field": "author",
+        "target": "Emile Van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Pasquale Minervini"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Edoardo Ponti"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "A Semantic Loss Function for Deep Learning with Symbolic Knowledge",
+      "Emile Van Krieken",
+      "Pasquale Minervini",
+      "Antonio Vergari",
+      "Edoardo Ponti"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "partially ordered set",
+    "filename": "partially ordered set.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "hasTopic": [
+        "[[mathematics]]"
+      ],
+      "isA": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "mathematics"
+      }
+    ],
+    "all_wikilinks": [
+      "mathematics",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#concept"
+  },
+  {
+    "doc_id": "Pasquale Minervini",
+    "filename": "Pasquale Minervini.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Edinburgh]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Edinburgh",
+      "17-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "probabilistic circuits",
+    "filename": "probabilistic circuits.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[machine learning]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "machine learning"
+      }
+    ],
+    "all_wikilinks": [
+      "machine learning",
+      "28-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "probabilistic logics",
+    "filename": "probabilistic logics.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[logic]]",
+        "[[probability theory]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "logic"
+      },
+      {
+        "field": "subset",
+        "target": "probability theory"
+      }
+    ],
+    "all_wikilinks": [
+      "logic",
+      "probability theory",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "probability theory",
+    "filename": "probability theory.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[mathematics]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "mathematics"
+      }
+    ],
+    "all_wikilinks": [
+      "mathematics",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "product t-norm",
+    "filename": "product t-norm.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "product t-conorm",
+      "probabilistic sum",
+      "noisy-or"
+    ],
+    "cite_key": "product t-conorm",
+    "frontmatter": {
+      "aliases": [
+        "product t-conorm",
+        "probabilistic sum",
+        "noisy-or"
+      ],
+      "isA": [
+        "[[t-norm]]"
+      ],
+      "relatedTo": [
+        "[[A Semantic Loss Function for Deep Learning with Symbolic Knowledge|Semantic Loss]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "isA",
+        "target": "t-norm"
+      },
+      {
+        "field": "relatedTo",
+        "target": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge"
+      }
+    ],
+    "all_wikilinks": [
+      "t-norm",
+      "A Semantic Loss Function for Deep Learning with Symbolic Knowledge",
+      "Pasted image 20251017110208.png",
+      "probabilistic logics"
+    ],
+    "body_preview": "![[Pasted image 20251017110208.png]]\n\nProbabilistic sum is also called **noisy-or** in [[probabilistic logics]]. \n\n--- \n#concept"
+  },
+  {
+    "doc_id": "README",
+    "filename": "README.md",
+    "note_type": "unknown",
+    "tags": [],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {},
+    "typed_links": [],
+    "all_wikilinks": [],
+    "body_preview": "[Please read the blog post](https://www.emilevankrieken.com/blog/2025/academic-obsidian/)\n# A Template for Academic Obsidian Use\nI've been using Obsidian for 5 years now (early adopter!) for academic research, and have tweaked and simplified my setup to the core ingredients needed. This demo vault provides all plugins and functionality I rely on, on a daily basis; little more is needed. It's 95% core Obsidian!\n\nThe philosophy behind my approach comes from the idea of [knowledge graphs](https://e"
+  },
+  {
+    "doc_id": "reasoning shortcuts",
+    "filename": "reasoning shortcuts.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "RSs"
+    ],
+    "cite_key": "RSs",
+    "frontmatter": {
+      "aliases": [
+        "RSs"
+      ],
+      "subset": [
+        "[[neurosymbolic learning]]",
+        "[[identifiable|identifiability]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "subset",
+        "target": "identifiable"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "identifiable",
+      "17-10-2025",
+      "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+      "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts"
+    ],
+    "body_preview": "This is when in typical NeSy predictor setups, a NeSy predictor properly learned the input-output problem (to 100% accuracy), but did not learn the proper concept extractor. Happens because the problem is not [[identifiable]]\n\nIntroduced in [[Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts]], but we now have a larger journal article in [[Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts]]\n\n\n--- \n#topic"
+  },
+  {
+    "doc_id": "Robin Manhaeve",
+    "filename": "Robin Manhaeve.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[KU Leuven]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "KU Leuven",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Samuele Bortolotti",
+    "filename": "Samuele Bortolotti.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Trento]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Trento",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Samy Badreddine",
+    "filename": "Samy Badreddine.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[Sony]]",
+        "[[University of Trento]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "Sony",
+      "University of Trento",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "sigmoid",
+    "filename": "sigmoid.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "hasTopic": [
+        "[[mathematics]]",
+        "[[deep learning]]"
+      ],
+      "isA": [],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "mathematics"
+      },
+      {
+        "field": "hasTopic",
+        "target": "deep learning"
+      }
+    ],
+    "all_wikilinks": [
+      "mathematics",
+      "deep learning",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#concept"
+  },
+  {
+    "doc_id": "Sony",
+    "filename": "Sony.md",
+    "note_type": "institution",
+    "tags": [
+      "institution",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution #topic"
+  },
+  {
+    "doc_id": "Stefano Teso",
+    "filename": "Stefano Teso.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [
+        "[[University of Trento]]"
+      ],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "University of Trento",
+      "28-10-2025"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "filename": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2510.14538",
+    "url": "https://arxiv.org/abs/2510.14538",
+    "year": 2025,
+    "aliases": [
+      "marconato2025symbolgroundingneurosymbolicai"
+    ],
+    "cite_key": "marconato2025symbolgroundingneurosymbolicai",
+    "frontmatter": {
+      "aliases": [
+        "marconato2025symbolgroundingneurosymbolicai"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[reasoning shortcuts]]"
+      ],
+      "author": [
+        "[[Emanuele Marconato]]",
+        "[[Samuele Bortolotti]]",
+        "[[Paolo Morettin]]",
+        "[[Elena Umili]]",
+        "[[Antonio Vergari]]",
+        "[[Efthymia Tsamoura]]",
+        "[[Andrea Passerini]]",
+        "[[Stefano Teso]]",
+        "[[Emile van Krieken]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "marconato2025symbolgroundingneurosymbolicai",
+      "zoteroUri": "zotero://select/items/@marconato2025symbolgroundingneurosymbolicai",
+      "url": "https://arxiv.org/abs/2510.14538"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "author",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "author",
+        "target": "Samuele Bortolotti"
+      },
+      {
+        "field": "author",
+        "target": "Paolo Morettin"
+      },
+      {
+        "field": "author",
+        "target": "Elena Umili"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Efthymia Tsamoura"
+      },
+      {
+        "field": "author",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "author",
+        "target": "Stefano Teso"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      }
+    ],
+    "all_wikilinks": [
+      "reasoning shortcuts",
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Paolo Morettin",
+      "Elena Umili",
+      "Antonio Vergari",
+      "Efthymia Tsamoura",
+      "Andrea Passerini",
+      "Stefano Teso",
+      "Emile van Krieken"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "symbolic AI",
+    "filename": "symbolic AI.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[artificial intelligence]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "artificial intelligence"
+      }
+    ],
+    "all_wikilinks": [
+      "artificial intelligence",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "t-norm",
+    "filename": "t-norm.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "triangular subnorm",
+      "triangular norm",
+      "t-subnorm",
+      "idempotent element",
+      "nilpotent element",
+      "zero divisor"
+    ],
+    "cite_key": "triangular subnorm",
+    "frontmatter": {
+      "aliases": [
+        "triangular subnorm",
+        "triangular norm",
+        "t-subnorm",
+        "idempotent element",
+        "nilpotent element",
+        "zero divisor"
+      ],
+      "isA": [
+        "[[fuzzy operators]]",
+        "[[associative]]",
+        "[[ordered semigroup]]",
+        "[[monotone function]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "isA",
+        "target": "fuzzy operators"
+      },
+      {
+        "field": "isA",
+        "target": "associative"
+      },
+      {
+        "field": "isA",
+        "target": "ordered semigroup"
+      },
+      {
+        "field": "isA",
+        "target": "monotone function"
+      }
+    ],
+    "all_wikilinks": [
+      "fuzzy operators",
+      "associative",
+      "ordered semigroup",
+      "monotone function",
+      "commutative",
+      "strictly inc",
+      "bijectivity",
+      "isomorphism",
+      "17-03-2021"
+    ],
+    "body_preview": "> [!definition]\n> Axioms: $T: [0, 1]^2 \\rightarrow [0, 1]$\n> - [[commutative|commutativity]] $T(x, y)=T(y, x)$\n> - [[associative]]\n> - [[monotone function]]\n> - Boundary: $T(x, 1)=x$\n\nImplies: $T(x, 0) = 0$, $T(x, y) \\leq \\min(x, y)$. \n\nThere are also **triangular subnorms**, for which the Boundary doesn't hold, but $T(x, y) \\leq \\min(x, y)$ does. \n\n## Analytical elements\n> [!definition]\n> **Idempotent element** is $a$ st $T(a, a)=a$. \n> **Nilpotent element** is $a$ st there is some $n$ st $T(a,"
+  },
+  {
+    "doc_id": "0Topic Template",
+    "filename": "0Topic Template.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [],
+      "Created": "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "<%tp.file.cursor()%>\n\n--- \n#topic"
+  },
+  {
+    "doc_id": "alias template",
+    "filename": "alias template.md",
+    "note_type": "unknown",
+    "tags": [],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "<%tp.file.cursor()%>"
+    ],
+    "cite_key": "<%tp.file.cursor()%>",
+    "frontmatter": {
+      "aliases": [
+        "<%tp.file.cursor()%>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [],
+    "body_preview": ""
+  },
+  {
+    "doc_id": "Author Template",
+    "filename": "Author Template.md",
+    "note_type": "author",
+    "tags": [
+      "author",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "worksIn": [],
+      "Created": "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Concept Template",
+    "filename": "Concept Template.md",
+    "note_type": "concept",
+    "tags": [
+      "concept"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "hasTopic": [],
+      "isA": [],
+      "Created": "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "<%tp.file.cursor()%>\n\n--- \n#concept"
+  },
+  {
+    "doc_id": "conference template",
+    "filename": "conference template.md",
+    "note_type": "venue",
+    "tags": [
+      "venue/conference"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "Created": [
+        "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "--- \n#venue/conference"
+  },
+  {
+    "doc_id": "Idea template",
+    "filename": "Idea template.md",
+    "note_type": "project",
+    "tags": [
+      "project/idea"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "with": null,
+      "hasTopic": null,
+      "score": null,
+      "Created": [
+        "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "<%tp.file.cursor()%>\n\n--- \n#project/idea"
+  },
+  {
+    "doc_id": "Institution Template",
+    "filename": "Institution Template.md",
+    "note_type": "institution",
+    "tags": [
+      "institution",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "--- \n#institution #topic\npartOf:: \n<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+  },
+  {
+    "doc_id": "Meeting template",
+    "filename": "Meeting template.md",
+    "note_type": "unknown",
+    "tags": [
+      "meeting"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {},
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "\n## Notes\n\n--- \n#meeting\nwith:: \n<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+  },
+  {
+    "doc_id": "Method Template",
+    "filename": "Method Template.md",
+    "note_type": "method",
+    "tags": [
+      "method"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "isA": null,
+      "Created": [
+        "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "--- \n#method"
+  },
+  {
+    "doc_id": "Paper Template",
+    "filename": "Paper Template.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "author": null,
+      "hasTopic": null,
+      "project": null,
+      "publishedIn": null,
+      "year": null,
+      "Created": [
+        "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "<%tp.file.cursor()%>\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "Problem Template",
+    "filename": "Problem Template.md",
+    "note_type": "concept",
+    "tags": [
+      "concept/problem"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "createdAt": "<% tp.file.include(\"[[templates/timestamp note]]\") %>",
+      "for": null,
+      "isA": null
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "--- \n#concept/problem"
+  },
+  {
+    "doc_id": "Project Template",
+    "filename": "Project Template.md",
+    "note_type": "project",
+    "tags": [
+      "project"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "with": [],
+      "hasTopic": [],
+      "Created": "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "j\n\n--- \n#project"
+  },
+  {
+    "doc_id": "Talk Template",
+    "filename": "Talk Template.md",
+    "note_type": "talk",
+    "tags": [
+      "source/talk"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "by": [],
+      "at": [],
+      "hasTopic": [],
+      "year": null,
+      "Created": "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "<%tp.file.cursor()%>\n\n--- \n#source/talk"
+  },
+  {
+    "doc_id": "timestamp note",
+    "filename": "timestamp note.md",
+    "note_type": "unknown",
+    "tags": [],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {},
+    "typed_links": [],
+    "all_wikilinks": [
+      "<% tp.date.now(\"DD-MM-YYYY\") %>"
+    ],
+    "body_preview": "\"[[<% tp.date.now(\"DD-MM-YYYY\") %>]]\""
+  },
+  {
+    "doc_id": "tool template",
+    "filename": "tool template.md",
+    "note_type": "method",
+    "tags": [
+      "method/tool"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "for": [],
+      "isA": [],
+      "Created": [
+        "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "--- \n#method/tool"
+  },
+  {
+    "doc_id": "University Template",
+    "filename": "University Template.md",
+    "note_type": "institution",
+    "tags": [
+      "institution/university"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "Created": "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "--- \n#institution/university"
+  },
+  {
+    "doc_id": "UAI",
+    "filename": "UAI.md",
+    "note_type": "venue",
+    "tags": [
+      "venue/conference",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "Created": [
+        "[[28-10-2025]]"
+      ],
+      "subset": [
+        "[[venues]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "venues"
+      }
+    ],
+    "all_wikilinks": [
+      "28-10-2025",
+      "venues"
+    ],
+    "body_preview": "--- \n#venue/conference #topic"
+  },
+  {
+    "doc_id": "UCLA",
+    "filename": "UCLA.md",
+    "note_type": "institution",
+    "tags": [
+      "institution",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution #topic"
+  },
+  {
+    "doc_id": "uncertainty quantification",
+    "filename": "uncertainty quantification.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [
+        "[[machine learning]]"
+      ],
+      "Created": "[[17-10-2025]]"
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "machine learning"
+      }
+    ],
+    "all_wikilinks": [
+      "machine learning",
+      "17-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "University of Amsterdam",
+    "filename": "University of Amsterdam.md",
+    "note_type": "institution",
+    "tags": [
+      "institution/university",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "UvA"
+    ],
+    "cite_key": "UvA",
+    "frontmatter": {
+      "aliases": [
+        "UvA"
+      ],
+      "Created": "[[17-10-2025]]",
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "17-10-2025",
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution/university #topic"
+  },
+  {
+    "doc_id": "University of Edinburgh",
+    "filename": "University of Edinburgh.md",
+    "note_type": "institution",
+    "tags": [
+      "institution/university",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "UoE"
+    ],
+    "cite_key": "UoE",
+    "frontmatter": {
+      "aliases": [
+        "UoE"
+      ],
+      "Created": "[[17-10-2025]]",
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "17-10-2025",
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution/university #topic"
+  },
+  {
+    "doc_id": "University of Trento",
+    "filename": "University of Trento.md",
+    "note_type": "institution",
+    "tags": [
+      "institution",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "partOf": null,
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution #topic"
+  },
+  {
+    "doc_id": "venues",
+    "filename": "venues.md",
+    "note_type": "topic",
+    "tags": [
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [],
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": [],
+      "subset": [],
+      "Created": "[[28-10-2025]]"
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "28-10-2025"
+    ],
+    "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Vrije Universiteit Amsterdam",
+    "filename": "Vrije Universiteit Amsterdam.md",
+    "note_type": "institution",
+    "tags": [
+      "institution/university",
+      "topic"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": [
+      "VU"
+    ],
+    "cite_key": "VU",
+    "frontmatter": {
+      "aliases": [
+        "VU"
+      ],
+      "Created": "[[17-10-2025]]",
+      "subset": [
+        "[[institutions]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "subset",
+        "target": "institutions"
+      }
+    ],
+    "all_wikilinks": [
+      "17-10-2025",
+      "institutions"
+    ],
+    "body_preview": "--- \n#institution/university #topic"
+  }
+]

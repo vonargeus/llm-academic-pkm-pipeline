@@ -1,0 +1,112 @@
+{
+  "1711.11157": {
+    "status": "ok",
+    "chars": 60501,
+    "path": "data\\extracted_text\\1711.11157.json"
+  },
+  "2005.11401": {
+    "status": "ok",
+    "chars": 68974,
+    "path": "data\\extracted_text\\2005.11401.json"
+  },
+  "2007.01282": {
+    "status": "ok",
+    "chars": 23078,
+    "path": "data\\extracted_text\\2007.01282.json"
+  },
+  "2210.06726": {
+    "status": "ok",
+    "chars": 66591,
+    "path": "data\\extracted_text\\2210.06726.json"
+  },
+  "2212.12393": {
+    "status": "ok",
+    "chars": 149928,
+    "path": "data\\extracted_text\\2212.12393.json"
+  },
+  "2305.10250": {
+    "status": "ok",
+    "chars": 45484,
+    "path": "data\\extracted_text\\2305.10250.json"
+  },
+  "2305.19951": {
+    "status": "ok",
+    "chars": 100783,
+    "path": "data\\extracted_text\\2305.19951.json"
+  },
+  "2306.07516": {
+    "status": "ok",
+    "chars": 26028,
+    "path": "data\\extracted_text\\2306.07516.json"
+  },
+  "2309.15217": {
+    "status": "ok",
+    "chars": 31685,
+    "path": "data\\extracted_text\\2309.15217.json"
+  },
+  "2310.08560": {
+    "status": "ok",
+    "chars": 54206,
+    "path": "data\\extracted_text\\2310.08560.json"
+  },
+  "2401.18059": {
+    "status": "ok",
+    "chars": 76990,
+    "path": "data\\extracted_text\\2401.18059.json"
+  },
+  "2402.12240": {
+    "status": "ok",
+    "chars": 112151,
+    "path": "data\\extracted_text\\2402.12240.json"
+  },
+  "2402.14207": {
+    "status": "ok",
+    "chars": 94911,
+    "path": "data\\extracted_text\\2402.14207.json"
+  },
+  "2402.17753": {
+    "status": "ok",
+    "chars": 77544,
+    "path": "data\\extracted_text\\2402.17753.json"
+  },
+  "2404.16130": {
+    "status": "ok",
+    "chars": 89429,
+    "path": "data\\extracted_text\\2404.16130.json"
+  },
+  "2405.14831": {
+    "status": "ok",
+    "chars": 102265,
+    "path": "data\\extracted_text\\2405.14831.json"
+  },
+  "2406.14177": {
+    "status": "ok",
+    "chars": 29686,
+    "path": "data\\extracted_text\\2406.14177.json"
+  },
+  "2409.05591": {
+    "status": "ok",
+    "chars": 76681,
+    "path": "data\\extracted_text\\2409.05591.json"
+  },
+  "2410.05779": {
+    "status": "ok",
+    "chars": 61081,
+    "path": "data\\extracted_text\\2410.05779.json"
+  },
+  "2502.12110": {
+    "status": "ok",
+    "chars": 87692,
+    "path": "data\\extracted_text\\2502.12110.json"
+  },
+  "2505.13138": {
+    "status": "ok",
+    "chars": 138583,
+    "path": "data\\extracted_text\\2505.13138.json"
+  },
+  "2510.14538": {
+    "status": "ok",
+    "chars": 246503,
+    "path": "data\\extracted_text\\2510.14538.json"
+  }
+}

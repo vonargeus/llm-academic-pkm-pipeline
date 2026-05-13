@@ -1,0 +1,978 @@
+[
+  {
+    "doc_id": "A semantic loss function for deep learning with symbolic knowledge",
+    "filename": "A semantic loss function for deep learning with symbolic knowledge.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "1711.11157",
+    "url": "https://arxiv.org/abs/1711.11157",
+    "year": 2018,
+    "aliases": [
+      "xu2018semanticlossfunctiondeep",
+      "Semantic Loss"
+    ],
+    "cite_key": "xu2018semanticlossfunctiondeep",
+    "frontmatter": {
+      "aliases": [
+        "xu2018semanticlossfunctiondeep",
+        "Semantic Loss"
+      ],
+      "year": 2018,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[probabilistic logics]]"
+      ],
+      "author": [
+        "[[Jingyi Xu]]",
+        "[[Zilu Zhang]]",
+        "[[Tal Friedman]]",
+        "[[Yitao Liang]]",
+        "[[Guy Van den Broeck]]"
+      ],
+      "project": [],
+      "publishedIn": "[[ICML]]",
+      "citeKey": "xu2018semanticlossfunctiondeep",
+      "zoteroUri": "zotero://select/items/@xu2018semanticlossfunctiondeep",
+      "url": "https://arxiv.org/abs/1711.11157"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic logics"
+      },
+      {
+        "field": "author",
+        "target": "Jingyi Xu"
+      },
+      {
+        "field": "author",
+        "target": "Zilu Zhang"
+      },
+      {
+        "field": "author",
+        "target": "Tal Friedman"
+      },
+      {
+        "field": "author",
+        "target": "Yitao Liang"
+      },
+      {
+        "field": "author",
+        "target": "Guy Van den Broeck"
+      },
+      {
+        "field": "publishedIn",
+        "target": "ICML"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "probabilistic logics",
+      "Jingyi Xu",
+      "Zilu Zhang",
+      "Tal Friedman",
+      "Yitao Liang",
+      "Guy Van den Broeck",
+      "ICML",
+      "probabilistic circuits",
+      "knowledge compilation"
+    ],
+    "body_preview": "How should you design a loss function to teach neural networks about background knowledge? This paper uses simple probabilistic logics to achieve this. Computationally this is hard, so they use [[probabilistic circuits]] where the structure is given by a [[knowledge compilation]] algorithm\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "filename": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2212.12393",
+    "url": "https://arxiv.org/abs/2212.12393",
+    "year": 2023,
+    "aliases": [
+      "vankrieken2023anesiscalableapproximatemethod"
+    ],
+    "cite_key": "vankrieken2023anesiscalableapproximatemethod",
+    "frontmatter": {
+      "aliases": [
+        "vankrieken2023anesiscalableapproximatemethod"
+      ],
+      "year": 2023,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[probabilistic logics]]",
+        "[[deep generative models]]"
+      ],
+      "author": [
+        "[[Emile van Krieken]]",
+        "[[Thiviyan Thanapalasingam]]",
+        "[[Jakub M. Tomczak]]",
+        "[[Frank van Harmelen]]",
+        "[[Annette ten Teije]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "vankrieken2023anesiscalableapproximatemethod",
+      "zoteroUri": "zotero://select/items/@vankrieken2023anesiscalableapproximatemethod",
+      "url": "https://arxiv.org/abs/2212.12393"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic logics"
+      },
+      {
+        "field": "hasTopic",
+        "target": "deep generative models"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Thiviyan Thanapalasingam"
+      },
+      {
+        "field": "author",
+        "target": "Jakub M. Tomczak"
+      },
+      {
+        "field": "author",
+        "target": "Frank van Harmelen"
+      },
+      {
+        "field": "author",
+        "target": "Annette ten Teije"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "probabilistic logics",
+      "deep generative models",
+      "Emile van Krieken",
+      "Thiviyan Thanapalasingam",
+      "Jakub M. Tomczak",
+      "Frank van Harmelen",
+      "Annette ten Teije",
+      "Neural probabilistic logic programming in DeepProbLog",
+      "Pasted image 20251028164309.png"
+    ],
+    "body_preview": "Current methods for neurosymbolic using [[probabilistic logics]] (eg [[Neural probabilistic logic programming in DeepProbLog|DeepProbLog]] rely on exact computation of the probabilities, but this is quite inefficient and often doesn't scale well. So use [[deep generative models]] which estimate the weighted model count used in probabilistic logics. \n![[Pasted image 20251028164309.png]]\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "Analyzing differentiable fuzzy logic operators",
+    "filename": "Analyzing differentiable fuzzy logic operators.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370221001533",
+    "year": 2022,
+    "aliases": [
+      "VANKRIEKEN2022103602",
+      "differentiable fuzzy logic",
+      "DFL",
+      "Sigmoidal implication",
+      "differentiable logic"
+    ],
+    "cite_key": "VANKRIEKEN2022103602",
+    "frontmatter": {
+      "aliases": [
+        "VANKRIEKEN2022103602",
+        "differentiable fuzzy logic",
+        "DFL",
+        "Sigmoidal implication",
+        "differentiable logic"
+      ],
+      "year": 2022,
+      "hasTopic": [
+        "[[fuzzy logic]]",
+        "[[neurosymbolic learning]]"
+      ],
+      "author": [
+        "[[Emile van Krieken]]",
+        "[[Erman Acar]]",
+        "[[Frank van Harmelen]]"
+      ],
+      "project": [
+        "[[How to properly use fuzzy logics in Neurosymbolic AI]]"
+      ],
+      "publishedIn": "[[AI Journal]]",
+      "citeKey": "VANKRIEKEN2022103602",
+      "zoteroUri": "zotero://select/items/@VANKRIEKEN2022103602",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0004370221001533"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "fuzzy logic"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Erman Acar"
+      },
+      {
+        "field": "author",
+        "target": "Frank van Harmelen"
+      },
+      {
+        "field": "publishedIn",
+        "target": "AI Journal"
+      },
+      {
+        "field": "project",
+        "target": "How to properly use fuzzy logics in Neurosymbolic AI"
+      }
+    ],
+    "all_wikilinks": [
+      "fuzzy logic",
+      "neurosymbolic learning",
+      "Emile van Krieken",
+      "Erman Acar",
+      "Frank van Harmelen",
+      "How to properly use fuzzy logics in Neurosymbolic AI",
+      "AI Journal",
+      "product t-norm",
+      "Lukasiewicz t-norm",
+      "sigmoid"
+    ],
+    "body_preview": "> [!abstract]-\n> The AI community is increasingly putting its attention towards combining symbolic and neural approaches, as it is often argued that the strengths and weaknesses of these approaches are complementary. One recent trend in the literature is weakly supervised learning techniques that employ operators from fuzzy logics. In particular, these use prior background knowledge described in such logics to help the training of a neural network from unlabeled and noisy data. By interpreting l"
+  },
+  {
+    "doc_id": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "filename": "BEARS make neuro-symbolic models aware of their reasoning shortcuts.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2402.12240",
+    "url": "https://arxiv.org/abs/2402.12240",
+    "year": 2024,
+    "aliases": [
+      "marconato2024bearsmakeneurosymbolicmodels",
+      "BEARS"
+    ],
+    "cite_key": "marconato2024bearsmakeneurosymbolicmodels",
+    "frontmatter": {
+      "aliases": [
+        "marconato2024bearsmakeneurosymbolicmodels",
+        "BEARS"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[reasoning shortcuts]]",
+        "[[uncertainty quantification]]",
+        "[[ensembles]]"
+      ],
+      "author": [
+        "[[Emanuele Marconato]]",
+        "[[Samuele Bortolotti]]",
+        "[[Emile Krieken]]",
+        "[[Antonio Vergari]]",
+        "[[Andrea Passerini]]",
+        "[[Stefano Teso]]"
+      ],
+      "project": [],
+      "publishedIn": "[[UAI]]",
+      "citeKey": "marconato2024bearsmakeneurosymbolicmodels",
+      "zoteroUri": "zotero://select/items/@marconato2024bearsmakeneurosymbolicmodels",
+      "url": "https://arxiv.org/abs/2402.12240"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "hasTopic",
+        "target": "uncertainty quantification"
+      },
+      {
+        "field": "hasTopic",
+        "target": "ensembles"
+      },
+      {
+        "field": "author",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "author",
+        "target": "Samuele Bortolotti"
+      },
+      {
+        "field": "author",
+        "target": "Emile Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "author",
+        "target": "Stefano Teso"
+      },
+      {
+        "field": "publishedIn",
+        "target": "UAI"
+      }
+    ],
+    "all_wikilinks": [
+      "reasoning shortcuts",
+      "uncertainty quantification",
+      "ensembles",
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Emile Krieken",
+      "Antonio Vergari",
+      "Andrea Passerini",
+      "Stefano Teso",
+      "UAI"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "Discovering mathematical equations with diffusion language model",
+    "filename": "Discovering mathematical equations with diffusion language model.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": 2025,
+    "aliases": [
+      "Han2025ARXIV_Discovering_Mathematical_Equations"
+    ],
+    "cite_key": "Han2025ARXIV_Discovering_Mathematical_Equations",
+    "frontmatter": {
+      "aliases": [
+        "Han2025ARXIV_Discovering_Mathematical_Equations"
+      ],
+      "year": 2025,
+      "hasTopic": [],
+      "author": [
+        "[[Xiaoxu Han]]",
+        "[[Chengzhen Ning]]",
+        "[[Jinghui Zhong]]",
+        "[[Fubiao Yang]]",
+        "[[Yu Wang]]",
+        "[[Xin Mu]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "Han2025ARXIV_Discovering_Mathematical_Equations",
+      "zoteroUri": "zotero://select/items/@Han2025ARXIV_Discovering_Mathematical_Equations",
+      "url": null
+    },
+    "typed_links": [
+      {
+        "field": "author",
+        "target": "Xiaoxu Han"
+      },
+      {
+        "field": "author",
+        "target": "Chengzhen Ning"
+      },
+      {
+        "field": "author",
+        "target": "Jinghui Zhong"
+      },
+      {
+        "field": "author",
+        "target": "Fubiao Yang"
+      },
+      {
+        "field": "author",
+        "target": "Yu Wang"
+      },
+      {
+        "field": "author",
+        "target": "Xin Mu"
+      }
+    ],
+    "all_wikilinks": [
+      "Xiaoxu Han",
+      "Chengzhen Ning",
+      "Jinghui Zhong",
+      "Fubiao Yang",
+      "Yu Wang",
+      "Xin Mu"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "Logic tensor networks",
+    "filename": "Logic tensor networks.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2021.10364",
+    "url": "http://dx.doi.org/10.1016/j.artint.2021.103649",
+    "year": 2022,
+    "aliases": [
+      "Badreddine_2022",
+      "LTN"
+    ],
+    "cite_key": "Badreddine_2022",
+    "frontmatter": {
+      "aliases": [
+        "Badreddine_2022",
+        "LTN"
+      ],
+      "year": 2022,
+      "hasTopic": [
+        "[[fuzzy logic]]",
+        "[[neurosymbolic learning]]"
+      ],
+      "author": [
+        "[[Samy Badreddine]]",
+        "[[Artur d’Avila Garcez]]",
+        "[[Luciano Serafini]]",
+        "[[Michael Spranger]]"
+      ],
+      "project": [
+        "[[How to properly use fuzzy logics in Neurosymbolic AI]]"
+      ],
+      "publishedIn": "[[AI Journal]]",
+      "citeKey": "Badreddine_2022",
+      "zoteroUri": "zotero://select/items/@Badreddine_2022",
+      "url": "http://dx.doi.org/10.1016/j.artint.2021.103649"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "fuzzy logic"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "author",
+        "target": "Samy Badreddine"
+      },
+      {
+        "field": "author",
+        "target": "Artur d’Avila Garcez"
+      },
+      {
+        "field": "author",
+        "target": "Luciano Serafini"
+      },
+      {
+        "field": "author",
+        "target": "Michael Spranger"
+      },
+      {
+        "field": "publishedIn",
+        "target": "AI Journal"
+      },
+      {
+        "field": "project",
+        "target": "How to properly use fuzzy logics in Neurosymbolic AI"
+      }
+    ],
+    "all_wikilinks": [
+      "fuzzy logic",
+      "neurosymbolic learning",
+      "Samy Badreddine",
+      "Artur d’Avila Garcez",
+      "Luciano Serafini",
+      "Michael Spranger",
+      "How to properly use fuzzy logics in Neurosymbolic AI",
+      "AI Journal"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "Neural probabilistic logic programming in DeepProbLog",
+    "filename": "Neural probabilistic logic programming in DeepProbLog.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370221000552",
+    "year": 2021,
+    "aliases": [
+      "MANHAEVE2021103504",
+      "DeepProbLog"
+    ],
+    "cite_key": "MANHAEVE2021103504",
+    "frontmatter": {
+      "aliases": [
+        "MANHAEVE2021103504",
+        "DeepProbLog"
+      ],
+      "year": 2021,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[probabilistic circuits]]",
+        "[[probabilistic logics]]"
+      ],
+      "author": [
+        "[[Robin Manhaeve]]",
+        "[[Sebastijan Dumančić]]",
+        "[[Angelika Kimmig]]",
+        "[[Thomas Demeester]]",
+        "[[Luc De Raedt]]"
+      ],
+      "project": [],
+      "publishedIn": "[[AI Journal]]",
+      "citeKey": "MANHAEVE2021103504",
+      "zoteroUri": "zotero://select/items/@MANHAEVE2021103504",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0004370221000552"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic circuits"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic logics"
+      },
+      {
+        "field": "author",
+        "target": "Robin Manhaeve"
+      },
+      {
+        "field": "author",
+        "target": "Sebastijan Dumančić"
+      },
+      {
+        "field": "author",
+        "target": "Angelika Kimmig"
+      },
+      {
+        "field": "author",
+        "target": "Thomas Demeester"
+      },
+      {
+        "field": "author",
+        "target": "Luc De Raedt"
+      },
+      {
+        "field": "publishedIn",
+        "target": "AI Journal"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "probabilistic circuits",
+      "probabilistic logics",
+      "Robin Manhaeve",
+      "Sebastijan Dumančić",
+      "Angelika Kimmig",
+      "Thomas Demeester",
+      "Luc De Raedt",
+      "AI Journal",
+      "logic program",
+      "Pasted image 20251028163856.png",
+      "Pasted image 20251028164004.png"
+    ],
+    "body_preview": "> [!abstract]-\n> We introduce DeepProbLog, a neural probabilistic logic programming language that incorporates deep learning by means of neural predicates. We show how existing inference and learning techniques of the underlying probabilistic logic programming language ProbLog can be adapted for the new language. We theoretically and experimentally demonstrate that DeepProbLog supports (i) both symbolic and subsymbolic representations and inference, (ii) program induction, (iii) probabilistic (l"
+  },
+  {
+    "doc_id": "Neurosymbolic Diffusion Models",
+    "filename": "Neurosymbolic Diffusion Models.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2505.13138",
+    "url": "https://arxiv.org/abs/2505.13138",
+    "year": 2025,
+    "aliases": [
+      "vankriekenNeurosymbolicDiffusionModels2025",
+      "NeSyDM",
+      "NeSyDMs"
+    ],
+    "cite_key": "vankriekenNeurosymbolicDiffusionModels2025",
+    "frontmatter": {
+      "aliases": [
+        "vankriekenNeurosymbolicDiffusionModels2025",
+        "NeSyDM",
+        "NeSyDMs"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[discrete diffusion models|masked diffusion]]",
+        "[[reasoning shortcuts]]"
+      ],
+      "author": [
+        "[[Emile van Krieken]]",
+        "[[Pasquale Minervini]]",
+        "[[Edoardo Ponti]]",
+        "[[Antonio Vergari]]"
+      ],
+      "project": [
+        "[[Expressiveness in Neurosymbolic Learning|Expressive NeSy]]"
+      ],
+      "publishedIn": "[[NeurIPS]]",
+      "citeKey": "vankriekenNeurosymbolicDiffusionModels2025",
+      "zoteroUri": "zotero://select/items/@vankriekenNeurosymbolicDiffusionModels2025",
+      "url": "https://arxiv.org/abs/2505.13138"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "discrete diffusion models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Pasquale Minervini"
+      },
+      {
+        "field": "author",
+        "target": "Edoardo Ponti"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "publishedIn",
+        "target": "NeurIPS"
+      },
+      {
+        "field": "project",
+        "target": "Expressiveness in Neurosymbolic Learning"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "discrete diffusion models",
+      "reasoning shortcuts",
+      "Emile van Krieken",
+      "Pasquale Minervini",
+      "Edoardo Ponti",
+      "Antonio Vergari",
+      "Expressiveness in Neurosymbolic Learning",
+      "NeurIPS",
+      "Pasted image 20251028164327.png"
+    ],
+    "body_preview": "![[Pasted image 20251028164327.png]]\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "filename": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2305.19951",
+    "url": "https://arxiv.org/abs/2305.19951",
+    "year": 2023,
+    "aliases": [
+      "marconato2023neurosymbolicconceptscreatedequal"
+    ],
+    "cite_key": "marconato2023neurosymbolicconceptscreatedequal",
+    "frontmatter": {
+      "aliases": [
+        "marconato2023neurosymbolicconceptscreatedequal"
+      ],
+      "year": 2023,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[reasoning shortcuts]]"
+      ],
+      "author": [
+        "[[Emanuele Marconato]]",
+        "[[Stefano Teso]]",
+        "[[Antonio Vergari]]",
+        "[[Andrea Passerini]]"
+      ],
+      "project": [
+        "[[Expressiveness in Neurosymbolic Learning|Expressive NeSy]]"
+      ],
+      "publishedIn": "[[NeurIPS]]",
+      "citeKey": "marconato2023neurosymbolicconceptscreatedequal",
+      "zoteroUri": "zotero://select/items/@marconato2023neurosymbolicconceptscreatedequal",
+      "url": "https://arxiv.org/abs/2305.19951"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "author",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "author",
+        "target": "Stefano Teso"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "publishedIn",
+        "target": "NeurIPS"
+      },
+      {
+        "field": "project",
+        "target": "Expressiveness in Neurosymbolic Learning"
+      }
+    ],
+    "all_wikilinks": [
+      "reasoning shortcuts",
+      "Emanuele Marconato",
+      "Stefano Teso",
+      "Antonio Vergari",
+      "Andrea Passerini",
+      "Expressiveness in Neurosymbolic Learning",
+      "NeurIPS",
+      "Pasted image 20251017113420.png"
+    ],
+    "body_preview": "![[Pasted image 20251017113420.png]]\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "On the independence assumption in neurosymbolic learning",
+    "filename": "On the independence assumption in neurosymbolic learning.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": 2024,
+    "aliases": [
+      "van2024independence"
+    ],
+    "cite_key": "van2024independence",
+    "frontmatter": {
+      "aliases": [
+        "van2024independence"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[neurosymbolic learning]]",
+        "[[A Semantic Loss Function for Deep Learning with Symbolic Knowledge]]"
+      ],
+      "author": [
+        "[[Emile Van Krieken]]",
+        "[[Pasquale Minervini]]",
+        "[[Antonio Vergari]]",
+        "[[Edoardo Ponti]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "van2024independence",
+      "zoteroUri": "zotero://select/items/@van2024independence",
+      "url": null
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic learning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge"
+      },
+      {
+        "field": "author",
+        "target": "Emile Van Krieken"
+      },
+      {
+        "field": "author",
+        "target": "Pasquale Minervini"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Edoardo Ponti"
+      }
+    ],
+    "all_wikilinks": [
+      "neurosymbolic learning",
+      "A Semantic Loss Function for Deep Learning with Symbolic Knowledge",
+      "Emile Van Krieken",
+      "Pasquale Minervini",
+      "Antonio Vergari",
+      "Edoardo Ponti"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "filename": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2510.14538",
+    "url": "https://arxiv.org/abs/2510.14538",
+    "year": 2025,
+    "aliases": [
+      "marconato2025symbolgroundingneurosymbolicai"
+    ],
+    "cite_key": "marconato2025symbolgroundingneurosymbolicai",
+    "frontmatter": {
+      "aliases": [
+        "marconato2025symbolgroundingneurosymbolicai"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[reasoning shortcuts]]"
+      ],
+      "author": [
+        "[[Emanuele Marconato]]",
+        "[[Samuele Bortolotti]]",
+        "[[Paolo Morettin]]",
+        "[[Elena Umili]]",
+        "[[Antonio Vergari]]",
+        "[[Efthymia Tsamoura]]",
+        "[[Andrea Passerini]]",
+        "[[Stefano Teso]]",
+        "[[Emile van Krieken]]"
+      ],
+      "project": [],
+      "publishedIn": null,
+      "citeKey": "marconato2025symbolgroundingneurosymbolicai",
+      "zoteroUri": "zotero://select/items/@marconato2025symbolgroundingneurosymbolicai",
+      "url": "https://arxiv.org/abs/2510.14538"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "reasoning shortcuts"
+      },
+      {
+        "field": "author",
+        "target": "Emanuele Marconato"
+      },
+      {
+        "field": "author",
+        "target": "Samuele Bortolotti"
+      },
+      {
+        "field": "author",
+        "target": "Paolo Morettin"
+      },
+      {
+        "field": "author",
+        "target": "Elena Umili"
+      },
+      {
+        "field": "author",
+        "target": "Antonio Vergari"
+      },
+      {
+        "field": "author",
+        "target": "Efthymia Tsamoura"
+      },
+      {
+        "field": "author",
+        "target": "Andrea Passerini"
+      },
+      {
+        "field": "author",
+        "target": "Stefano Teso"
+      },
+      {
+        "field": "author",
+        "target": "Emile van Krieken"
+      }
+    ],
+    "all_wikilinks": [
+      "reasoning shortcuts",
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Paolo Morettin",
+      "Elena Umili",
+      "Antonio Vergari",
+      "Efthymia Tsamoura",
+      "Andrea Passerini",
+      "Stefano Teso",
+      "Emile van Krieken"
+    ],
+    "body_preview": "--- \n#source/paper"
+  },
+  {
+    "doc_id": "Paper Template",
+    "filename": "Paper Template.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": null,
+    "url": null,
+    "year": null,
+    "aliases": null,
+    "cite_key": null,
+    "frontmatter": {
+      "aliases": null,
+      "author": null,
+      "hasTopic": null,
+      "project": null,
+      "publishedIn": null,
+      "year": null,
+      "Created": [
+        "<% tp.file.include(\"[[templates/timestamp note]]\") %>"
+      ]
+    },
+    "typed_links": [],
+    "all_wikilinks": [
+      "templates/timestamp note"
+    ],
+    "body_preview": "<%tp.file.cursor()%>\n\n--- \n#source/paper"
+  }
+]

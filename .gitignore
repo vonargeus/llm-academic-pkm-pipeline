@@ -1,0 +1,33 @@
+# Git ignore rules for thesis project
+
+# ── Secrets — NEVER commit ─────────────────────────────────────────────────
+.env
+*.key
+
+# ── Python ────────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# ── Data — PDFs not redistributed ─────────────────────────────────────────
+data/raw_pdfs/*.pdf
+data/emile_vault/
+
+# ── Large index files ─────────────────────────────────────────────────────
+data/results/*.npy
+index.json
+
+# ── OS files ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Jupyter checkpoints ──────────────────────────────────────────────────
+.ipynb_checkpoints/

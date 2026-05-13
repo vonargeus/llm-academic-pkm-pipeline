@@ -1,0 +1,252 @@
+{
+  "A semantic loss function for deep learning with symbolic knowledge": {
+    "title": "A semantic loss function for deep learning with symbolic knowledge",
+    "aliases": [
+      "xu2018semanticlossfunctiondeep",
+      "Semantic Loss"
+    ],
+    "year": 2018,
+    "venue": "ICML",
+    "authors": [
+      "Jingyi Xu",
+      "Zilu Zhang",
+      "Tal Friedman",
+      "Yitao Liang",
+      "Guy Van den Broeck"
+    ],
+    "hasTopic": [
+      "neurosymbolic learning",
+      "probabilistic logics"
+    ],
+    "arxiv_id": "1711.11157",
+    "url": "https://arxiv.org/abs/1711.11157"
+  },
+  "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference": {
+    "title": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "aliases": [
+      "vankrieken2023anesiscalableapproximatemethod"
+    ],
+    "year": 2023,
+    "venue": null,
+    "authors": [
+      "Emile van Krieken",
+      "Thiviyan Thanapalasingam",
+      "Jakub M. Tomczak",
+      "Frank van Harmelen",
+      "Annette ten Teije"
+    ],
+    "hasTopic": [
+      "neurosymbolic learning",
+      "probabilistic logics",
+      "deep generative models"
+    ],
+    "arxiv_id": "2212.12393",
+    "url": "https://arxiv.org/abs/2212.12393"
+  },
+  "Analyzing differentiable fuzzy logic operators": {
+    "title": "Analyzing differentiable fuzzy logic operators",
+    "aliases": [
+      "VANKRIEKEN2022103602",
+      "differentiable fuzzy logic",
+      "DFL",
+      "Sigmoidal implication",
+      "differentiable logic"
+    ],
+    "year": 2022,
+    "venue": "AI Journal",
+    "authors": [
+      "Emile van Krieken",
+      "Erman Acar",
+      "Frank van Harmelen"
+    ],
+    "hasTopic": [
+      "fuzzy logic",
+      "neurosymbolic learning"
+    ],
+    "arxiv_id": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370221001533"
+  },
+  "BEARS make neuro-symbolic models aware of their reasoning shortcuts": {
+    "title": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "aliases": [
+      "marconato2024bearsmakeneurosymbolicmodels",
+      "BEARS"
+    ],
+    "year": 2024,
+    "venue": "UAI",
+    "authors": [
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Emile Krieken",
+      "Antonio Vergari",
+      "Andrea Passerini",
+      "Stefano Teso"
+    ],
+    "hasTopic": [
+      "reasoning shortcuts",
+      "uncertainty quantification",
+      "ensembles"
+    ],
+    "arxiv_id": "2402.12240",
+    "url": "https://arxiv.org/abs/2402.12240"
+  },
+  "Discovering mathematical equations with diffusion language model": {
+    "title": "Discovering mathematical equations with diffusion language model",
+    "aliases": [
+      "Han2025ARXIV_Discovering_Mathematical_Equations"
+    ],
+    "year": 2025,
+    "venue": null,
+    "authors": [
+      "Xiaoxu Han",
+      "Chengzhen Ning",
+      "Jinghui Zhong",
+      "Fubiao Yang",
+      "Yu Wang",
+      "Xin Mu"
+    ],
+    "hasTopic": [],
+    "arxiv_id": null,
+    "url": null
+  },
+  "Logic tensor networks": {
+    "title": "Logic tensor networks",
+    "aliases": [
+      "Badreddine_2022",
+      "LTN"
+    ],
+    "year": 2022,
+    "venue": "AI Journal",
+    "authors": [
+      "Samy Badreddine",
+      "Artur d’Avila Garcez",
+      "Luciano Serafini",
+      "Michael Spranger"
+    ],
+    "hasTopic": [
+      "fuzzy logic",
+      "neurosymbolic learning"
+    ],
+    "arxiv_id": "2021.10364",
+    "url": "http://dx.doi.org/10.1016/j.artint.2021.103649"
+  },
+  "Neural probabilistic logic programming in DeepProbLog": {
+    "title": "Neural probabilistic logic programming in DeepProbLog",
+    "aliases": [
+      "MANHAEVE2021103504",
+      "DeepProbLog"
+    ],
+    "year": 2021,
+    "venue": "AI Journal",
+    "authors": [
+      "Robin Manhaeve",
+      "Sebastijan Dumančić",
+      "Angelika Kimmig",
+      "Thomas Demeester",
+      "Luc De Raedt"
+    ],
+    "hasTopic": [
+      "neurosymbolic learning",
+      "probabilistic circuits",
+      "probabilistic logics"
+    ],
+    "arxiv_id": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370221000552"
+  },
+  "Neurosymbolic Diffusion Models": {
+    "title": "Neurosymbolic Diffusion Models",
+    "aliases": [
+      "vankriekenNeurosymbolicDiffusionModels2025",
+      "NeSyDM",
+      "NeSyDMs"
+    ],
+    "year": 2025,
+    "venue": "NeurIPS",
+    "authors": [
+      "Emile van Krieken",
+      "Pasquale Minervini",
+      "Edoardo Ponti",
+      "Antonio Vergari"
+    ],
+    "hasTopic": [
+      "neurosymbolic learning",
+      "discrete diffusion models",
+      "reasoning shortcuts"
+    ],
+    "arxiv_id": "2505.13138",
+    "url": "https://arxiv.org/abs/2505.13138"
+  },
+  "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts": {
+    "title": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "aliases": [
+      "marconato2023neurosymbolicconceptscreatedequal"
+    ],
+    "year": 2023,
+    "venue": "NeurIPS",
+    "authors": [
+      "Emanuele Marconato",
+      "Stefano Teso",
+      "Antonio Vergari",
+      "Andrea Passerini"
+    ],
+    "hasTopic": [
+      "reasoning shortcuts"
+    ],
+    "arxiv_id": "2305.19951",
+    "url": "https://arxiv.org/abs/2305.19951"
+  },
+  "On the independence assumption in neurosymbolic learning": {
+    "title": "On the independence assumption in neurosymbolic learning",
+    "aliases": [
+      "van2024independence"
+    ],
+    "year": 2024,
+    "venue": null,
+    "authors": [
+      "Emile Van Krieken",
+      "Pasquale Minervini",
+      "Antonio Vergari",
+      "Edoardo Ponti"
+    ],
+    "hasTopic": [
+      "neurosymbolic learning",
+      "A Semantic Loss Function for Deep Learning with Symbolic Knowledge"
+    ],
+    "arxiv_id": null,
+    "url": null
+  },
+  "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts": {
+    "title": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "aliases": [
+      "marconato2025symbolgroundingneurosymbolicai"
+    ],
+    "year": 2025,
+    "venue": null,
+    "authors": [
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Paolo Morettin",
+      "Elena Umili",
+      "Antonio Vergari",
+      "Efthymia Tsamoura",
+      "Andrea Passerini",
+      "Stefano Teso",
+      "Emile van Krieken"
+    ],
+    "hasTopic": [
+      "reasoning shortcuts"
+    ],
+    "arxiv_id": "2510.14538",
+    "url": "https://arxiv.org/abs/2510.14538"
+  },
+  "Paper Template": {
+    "title": "Paper Template",
+    "aliases": null,
+    "year": null,
+    "venue": null,
+    "authors": [],
+    "hasTopic": [],
+    "arxiv_id": null,
+    "url": null
+  }
+}

@@ -1,0 +1,36 @@
+# Environment / secrets
+python-dotenv>=1.0.0     # auto-load .env file so API keys are always available
+
+# Core NLP / ML
+sentence-transformers>=2.7.0
+scikit-learn>=1.4.0
+numpy>=1.26.0
+
+# PDF extraction
+pymupdf>=1.24.0          # fitz
+
+# arXiv dataset download
+arxiv>=2.1.0
+
+# LLM APIs (install the one you use)
+google-generativeai>=0.7.0   # Gemini
+# openai>=1.30.0             # GPT-4o (uncomment if using OpenAI)
+# anthropic>=0.25.0          # Claude (uncomment if using Anthropic)
+
+# YAML / config
+pyyaml>=6.0
+
+# Data handling
+pandas>=2.2.0
+tqdm>=4.66.0
+
+# Evaluation utilities
+rouge-score>=0.1.2       # for supplementary summary eval (optional)
+
+# Jupyter (for notebooks)
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
+# Type checking & code quality
+mypy>=1.10.0
+ruff>=0.4.0

@@ -1,0 +1,52 @@
+# Structured Note System Configuration
+
+system: structured
+
+# --- LLM ---
+llm:
+  provider: gemini          # "gemini" | "openai" | "anthropic"
+  model: gemini-2.0-flash
+  temperature_metadata: 0.0
+  temperature_notes: 0.3
+  temperature_links: 0.0
+  max_output_tokens_metadata: 2048
+  max_output_tokens_notes: 4096
+  max_output_tokens_links: 2048
+
+# --- Agent Pipeline ---
+agents:
+  metadata_prompt: prompts/metadata_agent.md
+  note_prompt: prompts/paper_note_agent.md
+  link_prompt: prompts/link_agent.md
+  summary_prompt: prompts/summary_agent.md
+
+# --- Link Generation ---
+links:
+  top_k_candidates: 10      # candidate notes to pass to Link Agent
+  min_confidence: 0.6       # minimum confidence to include a link
+  max_links_per_note: 8     # cap to avoid link explosion
+
+# --- Embedding (same model as baseline for fair comparison) ---
+embedding:
+  model: all-MiniLM-L6-v2
+  normalize: true
+  batch_size: 32
+  index_field: full_note    # embed full note text (frontmatter + content)
+
+# --- Retrieval ---
+retrieval:
+  top_k: [1, 3, 5, 10]
+  similarity: cosine
+  mode: structured          # "structured" | "link_expanded"
+
+# --- Link Expansion (ablation) ---
+link_expansion:
+  enabled: false            # set true for link-expanded ablation
+  max_expansion_depth: 1    # expand 1 hop
+
+# --- Paths ---
+paths:
+  raw_pdfs: data/raw_pdfs/
+  extracted_text: data/extracted_text/
+  generated_notes: data/generated_notes/
+  index: data/results/structured_index.json

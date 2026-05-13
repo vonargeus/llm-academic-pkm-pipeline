@@ -1,0 +1,67 @@
+# Evaluation Configuration
+
+# --- Retrieval Evaluation ---
+retrieval:
+  k_values: [1, 3, 5, 10]
+  query_types:
+    - simple
+    - method
+    - comparison
+    - cross_note
+    - metadata
+    - link_relation
+    - failure_prone
+  primary_metric: f1@5
+  secondary_metrics: [recall@5, recall@10, mrr]
+
+# --- Metadata Evaluation ---
+metadata:
+  exact_match_fields:
+    - year
+    - venue
+    - doi_or_arxiv
+  set_fields:
+    - topics
+    - concepts
+    - keywords
+    - evaluation_metrics
+    - datasets
+    - method
+    - main_contributions
+  normalise: true   # lowercase + strip punctuation before comparison
+
+# --- Link Evaluation ---
+links:
+  evaluate_types: true      # also check if link type is correct
+  partial_credit: false     # if true, award partial credit for correct pair but wrong type
+  link_types:
+    - hasTopic
+    - usesMethod
+    - evaluatesOn
+    - extends
+    - comparesTo
+    - contradicts
+    - hasDataset
+    - publishedIn
+    - isA
+    - subset
+
+# --- Summary Evaluation ---
+summary:
+  n_samples: 20
+  rubric_dimensions:
+    - factual_correctness
+    - contribution_coverage
+    - hallucination_absence
+    - usefulness_for_rediscovery
+    - clarity
+  scale: [1, 2, 3, 4, 5]   # 1 = poor, 5 = excellent
+  evaluator: supervisor
+
+# --- Paths ---
+paths:
+  queries: data/queries/queries.json
+  gold_labels: data/gold_labels/gold_labels.json
+  metadata_gold: data/gold_labels/metadata_gold.json
+  link_gold: data/gold_labels/link_gold.json
+  results: data/results/

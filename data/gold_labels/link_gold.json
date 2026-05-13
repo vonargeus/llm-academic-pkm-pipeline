@@ -1,0 +1,944 @@
+[
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "probabilistic logics",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "Jingyi Xu",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "Zilu Zhang",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "Tal Friedman",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "Yitao Liang",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "Guy Van den Broeck",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A semantic loss function for deep learning with symbolic knowledge",
+    "target": "ICML",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "probabilistic logics",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "deep generative models",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "Emile van Krieken",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "Thiviyan Thanapalasingam",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "Jakub M. Tomczak",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "Frank van Harmelen",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+    "target": "Annette ten Teije",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "AI Journal",
+    "target": "venues",
+    "link_type": "subset",
+    "source_type": "venue"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "fuzzy logic",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "Emile van Krieken",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "Erman Acar",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "Frank van Harmelen",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "AI Journal",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "Analyzing differentiable fuzzy logic operators",
+    "target": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "link_type": "project",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "reasoning shortcuts",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "uncertainty quantification",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "ensembles",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "Emanuele Marconato",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "Samuele Bortolotti",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "Emile Krieken",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "Antonio Vergari",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "Andrea Passerini",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "Stefano Teso",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+    "target": "UAI",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "deep generative models",
+    "target": "generative models",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "deep generative models",
+    "target": "deep learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "deep learning",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "diffusion models",
+    "target": "deep generative models",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "Discovering mathematical equations with diffusion language model",
+    "target": "Xiaoxu Han",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Discovering mathematical equations with diffusion language model",
+    "target": "Chengzhen Ning",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Discovering mathematical equations with diffusion language model",
+    "target": "Jinghui Zhong",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Discovering mathematical equations with diffusion language model",
+    "target": "Fubiao Yang",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Discovering mathematical equations with diffusion language model",
+    "target": "Yu Wang",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Discovering mathematical equations with diffusion language model",
+    "target": "Xin Mu",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "discrete diffusion models",
+    "target": "diffusion models",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "discrete diffusion models",
+    "target": "masked models",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "ensembles",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "Expressiveness in Neurosymbolic Learning",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "project"
+  },
+  {
+    "source": "Expressiveness in Neurosymbolic Learning",
+    "target": "reasoning shortcuts",
+    "link_type": "hasTopic",
+    "source_type": "project"
+  },
+  {
+    "source": "Expressiveness in Neurosymbolic Learning",
+    "target": "Pasquale Minervini",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Expressiveness in Neurosymbolic Learning",
+    "target": "Edoardo Ponti",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Expressiveness in Neurosymbolic Learning",
+    "target": "Antonio Vergari",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "function",
+    "target": "mathematics",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "fuzzy logic",
+    "target": "logic",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "generative models",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "generative models",
+    "target": "probability theory",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "target": "fuzzy logic",
+    "link_type": "hasTopic",
+    "source_type": "project"
+  },
+  {
+    "source": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "target": "neurosymbolic AI",
+    "link_type": "hasTopic",
+    "source_type": "project"
+  },
+  {
+    "source": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "project"
+  },
+  {
+    "source": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "target": "Erman Acar",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "target": "Frank van Harmelen",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "ICML",
+    "target": "venues",
+    "link_type": "subset",
+    "source_type": "venue"
+  },
+  {
+    "source": "identifiable",
+    "target": "probability theory",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "independence",
+    "target": "probability theory",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "reasoning shortcuts",
+    "link_type": "hasTopic",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Emanuele Marconato",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Samuele Bortolotti",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Paolo Morettin",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Elena Umili",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Antonio Vergari",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Efthymia Tsamoura",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Andrea Passerini",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "Journal version of Reasoning Shortcuts",
+    "target": "Stefano Teso",
+    "link_type": "with",
+    "source_type": "project"
+  },
+  {
+    "source": "KU Leuven",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "fuzzy logic",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "Samy Badreddine",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "Artur d’Avila Garcez",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "Luciano Serafini",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "Michael Spranger",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "AI Journal",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "Logic tensor networks",
+    "target": "How to properly use fuzzy logics in Neurosymbolic AI",
+    "link_type": "project",
+    "source_type": "paper"
+  },
+  {
+    "source": "Lukasiewicz t-norm",
+    "target": "t-norm",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "machine learning",
+    "target": "artificial intelligence",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "masked models",
+    "target": "deep learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "monotone function",
+    "target": "mathematics",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "monotone function",
+    "target": "function",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "probabilistic circuits",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "probabilistic logics",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "Robin Manhaeve",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "Sebastijan Dumančić",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "Angelika Kimmig",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "Thomas Demeester",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "Luc De Raedt",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neural probabilistic logic programming in DeepProbLog",
+    "target": "AI Journal",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "NeurIPS",
+    "target": "venues",
+    "link_type": "subset",
+    "source_type": "venue"
+  },
+  {
+    "source": "neurosymbolic AI",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "neurosymbolic AI",
+    "target": "symbolic AI",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "discrete diffusion models",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "reasoning shortcuts",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "Emile van Krieken",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "Pasquale Minervini",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "Edoardo Ponti",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "Antonio Vergari",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "NeurIPS",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "Neurosymbolic Diffusion Models",
+    "target": "Expressiveness in Neurosymbolic Learning",
+    "link_type": "project",
+    "source_type": "paper"
+  },
+  {
+    "source": "neurosymbolic learning",
+    "target": "neurosymbolic AI",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "neurosymbolic learning",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "reasoning shortcuts",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "Emanuele Marconato",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "Stefano Teso",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "Antonio Vergari",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "Andrea Passerini",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "NeurIPS",
+    "link_type": "publishedIn",
+    "source_type": "paper"
+  },
+  {
+    "source": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+    "target": "Expressiveness in Neurosymbolic Learning",
+    "link_type": "project",
+    "source_type": "paper"
+  },
+  {
+    "source": "On the independence assumption in neurosymbolic learning",
+    "target": "neurosymbolic learning",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "On the independence assumption in neurosymbolic learning",
+    "target": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "On the independence assumption in neurosymbolic learning",
+    "target": "Emile Van Krieken",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "On the independence assumption in neurosymbolic learning",
+    "target": "Pasquale Minervini",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "On the independence assumption in neurosymbolic learning",
+    "target": "Antonio Vergari",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "On the independence assumption in neurosymbolic learning",
+    "target": "Edoardo Ponti",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "partially ordered set",
+    "target": "mathematics",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "probabilistic circuits",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "probabilistic logics",
+    "target": "logic",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "probabilistic logics",
+    "target": "probability theory",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "probability theory",
+    "target": "mathematics",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "product t-norm",
+    "target": "t-norm",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "product t-norm",
+    "target": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge",
+    "link_type": "relatedTo",
+    "source_type": "concept"
+  },
+  {
+    "source": "reasoning shortcuts",
+    "target": "neurosymbolic learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "reasoning shortcuts",
+    "target": "identifiable",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "sigmoid",
+    "target": "mathematics",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "sigmoid",
+    "target": "deep learning",
+    "link_type": "hasTopic",
+    "source_type": "concept"
+  },
+  {
+    "source": "Sony",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "reasoning shortcuts",
+    "link_type": "hasTopic",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Emanuele Marconato",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Samuele Bortolotti",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Paolo Morettin",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Elena Umili",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Antonio Vergari",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Efthymia Tsamoura",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Andrea Passerini",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Stefano Teso",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+    "target": "Emile van Krieken",
+    "link_type": "author",
+    "source_type": "paper"
+  },
+  {
+    "source": "symbolic AI",
+    "target": "artificial intelligence",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "t-norm",
+    "target": "fuzzy operators",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "t-norm",
+    "target": "associative",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "t-norm",
+    "target": "ordered semigroup",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "t-norm",
+    "target": "monotone function",
+    "link_type": "isA",
+    "source_type": "concept"
+  },
+  {
+    "source": "UAI",
+    "target": "venues",
+    "link_type": "subset",
+    "source_type": "venue"
+  },
+  {
+    "source": "UCLA",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  },
+  {
+    "source": "uncertainty quantification",
+    "target": "machine learning",
+    "link_type": "subset",
+    "source_type": "topic"
+  },
+  {
+    "source": "University of Amsterdam",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  },
+  {
+    "source": "University of Edinburgh",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  },
+  {
+    "source": "University of Trento",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  },
+  {
+    "source": "Vrije Universiteit Amsterdam",
+    "target": "institutions",
+    "link_type": "subset",
+    "source_type": "institution"
+  }
+]
