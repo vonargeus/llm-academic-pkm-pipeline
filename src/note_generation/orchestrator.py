@@ -14,7 +14,7 @@ from src.agents.link_agent import generate_links
 def process_corpus(extracted_text_dir: Path, output_dir: Path, max_papers: int | None = None):
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    text_files = sorted(extracted_text_dir.glob("*.json"))
+    text_files = [f for f in sorted(extracted_text_dir.glob("*.json")) if not f.name.startswith("_")]
     if max_papers:
         text_files = text_files[:max_papers]
         
@@ -31,6 +31,35 @@ def process_corpus(extracted_text_dir: Path, output_dir: Path, max_papers: int |
             
         text = payload["text"]
         doc_id = payload.get("doc_id", tf.stem)
+        out_path = output_dir / f"{doc_id}.md"
+        
+        # Resume/Skip check: If file already exists, load it from disk
+        if out_path.exists():
+            print("  -> Note already exists. Loading from disk...")
+            with open(out_path, encoding="utf-8") as f:
+                note_md = f.read()
+            
+            # Simple frontmatter parsing
+            import re
+            import yaml
+            metadata = {}
+            title = doc_id
+            fm_match = re.match(r"^---\s*\n(.*?)\n---\s*\n?(.*)", note_md, re.DOTALL)
+            if fm_match:
+                try:
+                    metadata = yaml.safe_load(fm_match.group(1))
+                    title = metadata.get("title", doc_id)
+                except Exception:
+                    pass
+            
+            notes_data.append({
+                "doc_id": doc_id,
+                "title": title,
+                "frontmatter": metadata,
+                "summary": "Extracted summary. " + metadata.get("research_problem", "") if metadata else "Extracted summary.",
+                "md_content": note_md
+            })
+            continue
         
         # 1a. Metadata
         print("  -> Extracting metadata...")
@@ -50,7 +79,6 @@ def process_corpus(extracted_text_dir: Path, output_dir: Path, max_papers: int |
         })
         
         # Save intermediate note without links
-        out_path = output_dir / f"{doc_id}.md"
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(note_md)
             

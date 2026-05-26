@@ -5,7 +5,7 @@ system: structured
 # --- LLM ---
 llm:
   provider: gemini          # "gemini" | "openai" | "anthropic"
-  model: gemini-2.0-flash
+  model: gemini-flash-latest
   temperature_metadata: 0.0
   temperature_notes: 0.3
   temperature_links: 0.0

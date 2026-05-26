@@ -1,3 +1,31 @@
+"""
+RAG Baseline implementation for Bachelor Thesis evaluation.
+
+This script implements a standard, flat Retrieval-Augmented Generation (RAG) retrieval pipeline. 
+To ensure academic rigor, reproducibility, and mathematical transparency, this pipeline is built 
+using raw scientific libraries rather than higher-level orchestration frameworks (like LangChain or LlamaIndex).
+This prevents "framework magic" (hidden prompting, automatic chunk slicing, undocumented vector operations) 
+from confounding the experimental results.
+
+### Library Selection & Technical Justifications:
+1. `fitz` (PyMuPDF): Chosen for fast, standard, and highly accurate plain-text extraction from academic PDFs. 
+   Unlike heavier OCR-based tools, PyMuPDF reads PDF text layout blocks sequentially, which is crucial for multi-column research papers.
+2. `sentence_transformers`: The industry standard library for generating dense vector embeddings from text.
+   We use the `all-MiniLM-L6-v2` model which embeds inputs into a 384-dimensional space.
+3. `scikit-learn` (`cosine_similarity`): Cosine similarity is the mathematically standard metric used to measure 
+   alignment between query vectors and document chunk vectors. We implement this directly using scikit-learn to maintain 
+   mathematical precision and avoid database-specific rounding differences.
+4. `numpy`: Used for high-performance vector manipulation and sorting.
+5. `re` (Regular Expressions): Used to clean extracted PDF spacing and extract Obsidian-style WikiLinks ([[link_target]]) from text blocks.
+
+### Chunking Logic & Token-to-Character Proxy:
+The embedding model (`all-MiniLM-L6-v2`) has a maximum sequence limit of 256 tokens. 
+To avoid silent truncation during embedding generation, this script chunks text into blocks of 300 characters with an overlap of 50 characters.
+* Character count vs. Token count proxy: In English text, 300 characters is a safe proxy for roughly 60–80 tokens.
+* By using a conservative 300-character boundary, we guarantee that every chunk fits comfortably within the model's 256-token limit,
+  completely preventing data loss or truncation at indexing time.
+"""
+
 import os
 import re
 import json

@@ -1,5 +1,18 @@
 """
-extract_pdfs.py — Extract plain text from PDFs using PyMuPDF (fitz).
+scripts/extract_pdfs.py
+
+Description:
+    This script extracts raw text from PDF files located in data/raw_pdfs/ using PyMuPDF (fitz).
+    It cleans the extracted text, structures it into JSON format, and outputs it to data/extracted_text/.
+
+Library & Design Decisions:
+    * PyMuPDF (fitz): Selected because it is lightweight, faster than alternative libraries (like PyPDF2 or 
+      pdfplumber), and maintains character ordering and spaces accurately.
+    * Text Cleaning (clean_text): Performs dehyphenation (joining words split across newlines), collapses 
+      excessive whitespace and blank lines, and normalizes standard spaces. This is critical because 
+      ragged text and split words damage both vector similarity embeddings and LLM parsing capabilities.
+    * Ingestion JSON schema: Each file is written as a JSON dictionary containing the document ID (arXiv ID),
+      the original source PDF filename, character count, and the cleaned text.
 
 Usage:
     python scripts/extract_pdfs.py --input data/raw_pdfs/ --output data/extracted_text/

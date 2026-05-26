@@ -150,7 +150,7 @@ The baseline system represents a standard, industry-practice naive RAG pipeline.
 A multi-agent pipeline (Metadata, Note, and Link Agents) transforms PDFs into Obsidian Markdown. Retrieval is performed on document-level vectors of the full structured notes.
 
 \subsection{LLM Configuration}
-All agents use the \textbf{Gemini 2.0 Flash} model. For extraction tasks (Metadata and Link Agents), the temperature is set to \textbf{0.0} to ensure deterministic, low-variance output. For the Note Agent (summary generation), a temperature of \textbf{0.3} is used to allow for more natural synthesis while maintaining factual grounding.
+All agents use the \textbf{Gemini 1.5 Flash} model (via the stable \texttt{gemini-flash-latest} API model channel). Using this model provides a generous daily free-tier request quota (1,500 requests per day) compared to preview model channels (e.g., 2.0 and 2.5), enabling complete end-to-end execution of the pipeline. For extraction tasks (Metadata and Link Agents), the temperature is set to \textbf{0.0} to ensure deterministic, low-variance output. For the Note Agent (summary generation), a temperature of \textbf{0.3} is used to allow for more natural synthesis while maintaining factual grounding.
 
 \subsection{Evaluation Data}
 The system is evaluated against a "Gold Standard" created manually:
@@ -240,5 +240,9 @@ In the development of this evaluation framework, several alternative metrics wer
 \bibliographystyle{plainnat}
 \nocite{*}
 \bibliography{refs}
+
+\newpage
+\appendix
+\input{research_decisions.tex}
 
 \end{document}

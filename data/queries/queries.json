@@ -1,0 +1,202 @@
+[
+  {
+    "query_id": "q1",
+    "text": "Who are the authors of the Retrieval-Augmented Generation (RAG) paper?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q2",
+    "text": "What is Fusion-in-Decoder (FiD) and how does it leverage passage retrieval?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q3",
+    "text": "What framework evaluates RAG pipelines using faithfulness and answer relevance?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q4",
+    "text": "How does GraphRAG perform query-focused summarization over a corpus?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q5",
+    "text": "What is LightRAG and how does it optimize graph-based retrieval?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q6",
+    "text": "Describe HippoRAG's neurobiologically inspired long-term memory framework.",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q7",
+    "text": "How does RAPTOR implement recursive tree-structured retrieval?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q8",
+    "text": "What is the Zettelkasten-inspired agentic memory system of A-MEM?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q9",
+    "text": "How does MemGPT manage virtual context to extend context windows?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q10",
+    "text": "Describe the long-term memory mechanism of MemoryBank for LLMs.",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q11",
+    "text": "What is MemoRAG and how does it use a memory model for retrieval?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q12",
+    "text": "What coding theory properties are evaluated in the three-weight linear codes paper?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q13",
+    "text": "How does STORM synthesize topic outlines from scratch using multi-perspective question asking?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q14",
+    "text": "What pipeline does LoCoMo use to evaluate open-domain dialogues over long contexts?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q15",
+    "text": "Describe FBK's simultaneous speech translation submission for IWSLT 2024.",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q16",
+    "text": "How does the training of small reasoners benefit from LLM explanations?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q17",
+    "text": "What is a semantic loss function and how is it used for deep learning with symbolic knowledge?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q18",
+    "text": "Describe the approximate method A-nesi for probabilistic neurosymbolic inference.",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q19",
+    "text": "What are reasoning shortcuts in neurosymbolic learning according to Marconato et al.?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q20",
+    "text": "How does BEARS mitigate reasoning shortcuts in neurosymbolic models?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q21",
+    "text": "Explain Neurosymbolic Diffusion Models (NeSyDM) and their applications.",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q22",
+    "text": "What introduction to symbol grounding and reasoning shortcuts is provided by Marconato et al. in 2025?",
+    "category": "simple_factual"
+  },
+  {
+    "query_id": "q23",
+    "text": "Compare the memory mechanisms of MemGPT and MemoryBank.",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q24",
+    "text": "Which papers focus on evaluating RAG pipelines or dialog systems?",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q25",
+    "text": "Compare GraphRAG and LightRAG in terms of knowledge graph utilization.",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q26",
+    "text": "How do HippoRAG and GraphRAG differ in their retrieval strategy?",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q27",
+    "text": "Which systems use memory-inspired architectures or Zettelkasten for LLM agents?",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q28",
+    "text": "Compare the hierarchical clustering retrieval of RAPTOR with standard flat RAG.",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q29",
+    "text": "What approaches are proposed to address reasoning shortcuts in neurosymbolic AI?",
+    "category": "neurosymbolic"
+  },
+  {
+    "query_id": "q30",
+    "text": "Compare A-nesi and Semantic Loss in terms of probabilistic neurosymbolic reasoning.",
+    "category": "neurosymbolic"
+  },
+  {
+    "query_id": "q31",
+    "text": "How do STORM and MemoRAG handle long contexts or document generation?",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q32",
+    "text": "Which papers are co-authored by Emile van Krieken?",
+    "category": "metadata_lookup"
+  },
+  {
+    "query_id": "q33",
+    "text": "Which papers address symbol grounding or shortcuts in neurosymbolic learning?",
+    "category": "neurosymbolic"
+  },
+  {
+    "query_id": "q34",
+    "text": "What are the common evaluation metrics used across different RAG systems?",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q35",
+    "text": "How does the integration of first-order logic constraints affect neural network training?",
+    "category": "neurosymbolic"
+  },
+  {
+    "query_id": "q36",
+    "text": "Which papers focus on graph-based RAG methods?",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q37",
+    "text": "Compare the retrieval mechanisms of A-MEM and HippoRAG.",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q38",
+    "text": "What are the main research areas that combine deep learning with symbolic reasoning?",
+    "category": "neurosymbolic"
+  },
+  {
+    "query_id": "q39",
+    "text": "Compare Fusion-in-Decoder and Retrieval-Augmented Generation for QA.",
+    "category": "comparison"
+  },
+  {
+    "query_id": "q40",
+    "text": "Which papers deal with machine translation or explanations from large language models?",
+    "category": "comparison"
+  }
+]

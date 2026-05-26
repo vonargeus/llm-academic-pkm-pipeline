@@ -74,18 +74,62 @@ def load_prompt(text: str) -> str:
 # LLM backends
 # ---------------------------------------------------------------------------
 
-def _call_gemini(prompt: str, model: str = "gemini-2.0-flash") -> str:
+import time
+from google.api_core.exceptions import ResourceExhausted
+
+# Model pool for rotating due to daily limit (20 reqs/day/model)
+MODEL_POOL = [
+    "gemini-flash-latest",
+    "gemini-2.5-flash",
+    "gemini-2.0-flash",
+    "gemini-3-flash-preview",
+    "gemini-2.0-flash-001",
+    "gemini-3.5-flash",
+    "gemini-3.1-flash-lite",
+    "gemini-2.5-flash-lite",
+    "gemini-2.0-flash-lite-001",
+]
+CURRENT_MODEL_INDEX = 0
+
+def _call_gemini(prompt: str, model: str = "gemini-2.5-flash") -> str:
     import google.generativeai as genai
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         raise ValueError("GEMINI_API_KEY environment variable is not set.")
     genai.configure(api_key=api_key)
     m = genai.GenerativeModel(model)
-    response = m.generate_content(
-        prompt,
-        generation_config={"temperature": 0.0, "max_output_tokens": 2048},
-    )
-    return response.text
+    
+    max_retries = 5
+    for attempt in range(max_retries):
+        try:
+            response = m.generate_content(
+                prompt,
+                generation_config={"temperature": 0.0},
+            )
+            return response.text
+        except ResourceExhausted as e:
+            err_str = str(e).lower()
+            if "perday" in err_str or "daily" in err_str or "limit: 20" in err_str or "limit: 0" in err_str or "requests per day" in err_str:
+                # Raise immediately to trigger model rotation in call_llm
+                raise e
+            if attempt == max_retries - 1:
+                raise e
+            print(f"\n[Rate Limit] Exceeded. Sleeping 60s before retry (attempt {attempt + 1}/{max_retries})...")
+            time.sleep(60)
+        except Exception as e:
+            err_str = str(e).lower()
+            if "perday" in err_str or "daily" in err_str or "limit: 20" in err_str or "limit: 0" in err_str or "requests per day" in err_str:
+                raise e
+            if "quota" in err_str or "limit" in err_str or "429" in err_str:
+                if attempt == max_retries - 1:
+                    raise e
+                print(f"\n[Quota/Rate Limit Exception] {e}. Sleeping 60s...")
+                time.sleep(60)
+            else:
+                if attempt == max_retries - 1:
+                    raise e
+                print(f"\n[Transient Error] {e}. Sleeping 10s...")
+                time.sleep(10)
 
 
 def _call_openai(prompt: str, model: str = "gpt-4o-mini") -> str:
@@ -112,9 +156,21 @@ def _call_anthropic(prompt: str, model: str = "claude-3-haiku-20240307") -> str:
 
 
 def call_llm(prompt: str) -> str:
+    global CURRENT_MODEL_INDEX
     provider = os.environ.get("LLM_PROVIDER", "gemini").lower()
     if provider == "gemini":
-        return _call_gemini(prompt)
+        while CURRENT_MODEL_INDEX < len(MODEL_POOL):
+            model = MODEL_POOL[CURRENT_MODEL_INDEX]
+            try:
+                return _call_gemini(prompt, model=model)
+            except Exception as e:
+                err_str = str(e).lower()
+                if "perday" in err_str or "daily" in err_str or "limit: 20" in err_str or "limit: 0" in err_str or "requests per day" in err_str:
+                    print(f"\n[Quota Rotation] Model '{model}' daily quota exhausted. Rotating to next model...")
+                    CURRENT_MODEL_INDEX += 1
+                    continue
+                raise e
+        raise RuntimeError("All models in the Gemini model pool have exhausted their daily quota.")
     elif provider == "openai":
         return _call_openai(prompt)
     elif provider == "anthropic":

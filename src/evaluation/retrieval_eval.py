@@ -162,7 +162,7 @@ def save_results(results: dict, output_path: Path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
-    print(f"Results saved → {output_path}")
+    print(f"Results saved -> {output_path}")
 
 
 # ---------------------------------------------------------------------------
