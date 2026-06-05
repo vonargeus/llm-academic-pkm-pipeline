@@ -97,5 +97,26 @@ MRR & 0.8240 & 0.8833 & 0.8833 \\ \hline
     \text{Score}_{\text{final}}(d) = \text{CosineSimilarity}(q, d) + \alpha \cdot \mathbb{I}(d \in \mathcal{G}_{\text{linked}})
     \]
     Where $\alpha = 0.05$ is the Graph Connectivity Hyperparameter, and $\mathbb{I}$ is an indicator function representing whether a candidate node $d$ is linked by the top-$k$ initial vector matches.
-    \item \textbf{Divergence at $k=10$}: Due to this re-ranking, a linked document that was originally outside the top-10 matches but shares topological proximity to the seed matches is boosted into the final top-10 list. This causes the Structured and Link-Expanded systems to diverge at $k=10$, resulting in a Recall@10 of 0.9875 and Precision@10 of 0.1675 for the Link-Expanded model. This represents a classic information retrieval trade-off: graph connectivity broadening improves retrieval coverage (context depth) for downstream generation, but can introduce minor noise in strict direct query-relevance recall checks.
+    \item \textbf{Divergence at $k=10$}: Due to this re-ranking, a linked document that was originally outside the top-10 matches but shares topological proximity to the seed matches is boosted into the final top-10 list. This causes the Structured and Link-Expanded systems to diverge at $k=10$, resulting in a Recall@10 of 0.9875 and Precision@10 of 0.1675 for the Link-Expanded model. This represents a classic information retrieval trade-off: graph connectivity-based expansion increases retrieval coverage (context depth) for downstream generation, but can introduce minor noise in strict direct query-relevance recall checks.
 \end{itemize}
+
+\subsection*{9. Frequently Asked Questions \& Conceptual Clarifications}
+\begin{enumerate}[label=\textbf{Q\arabic*:}, leftmargin=*]
+    \item \textbf{Why does the agentic pipeline output Markdown notes rather than native PDFs?} \\
+    LLMs generate text sequentially and cannot natively output formatted binary PDF files. Markdown is a lightweight, plain-text format that LLMs write with high fidelity. Furthermore, Markdown supports structured headers and YAML frontmatter (enabling structured key-value metadata), as well as native Obsidian-style wiki-links (\texttt{[[Target Note]]}) to model graph edges. Raw PDF text lacks these semantic wrappers, making it unstructured layout data.
+
+    \item \textbf{Why is the embedding model \texttt{all-MiniLM-L6-v2} used for all configurations, and how do their embedding processes differ?} \\
+    Using the same embedding model across all systems is a critical scientific control. If we used a different model for Structured RAG, the performance delta could be caused by the model rather than the document structure. 
+    In terms of execution:
+    \begin{itemize}
+        \item \textit{Flat RAG} embeds raw 300-character sequential chunks.
+        \item \textit{Structured RAG} embeds the full note (YAML frontmatter + summary text) as a single vector, capturing global context.
+        \item \textit{Link-Expanded RAG} uses the same note embeddings to generate seeds, then adds the topological boost ($\alpha$) during the re-ranking step.
+    \end{itemize}
+
+    \item \textbf{Why are the Structured and Link-Expanded RAG configurations evaluated separately instead of permanently merged?} \\
+    In production systems, they are merged. However, in an academic thesis, they must be separated to conduct a proper ablation study. By evaluating them separately, we can isolate the individual performance gains of summarization/structure (Structured RAG) versus topological link propagation (Link-Expanded RAG), revealing the specific trade-offs at different values of $k$.
+
+    \item \textbf{What are the formal criteria for defining data as ``structured'' versus ``unstructured'' in this research?} \\
+    Unstructured data has no predefined schema or semantic labeling (e.g., raw PDF text streams). Structured data adheres to a formal data model or schema. In this project, the Markdown notes are defined as structured because they contain a queryable YAML frontmatter schema, standardized section headings, and explicit typed link predicates (\texttt{[[WikiLinks]]}).
+\end{enumerate}
