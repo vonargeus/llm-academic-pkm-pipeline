@@ -1,25 +1,20 @@
 {
-  "evaluation_scope": "RQ3 - Link Prediction Reliability",
-  "level_a_global_citations": {
-    "description": "Evaluated on all 40 papers in the corpus against the Semantic Scholar citation graph.",
-    "metrics": {
-      "n_predicted": 189,
-      "n_gold": 42,
-      "true_positives": 28,
-      "precision": 0.14815,
-      "recall": 0.66667,
-      "f1": 0.24242
-    }
+  "evaluation_scope": "RQ3 - Link Prediction Reliability (Sole Gold Standard: Semantic Scholar API)",
+  "hypothesis": "H3: The Link Agent will identify a meaningful proportion of the directed citation links between papers in the corpus, although some errors are expected because the agent predicts links from paper summaries rather than complete reference lists.",
+  "directed_evaluation_primary": {
+    "true_positives": 28,
+    "false_positives": 161,
+    "false_negatives": 14,
+    "precision": 0.14815,
+    "recall": 0.66667,
+    "f1": 0.24242
   },
-  "level_b_personal_vault": {
-    "description": "Evaluated on the 22 overlapping papers against Emile's Obsidian vault paper-to-paper links.",
-    "metrics": {
-      "n_predicted": 89,
-      "n_gold": 1,
-      "true_positives": 1,
-      "precision": 0.01124,
-      "recall": 1.0,
-      "f1": 0.02222
-    }
+  "undirected_evaluation_secondary": {
+    "true_positives": 37,
+    "false_positives": 96,
+    "false_negatives": 5,
+    "precision": 0.2782,
+    "recall": 0.88095,
+    "f1": 0.42286
   }
 }
