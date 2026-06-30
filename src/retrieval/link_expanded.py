@@ -86,8 +86,9 @@ def retrieve_link_expanded(
     model_name = index_data.get("model", "all-MiniLM-L6-v2")
     
     # 2. Encode query and calculate baseline cosine similarities
-    model = SentenceTransformer(model_name)
-    query_emb = model.encode([query], convert_to_numpy=True, normalize_embeddings=True)
+    model = SentenceTransformer(model_name, trust_remote_code=True)
+    query_text = "search_query: " + query
+    query_emb = model.encode([query_text], convert_to_numpy=True, normalize_embeddings=True)
     similarities = cosine_similarity(query_emb, doc_embs)[0]
     
     # Store initial similarities

@@ -1,0 +1,507 @@
+{
+  "label": "B1c/B1s Sensitivity Analysis — Secondary Result",
+  "tau_m_frozen": 0.7361213564872742,
+  "best_k": 4,
+  "best_tau_d": 0.85,
+  "n_dev": 7,
+  "n_test": 15,
+  "dev_ids": [
+    "2412.06014",
+    "2410.02143",
+    "1711.11157",
+    "2212.12393",
+    "2312.04474",
+    "2012.13635",
+    "2305.19951"
+  ],
+  "test_ids": [
+    "2310.17451",
+    "2505.23061",
+    "2507.14484",
+    "2602.23878",
+    "2603.03612",
+    "2401.05224",
+    "2402.12240",
+    "2502.03274",
+    "2505.13138",
+    "2507.21053",
+    "2602.17270",
+    "2506.03719",
+    "2509.26625",
+    "2502.01341",
+    "2510.14538"
+  ],
+  "B1c_exact_test": {
+    "precision": 0.3389,
+    "recall": 0.4756,
+    "f1": 0.3831
+  },
+  "B1s_soft_test": {
+    "precision": 0.8443,
+    "recall": 0.8811,
+    "f1": 0.8614
+  },
+  "per_paper": [
+    {
+      "arxiv_id": "2310.17451",
+      "title": "Generating by understanding_ Neural visual generation with logical symbol groundings",
+      "n_agent_raw": 6,
+      "n_after_dedup": 6,
+      "n_canonical": 4,
+      "canon_labels": [
+        "controlled generation",
+        "abductive reasoning",
+        "neurosymbolic learning",
+        "graph neural network"
+      ],
+      "gold_labels": [
+        "generative modeling",
+        "inductive logic programming",
+        "abductive reasoning",
+        "variational auto-encoder",
+        "discrete latent structures"
+      ],
+      "exact": {
+        "p": 0.25,
+        "r": 0.2,
+        "f1": 0.2222,
+        "tp": 1,
+        "n_pred": 4,
+        "n_gold": 5
+      },
+      "soft": {
+        "p": 0.7979,
+        "r": 0.7827,
+        "f1": 0.7902
+      }
+    },
+    {
+      "arxiv_id": "2505.23061",
+      "title": "DINGO_ Constrained inference for diffusion LLMs",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "diffusion models",
+        "large language model reasoning",
+        "probabilistic verification",
+        "structured prediction"
+      ],
+      "gold_labels": [
+        "Boolean circuit",
+        "controlled generation",
+        "sampling methods",
+        "discrete diffusion",
+        "dynamic programming"
+      ],
+      "exact": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "n_pred": 4,
+        "n_gold": 5
+      },
+      "soft": {
+        "p": 0.7588,
+        "r": 0.7483,
+        "f1": 0.7535
+      }
+    },
+    {
+      "arxiv_id": "2507.14484",
+      "title": "ReDiSC_ A reparameterized masked diffusion model for scalable node classification with structured predictions",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "structured prediction",
+        "diffusion models",
+        "node classification",
+        "graph neural network"
+      ],
+      "gold_labels": [
+        "graph neural network",
+        "node classification",
+        "structured prediction",
+        "discrete diffusion",
+        "homophily"
+      ],
+      "exact": {
+        "p": 0.75,
+        "r": 0.6,
+        "f1": 0.6667,
+        "tp": 3,
+        "n_pred": 4,
+        "n_gold": 5
+      },
+      "soft": {
+        "p": 0.9703,
+        "r": 0.9119,
+        "f1": 0.9402
+      }
+    },
+    {
+      "arxiv_id": "2602.23878",
+      "title": "A foundation for differentiable logics using dependent type theory",
+      "n_agent_raw": 6,
+      "n_after_dedup": 6,
+      "n_canonical": 4,
+      "canon_labels": [
+        "differentiable logics",
+        "fuzzy logic",
+        "probabilistic verification",
+        "proving"
+      ],
+      "gold_labels": [
+        "dependent type theory",
+        "differentiable logics",
+        "proving",
+        "type theory"
+      ],
+      "exact": {
+        "p": 0.5,
+        "r": 0.5,
+        "f1": 0.5,
+        "tp": 2,
+        "n_pred": 4,
+        "n_gold": 4
+      },
+      "soft": {
+        "p": 0.8932,
+        "r": 0.8592,
+        "f1": 0.8759
+      }
+    },
+    {
+      "arxiv_id": "2603.03612",
+      "title": "Why are linear RNNs more parallelizable_",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "recurrent neural networks",
+        "parallelization",
+        "vision-language models",
+        "probabilistic circuits"
+      ],
+      "gold_labels": [
+        "expressivity of models",
+        "recurrent neural networks",
+        "parallelization"
+      ],
+      "exact": {
+        "p": 0.5,
+        "r": 0.6667,
+        "f1": 0.5714,
+        "tp": 2,
+        "n_pred": 4,
+        "n_gold": 3
+      },
+      "soft": {
+        "p": 0.8799,
+        "r": 0.9255,
+        "f1": 0.9021
+      }
+    },
+    {
+      "arxiv_id": "2401.05224",
+      "title": "Do vision and language encoders represent the world similarly_",
+      "n_agent_raw": 6,
+      "n_after_dedup": 6,
+      "n_canonical": 4,
+      "canon_labels": [
+        "vision-language models",
+        "visual encoder",
+        "graph neural network",
+        "modality alignment"
+      ],
+      "gold_labels": [
+        "modality alignment",
+        "text encoder",
+        "visual encoder"
+      ],
+      "exact": {
+        "p": 0.5,
+        "r": 0.6667,
+        "f1": 0.5714,
+        "tp": 2,
+        "n_pred": 4,
+        "n_gold": 3
+      },
+      "soft": {
+        "p": 0.8694,
+        "r": 0.9713,
+        "f1": 0.9175
+      }
+    },
+    {
+      "arxiv_id": "2402.12240",
+      "title": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+      "n_agent_raw": 7,
+      "n_after_dedup": 7,
+      "n_canonical": 4,
+      "canon_labels": [
+        "reasoning shortcuts",
+        "probabilistic logics",
+        "uncertainty quantification",
+        "neurosymbolic learning"
+      ],
+      "gold_labels": [
+        "reasoning shortcuts",
+        "ensembles",
+        "uncertainty quantification"
+      ],
+      "exact": {
+        "p": 0.5,
+        "r": 0.6667,
+        "f1": 0.5714,
+        "tp": 2,
+        "n_pred": 4,
+        "n_gold": 3
+      },
+      "soft": {
+        "p": 0.867,
+        "r": 0.8935,
+        "f1": 0.88
+      }
+    },
+    {
+      "arxiv_id": "2502.03274",
+      "title": "A scalable approach to probabilistic neuro-symbolic verification",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "probabilistic logics",
+        "probabilistic verification",
+        "neurosymbolic learning",
+        "uncertainty quantification"
+      ],
+      "gold_labels": [
+        "neurosymbolic verification",
+        "probabilistic verification",
+        "differentiable probabilistic logics"
+      ],
+      "exact": {
+        "p": 0.25,
+        "r": 0.3333,
+        "f1": 0.2857,
+        "tp": 1,
+        "n_pred": 4,
+        "n_gold": 3
+      },
+      "soft": {
+        "p": 0.9005,
+        "r": 0.9326,
+        "f1": 0.9163
+      }
+    },
+    {
+      "arxiv_id": "2505.13138",
+      "title": "Neurosymbolic Diffusion Models",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "diffusion models",
+        "uncertainty quantification",
+        "neurosymbolic learning",
+        "probabilistic logics"
+      ],
+      "gold_labels": [
+        "neurosymbolic learning",
+        "discrete diffusion models",
+        "reasoning shortcuts"
+      ],
+      "exact": {
+        "p": 0.25,
+        "r": 0.3333,
+        "f1": 0.2857,
+        "tp": 1,
+        "n_pred": 4,
+        "n_gold": 3
+      },
+      "soft": {
+        "p": 0.8466,
+        "r": 0.8966,
+        "f1": 0.8709
+      }
+    },
+    {
+      "arxiv_id": "2507.21053",
+      "title": "Flow matching policy gradients",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "generative modeling",
+        "diffusion models",
+        "recurrent neural networks",
+        "controlled generation"
+      ],
+      "gold_labels": [
+        "on policy RL",
+        "policy gradient"
+      ],
+      "exact": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "n_pred": 4,
+        "n_gold": 2
+      },
+      "soft": {
+        "p": 0.7028,
+        "r": 0.6876,
+        "f1": 0.6951
+      }
+    },
+    {
+      "arxiv_id": "2602.17270",
+      "title": "Unified latents (UL)_ How to train your latents",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "diffusion models",
+        "latent variable models",
+        "generative modeling",
+        "visual encoder"
+      ],
+      "gold_labels": [
+        "variational auto-encoder",
+        "diffusion models",
+        "latent variable models"
+      ],
+      "exact": {
+        "p": 0.5,
+        "r": 0.6667,
+        "f1": 0.5714,
+        "tp": 2,
+        "n_pred": 4,
+        "n_gold": 3
+      },
+      "soft": {
+        "p": 0.91,
+        "r": 0.9462,
+        "f1": 0.9277
+      }
+    },
+    {
+      "arxiv_id": "2506.03719",
+      "title": "On the closed-form of flow matching_ Generalization does not arise from target stochasticity",
+      "n_agent_raw": 4,
+      "n_after_dedup": 4,
+      "n_canonical": 3,
+      "canon_labels": [
+        "deep generative models",
+        "generalisation",
+        "inductive logic programming"
+      ],
+      "gold_labels": [
+        "generalisation"
+      ],
+      "exact": {
+        "p": 0.3333,
+        "r": 1.0,
+        "f1": 0.5,
+        "tp": 1,
+        "n_pred": 3,
+        "n_gold": 1
+      },
+      "soft": {
+        "p": 0.8188,
+        "r": 1.0,
+        "f1": 0.9004
+      }
+    },
+    {
+      "arxiv_id": "2509.26625",
+      "title": "Learning to see before seeing_ Demystifying LLM visual priors from language pre-training",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "large language model reasoning",
+        "visual prior",
+        "deep generative models",
+        "diffusion models"
+      ],
+      "gold_labels": [
+        "vision-language models",
+        "visual prior"
+      ],
+      "exact": {
+        "p": 0.25,
+        "r": 0.5,
+        "f1": 0.3333,
+        "tp": 1,
+        "n_pred": 4,
+        "n_gold": 2
+      },
+      "soft": {
+        "p": 0.837,
+        "r": 0.9151,
+        "f1": 0.8743
+      }
+    },
+    {
+      "arxiv_id": "2502.01341",
+      "title": "AlignVLM_ Bridging vision and language latent spaces for multimodal understanding",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 2,
+      "canon_labels": [
+        "vision-language models",
+        "large language model reasoning"
+      ],
+      "gold_labels": [
+        "vision-language models"
+      ],
+      "exact": {
+        "p": 0.5,
+        "r": 1.0,
+        "f1": 0.6667,
+        "tp": 1,
+        "n_pred": 2,
+        "n_gold": 1
+      },
+      "soft": {
+        "p": 0.9151,
+        "r": 1.0,
+        "f1": 0.9557
+      }
+    },
+    {
+      "arxiv_id": "2510.14538",
+      "title": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+      "n_agent_raw": 5,
+      "n_after_dedup": 5,
+      "n_canonical": 4,
+      "canon_labels": [
+        "expressivity of models",
+        "neurosymbolic learning",
+        "probabilistic logics",
+        "probabilistic verification"
+      ],
+      "gold_labels": [
+        "reasoning shortcuts"
+      ],
+      "exact": {
+        "p": 0.0,
+        "r": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "n_pred": 4,
+        "n_gold": 1
+      },
+      "soft": {
+        "p": 0.6968,
+        "r": 0.7462,
+        "f1": 0.7207
+      }
+    }
+  ]
+}

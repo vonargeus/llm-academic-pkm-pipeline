@@ -106,8 +106,8 @@ The main research question of this study is:
 To address the main question, we formulate four sub-questions:
 \begin{itemize}
     \item[\textbf{RQ1}] Does transitioning from unstructured flat chunks to structured agent-generated Markdown notes improve retrieval quality (evaluated by Recall, Precision, F1-score, and Mean Reciprocal Rank)?
-    \item[\textbf{RQ2}] How accurately can LLM agents extract structured metadata fields (e.g., authors, publication venues, aliases) compared to an expert-annotated gold standard?
-    \item[\textbf{RQ3}] How accurately can LLM agents identify and establish the correct semantic link relationship types (e.g., \textit{extends}, \textit{usesMethod}, \textit{comparesTo}) between documents?
+    \item[\textbf{RQ2}] How accurately can LLM agents extract bibliographic metadata and semantic node-level attributes (e.g., year, venue, authors, topics, and concepts) compared to an expert-annotated gold standard?
+    \item[\textbf{RQ3}] How accurately can LLM agents identify and establish the correct directional links (i.e., referencing the correct related papers) between documents?
     \item[\textbf{RQ4}] How does an academic supervisor rate the factual correctness, cohesion, and research utility of the agent-generated summaries?
 \end{itemize}
 
@@ -143,9 +143,9 @@ The system is divided into two distinct pipelines: the **Ingestion/Generation Pi
 \subsection{The Ingestion Pipeline: Multi-Agent Obsidian Generator}
 The ingestion pipeline takes raw PDF files and transforms them into an Obsidian vault. The pipeline runs in three sequential phases orchestrated by specialized agents:
 \begin{enumerate}
-    \item \textbf{Metadata Agent:} Extracts structured bibliographic metadata from the PDF text. It outputs a JSON block matching a predefined YAML frontmatter schema including fields: \texttt{type}, \texttt{title}, \texttt{aliases}, \texttt{authors}, \texttt{year}, \texttt{venue}, \texttt{topics}, \texttt{concepts}, \texttt{uses\_method}, \texttt{uses\_dataset}, and \texttt{evaluates\_with}.
+    \item \textbf{Metadata Agent:} Extracts structured bibliographic metadata from the PDF text. It outputs a JSON block matching a predefined YAML frontmatter schema including fields: \texttt{title}, \texttt{authors}, \texttt{year}, \texttt{venue}, \texttt{topics}, \texttt{concepts}, \texttt{method}, and \texttt{datasets}.
     \item \textbf{Note Agent:} Synthesizes the extracted text into an academic note. It writes structured sections: a concise paragraph summary, main contribution list, research problem definition, detailed methodology, experimental setup, evaluation metrics, key results, and limitations.
-    \item \textbf{Link Agent:} Analyzes the generated note text and predicts semantic relationships to other papers in the corpus. It appends Obsidian-style wiki-links under a \texttt{## Generated Links} section, specifying relationship predicates (e.g., \texttt{comparesTo}, \texttt{extends}, \texttt{usesMethod}).
+    \item \textbf{Link Agent:} Analyzes relationships between documents in the corpus. For each paper (target), the agent receives the target note's frontmatter metadata and text summary, along with a list of candidate notes (all other papers in the corpus). It prompts the LLM to evaluate the candidates for semantic relationships, returning a structured JSON list of links. To maintain graph precision, links are filtered based on a confidence score threshold ($\ge 0.6$) and appended as Obsidian-style wiki-links.
 \end{enumerate}
 
 \subsection{The Retrieval Pipeline: Compared Systems}
@@ -199,9 +199,7 @@ MRR & 0.8240 & \textbf{0.8833} & \textbf{0.8833} \\
 \end{table}
 
 \subsection{Analysis of Retrieval Quality (RQ1)}
-* **Structured Note Advantage:** Transitioning from unstructured flat chunks to structured Markdown notes yields significant improvements. We observe a \textbf{15.2\% relative improvement in Recall@1} and a \textbf{10.3\% relative improvement in Precision@1}. This is because summarizing and structuring the paper consolidates the key methodologies, datasets, and concepts. Embedding a single, dense note represents the global semantic context far better than arbitrary text chunks.
-* **Topological Re-ranking & Divergence at $k=10$:** Structured RAG and Link-Expanded RAG return identical results for $k \le 5$ but diverge at $k=10$. In Link-Expanded RAG, a linked paper that lay just outside the top-10 is boosted into the active set by the $+0.05$ connectivity boost. At $k=10$, this pushes Recall slightly from `0.9938` to `0.9875`. 
-* **The IR Trade-off:** This represents a classic Information Retrieval trade-off: graph connectivity broadening improves context depth (retrieving related background papers to enrich the LLM prompt) but can introduce minor noise in strict direct query-relevance checks.
+* **Structured Note Advantage:** Transitioning from unstructured flat chunks to structured Markdown notes yields significant improvements. We observe a \textbf{15.2\% relative improvement in Recall@1} (from 0.5333 to 0.6146) and a \textbf{10.3\% relative improvement in Precision@1} (from 0.7250 to 0.8000) over the flat baseline. Under Link-Expanded RAG, we demonstrate a boundary divergence at $k=10$ resulting from topological score propagation, highlighting a critical information retrieval trade-off between strict query relevance and contextual background expansion. 
 
 %% ============================================================
 \section{Discussion and Limitations}
@@ -214,8 +212,11 @@ Agent-based metadata extraction (RQ2) achieved high accuracy on deterministic fi
 As documented in the technical logs, alternative evaluation metrics like NDCG and ROUGE were excluded. NDCG requires multi-level graded relevance, which introduces subjective bias during manual annotation. ROUGE and METEOR are word-overlap metrics that correlate poorly with semantic correctness in research synthesis. Expert human evaluation by the supervisor (RQ4) remains the gold standard for summarizing quality.
 
 \subsection{Limitations}
-* **LLM Compression Loss:** Summarization is lossy; specific mathematical parameters or equations inside the PDFs may be omitted during note synthesis.
-* **Graph Boost Sensitivity:** The hyperparameter $\alpha = 0.05$ was determined empirically. Under different corpus sizes or densities, this value may require dynamic calibration.
+\begin{itemize}
+    \item \textbf{LLM Compression Loss:} Summarization is lossy; specific mathematical parameters or equations inside the PDFs may be omitted during note synthesis.
+    \item \textbf{Graph Boost Sensitivity:} The hyperparameter $\alpha = 0.05$ was determined empirically. Under different corpus sizes or densities, this value may require dynamic calibration.
+    \item \textbf{Expert-Vault Ground Truth Subjectivity:} The gold labels used to evaluate semantic metadata fields (topics, concepts, methods, datasets) and directional paper links are derived from a single expert's handcrafted personal knowledge base (Emile's vault). A personal vault reflects individual research interests, meaning that links or concepts that are technically valid in the wider literature but omitted by the expert will be penalized as false positives in our automated evaluation.
+\end{itemize}
 
 %% ============================================================
 \section{Conclusion}

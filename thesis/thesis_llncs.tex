@@ -1,0 +1,185 @@
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{color}
+
+% Custom configuration for hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\begin{document}
+%
+\title{LLM Agents for Interlinked and Personalised Knowledge Bases}
+%
+\titlerunning{LLM Agents for Personalised Knowledge Bases}
+%
+\author{Muhammed Furkan Kaya}
+%
+\authorrunning{M. F. Kaya}
+%
+\institute{Vrije Universiteit Amsterdam, Amsterdam, The Netherlands\\
+\email{m.f.kaya@student.vu.nl}\\
+\textbf{Supervisor:} Emile van Krieken \and
+\textbf{Second Assessor:} Frank van Harmelen
+}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+THIS PART WILL BE REWRITTEN AFTER REACHING OUTPUTS
+
+\keywords{Retrieval-Augmented Generation \and Personal Knowledge Graphs \and Obsidian \and Multi-Agent Systems \and Information Retrieval.}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+\label{sec:intro}
+
+\subsection{Context and Motivation}
+
+Conducting academic research requires continuously synthesising an expanding body of scientific literature. Discovering connections across papers, tracking research methodologies, and organising findings can impose a substantial cognitive burden. Personal Knowledge Management (PKM) systems such as Obsidian, Logseq, and Roam Research support this process by allowing users to organise information as interconnected notes.
+
+Balog and Kenter define a Personal Knowledge Graph (PKG) as a resource containing structured information about entities that are personally related to its user~\cite{balog2019personal}. In this thesis, this concept is operationalised as a graph in which structured Markdown paper notes represent nodes and explicit Markdown wiki-links (\texttt{[[Note Target]]}) represent directed relationships between notes.
+
+A well-maintained PKG can serve as an externalised research memory that reflects a researcher's individual understanding and organisational preferences. However, constructing and maintaining such a graph is a manual and labour-intensive process. A researcher must obtain a paper, read it, extract bibliographic metadata, summarise its contributions, and identify relationships with previously stored literature. When this process is not maintained consistently, personal academic collections may devolve into folders of weakly connected PDFs and notes, reducing the potential benefits of graph-based organisation.
+
+\subsection{Problem Statement}
+
+Large Language Models (LLMs) offer a potential means of automating parts of this ingestion process by extracting bibliographic metadata, generating structured summaries, and proposing links between related papers. However, it remains unclear whether transforming raw academic documents into interlinked, agent-generated notes improves downstream Information Retrieval (IR).
+
+Retrieval-Augmented Generation (RAG) combines a generative language model with information retrieved from an external document collection~\cite{lewis2020retrieval}. In the Flat RAG baseline implemented in this thesis, raw PDF text is divided into sequential, fixed-size character chunks with overlap. Each chunk is embedded independently, and the chunks with the highest vector similarity to a query are retrieved. Although this approach is simple and computationally practical, it introduces two relevant limitations:
+
+\begin{enumerate}
+\item \textbf{Context Fragmentation:} A coherent argument, contribution, or methodological description may be divided across arbitrary chunk boundaries, causing retrieved units to contain incomplete context~\cite{sarthi2024raptor}.
+
+\item \textbf{Loss of Inter-Document Context:} Independent vector retrieval does not directly incorporate explicit relationships between papers, such as citations, methodological extensions, comparisons, or contradictions~\cite{edge2024local,gutierrez2024hipporag}.
+
+\end{enumerate}
+
+To investigate these limitations, this thesis implements a multi-agent ingestion pipeline that transforms academic PDFs into structured, Obsidian-compatible Markdown notes and generates typed inter-note wiki-links. Retrieval is evaluated using three configurations: Flat RAG over raw PDF chunks, Structured RAG over agent-generated notes, and Link-Expanded RAG, which additionally propagates retrieval scores through the generated wiki-link graph. This design separates the effect of document restructuring from the additional effect of graph-informed link expansion.
+
+\subsection{Research Questions and Hypotheses}
+\label{sec:rqs}
+
+The central objective of this work is to determine whether transforming a flat PDF corpus into a network of structured, agent-generated notes improves retrieval within a personal academic knowledge base. The primary research question is formulated as follows:
+
+\begin{quote}
+\textit{To what extent can an LLM-agent ingestion pipeline improve retrieval in a personal knowledge base by generating structured notes and inter-note links, compared with a Flat RAG baseline?}
+\end{quote}
+
+To address this objective, four sub-questions and their corresponding hypotheses are formulated.
+
+\subsubsection{RQ1: Retrieval Performance}
+
+Does retrieval from structured, agent-generated Markdown notes, with or without graph-informed link expansion, improve search quality compared with retrieval from flat PDF chunks?
+
+\begin{itemize}
+\item[\textbf{H1:}] We hypothesise that Structured RAG will achieve higher Precision@5, Recall@5, and MRR@5 than Flat RAG because the structured notes preserve paper-level context and reduce chunk fragmentation. We further hypothesise that Link-Expanded RAG will improve retrieval beyond Structured RAG by incorporating relationships represented through inter-note wiki-links.
+\end{itemize}
+
+\subsubsection{RQ2: Metadata Extraction Accuracy}
+
+How accurately can the LLM agent extract bibliographic metadata (title, year, venue, and authors) compared with externally curated bibliographic records, and semantic topic labels compared with expert-authored annotations?
+
+\begin{itemize}
+\item[\textbf{H2:}] We hypothesise that the LLM agent will achieve higher alignment for bibliographic metadata than for semantic topic annotations. Bibliographic alignment is evaluated using title and year exact match, fuzzy venue matching, and author-set F1, while semantic alignment is evaluated using set-based Precision, Recall, and F1 against expert-authored topic annotations.
+\end{itemize}
+
+\subsubsection{RQ3: Link Prediction Reliability}
+How accurately can LLM agents identify and establish the correct directional links (i.e., referencing the correct related papers) between documents?
+\begin{itemize}
+    \item[\textbf{H3:}] We hypothesize that the LLM-predicted links overlap with the expert vault, but contain additional valid relations not cataloged by the expert, resulting in lower recall metrics due to the personal vault's sparsity and omission of non-core citation edges.
+\end{itemize}
+
+\subsubsection{RQ4: Qualitative Summary Quality}
+How does an academic supervisor rate the factual correctness, cohesion, and research utility of the agent-generated summaries?
+\begin{itemize}
+    \item[\textbf{H4:}] We hypothesize that a domain-expert supervisor's evaluation of the agent-generated summaries will yield average scores exceeding the neutral midpoint (3.0 out of 5.0) across the rubric dimensions of factual correctness, contribution coverage, hallucination absence, and usefulness for rediscovery, while identifying selective omissions of minor details (compression loss) compared to manually drafted notes.
+\end{itemize}
+
+
+% ============================================================
+\section{Literature Study}
+\label{sec:literature}
+
+This section reviews the academic literature surrounding Retrieval-Augmented Generation (RAG), advanced graph-based retrieval architectures, and personal citation network analysis. We critique the strengths and limitations of these existing approaches and detail how they inform the design of our structured personal knowledge base.
+
+\subsection{Naive Chunk-Based Retrieval Baselines}
+Information retrieval over unstructured document collections typically relies on splitting documents into sequential, fixed-size character or token chunks. Each chunk is projected into a dense vector space using bi-encoder models such as MiniLM, and retrieval is performed by computing cosine similarity between the query vector and candidate chunk vectors. Qiu~\cite{qiu2024personal} explored this paradigm in the design of local personal assistants, demonstrating its utility in indexing and querying user desktop files.
+
+While naive chunk-based retrieval is computationally efficient and requires no prior semantic modeling of the document corpus, it has significant architectural limitations for scholarly workflows. First, arbitrary chunk boundaries introduce context fragmentation, frequently splitting coherent methodologies or tables across chunks and producing incomplete or distorted retrieval contexts. Second, this model operates under a strong independence assumption: it treats text chunks as isolated information units, ignoring document-level structure and the rich bibliographic relationships (such as citations, extensions, or contradictions) that define academic literature. In this thesis, we utilize a flat chunking approach as our control baseline. To address context fragmentation, we propose a structured retrieval configuration where each paper is represented by a single, agent-generated summarized note, ensuring the preservation of document-level context in the vector space.
+
+\subsection{Advanced Graph-Structured and Hierarchical RAG}
+To address the limitations of flat vector search, advanced Retrieval-Augmented Generation (RAG) architectures incorporate graph topologies or hierarchical indexing. Edge et al.~\cite{edge2024local} introduced Microsoft's GraphRAG, which utilizes LLMs to extract entities, relationships, and claims from text chunks, building a global knowledge graph to support global query-focused summarization. In a different approach to relational modeling, HippoRAG~\cite{gutierrez2024hipporag} models the human hippocampal memory by constructing a concept-level network from extracted noun phrases and utilizing Personalized PageRank (PPR) for multi-hop retrieval. For structured hierarchies, RAPTOR~\cite{sarthi2024raptor} clusters chunks recursively to build a tree of abstractive summaries, capturing multi-scale document context.
+
+The evaluation of these advanced architectures requires complex, domain-specific multi-hop queries where information is scattered across different nodes. Han et al.~\cite{han2025graphragbench} established the \textit{GraphRAG-Bench} framework to evaluate these systems, proving that standard vector search underperforms on tasks that require synthesizing information distributed across multiple documents.
+
+These advanced architectures present clear advantages in multi-hop reasoning and thematic synthesis, but they introduce severe computational and financial overhead. Entity and triplet extraction require a high volume of LLM API calls, leading to substantial token consumption. Furthermore, they rely on external, heavy graph database engines (such as Neo4j), which complicates setup, increases query latency, and hinders deployment in local, resource-constrained environments. In this thesis, we adapt the topological retrieval benefits of graph-structured RAG but attempt to mitigate the dependency on external databases and expensive triplet extraction. We leverage the native Markdown wiki-link structure (\texttt{[[WikiLinks]]}) of personal knowledge bases like Obsidian. Our Link-Expanded RAG performs topological score propagation directly over local Markdown files, providing a lightweight and cost-effective alternative.
+
+\subsection{Link Prediction in Citation Networks}
+Personal Knowledge Graphs (PKGs) represent a user's individualized research landscape, where notes function as nodes and wiki-links represent semantic citations. Unlike static corporate knowledge graphs, PKGs are sparse, highly dynamic, and tailored to the researcher's focus.
+
+To automate link discovery in these sparse networks, traditional bibliometrics has focused on topological link prediction. Shibata et al.~\cite{shibata2012link} compared different topological link prediction algorithms (such as Common Neighbors, Jaccard Coefficient, and Adamic-Adar) to detect emerging research fields in citation networks. These algorithms successfully exploit structural properties (such as triadic closure or clustering coefficients) to predict future citation edges with low computational cost.
+
+However, topological link prediction algorithms suffer from two main weaknesses. First, they are blind to the semantic text content of the nodes, relying entirely on existing edge structures. This makes them incapable of linking newly introduced papers that have no pre-existing connections (the cold-start problem). Second, they cannot predict the specific nature of a relationship (such as whether a paper \textit{extends} or \textit{compares to} another). This thesis addresses the text-blindness of traditional link prediction by implementing an LLM-based Link Predictor agent. This agent reads note summaries and metadata to establish typed, directional wiki-links between notes, helping mitigate the cold-start problem and enriching the graph with semantic relationship classifications.
+
+\subsection{Synthesis and Gap Analysis}
+Existing advanced retrieval architectures optimize large-scale enterprise or web-scale data access through complex entity relation graphs, centralized graph databases, or deep hierarchical indexing tree structures. In contrast, personal knowledge bases operate under different, more localized constraints: they are stored locally on user desktops, are highly sparse, evolve continuously as the researcher's thinking changes, and must remain computationally lightweight and token-efficient. This gap between heavy enterprise architectures and localized personal requirements motivates the lightweight, Markdown-native agentic architecture proposed in this thesis.
+
+
+% ============================================================
+\section{Methodology}
+\label{sec:methodology}
+% Placeholder for Section 3: Methodology
+% Guideline: Describe the approach taken to investigate the research question, including 
+% methods, models, or frameworks applied. Present research process steps and reasoning, 
+% making assumptions explicit. Detail the data used (structure, preprocessing, limitations).
+
+
+% ============================================================
+\section{Results}
+\label{sec:results}
+% Placeholder for Section 4: Results
+% Guideline: Present the main results of analysis/implementation, explaining how they 
+% address the problem. Situate results in the context of reviewed literature, supporting 
+% conclusions with clear arguments and evidence.
+
+
+% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+% Placeholder for Section 5: Discussion
+% Guideline: Discuss assumptions, limitations, and reflect on alternatives. Consider what 
+% could be improved (methodology, code, data quality). Critically evaluate pros/cons compared 
+% to other approaches. Relate findings to the wider academic/practical context.
+
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% Placeholder for Section 6: Conclusion
+% Guideline: Summarize findings, reflect on how well RQs were answered, highlight core 
+% contributions, and suggest future research directions.
+
+
+% ============================================================
+\section*{Addendum: Reflection}
+\label{sec:reflection}
+% Placeholder for Addendum: Reflection (personal, subjective tone)
+% Guideline: Personal reflection on the process. Discuss planning, time management, 
+% adaptations, independent work, supervisor consultations, shift in style of thought, 
+% and academic/personal lessons.
+
+\bibliographystyle{splncs04}
+\bibliography{refs}
+
+\end{document}

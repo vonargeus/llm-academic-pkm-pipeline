@@ -221,15 +221,6 @@ def parse_vault(vault_dir: Path, output_dir: Path):
         if note["note_type"] == "paper":
             paper_notes.append(note)
 
-        # Build gold link set from typed_links
-        for link in note["typed_links"]:
-            link_gold.append({
-                "source": note["doc_id"],
-                "target": link["target"],
-                "link_type": link["field"],
-                "source_type": note["note_type"],
-            })
-
     # ── Summaries ────────────────────────────────────────────────────────────
     type_counts: dict[str, int] = {}
     for n in all_notes:
@@ -243,7 +234,58 @@ def parse_vault(vault_dir: Path, output_dir: Path):
     papers_with_arxiv = [p for p in paper_notes if p["arxiv_id"]]
     print(f"\nPaper notes total:       {len(paper_notes)}")
     print(f"Papers with arXiv ID:    {len(papers_with_arxiv)}")
-    print(f"Total typed links found: {len(link_gold)}")
+
+    # Map from doc_id and aliases to note_type
+    note_type_by_id = {}
+    for n in all_notes:
+        nid = n["doc_id"].lower().strip()
+        note_type_by_id[nid] = n["note_type"]
+        aliases = n.get("aliases") or []
+        for alias in aliases:
+            if isinstance(alias, str):
+                note_type_by_id[alias.lower().strip()] = n["note_type"]
+
+    # Build gold link set from typed_links and paper-to-paper body wikilinks
+    for note in all_notes:
+        # 1. Frontmatter typed links (relationships to concepts, topics, etc.)
+        for link in note["typed_links"]:
+            target_norm = link["target"].lower().strip()
+            target_type = note_type_by_id.get(target_norm, "unknown")
+            link_gold.append({
+                "source": note["doc_id"],
+                "target": link["target"],
+                "link_type": link["field"],
+                "source_type": note["note_type"],
+                "target_type": target_type
+            })
+        
+        # 2. Paper-to-paper body wikilinks (for RQ3 link quality)
+        if note["note_type"] == "paper":
+            for link_target in note["all_wikilinks"]:
+                target_norm = link_target.lower().strip()
+                t_type = note_type_by_id.get(target_norm)
+                if t_type == "paper":
+                    target_case = link_target
+                    for n2 in all_notes:
+                        if n2["doc_id"].lower().strip() == target_norm:
+                            target_case = n2["doc_id"]
+                            break
+                    # Avoid duplicates
+                    exists = False
+                    for lg in link_gold:
+                        if lg["source"] == note["doc_id"] and lg["target"] == target_case and lg["link_type"] == "cites":
+                            exists = True
+                            break
+                    if not exists:
+                        link_gold.append({
+                            "source": note["doc_id"],
+                            "target": target_case,
+                            "link_type": "cites",
+                            "source_type": "paper",
+                            "target_type": "paper"
+                        })
+
+    print(f"Total typed/paper links found: {len(link_gold)}")
 
     # ── Save outputs ─────────────────────────────────────────────────────────
     # All notes
@@ -265,24 +307,48 @@ def parse_vault(vault_dir: Path, output_dir: Path):
     print(f"Gold links -> {link_gold_path}")
 
     # arXiv IDs for download
-    arxiv_ids_path = output_dir / "vault_arxiv_ids.json"
+    arxiv_ids_path = output_dir / "emile_vault_arxiv_ids.json"
     arxiv_map = {p["doc_id"]: p["arxiv_id"] for p in papers_with_arxiv}
     with open(arxiv_ids_path, "w", encoding="utf-8") as f:
         json.dump(arxiv_map, f, indent=2, ensure_ascii=False)
     print(f"arXiv IDs  -> {arxiv_ids_path}")
 
     # Gold metadata for metadata evaluation
-    metadata_gold_path = output_dir / "metadata_gold.json"
+    metadata_gold_path = output_dir / "emile_vault_gold.json"
     metadata_gold = {}
     for n in paper_notes:
         fm = n["frontmatter"]
+        
+        linked_concepts = []
+        linked_methods = []
+        linked_datasets = []
+        linked_topics = []
+        
+        for link_target in n["all_wikilinks"]:
+            target_norm = link_target.lower().strip()
+            t_type = note_type_by_id.get(target_norm)
+            if t_type == "concept":
+                linked_concepts.append(link_target)
+            elif t_type == "method":
+                linked_methods.append(link_target)
+            elif t_type == "dataset":
+                linked_datasets.append(link_target)
+            elif t_type == "topic":
+                linked_topics.append(link_target)
+                
+        # Merge topics from frontmatter hasTopic with any linked topic notes
+        topics_all = list(set(_extract_all_link_targets(fm.get("hasTopic", [])) + linked_topics))
+        
         metadata_gold[n["doc_id"]] = {
             "title": n["doc_id"],  # filename is the title in Emile's system
             "aliases": n["aliases"],
             "year": n["year"],
             "venue": _extract_link_target(fm.get("publishedIn", "")),
             "authors": _extract_all_link_targets(fm.get("author", [])),
-            "hasTopic": _extract_all_link_targets(fm.get("hasTopic", [])),
+            "topics": topics_all,
+            "concepts": list(set(linked_concepts)),
+            "method": list(set(linked_methods)),
+            "datasets": list(set(linked_datasets)),
             "arxiv_id": n["arxiv_id"],
             "url": n["url"],
         }

@@ -60,14 +60,9 @@ def main():
     for q in queries:
         qid = q["query_id"]
         text = q["text"]
-        # Retrieve more chunks to get at least 10 unique documents
-        retrieved_chunks = baseline_retrieve(text, docs, embeddings, model, k=50, mode="baseline")
-        seen_docs = []
-        for score, doc in retrieved_chunks:
-            doc_id = doc["doc_id"]
-            if doc_id not in seen_docs:
-                seen_docs.append(doc_id)
-        baseline_run[qid] = seen_docs[:10]
+        # Retrieve top 5 unique documents directly using MaxP aggregation
+        retrieved_docs = baseline_retrieve(text, docs, embeddings, model, k=5, mode="baseline")
+        baseline_run[qid] = [doc["doc_id"] for score, doc in retrieved_docs]
 
     with open(output_dir / "baseline_run.json", "w", encoding="utf-8") as f:
         json.dump(baseline_run, f, indent=2)
@@ -78,7 +73,8 @@ def main():
     for q in queries:
         qid = q["query_id"]
         text = q["text"]
-        structured_run[qid] = structured_retrieve(text, structured_index_path, top_k=10)
+        # Retrieve top 5 notes
+        structured_run[qid] = structured_retrieve(text, structured_index_path, top_k=5)
 
     with open(output_dir / "structured_run.json", "w", encoding="utf-8") as f:
         json.dump(structured_run, f, indent=2)
@@ -89,7 +85,8 @@ def main():
     for q in queries:
         qid = q["query_id"]
         text = q["text"]
-        link_run[qid] = retrieve_link_expanded(text, structured_index_path, notes_dir, top_k=10)
+        # Retrieve top 5 re-ranked notes with a fixed alpha of 0.05
+        link_run[qid] = retrieve_link_expanded(text, structured_index_path, notes_dir, top_k=5, graph_boost_alpha=0.05)
 
     with open(output_dir / "link_run.json", "w", encoding="utf-8") as f:
         json.dump(link_run, f, indent=2)

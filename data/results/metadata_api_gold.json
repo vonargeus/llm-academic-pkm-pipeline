@@ -1,0 +1,534 @@
+{
+  "1711.11157": {
+    "title": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge",
+    "year": 2017,
+    "venue": "International Conference on Machine Learning",
+    "authors": [
+      "Jingyi Xu",
+      "Zilu Zhang",
+      "Tal Friedman",
+      "Yitao Liang",
+      "Guy Van den Broeck"
+    ]
+  },
+  "2005.11401": {
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "year": 2020,
+    "venue": "Neural Information Processing Systems",
+    "authors": [
+      "Patrick Lewis",
+      "Ethan Perez",
+      "Aleksandara Piktus",
+      "F. Petroni",
+      "Vladimir Karpukhin",
+      "Naman Goyal",
+      "Heinrich Kuttler",
+      "M. Lewis",
+      "Wen-tau Yih",
+      "Tim Rocktäschel",
+      "Sebastian Riedel",
+      "Douwe Kiela"
+    ]
+  },
+  "2007.01282": {
+    "title": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+    "year": 2020,
+    "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+    "authors": [
+      "Gautier Izacard",
+      "Edouard Grave"
+    ]
+  },
+  "2012.13635": {
+    "title": "Logic Tensor Networks",
+    "year": 2020,
+    "venue": "Artificial Intelligence",
+    "authors": [
+      "Samy Badreddine",
+      "A. Garcez",
+      "L. Serafini",
+      "M. Spranger"
+    ]
+  },
+  "2210.06726": {
+    "title": "Explanations from Large Language Models Make Small Reasoners Better",
+    "year": 2022,
+    "venue": "arXiv.org",
+    "authors": [
+      "SHIYANG LI",
+      "Jianshu Chen",
+      "Yelong Shen",
+      "Zhiyu Chen",
+      "Xinlu Zhang",
+      "Zekun Li",
+      "Hong Wang",
+      "Jingu Qian",
+      "Baolin Peng",
+      "Yi Mao",
+      "Wenhu Chen",
+      "Xifeng Yan"
+    ]
+  },
+  "2212.12393": {
+    "title": "A-NeSI: A Scalable Approximate Method for Probabilistic Neurosymbolic Inference",
+    "year": 2022,
+    "venue": "Neural Information Processing Systems",
+    "authors": [
+      "Emile van Krieken",
+      "Thiviyan Thanapalasingam",
+      "J. Tomczak",
+      "F. V. Harmelen",
+      "A. T. Teije"
+    ]
+  },
+  "2305.10250": {
+    "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+    "year": 2023,
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "authors": [
+      "Wanjun Zhong",
+      "Lianghong Guo",
+      "Qi-Fei Gao",
+      "He Ye",
+      "Yanlin Wang"
+    ]
+  },
+  "2305.19951": {
+    "title": "Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts",
+    "year": 2023,
+    "venue": "Neural Information Processing Systems",
+    "authors": [
+      "E. Marconato",
+      "Stefano Teso",
+      "Antonio Vergari",
+      "Andrea Passerini"
+    ]
+  },
+  "2306.07516": {
+    "title": "Weight hierarchies of 3-weight linear codes from two p-ary quadratic functions",
+    "year": 2023,
+    "venue": "arXiv.org",
+    "authors": [
+      "Xiumei Li",
+      "Fei Li"
+    ]
+  },
+  "2309.15217": {
+    "title": "RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+    "year": 2023,
+    "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+    "authors": [
+      "ES Shahul",
+      "J. James",
+      "Luis Espinosa Anke",
+      "S. Schockaert"
+    ]
+  },
+  "2310.08560": {
+    "title": "MemGPT: Towards LLMs as Operating Systems",
+    "year": 2023,
+    "venue": "arXiv.org",
+    "authors": [
+      "Charles Packer",
+      "Vivian Fang",
+      "Shishir G. Patil",
+      "Kevin Lin",
+      "Sarah Wooders",
+      "Joseph Gonzalez"
+    ]
+  },
+  "2310.11511": {
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "year": 2023,
+    "venue": "International Conference on Learning Representations",
+    "authors": [
+      "Akari Asai",
+      "Zeqiu Wu",
+      "Yizhong Wang",
+      "Avirup Sil",
+      "Hannaneh Hajishirzi"
+    ]
+  },
+  "2310.17451": {
+    "title": "Generating by Understanding: Neural Visual Generation with Logical Symbol Groundings",
+    "year": 2023,
+    "venue": "Knowledge Discovery and Data Mining",
+    "authors": [
+      "Yifei Peng",
+      "Zijie Zha",
+      "Yu Jin",
+      "Zhexu Luo",
+      "Wang-Zhou Dai",
+      "Zhong Ren",
+      "Yao-Xiang Ding",
+      "Kun Zhou"
+    ]
+  },
+  "2312.04474": {
+    "title": "Chain of Code: Reasoning with a Language Model-Augmented Code Emulator",
+    "year": 2023,
+    "venue": "International Conference on Machine Learning",
+    "authors": [
+      "Chengshu Li",
+      "Jacky Liang",
+      "Andy Zeng",
+      "Xinyun Chen",
+      "Karol Hausman",
+      "Dorsa Sadigh",
+      "Sergey Levine",
+      "Fei-Fei Li",
+      "Fei Xia",
+      "Brian Ichter"
+    ]
+  },
+  "2401.05224": {
+    "title": "Do Vision and Language Encoders Represent the World Similarly?",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition",
+    "authors": [
+      "Mayug Maniparambil",
+      "Raiymbek Akshulakov",
+      "Y. Djilali",
+      "Sanath Narayan",
+      "M. Seddik",
+      "K. Mangalam",
+      "Noel E. O'Connor"
+    ]
+  },
+  "2401.15884": {
+    "title": "Corrective Retrieval Augmented Generation",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "authors": [
+      "Shi-Qi Yan",
+      "Jia-Chen Gu",
+      "Yun Zhu",
+      "Zhen-Hua Ling"
+    ]
+  },
+  "2401.18059": {
+    "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+    "year": 2024,
+    "venue": "International Conference on Learning Representations",
+    "authors": [
+      "Parth Sarthi",
+      "Salman Abdullah",
+      "Aditi Tuli",
+      "Shubh Khanna",
+      "Anna Goldie",
+      "Christopher D. Manning"
+    ]
+  },
+  "2402.12240": {
+    "title": "BEARS Make Neuro-Symbolic Models Aware of their Reasoning Shortcuts",
+    "year": 2024,
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "authors": [
+      "E. Marconato",
+      "Samuele Bortolotti",
+      "Emile van Krieken",
+      "Antonio Vergari",
+      "Andrea Passerini",
+      "Stefano Teso"
+    ]
+  },
+  "2402.14207": {
+    "title": "Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models",
+    "year": 2024,
+    "venue": "North American Chapter of the Association for Computational Linguistics",
+    "authors": [
+      "Yijia Shao",
+      "Yucheng Jiang",
+      "Theodore A. Kanell",
+      "Peter Xu",
+      "Omar Khattab",
+      "Monica S. Lam"
+    ]
+  },
+  "2402.17753": {
+    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+    "year": 2024,
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "authors": [
+      "Adyasha Maharana",
+      "Dong-Ho Lee",
+      "S. Tulyakov",
+      "Mohit Bansal",
+      "Francesco Barbieri",
+      "Yuwei Fang"
+    ]
+  },
+  "2404.16130": {
+    "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "authors": [
+      "Darren Edge",
+      "Ha Trinh",
+      "Newman Cheng",
+      "Joshua Bradley",
+      "A. Chao",
+      "Apurva N. Mody",
+      "Steven Truitt",
+      "Jonathan Larson"
+    ]
+  },
+  "2405.14831": {
+    "title": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+    "year": 2024,
+    "venue": "Neural Information Processing Systems",
+    "authors": [
+      "Bernal Jimenez Gutierrez",
+      "Yiheng Shu",
+      "Yu Gu",
+      "Michihiro Yasunaga",
+      "Yu Su"
+    ]
+  },
+  "2406.14177": {
+    "title": "SimulSeamless: FBK at IWSLT 2024 Simultaneous Speech Translation",
+    "year": 2024,
+    "venue": "International Workshop on Spoken Language Translation",
+    "authors": [
+      "Sara Papi",
+      "Marco Gaido",
+      "Matteo Negri",
+      "L. Bentivogli"
+    ]
+  },
+  "2409.05591": {
+    "title": "MemoRAG: Boosting Long Context Processing with Global Memory-Enhanced Retrieval Augmentation",
+    "year": 2024,
+    "venue": "The Web Conference",
+    "authors": [
+      "Hongjin Qian",
+      "Zheng Liu",
+      "Peitian Zhang",
+      "Kelong Mao",
+      "Defu Lian",
+      "Zhicheng Dou",
+      "Tiejun Huang"
+    ]
+  },
+  "2410.02143": {
+    "title": "Plug-and-Play Controllable Generation for Discrete Masked Models",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "authors": [
+      "Wei Guo",
+      "Yuchen Zhu",
+      "Molei Tao",
+      "Yongxin Chen"
+    ]
+  },
+  "2410.05779": {
+    "title": "LightRAG: Simple and Fast Retrieval-Augmented Generation",
+    "year": 2024,
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "authors": [
+      "Zirui Guo",
+      "Lianghao Xia",
+      "Yanhua Yu",
+      "Tu Ao",
+      "Chao Huang"
+    ]
+  },
+  "2412.06014": {
+    "title": "Post-hoc Probabilistic Vision-Language Models",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "authors": [
+      "Anton Baumann",
+      "Rui Li",
+      "Marcus Klasson",
+      "Santeri Mentu",
+      "Shyamgopal Karthik",
+      "Zeynep Akata",
+      "Arno Solin",
+      "Martin Trapp"
+    ]
+  },
+  "2502.01341": {
+    "title": "AlignVLM: Bridging Vision and Language Latent Spaces for Multimodal Document Understanding",
+    "year": 2025,
+    "venue": "",
+    "authors": [
+      "Ahmed Masry",
+      "Juan A. Rodriguez",
+      "Tianyu Zhang",
+      "Suyuchen Wang",
+      "Chao Wang",
+      "Aarash Feizi",
+      "Akshay Kalkunte Suresh",
+      "Abhay Puri",
+      "Xiangru Jian",
+      "Pierre-André Noël",
+      "Sathwik Tejaswi Madhusudhan",
+      "Marco Pedersoli",
+      "Bang Liu",
+      "Nicolas Chapados",
+      "Y. Bengio",
+      "Enamul Hoque",
+      "Christopher Pal",
+      "I. Laradji",
+      "David Vázquez",
+      "Perouz Taslakian",
+      "Spandana Gella",
+      "Sai Rajeswar"
+    ]
+  },
+  "2502.03274": {
+    "title": "A Scalable Approach to Probabilistic Neuro-Symbolic Robustness Verification",
+    "year": 2025,
+    "venue": "International Workshop on Neural-Symbolic Learning and Reasoning",
+    "authors": [
+      "Vasileios Manginas",
+      "Nikolaos Manginas",
+      "Edward Stevinson",
+      "Sherwin Varghese",
+      "Nikos Katzouris",
+      "Georgios Paliouras",
+      "Alessio Lomuscio"
+    ]
+  },
+  "2502.12110": {
+    "title": "A-MEM: Agentic Memory for LLM Agents",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "Wujiang Xu",
+      "Zujie Liang",
+      "K. Mei",
+      "Hang Gao",
+      "Juntao Tan",
+      "Yongfeng Zhang"
+    ]
+  },
+  "2505.13138": {
+    "title": "Neurosymbolic Diffusion Models",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "Emile van Krieken",
+      "Pasquale Minervini",
+      "Edoardo Ponti",
+      "Antonio Vergari"
+    ]
+  },
+  "2505.23061": {
+    "title": "DINGO: Constrained Inference for Diffusion LLMs",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "Tarun Suresh",
+      "Debangshu Banerjee",
+      "Shubham Ugare",
+      "Sasa Misailovic",
+      "Gagandeep Singh"
+    ]
+  },
+  "2506.03719": {
+    "title": "On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "Quentin Bertrand",
+      "Anne Gagneux",
+      "Mathurin Massias",
+      "R'emi Emonet"
+    ]
+  },
+  "2507.14484": {
+    "title": "ReDiSC: A Reparameterized Masked Diffusion Model for Scalable Node Classification with Structured Predictions",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "Yule Li",
+      "Yifeng Lu",
+      "Zhen Wang",
+      "Zhewei Wei",
+      "Yaliang Li",
+      "Bolin Ding"
+    ]
+  },
+  "2507.21053": {
+    "title": "Flow Matching Policy Gradients",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "David McAllister",
+      "Songwei Ge",
+      "Brent Yi",
+      "Chung Min Kim",
+      "Ethan Weber",
+      "Hongsuk Choi",
+      "Haiwen Feng",
+      "Angjoo Kanazawa"
+    ]
+  },
+  "2509.26625": {
+    "title": "Learning to See Before Seeing: Demystifying LLM Visual Priors from Language Pre-training",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "Junlin Han",
+      "Shengbang Tong",
+      "David Fan",
+      "Yufan Ren",
+      "Koustuv Sinha",
+      "Philip H. S. Torr",
+      "Filippos Kokkinos"
+    ]
+  },
+  "2510.14538": {
+    "title": "Symbol Grounding in Neuro-Symbolic AI: A Gentle Introduction to Reasoning Shortcuts",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "authors": [
+      "E. Marconato",
+      "Samuele Bortolotti",
+      "Emile van Krieken",
+      "Paolo Morettin",
+      "Elena Umili",
+      "Antonio Vergari",
+      "Efthymia Tsamoura",
+      "Andrea Passerini",
+      "Stefano Teso"
+    ]
+  },
+  "2602.17270": {
+    "title": "Unified Latents (UL): How to train your latents",
+    "year": 2026,
+    "venue": "arXiv.org",
+    "authors": [
+      "J. Heek",
+      "E. Hoogeboom",
+      "Thomas Mensink",
+      "Tim Salimans"
+    ]
+  },
+  "2602.23878": {
+    "title": "A Foundation for Differentiable Logics using Dependent Type Theory",
+    "year": 2026,
+    "venue": "arXiv.org",
+    "authors": [
+      "Reynald Affeldt",
+      "A. Bruni",
+      "Ekaterina Komendantskaya",
+      "Natalia Slusarz",
+      "Kathrin Stark"
+    ]
+  },
+  "2603.03612": {
+    "title": "Why Are Linear RNNs More Parallelizable?",
+    "year": 2026,
+    "venue": "arXiv.org",
+    "authors": [
+      "William Merrill",
+      "Hongjian Jiang",
+      "Yanhong Li",
+      "A. Lin",
+      "Ashish Sabharwal"
+    ]
+  }
+}

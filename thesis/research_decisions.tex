@@ -4,103 +4,11 @@
 %% Bachelor Thesis — Vrije Universiteit Amsterdam
 %% ============================================================
 
-\section*{Thesis Research Decisions \& Technical Rationale}
+\section*{Frequently Asked Questions \& Conceptual Clarifications}
 \label{sec:research_decisions}
 
-This document compiles the core design choices, scientific justifications, and architectural decisions made for the Bachelor of AI thesis evaluation pipeline. It provides a quick reference for the logic and reasoning behind the current codebase.
+This document compiles the conceptual questions, research design justifications, and methodology clarifications raised during the development of the Bachelor of AI thesis evaluation pipeline.
 
-\subsection*{1. Folder Structure \& Code Modularity}
-The codebase is structured logically to maintain separation of concerns:
-\begin{itemize}
-    \item \textbf{\texttt{rag\_baseline.py}} (Root CLI Wrapper): Acts as a light wrapper exposing CLI commands (\texttt{build}, \texttt{query}) but imports all core logic.
-    \item \textbf{\texttt{src/retrieval/baseline.py}}: Contains the implementation of the flat RAG baseline (extraction, chunking, indexing, and retrieval).
-    \item \textbf{\texttt{src/retrieval/structured.py}}: Implements retrieval on the structured Obsidian notes (embedding full notes and traversing semantic links).
-    \item \textbf{\texttt{src/agents/}}: Contains independent LLM agents (\texttt{metadata\_agent.py}, \texttt{note\_agent.py}, \texttt{link\_agent.py}) responsible for generating Obsidian-ready interlinked notes.
-    \item \textbf{\texttt{scripts/}}: Executable pipelines for downloading papers, generating evaluation queries, building structured notes, and running the evaluation suite.
-\end{itemize}
-
-\subsection*{2. Why Use an Embedding Model Alongside Gemini?}
-We utilize two different tiers of models for distinct responsibilities in the pipeline:
-\begin{enumerate}
-    \item \textbf{Retriever (Bi-Encoder Layer)}: We use a local, lightweight embedding model (\texttt{all-MiniLM-L6-v2} from Hugging Face's \texttt{sentence-transformers}). It embeds text chunks/notes into a low-dimensional vector space and performs fast mathematical cosine similarity search on the local system. This represents an industry-standard, efficient retrieval layer.
-    \item \textbf{Generator \& Extractor (Gemini)}: Gemini is a heavy, generative autoregressive model. We use it for metadata extraction, note synthesis (generating Obsidian Markdown content), link prediction, and final answer generation. It is too expensive and slow to use for raw document retrieval (which requires evaluating and scoring every document/chunk in a database).
-\end{enumerate}
-
-\subsection*{3. RAG Baseline as a Scientific Control Group}
-To conduct a scientifically valid, academically defensible evaluation, we divide the retrieval system into two main groups:
-\begin{itemize}
-    \item \textbf{Control Group (Flat RAG Baseline)}: Slices raw extracted PDF text into sequential character-based chunks ($L=800$, overlap $O=120$) and runs pure cosine similarity search. It is completely blind to document metadata and links. It represents standard industry retrieval.
-    \item \textbf{Experimental Group (Structured Retrieval)}: Indexes generated interlinked Markdown notes. It embeds the full note text (which contains YAML metadata) and utilizes the interlinked Obsidian graph structure to expand search coverage (e.g., following semantic links to retrieve related nodes).
-\end{itemize}
-The baseline must remain "flat" and unstructured. If the baseline used metadata or links, we could not mathematically isolate the performance improvements ($ \Delta $) gained by adding structural graph features.
-
-\subsection*{4. Structured vs. Unstructured Data}
-\begin{itemize}
-    \item \textbf{Unstructured Data (Flat RAG)}: Raw linear PDF text with no explicit data schema. Retrieval must rely entirely on word overlap or semantic embedding matching on raw chunks.
-    \item \textbf{Structured Data (Obsidian Knowledge Graph)}: A formal schema where each paper is a node containing specific metadata attributes (e.g., authors, venue, datasets, methods) and explicit relational links (e.g., \texttt{usesMethod}, \texttt{comparesTo}) pointing to other nodes. This structure enables Graph-based retrieval and metadata filtering.
-\end{itemize}
-
-\subsection*{5. The 22-Paper Corpus Strategy}
-The corpus size of 22 papers is strategically split to balance expert-crafted data and search scale:
-\begin{itemize}
-    \item \textbf{6 Neurosymbolic AI Papers}: These are selected directly from supervisor Emile's expert-crafted vault. They act as our \textbf{Gold Standard (Ground Truth)} for metadata extraction (RQ2) and link prediction (RQ3) evaluations.
-    \item \textbf{16 RAG, GraphRAG, \& Memory Papers}: These are standard papers added to expand the retrieval database. They provide a realistic academic search pool to test retrieval quality (RQ1).
-\end{itemize}
-
-\subsection*{6. Model Configuration: Reverting to Stable \texttt{gemini-flash-latest}}
-For note generation, we use the stable \textbf{\texttt{gemini-flash-latest}} (Gemini 1.5 Flash):
-\begin{itemize}
-    \item Preview/experimental models (such as \texttt{gemini-2.0-flash} and \texttt{gemini-2.5-flash}) are restricted to a daily quota of only 20 requests in the free tier of AI Studio, causing note generation to stall.
-    \item \texttt{gemini-flash-latest} is a stable, standard model widely cited in 2024--2026 literature, and provides the full 15 requests/minute and 1,500 requests/day quota, ensuring the pipeline completes successfully.
-\end{itemize}
-
-\subsection*{7. Summary of Evaluation Metrics}
-We evaluate retrieval quality (RQ1) using the following metrics:
-\begin{align*}
-    \text{Precision@k} &= \frac{|\text{Relevant Retrieved Documents}|}{k} \\
-    \text{Recall@k} &= \frac{|\text{Relevant Retrieved Documents}|}{|\text{All Gold Relevant Documents}|} \\
-    \text{F1-score@k} &= 2 \times \frac{\text{Precision@k} \times \text{Recall@k}}{\text{Precision@k} + \text{Recall@k}} \\
-    \text{MRR@k} &= \frac{1}{\text{rank of the first relevant document}} \quad (\text{or } 0 \text{ if none retrieved})
-\end{align*}
-For RQ2 and RQ3, we compute standard Precision, Recall, and F1-score comparing predicted agents' outputs against Emile's hand-crafted links and attributes.\subsection*{8. Empirical Evaluation Results \& Retrieval Performance Comparison}
-The evaluation was executed across 40 queries categorized into simple factual, comparison, and neurosymbolic domains. Below is the side-by-side performance of the flat RAG baseline, the structured agent-generated notes, and the link-expanded retrieval:
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{lccc}
-\hline
-\textbf{Metric} & \textbf{Baseline RAG} & \textbf{Structured RAG} & \textbf{Link-Expanded RAG} \\ \hline
-Recall@1 & 0.5333 & 0.6146 & 0.6146 \\
-Precision@1 & 0.7250 & 0.8000 & 0.8000 \\
-F1@1 & 0.5855 & 0.6671 & 0.6671 \\ \hline
-Recall@3 & 0.7583 & 0.8521 & 0.8521 \\
-Precision@3 & 0.3833 & 0.4333 & 0.4333 \\
-F1@3 & 0.4786 & 0.5414 & 0.5414 \\ \hline
-Recall@5 & 0.8958 & 0.9646 & 0.9646 \\
-Precision@5 & 0.2900 & 0.3200 & 0.3200 \\
-F1@5 & 0.4146 & 0.4544 & 0.4544 \\ \hline
-Recall@10 & 0.9583 & 0.9938 & 0.9875 \\
-Precision@10 & 0.1575 & 0.1700 & 0.1675 \\
-F1@10 & 0.2600 & 0.2784 & 0.2748 \\ \hline
-MRR & 0.8240 & 0.8833 & 0.8833 \\ \hline
-\end{tabular}
-\caption{Retrieval performance comparison across 40 queries.}
-\label{tab:retrieval_comparison}
-\end{table}
-
-\paragraph{Key Observations:}
-\begin{itemize}
-    \item \textbf{Performance Gain ($\Delta$)}: Structured RAG significantly outperforms Flat RAG across all metrics. Specifically, we observe a \textbf{15.2\% relative improvement in Recall@1} (from 0.5333 to 0.6146) and a \textbf{10.3\% relative improvement in Precision@1} (from 0.7250 to 0.8000). The overall Mean Reciprocal Rank (MRR) increases by \textbf{7.2\%} (from 0.8240 to 0.8833).
-    \item \textbf{High-Density Information Consolidation}: Structured notes consolidate the paper's key methodologies, datasets, contributions, and concepts into a dense Markdown representation (including structured YAML frontmatter). When embedded, these high-density nodes allow the bi-encoder to match queries more robustly than sequential, flat text chunks that lack global document context.
-    \item \textbf{Link-Expanded Retrieval and Graph Re-ranking}: The Link-Expanded RAG implements a deterministic identity resolution layer to map Obsidian [[WikiLinks]] (such as paper titles or aliases) to their corresponding arXiv IDs, and applies a graph connectivity boost ($\alpha = 0.05$). The scoring formula is parameterized as:
-    \[
-    \text{Score}_{\text{final}}(d) = \text{CosineSimilarity}(q, d) + \alpha \cdot \mathbb{I}(d \in \mathcal{G}_{\text{linked}})
-    \]
-    Where $\alpha = 0.05$ is the Graph Connectivity Hyperparameter, and $\mathbb{I}$ is an indicator function representing whether a candidate node $d$ is linked by the top-$k$ initial vector matches.
-    \item \textbf{Divergence at $k=10$}: Due to this re-ranking, a linked document that was originally outside the top-10 matches but shares topological proximity to the seed matches is boosted into the final top-10 list. This causes the Structured and Link-Expanded systems to diverge at $k=10$, resulting in a Recall@10 of 0.9875 and Precision@10 of 0.1675 for the Link-Expanded model. This represents a classic information retrieval trade-off: graph connectivity-based expansion increases retrieval coverage (context depth) for downstream generation, but can introduce minor noise in strict direct query-relevance recall checks.
-\end{itemize}
-
-\subsection*{9. Frequently Asked Questions \& Conceptual Clarifications}
 \begin{enumerate}[label=\textbf{Q\arabic*:}, leftmargin=*]
     \item \textbf{Why does the agentic pipeline output Markdown notes rather than native PDFs?} \\
     LLMs generate text sequentially and cannot natively output formatted binary PDF files. Markdown is a lightweight, plain-text format that LLMs write with high fidelity. Furthermore, Markdown supports structured headers and YAML frontmatter (enabling structured key-value metadata), as well as native Obsidian-style wiki-links (\texttt{[[Target Note]]}) to model graph edges. Raw PDF text lacks these semantic wrappers, making it unstructured layout data.
@@ -119,4 +27,19 @@ MRR & 0.8240 & 0.8833 & 0.8833 \\ \hline
 
     \item \textbf{What are the formal criteria for defining data as ``structured'' versus ``unstructured'' in this research?} \\
     Unstructured data has no predefined schema or semantic labeling (e.g., raw PDF text streams). Structured data adheres to a formal data model or schema. In this project, the Markdown notes are defined as structured because they contain a queryable YAML frontmatter schema, standardized section headings, and explicit typed link predicates (\texttt{[[WikiLinks]]}).
+
+    \item \textbf{Why do we retrieve a larger number of chunks ($K_{chunk} = 150$) for Flat RAG to get 10 unique papers, and why must we evaluate exactly 10 unique papers?} \\
+    In Information Retrieval (IR) science, systems are evaluated on a ranked list of recommendations (e.g., top-10) using metrics like Recall@10 and Mean Reciprocal Rank (MRR). 
+    Because Flat RAG chunks are tiny (300 characters, ~50 words) to prevent model truncation, a single paper is split into over 100 chunks. Highly relevant papers cluster at the top of the vector search, meaning the top 10 retrieved chunks might all belong to the same 1 or 2 papers. To construct a list of 10 unique candidate papers for a fair document-level comparison, Flat RAG must retrieve a larger chunk pool (empirically calibrated at an average of 146.88 chunks) before deduplicating by parent document ID.
+
+    \item \textbf{How does the embedding model interact with the LLM in Structured RAG?} \\
+    There is a strict separation of roles:
+    \begin{itemize}
+        \item \textbf{Generation Phase (LLM):} The LLM (Gemini API) is used once as an offline preprocessing step to read raw PDF text and write structured Markdown notes (summaries, metadata, wiki-links).
+        \item \textbf{Retrieval Phase (Embedding Model):} During the actual search experiment, the LLM is not used. We embed the generated Markdown notes using the local `all-MiniLM-L6-v2` embedding model. Cosine similarity is calculated directly between the query vector and note vectors to find the top matches.
+    \end{itemize}
+
+    \item \textbf{What is confounding bias, and how does it manifest in this evaluation?} \\
+    Confounding bias occurs when a third, unmeasured variable correlates with both the proposed cause and the proposed effect, leading to a false or exaggerated causal attribution. 
+    In our experiment, the confounding variable is \textbf{document length/noise}. Shorter, condensed summaries (structured notes) naturally present less text noise to dense vector retrievers than long raw PDF chunks. This difference in length is a confounder because retrieval improvements could be partially driven by the brevity of the summaries rather than their metadata structure. We document this in the ``Limitations'' section to maintain scientific transparency.
 \end{enumerate}

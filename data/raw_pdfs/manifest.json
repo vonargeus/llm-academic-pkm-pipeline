@@ -3,275 +3,110 @@
     "path": "data\\raw_pdfs\\2005.11401.pdf",
     "label": "Lewis et al. 2020 — Retrieval-Augmented Generation",
     "category": "RAG",
-    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
-    "authors": [
-      "Patrick Lewis",
-      "Ethan Perez",
-      "Aleksandra Piktus",
-      "Fabio Petroni",
-      "Vladimir Karpukhin",
-      "Naman Goyal",
-      "Heinrich Küttler",
-      "Mike Lewis",
-      "Wen-tau Yih",
-      "Tim Rocktäschel",
-      "Sebastian Riedel",
-      "Douwe Kiela"
-    ],
-    "year": 2020,
-    "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models",
-    "status": "ok"
+    "status": "cached"
   },
   "2007.01282": {
     "path": "data\\raw_pdfs\\2007.01282.pdf",
     "label": "Izacard & Grave 2020 — Fusion-in-Decoder",
     "category": "RAG",
-    "title": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
-    "authors": [
-      "Gautier Izacard",
-      "Edouard Grave"
-    ],
-    "year": 2020,
-    "abstract": "Generative models for open domain question answering have proven to be competitive, without resorting to external knowledge. While promising, this approach requires to use models with billions of parameters, which are expensive to train and query. In this paper, we investigate how much these models can benefit from retrieving text passages, potentially containing evidence. We obtain state-of-the-art results on the Natural Questions and TriviaQA open benchmarks. Interestingly, we observe that the",
-    "status": "ok"
+    "status": "cached"
+  },
+  "2310.11511": {
+    "status": "error",
+    "error": "HTTP Error 429: Unknown Error",
+    "id": "2310.11511",
+    "label": "Asai et al. 2023 — Self-RAG: Self-Reflective Retrieval",
+    "category": "RAG"
+  },
+  "2401.15884": {
+    "status": "error",
+    "error": "HTTP Error 429: Unknown Error",
+    "id": "2401.15884",
+    "label": "Yan et al. 2024 — Corrective RAG (CRAG)",
+    "category": "RAG"
   },
   "2309.15217": {
     "path": "data\\raw_pdfs\\2309.15217.pdf",
     "label": "Es et al. 2023 — RAGAS: RAG Evaluation Framework",
     "category": "RAG_Eval",
-    "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
-    "authors": [
-      "Shahul Es",
-      "Jithin James",
-      "Luis Espinosa-Anke",
-      "Steven Schockaert"
-    ],
-    "year": 2023,
-    "abstract": "We introduce Ragas (Retrieval Augmented Generation Assessment), a framework for reference-free evaluation of Retrieval Augmented Generation (RAG) pipelines. RAG systems are composed of a retrieval and an LLM based generation module, and provide LLMs with knowledge from a reference textual database, which enables them to act as a natural language layer between a user and textual databases, reducing the risk of hallucinations. Evaluating RAG architectures is, however, challenging because there are",
-    "status": "ok"
+    "status": "cached"
   },
   "2404.16130": {
     "path": "data\\raw_pdfs\\2404.16130.pdf",
     "label": "Edge et al. 2024 — GraphRAG: From Local to Global",
     "category": "GraphRAG",
-    "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
-    "authors": [
-      "Darren Edge",
-      "Ha Trinh",
-      "Newman Cheng",
-      "Joshua Bradley",
-      "Alex Chao",
-      "Apurva Mody",
-      "Steven Truitt",
-      "Dasha Metropolitansky",
-      "Robert Osazuwa Ness",
-      "Jonathan Larson"
-    ],
-    "year": 2024,
-    "abstract": "The use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections. However, RAG fails on global questions directed at an entire text corpus, such as \"What are the main themes in the dataset?\", since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task. Prior QFS methods, meanwhile, do no",
-    "status": "ok"
+    "status": "cached"
   },
   "2410.05779": {
     "path": "data\\raw_pdfs\\2410.05779.pdf",
     "label": "Guo et al. 2024 — LightRAG: Graph + Vector RAG",
     "category": "GraphRAG",
-    "title": "LightRAG: Simple and Fast Retrieval-Augmented Generation",
-    "authors": [
-      "Zirui Guo",
-      "Lianghao Xia",
-      "Yanhua Yu",
-      "Tu Ao",
-      "Chao Huang"
-    ],
-    "year": 2024,
-    "abstract": "Retrieval-Augmented Generation (RAG) systems enhance large language models (LLMs) by integrating external knowledge sources, enabling more accurate and contextually relevant responses tailored to user needs. However, existing RAG systems have significant limitations, including reliance on flat data representations and inadequate contextual awareness, which can lead to fragmented answers that fail to capture complex inter-dependencies. To address these challenges, we propose LightRAG, which incor",
-    "status": "ok"
+    "status": "cached"
   },
   "2405.14831": {
     "path": "data\\raw_pdfs\\2405.14831.pdf",
     "label": "Gutierrez et al. 2024 — HippoRAG: Memory-Inspired RAG",
     "category": "GraphRAG",
-    "title": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
-    "authors": [
-      "Bernal Jiménez Gutiérrez",
-      "Yiheng Shu",
-      "Yu Gu",
-      "Michihiro Yasunaga",
-      "Yu Su"
-    ],
-    "year": 2024,
-    "abstract": "In order to thrive in hostile and ever-changing natural environments, mammalian brains evolved to store large amounts of knowledge about the world and continually integrate new information while avoiding catastrophic forgetting. Despite the impressive accomplishments, large language models (LLMs), even with retrieval-augmented generation (RAG), still struggle to efficiently and effectively integrate a large amount of new experiences after pre-training. In this work, we introduce HippoRAG, a nove",
-    "status": "ok"
+    "status": "cached"
   },
   "2401.18059": {
     "path": "data\\raw_pdfs\\2401.18059.pdf",
     "label": "Sarthi et al. 2024 — RAPTOR: Hierarchical Tree Retrieval",
     "category": "HierarchicalRAG",
-    "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
-    "authors": [
-      "Parth Sarthi",
-      "Salman Abdullah",
-      "Aditi Tuli",
-      "Shubh Khanna",
-      "Anna Goldie",
-      "Christopher D. Manning"
-    ],
-    "year": 2024,
-    "abstract": "Retrieval-augmented language models can better adapt to changes in world state and incorporate long-tail knowledge. However, most existing methods retrieve only short contiguous chunks from a retrieval corpus, limiting holistic understanding of the overall document context. We introduce the novel approach of recursively embedding, clustering, and summarizing chunks of text, constructing a tree with differing levels of summarization from the bottom up. At inference time, our RAPTOR model retrieve",
-    "status": "ok"
+    "status": "cached"
   },
   "2502.12110": {
     "path": "data\\raw_pdfs\\2502.12110.pdf",
     "label": "A-MEM: Agentic Memory for LLM Agents (Zettelkasten)",
     "category": "AgenticMemory",
-    "title": "A-MEM: Agentic Memory for LLM Agents",
-    "authors": [
-      "Wujiang Xu",
-      "Zujie Liang",
-      "Kai Mei",
-      "Hang Gao",
-      "Juntao Tan",
-      "Yongfeng Zhang"
-    ],
-    "year": 2025,
-    "abstract": "While large language model (LLM) agents can effectively use external tools for complex real-world tasks, they require memory systems to leverage historical experiences. Current memory systems enable basic storage and retrieval but lack sophisticated memory organization, despite recent attempts to incorporate graph databases. Moreover, these systems' fixed operations and structures limit their adaptability across diverse tasks. To address this limitation, this paper proposes a novel agentic memor",
-    "status": "ok"
+    "status": "cached"
   },
   "2310.08560": {
     "path": "data\\raw_pdfs\\2310.08560.pdf",
     "label": "Packer et al. 2023 — MemGPT: LLMs as Operating Systems",
     "category": "AgenticMemory",
-    "title": "MemGPT: Towards LLMs as Operating Systems",
-    "authors": [
-      "Charles Packer",
-      "Sarah Wooders",
-      "Kevin Lin",
-      "Vivian Fang",
-      "Shishir G. Patil",
-      "Ion Stoica",
-      "Joseph E. Gonzalez"
-    ],
-    "year": 2023,
-    "abstract": "Large language models (LLMs) have revolutionized AI, but are constrained by limited context windows, hindering their utility in tasks like extended conversations and document analysis. To enable using context beyond limited context windows, we propose virtual context management, a technique drawing inspiration from hierarchical memory systems in traditional operating systems that provide the appearance of large memory resources through data movement between fast and slow memory. Using this techn",
-    "status": "ok"
+    "status": "cached"
   },
   "2305.10250": {
     "path": "data\\raw_pdfs\\2305.10250.pdf",
     "label": "Zhong et al. 2023 — MemoryBank: Long-Term Memory for LLMs",
     "category": "AgenticMemory",
-    "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
-    "authors": [
-      "Wanjun Zhong",
-      "Lianghong Guo",
-      "Qiqi Gao",
-      "He Ye",
-      "Yanlin Wang"
-    ],
-    "year": 2023,
-    "abstract": "Revolutionary advancements in Large Language Models have drastically reshaped our interactions with artificial intelligence systems. Despite this, a notable hindrance remains-the deficiency of a long-term memory mechanism within these models. This shortfall becomes increasingly evident in situations demanding sustained interaction, such as personal companion systems and psychological counseling. Therefore, we propose MemoryBank, a novel memory mechanism tailored for LLMs. MemoryBank enables the ",
-    "status": "ok"
+    "status": "cached"
   },
   "2409.05591": {
     "path": "data\\raw_pdfs\\2409.05591.pdf",
     "label": "Qian et al. 2024 — MemoRAG: Memory-Augmented Generation",
     "category": "AgenticMemory",
-    "title": "MemoRAG: Boosting Long Context Processing with Global Memory-Enhanced Retrieval Augmentation",
-    "authors": [
-      "Hongjin Qian",
-      "Zheng Liu",
-      "Peitian Zhang",
-      "Kelong Mao",
-      "Defu Lian",
-      "Zhicheng Dou",
-      "Tiejun Huang"
-    ],
-    "year": 2024,
-    "abstract": "Processing long contexts presents a significant challenge for large language models (LLMs). While recent advancements allow LLMs to handle much longer contexts than before (e.g., 32K or 128K tokens), it is computationally expensive and can still be insufficient for many applications. Retrieval-Augmented Generation (RAG) is considered a promising strategy to address this problem. However, conventional RAG methods face inherent limitations because of two underlying requirements: 1) explicitly stat",
-    "status": "ok"
+    "status": "cached"
   },
   "2306.07516": {
     "path": "data\\raw_pdfs\\2306.07516.pdf",
     "label": "Balog & Kenter 2023 — Personal Knowledge Graphs Survey",
     "category": "PKG",
-    "title": "Weight hierarchies of 3-weight linear codes from two $p$-ary quadratic functions",
-    "authors": [
-      "Xiumei Li",
-      "Fei Li"
-    ],
-    "year": 2023,
-    "abstract": "The weight hierarchy of a linear code has been an important research topic in coding theory since Wei's original work in 1991. Choosing $ D=\\Big\\{(x,y)\\in \\Big(\\F_{p^{s_1}}\\times\\F_{p^{s_2}}\\Big)\\Big\\backslash\\{(0,0)\\}: f(x)+g(y)=0\\Big\\}$ as a defining set , where $f(x),g(y)$ are quadratic forms over $\\mathbb{F}_{p^{s_i}},i=1,2$, respectively, with values in $\\F_p$, we construct a family of 3-weight $p$-ary linear codes and determine their weight distributions and weight hierarchies completely. ",
-    "status": "ok"
+    "status": "cached"
   },
   "2402.14207": {
     "path": "data\\raw_pdfs\\2402.14207.pdf",
     "label": "Shao et al. 2024 — STORM: Long-Form Article Writing Agent",
     "category": "StructuredSynthesis",
-    "title": "Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models",
-    "authors": [
-      "Yijia Shao",
-      "Yucheng Jiang",
-      "Theodore A. Kanell",
-      "Peter Xu",
-      "Omar Khattab",
-      "Monica S. Lam"
-    ],
-    "year": 2024,
-    "abstract": "We study how to apply large language models to write grounded and organized long-form articles from scratch, with comparable breadth and depth to Wikipedia pages. This underexplored problem poses new challenges at the pre-writing stage, including how to research the topic and prepare an outline prior to writing. We propose STORM, a writing system for the Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking. STORM models the pre-writing stage by (1) discovering dive",
-    "status": "ok"
+    "status": "cached"
   },
   "2402.17753": {
     "path": "data\\raw_pdfs\\2402.17753.pdf",
     "label": "Maharana et al. 2024 — LoCoMo: Long-Context Memory Eval",
     "category": "MemoryEval",
-    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
-    "authors": [
-      "Adyasha Maharana",
-      "Dong-Ho Lee",
-      "Sergey Tulyakov",
-      "Mohit Bansal",
-      "Francesco Barbieri",
-      "Yuwei Fang"
-    ],
-    "year": 2024,
-    "abstract": "Existing works on long-term open-domain dialogues focus on evaluating model responses within contexts spanning no more than five chat sessions. Despite advancements in long-context large language models (LLMs) and retrieval augmented generation (RAG) techniques, their efficacy in very long-term dialogues remains unexplored. To address this research gap, we introduce a machine-human pipeline to generate high-quality, very long-term dialogues by leveraging LLM-based agent architectures and groundi",
-    "status": "ok"
+    "status": "cached"
   },
   "2406.14177": {
     "path": "data\\raw_pdfs\\2406.14177.pdf",
     "label": "Ma et al. 2024 — MDocAgent: Multi-modal Document Agent",
     "category": "DocumentUnderstanding",
-    "title": "SimulSeamless: FBK at IWSLT 2024 Simultaneous Speech Translation",
-    "authors": [
-      "Sara Papi",
-      "Marco Gaido",
-      "Matteo Negri",
-      "Luisa Bentivogli"
-    ],
-    "year": 2024,
-    "abstract": "This paper describes the FBK's participation in the Simultaneous Translation Evaluation Campaign at IWSLT 2024. For this year's submission in the speech-to-text translation (ST) sub-track, we propose SimulSeamless, which is realized by combining AlignAtt and SeamlessM4T in its medium configuration. The SeamlessM4T model is used \"off-the-shelf\" and its simultaneous inference is enabled through the adoption of AlignAtt, a SimulST policy based on cross-attention that can be applied without any retr",
-    "status": "ok"
+    "status": "cached"
   },
   "2210.06726": {
     "path": "data\\raw_pdfs\\2210.06726.pdf",
     "label": "Lo et al. 2022 — ORKG: Scholarly Knowledge Graphs",
     "category": "ScientificIE",
-    "title": "Explanations from Large Language Models Make Small Reasoners Better",
-    "authors": [
-      "Shiyang Li",
-      "Jianshu Chen",
-      "Yelong Shen",
-      "Zhiyu Chen",
-      "Xinlu Zhang",
-      "Zekun Li",
-      "Hong Wang",
-      "Jing Qian",
-      "Baolin Peng",
-      "Yi Mao",
-      "Wenhu Chen",
-      "Xifeng Yan"
-    ],
-    "year": 2022,
-    "abstract": "Integrating free-text explanations to in-context learning of large language models (LLM) is shown to elicit strong reasoning capabilities along with reasonable explanations. In this paper, we consider the problem of leveraging the explanations generated by LLM to improve the training of small reasoners, which are more favorable in real-production deployment due to their low cost. We systematically explore three explanation generation approaches from LLM and utilize a multi-task learning framewor",
-    "status": "ok"
+    "status": "cached"
   }
 }

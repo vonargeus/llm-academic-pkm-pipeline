@@ -73,7 +73,7 @@ def ndcg_at_k(retrieved: list[str], relevant: set[str], k: int) -> float:
 def evaluate_query(
     retrieved: list[str],
     gold_relevant: list[str],
-    k_values: list[int] = [1, 3, 5, 10],
+    k_values: list[int] = [1, 3, 5],
 ) -> dict[str, float]:
     """Compute all metrics for a single query."""
     relevant = set(gold_relevant)
@@ -94,7 +94,7 @@ def evaluate_query(
 def evaluate_system(
     run: dict[str, list[str]],
     gold: dict[str, list[str]],
-    k_values: list[int] = [1, 3, 5, 10],
+    k_values: list[int] = [1, 3, 5],
     query_meta: dict[str, dict] | None = None,
 ) -> dict[str, Any]:
     """
@@ -173,7 +173,7 @@ def print_comparison_table(
     results_baseline: dict,
     results_structured: dict,
     results_link_expanded: dict | None = None,
-    k_values: list[int] = [1, 3, 5, 10],
+    k_values: list[int] = [1, 3, 5],
 ):
     """Print a side-by-side metric comparison table."""
     print("\n" + "=" * 90)

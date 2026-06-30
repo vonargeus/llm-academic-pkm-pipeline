@@ -212,11 +212,29 @@ thesis design decisions.
 
 ---
 
+## 12. Karpukhin et al. (2020) — Dense Passage Retrieval for Open-Domain Question Answering (DPR)
+
+**arXiv:** 2004.04906 | **Venue:** EMNLP 2020
+
+| Dimension | Detail |
+|-----------|--------|
+| **Problem** | Traditional sparse retrieval (BM25) fails to capture semantic synonyms; how to train a dense passage retriever using dual-encoders |
+| **Method** | Dense bi-encoder architecture (BERT-based) mapping queries and passages to a shared 768-dimensional space, optimized via contrastive learning and hard-negative mining |
+| **Dataset** | NaturalQuestions, TriviaQA, WebQuestions, CuratedTrec |
+| **Dataset size** | Millions of Wikipedia passages (standardized 100-word blocks) |
+| **Baselines** | BM25, ORQA (realm-style joint training) |
+| **Retrieval metrics** | Top-k Retrieval Accuracy (equivalent to Recall@k) |
+| **Reusable for thesis** | Directly justifies our dense chunking retrieval paradigm. Highlights the standard practice of partitioning text into fixed-length blocks (100-word passages). Critically, it outlines the limitations of chunk-level boundary splitting, where semantic coherence is broken across chunk limits, causing "context fragmentation." We cite this to motivate why document-level agentic summaries are necessary to preserve context. |
+| **Limitations / gaps** | Evaluated on short Wikipedia snippets for factoid QA. Does not investigate graph relations, metadata fields, or inter-document wiki-links. Chunks are treated as completely independent units. |
+
+---
+
 ## Summary Table: What Each Paper Contributes to My Thesis
 
 | Paper | Core contribution to my evaluation design |
 |-------|------------------------------------------|
 | Lewis et al. 2020 | Justifies baseline RAG design; metric precedent (EM, F1, Hit@k) |
+| Karpukhin et al. 2020 | DPR dense retrieval baseline paradigm; standardizes fixed-chunk retrieval; highlights semantic boundary fragmentation |
 | Edge et al. 2024 | Complex query design; community structure motivation; LLM-judge to avoid |
 | Balog & Kenter 2019 | PKG framing; link quality challenge; motivates RQ3 |
 | A-MEM 2025 | Closest prior work; note+link design; ablation design |
@@ -238,3 +256,4 @@ thesis design decisions.
 4. **Ablation design** (no links → links → link expansion) mirrors A-MEM ablations and is well-justified.
 5. **Dataset size** in related work: 15–100 documents is common at this scope for structured retrieval experiments. My 15–25 paper corpus is defensible.
 6. **Annotation**: LoCoMo uses manually constructed QA pairs with gold answers. My approach (manually create 50–100 query/relevance pairs) is methodologically aligned with the field.
+7. **Semantic Fragmentation in Chunking**: Citing Karpukhin et al. (2020) establishes that fixed-size passage chunking is a standard retrieval baseline, but directly causes boundary-splitting issues where facts are fragmented across contiguous blocks. This justifies our Agentic Restructuring approach.

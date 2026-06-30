@@ -69,7 +69,7 @@ python scripts/generate_notes.py \
 python scripts/run_full_eval.py \
     --queries data/queries/queries.json \
     --gold data/gold_labels/gold_labels.json \
-    --metadata-gold data/gold_labels/metadata_gold.json \
+    --metadata-gold data/gold_labels/emile_vault_gold.json \
     --link-gold data/gold_labels/link_gold.json \
     --output data/results/
 ```
@@ -100,7 +100,7 @@ python scripts/run_full_eval.py \
 | Generated notes | ✅ Yes | Markdown | `data/generated_notes/` |
 | Query set | ✅ Yes | JSON | `data/queries/queries.json` |
 | Gold labels (retrieval) | ✅ Yes | JSON | `data/gold_labels/gold_labels.json` |
-| Gold labels (metadata) | ✅ Yes | JSON | `data/gold_labels/metadata_gold.json` |
+| Gold labels (metadata) | ✅ Yes | JSON | `data/gold_labels/emile_vault_gold.json` |
 | Gold labels (links) | ✅ Yes | JSON | `data/gold_labels/link_gold.json` |
 | Evaluation results | ✅ Yes | JSON | `data/results/` |
 | Prompts | ✅ Yes | Markdown | `prompts/` |

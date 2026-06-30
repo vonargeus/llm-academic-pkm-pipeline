@@ -24,6 +24,8 @@ CORPUS = [
     # ── RAG ──────────────────────────────────────────────────────────────
     {"id": "2005.11401", "label": "Lewis et al. 2020 — Retrieval-Augmented Generation",           "category": "RAG"},
     {"id": "2007.01282", "label": "Izacard & Grave 2020 — Fusion-in-Decoder",                    "category": "RAG"},
+    {"id": "2310.11511", "label": "Asai et al. 2023 — Self-RAG: Self-Reflective Retrieval",       "category": "RAG"},
+    {"id": "2401.15884", "label": "Yan et al. 2024 — Corrective RAG (CRAG)",                     "category": "RAG"},
     {"id": "2309.15217", "label": "Es et al. 2023 — RAGAS: RAG Evaluation Framework",            "category": "RAG_Eval"},
     # ── Graph-Enhanced RAG ───────────────────────────────────────────────
     {"id": "2404.16130", "label": "Edge et al. 2024 — GraphRAG: From Local to Global",           "category": "GraphRAG"},

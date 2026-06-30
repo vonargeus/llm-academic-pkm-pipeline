@@ -1,0 +1,212 @@
+[
+  {
+    "source": "2007.01282",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2012.13635",
+    "target": "1711.11157",
+    "link_type": "cites"
+  },
+  {
+    "source": "2212.12393",
+    "target": "2012.13635",
+    "link_type": "cites"
+  },
+  {
+    "source": "2212.12393",
+    "target": "1711.11157",
+    "link_type": "cites"
+  },
+  {
+    "source": "2305.19951",
+    "target": "2212.12393",
+    "link_type": "cites"
+  },
+  {
+    "source": "2305.19951",
+    "target": "1711.11157",
+    "link_type": "cites"
+  },
+  {
+    "source": "2309.15217",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2310.08560",
+    "target": "2007.01282",
+    "link_type": "cites"
+  },
+  {
+    "source": "2310.08560",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2310.11511",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2401.15884",
+    "target": "2310.11511",
+    "link_type": "cites"
+  },
+  {
+    "source": "2401.15884",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2401.18059",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2402.12240",
+    "target": "2305.19951",
+    "link_type": "cites"
+  },
+  {
+    "source": "2402.12240",
+    "target": "2212.12393",
+    "link_type": "cites"
+  },
+  {
+    "source": "2402.12240",
+    "target": "2012.13635",
+    "link_type": "cites"
+  },
+  {
+    "source": "2402.12240",
+    "target": "1711.11157",
+    "link_type": "cites"
+  },
+  {
+    "source": "2402.14207",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2404.16130",
+    "target": "2401.18059",
+    "link_type": "cites"
+  },
+  {
+    "source": "2404.16130",
+    "target": "2309.15217",
+    "link_type": "cites"
+  },
+  {
+    "source": "2404.16130",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2405.14831",
+    "target": "2404.16130",
+    "link_type": "cites"
+  },
+  {
+    "source": "2405.14831",
+    "target": "2401.18059",
+    "link_type": "cites"
+  },
+  {
+    "source": "2405.14831",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2409.05591",
+    "target": "2404.16130",
+    "link_type": "cites"
+  },
+  {
+    "source": "2409.05591",
+    "target": "2007.01282",
+    "link_type": "cites"
+  },
+  {
+    "source": "2409.05591",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2410.05779",
+    "target": "2404.16130",
+    "link_type": "cites"
+  },
+  {
+    "source": "2410.05779",
+    "target": "2309.15217",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.03274",
+    "target": "2402.12240",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.12110",
+    "target": "2404.16130",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.12110",
+    "target": "2402.17753",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.12110",
+    "target": "2310.11511",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.12110",
+    "target": "2310.08560",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.12110",
+    "target": "2305.10250",
+    "link_type": "cites"
+  },
+  {
+    "source": "2502.12110",
+    "target": "2005.11401",
+    "link_type": "cites"
+  },
+  {
+    "source": "2505.13138",
+    "target": "2410.02143",
+    "link_type": "cites"
+  },
+  {
+    "source": "2505.13138",
+    "target": "2402.12240",
+    "link_type": "cites"
+  },
+  {
+    "source": "2505.13138",
+    "target": "2305.19951",
+    "link_type": "cites"
+  },
+  {
+    "source": "2505.13138",
+    "target": "2212.12393",
+    "link_type": "cites"
+  },
+  {
+    "source": "2505.13138",
+    "target": "2012.13635",
+    "link_type": "cites"
+  },
+  {
+    "source": "2505.13138",
+    "target": "1711.11157",
+    "link_type": "cites"
+  }
+]

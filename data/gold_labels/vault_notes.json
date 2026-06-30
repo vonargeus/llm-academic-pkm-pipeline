@@ -1,5 +1,203 @@
 [
   {
+    "doc_id": "A foundation for differentiable logics using dependent type theory",
+    "filename": "A foundation for differentiable logics using dependent type theory.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2602.23878",
+    "url": "https://arxiv.org/abs/2602.23878",
+    "year": 2026,
+    "aliases": [
+      "affeldt2026foundationdifferentiablelogicsusing"
+    ],
+    "cite_key": "affeldt2026foundationdifferentiablelogicsusing",
+    "frontmatter": {
+      "aliases": [
+        "affeldt2026foundationdifferentiablelogicsusing"
+      ],
+      "year": 2026,
+      "hasTopic": [
+        "[[differentiable logics]]",
+        "[[type theory|type]]",
+        "[[dependent type theory]]",
+        "[[proving|proof theory]]"
+      ],
+      "author": [
+        "[[Reynald Affeldt]]",
+        "[[Alessandro Bruni]]",
+        "[[Ekaterina Komendantskaya]]",
+        "[[Natalia Ślusarz]]",
+        "[[Kathrin Stark]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "affeldt2026foundationdifferentiablelogicsusing",
+      "zoteroUri": "zotero://select/items/@affeldt2026foundationdifferentiablelogicsusing",
+      "url": "https://arxiv.org/abs/2602.23878"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "differentiable logics"
+      },
+      {
+        "field": "hasTopic",
+        "target": "type theory"
+      },
+      {
+        "field": "hasTopic",
+        "target": "dependent type theory"
+      },
+      {
+        "field": "hasTopic",
+        "target": "proving"
+      },
+      {
+        "field": "author",
+        "target": "Reynald Affeldt"
+      },
+      {
+        "field": "author",
+        "target": "Alessandro Bruni"
+      },
+      {
+        "field": "author",
+        "target": "Ekaterina Komendantskaya"
+      },
+      {
+        "field": "author",
+        "target": "Natalia Ślusarz"
+      },
+      {
+        "field": "author",
+        "target": "Kathrin Stark"
+      }
+    ],
+    "all_wikilinks": [
+      "differentiable logics",
+      "type theory",
+      "dependent type theory",
+      "proving",
+      "Reynald Affeldt",
+      "Alessandro Bruni",
+      "Ekaterina Komendantskaya",
+      "Natalia Ślusarz",
+      "Kathrin Stark",
+      "differentiable fuzzy logics",
+      "signal temporal logic",
+      "algebra",
+      "On Robustness Metrics for Learning STL Tasks",
+      "proof-theoretic semantics"
+    ],
+    "body_preview": "Many differentiable logics (beyond [[differentiable fuzzy logics]], eg [[signal temporal logic|STL]]-like stuff) have more desirable analytic properties, but are not well understood from an [[algebra|algebraic]] point of view. See eg [[On Robustness Metrics for Learning STL Tasks]]. \n\nTheir [[proof-theoretic semantics]] is also poorly understood. \n\n\n\n--- \n#source/paper"
+  },
+  {
+    "doc_id": "A scalable approach to probabilistic neuro-symbolic verification",
+    "filename": "A scalable approach to probabilistic neuro-symbolic verification.md",
+    "note_type": "paper",
+    "tags": [
+      "P",
+      "source/paper"
+    ],
+    "arxiv_id": "2502.03274",
+    "url": "https://arxiv.org/abs/2502.03274",
+    "year": 2025,
+    "aliases": [
+      "manginas2025scalableapproachprobabilisticneurosymbolic"
+    ],
+    "cite_key": "manginas2025scalableapproachprobabilisticneurosymbolic",
+    "frontmatter": {
+      "aliases": [
+        "manginas2025scalableapproachprobabilisticneurosymbolic"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[differentiable probabilistic logics|probabilistic neural symbolic methods]]",
+        "[[probabilistic verification]]",
+        "[[neurosymbolic verification]]"
+      ],
+      "author": [
+        "[[Vasileios Manginas]]",
+        "[[Nikolaos Manginas]]",
+        "[[Edward Stevinson]]",
+        "[[Sherwin Varghese]]",
+        "[[Nikos Katzouris]]",
+        "[[Georgios Paliouras]]",
+        "[[Alessio Lomuscio]]"
+      ],
+      "projects": null,
+      "publishedIn": null,
+      "citeKey": "manginas2025scalableapproachprobabilisticneurosymbolic",
+      "zoteroUri": "zotero://select/items/@manginas2025scalableapproachprobabilisticneurosymbolic",
+      "url": "https://arxiv.org/abs/2502.03274"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "differentiable probabilistic logics"
+      },
+      {
+        "field": "hasTopic",
+        "target": "probabilistic verification"
+      },
+      {
+        "field": "hasTopic",
+        "target": "neurosymbolic verification"
+      },
+      {
+        "field": "author",
+        "target": "Vasileios Manginas"
+      },
+      {
+        "field": "author",
+        "target": "Nikolaos Manginas"
+      },
+      {
+        "field": "author",
+        "target": "Edward Stevinson"
+      },
+      {
+        "field": "author",
+        "target": "Sherwin Varghese"
+      },
+      {
+        "field": "author",
+        "target": "Nikos Katzouris"
+      },
+      {
+        "field": "author",
+        "target": "Georgios Paliouras"
+      },
+      {
+        "field": "author",
+        "target": "Alessio Lomuscio"
+      }
+    ],
+    "all_wikilinks": [
+      "differentiable probabilistic logics",
+      "probabilistic verification",
+      "neurosymbolic verification",
+      "Vasileios Manginas",
+      "Nikolaos Manginas",
+      "Edward Stevinson",
+      "Sherwin Varghese",
+      "Nikos Katzouris",
+      "Georgios Paliouras",
+      "Alessio Lomuscio",
+      "Neuro-symbolic verification of deep neural networks",
+      "Pasted image 20250207113621.png",
+      "Not All Neuro-Symbolic Concepts Are Created Equal_ Analysis and Mitigation of Reasoning Shortcuts",
+      "probabilistic circuit",
+      "circuit compilation",
+      "sentential decision diagrams",
+      "robust statistics"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nLooks pretty related to [[Neuro-symbolic verification of deep neural networks]]\n\n![[Pasted image 20250207113621.png]] \nAssume high-level constraints to verify. I think the setup is the latent variable setup from 'NeSy predictors' as defined in [[Not All Neuro-Symbolic Concepts Are Created Equal_ Analysis and Mitigation of Reasoning Shortcuts|Reasoning Shortcuts]]. Then use [[probabilistic circuit|PC]]s/[[circuit compilation|knowledge compilation]]/[[sentential decision diagram"
+  },
+  {
     "doc_id": "A semantic loss function for deep learning with symbolic knowledge",
     "filename": "A semantic loss function for deep learning with symbolic knowledge.md",
     "note_type": "paper",
@@ -205,6 +403,185 @@
       "venues"
     ],
     "body_preview": "--- \n#venue/journal #topic"
+  },
+  {
+    "doc_id": "AlignVLM_ Bridging vision and language latent spaces for multimodal understanding",
+    "filename": "AlignVLM_ Bridging vision and language latent spaces for multimodal understanding.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2502.01341",
+    "url": "https://arxiv.org/abs/2502.01341",
+    "year": 2025,
+    "aliases": [
+      "masry2025alignvlmbridgingvisionlanguage",
+      "AlignVLM"
+    ],
+    "cite_key": "masry2025alignvlmbridgingvisionlanguage",
+    "frontmatter": {
+      "aliases": [
+        "masry2025alignvlmbridgingvisionlanguage",
+        "AlignVLM"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[vision-language models|VLM]]"
+      ],
+      "author": [
+        "[[Ahmed Masry]]",
+        "[[Juan A. Rodriguez]]",
+        "[[Tianyu Zhang]]",
+        "[[Suyuchen Wang]]",
+        "[[Chao Wang]]",
+        "[[Aarash Feizi]]",
+        "[[Akshay Kalkunte Suresh]]",
+        "[[Abhay Puri]]",
+        "[[Xiangru Jian]]",
+        "[[Pierre-André Noël]]",
+        "[[Sathwik Tejaswi Madhusudhan]]",
+        "[[Marco Pedersoli]]",
+        "[[Bang Liu]]",
+        "[[Nicolas Chapados]]",
+        "[[Yoshua Bengio]]",
+        "[[Enamul Hoque]]",
+        "[[Christopher Pal]]",
+        "[[Issam H. Laradji]]",
+        "[[David Vazquez]]",
+        "[[Perouz Taslakian]]",
+        "[[Spandana Gella]]",
+        "[[Sai Rajeswar]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "masry2025alignvlmbridgingvisionlanguage",
+      "zoteroUri": "zotero://select/items/@masry2025alignvlmbridgingvisionlanguage",
+      "url": "https://arxiv.org/abs/2502.01341"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "vision-language models"
+      },
+      {
+        "field": "author",
+        "target": "Ahmed Masry"
+      },
+      {
+        "field": "author",
+        "target": "Juan A. Rodriguez"
+      },
+      {
+        "field": "author",
+        "target": "Tianyu Zhang"
+      },
+      {
+        "field": "author",
+        "target": "Suyuchen Wang"
+      },
+      {
+        "field": "author",
+        "target": "Chao Wang"
+      },
+      {
+        "field": "author",
+        "target": "Aarash Feizi"
+      },
+      {
+        "field": "author",
+        "target": "Akshay Kalkunte Suresh"
+      },
+      {
+        "field": "author",
+        "target": "Abhay Puri"
+      },
+      {
+        "field": "author",
+        "target": "Xiangru Jian"
+      },
+      {
+        "field": "author",
+        "target": "Pierre-André Noël"
+      },
+      {
+        "field": "author",
+        "target": "Sathwik Tejaswi Madhusudhan"
+      },
+      {
+        "field": "author",
+        "target": "Marco Pedersoli"
+      },
+      {
+        "field": "author",
+        "target": "Bang Liu"
+      },
+      {
+        "field": "author",
+        "target": "Nicolas Chapados"
+      },
+      {
+        "field": "author",
+        "target": "Yoshua Bengio"
+      },
+      {
+        "field": "author",
+        "target": "Enamul Hoque"
+      },
+      {
+        "field": "author",
+        "target": "Christopher Pal"
+      },
+      {
+        "field": "author",
+        "target": "Issam H. Laradji"
+      },
+      {
+        "field": "author",
+        "target": "David Vazquez"
+      },
+      {
+        "field": "author",
+        "target": "Perouz Taslakian"
+      },
+      {
+        "field": "author",
+        "target": "Spandana Gella"
+      },
+      {
+        "field": "author",
+        "target": "Sai Rajeswar"
+      }
+    ],
+    "all_wikilinks": [
+      "vision-language models",
+      "Ahmed Masry",
+      "Juan A. Rodriguez",
+      "Tianyu Zhang",
+      "Suyuchen Wang",
+      "Chao Wang",
+      "Aarash Feizi",
+      "Akshay Kalkunte Suresh",
+      "Abhay Puri",
+      "Xiangru Jian",
+      "Pierre-André Noël",
+      "Sathwik Tejaswi Madhusudhan",
+      "Marco Pedersoli",
+      "Bang Liu",
+      "Nicolas Chapados",
+      "Yoshua Bengio",
+      "Enamul Hoque",
+      "Christopher Pal",
+      "Issam H. Laradji",
+      "David Vazquez",
+      "Perouz Taslakian",
+      "Spandana Gella",
+      "Sai Rajeswar",
+      "convex",
+      "Pasted image 20251001170552.png",
+      "Commonsense knowledge transfer from LLMs as judges"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nHow to map vision embeddings to the latent space of an LLM? Use [[convex]] combinations of existing vocabulary embeddings by predicting distributions over tokens. \n\nWhy? Using MLP to transform embeddings can result in OOD embeddings:\n![[Pasted image 20251001170552.png]]\nThey use an LLM output head for this (clever). \nSampling from that would probably be kinda bad since the tokens are independent. But you could stick a discrete diffusion model on top instead. \n\nWhat's nice abou"
   },
   {
     "doc_id": "Analyzing differentiable fuzzy logic operators",
@@ -471,6 +848,130 @@
     "body_preview": "--- \n#source/paper"
   },
   {
+    "doc_id": "Chain of code_ Reasoning with a language model-augmented code emulator",
+    "filename": "Chain of code_ Reasoning with a language model-augmented code emulator.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2312.04474",
+    "url": "https://arxiv.org/abs/2312.04474",
+    "year": 2024,
+    "aliases": [
+      "li2024chaincodereasoninglanguage",
+      "Chain of Code"
+    ],
+    "cite_key": "li2024chaincodereasoninglanguage",
+    "frontmatter": {
+      "aliases": [
+        "li2024chaincodereasoninglanguage",
+        "Chain of Code"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[chain-of-thought]]",
+        "[[large language model reasoning|LLM reasoning]]",
+        "[[program induction|program synthesis]]"
+      ],
+      "author": [
+        "[[Chengshu Li]]",
+        "[[Jacky Liang]]",
+        "[[Andy Zeng]]",
+        "[[Xinyun Chen]]",
+        "[[Karol Hausman]]",
+        "[[Dorsa Sadigh]]",
+        "[[Sergey Levine]]",
+        "[[Li Fei-Fei]]",
+        "[[Fei Xia]]",
+        "[[Brian Ichter]]"
+      ],
+      "projects": null,
+      "publishedIn": [
+        "[[ICML]]"
+      ],
+      "citeKey": "li2024chaincodereasoninglanguage",
+      "zoteroUri": "zotero://select/items/@li2024chaincodereasoninglanguage",
+      "url": "https://arxiv.org/abs/2312.04474"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "chain-of-thought"
+      },
+      {
+        "field": "hasTopic",
+        "target": "large language model reasoning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "program induction"
+      },
+      {
+        "field": "author",
+        "target": "Chengshu Li"
+      },
+      {
+        "field": "author",
+        "target": "Jacky Liang"
+      },
+      {
+        "field": "author",
+        "target": "Andy Zeng"
+      },
+      {
+        "field": "author",
+        "target": "Xinyun Chen"
+      },
+      {
+        "field": "author",
+        "target": "Karol Hausman"
+      },
+      {
+        "field": "author",
+        "target": "Dorsa Sadigh"
+      },
+      {
+        "field": "author",
+        "target": "Sergey Levine"
+      },
+      {
+        "field": "author",
+        "target": "Li Fei-Fei"
+      },
+      {
+        "field": "author",
+        "target": "Fei Xia"
+      },
+      {
+        "field": "author",
+        "target": "Brian Ichter"
+      },
+      {
+        "field": "publishedIn",
+        "target": "ICML"
+      }
+    ],
+    "all_wikilinks": [
+      "chain-of-thought",
+      "large language model reasoning",
+      "program induction",
+      "Chengshu Li",
+      "Jacky Liang",
+      "Andy Zeng",
+      "Xinyun Chen",
+      "Karol Hausman",
+      "Dorsa Sadigh",
+      "Sergey Levine",
+      "Li Fei-Fei",
+      "Fei Xia",
+      "Brian Ichter",
+      "ICML",
+      "Pasted image 20240729121653.png"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\n![[Pasted image 20240729121653.png]]\n\n--- \n#source/paper"
+  },
+  {
     "doc_id": "commutative",
     "filename": "commutative.md",
     "note_type": "concept",
@@ -605,6 +1106,113 @@
     "body_preview": "--- \n#topic"
   },
   {
+    "doc_id": "DINGO_ Constrained inference for diffusion LLMs",
+    "filename": "DINGO_ Constrained inference for diffusion LLMs.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2505.23061",
+    "url": "https://arxiv.org/abs/2505.23061",
+    "year": 2025,
+    "aliases": [
+      "suresh2025dingoconstrainedinferencediffusion",
+      "DINGO"
+    ],
+    "cite_key": "suresh2025dingoconstrainedinferencediffusion",
+    "frontmatter": {
+      "aliases": [
+        "suresh2025dingoconstrainedinferencediffusion",
+        "DINGO"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[discrete diffusion]]",
+        "[[controlled generation|constrained generation]]",
+        "[[dynamic programming]]",
+        "[[sampling methods]]",
+        "[[Boolean circuit]]"
+      ],
+      "author": [
+        "[[Tarun Suresh]]",
+        "[[Debangshu Banerjee]]",
+        "[[Shubham Ugare]]",
+        "[[Sasa Misailovic]]",
+        "[[Gagandeep Singh]]"
+      ],
+      "projects": [
+        "[[Discrete diffusion for NeSy]]"
+      ],
+      "publishedIn": null,
+      "citeKey": "suresh2025dingoconstrainedinferencediffusion",
+      "zoteroUri": "zotero://select/items/@suresh2025dingoconstrainedinferencediffusion",
+      "url": "https://arxiv.org/abs/2505.23061"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "discrete diffusion"
+      },
+      {
+        "field": "hasTopic",
+        "target": "controlled generation"
+      },
+      {
+        "field": "hasTopic",
+        "target": "dynamic programming"
+      },
+      {
+        "field": "hasTopic",
+        "target": "sampling methods"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Boolean circuit"
+      },
+      {
+        "field": "author",
+        "target": "Tarun Suresh"
+      },
+      {
+        "field": "author",
+        "target": "Debangshu Banerjee"
+      },
+      {
+        "field": "author",
+        "target": "Shubham Ugare"
+      },
+      {
+        "field": "author",
+        "target": "Sasa Misailovic"
+      },
+      {
+        "field": "author",
+        "target": "Gagandeep Singh"
+      }
+    ],
+    "all_wikilinks": [
+      "discrete diffusion",
+      "controlled generation",
+      "dynamic programming",
+      "sampling methods",
+      "Boolean circuit",
+      "Tarun Suresh",
+      "Debangshu Banerjee",
+      "Shubham Ugare",
+      "Sasa Misailovic",
+      "Gagandeep Singh",
+      "Discrete diffusion for NeSy",
+      "Semantic Probabilistic Layers for Neuro-Symbolic Learning",
+      "block diffusion",
+      "deterministic finite automaton",
+      "regular expressions",
+      "nondeterministic finite automaton",
+      "Z3"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nBasically [[Semantic Probabilistic Layers for Neuro-Symbolic Learning|SPL]] + discrete diffusion. I think they only implement the argmax generation, not constrained sampling. \nThey use [[block diffusion]] of length $d$. \nOnly works for [[deterministic finite automaton|DFA]]s (ie [[regular expressions|regular language]]s). \n\n## Method\n- They use 'substitution sets' which is what I see as the cover of a partially masked input\n- A decoder is **valid** if any generation it makes h"
+  },
+  {
     "doc_id": "Discovering mathematical equations with diffusion language model",
     "filename": "Discovering mathematical equations with diffusion language model.md",
     "note_type": "paper",
@@ -714,6 +1322,117 @@
       "17-10-2025"
     ],
     "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Do vision and language encoders represent the world similarly_",
+    "filename": "Do vision and language encoders represent the world similarly_.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2401.05224",
+    "url": "https://arxiv.org/abs/2401.05224",
+    "year": 2024,
+    "aliases": [
+      "maniparambil2024visionlanguageencodersrepresent"
+    ],
+    "cite_key": "maniparambil2024visionlanguageencodersrepresent",
+    "frontmatter": {
+      "aliases": [
+        "maniparambil2024visionlanguageencodersrepresent"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[modality alignment]]",
+        "[[visual encoder]]",
+        "[[text encoder]]"
+      ],
+      "author": [
+        "[[Mayug Maniparambil]]",
+        "[[Raiymbek Akshulakov]]",
+        "[[Yasser Abdelaziz Dahou Djilali]]",
+        "[[Sanath Narayan]]",
+        "[[Mohamed El Amine Seddik]]",
+        "[[Karttikeya Mangalam]]",
+        "[[Noel E. O'Connor]]"
+      ],
+      "projects": [],
+      "publishedIn": [
+        "[[CVPR]]"
+      ],
+      "citeKey": "maniparambil2024visionlanguageencodersrepresent",
+      "zoteroUri": "zotero://select/items/@maniparambil2024visionlanguageencodersrepresent",
+      "url": "https://arxiv.org/abs/2401.05224"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "modality alignment"
+      },
+      {
+        "field": "hasTopic",
+        "target": "visual encoder"
+      },
+      {
+        "field": "hasTopic",
+        "target": "text encoder"
+      },
+      {
+        "field": "author",
+        "target": "Mayug Maniparambil"
+      },
+      {
+        "field": "author",
+        "target": "Raiymbek Akshulakov"
+      },
+      {
+        "field": "author",
+        "target": "Yasser Abdelaziz Dahou Djilali"
+      },
+      {
+        "field": "author",
+        "target": "Sanath Narayan"
+      },
+      {
+        "field": "author",
+        "target": "Mohamed El Amine Seddik"
+      },
+      {
+        "field": "author",
+        "target": "Karttikeya Mangalam"
+      },
+      {
+        "field": "author",
+        "target": "Noel E. O'Connor"
+      },
+      {
+        "field": "publishedIn",
+        "target": "CVPR"
+      }
+    ],
+    "all_wikilinks": [
+      "modality alignment",
+      "visual encoder",
+      "text encoder",
+      "Mayug Maniparambil",
+      "Raiymbek Akshulakov",
+      "Yasser Abdelaziz Dahou Djilali",
+      "Sanath Narayan",
+      "Mohamed El Amine Seddik",
+      "Karttikeya Mangalam",
+      "Noel E. O'Connor",
+      "CVPR",
+      "The Platonic Representation Hypothesis",
+      "Blip-2_ Bootstrapping language-image pre-training with frozen image encoders and large language models",
+      "Algorithms for learning kernels based on centered alignment",
+      "DINOv2_ Learning robust visual features without supervision",
+      "RoBERTa",
+      "matching",
+      "quadratic assignment problem",
+      "Pasted image 20251007174807.png"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\n(Note, this is before the [[The Platonic Representation Hypothesis]])\n\nA previous work essentially did [[Blip-2_ Bootstrapping language-image pre-training with frozen image encoders and large language models|BLIP-2]] to align the image and text modalities with a linear layer to show the embeddings are aligned. This linear layer was trained using 3M image-caption pairs. \n\nIs that training step necessary? \n\nFirst, they show very high alignment of [[Algorithms for learning kernel"
   },
   {
     "doc_id": "Edoardo Ponti",
@@ -918,6 +1637,113 @@
     "body_preview": "We showed in [[On the independence assumption in neurosymbolic learning]] that the common assumption in Neurosymbolic learning that concepts are [[independence|independent]] from each other given the input, can really impact [[uncertainty quantification]]. \n\nHow do we overcome this? One idea is using [[discrete diffusion models|masked diffusion]], a very expressive kind of [[deep generative models]]. This can result in [[Neurosymbolic Diffusion Models]]. \n\n--- \n#project"
   },
   {
+    "doc_id": "Flow matching policy gradients",
+    "filename": "Flow matching policy gradients.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2507.21053",
+    "url": "https://arxiv.org/abs/2507.21053",
+    "year": 2025,
+    "aliases": [
+      "mcallister2025flowmatchingpolicygradients",
+      "FPO",
+      "Flow Policy Optimization"
+    ],
+    "cite_key": "mcallister2025flowmatchingpolicygradients",
+    "frontmatter": {
+      "aliases": [
+        "mcallister2025flowmatchingpolicygradients",
+        "FPO",
+        "Flow Policy Optimization"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[policy gradient]]",
+        "[[on policy RL|on-policy]]",
+        "[[Flow Matching for Generative Modeling|Flow Matching]]"
+      ],
+      "author": [
+        "[[David McAllister]]",
+        "[[Songwei Ge]]",
+        "[[Brent Yi]]",
+        "[[Chung Min Kim]]",
+        "[[Ethan Weber]]",
+        "[[Hongsuk Choi]]",
+        "[[Haiwen Feng]]",
+        "[[Angjoo Kanazawa]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "mcallister2025flowmatchingpolicygradients",
+      "zoteroUri": "zotero://select/items/@mcallister2025flowmatchingpolicygradients",
+      "url": "https://arxiv.org/abs/2507.21053"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "policy gradient"
+      },
+      {
+        "field": "hasTopic",
+        "target": "on policy RL"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Flow Matching for Generative Modeling"
+      },
+      {
+        "field": "author",
+        "target": "David McAllister"
+      },
+      {
+        "field": "author",
+        "target": "Songwei Ge"
+      },
+      {
+        "field": "author",
+        "target": "Brent Yi"
+      },
+      {
+        "field": "author",
+        "target": "Chung Min Kim"
+      },
+      {
+        "field": "author",
+        "target": "Ethan Weber"
+      },
+      {
+        "field": "author",
+        "target": "Hongsuk Choi"
+      },
+      {
+        "field": "author",
+        "target": "Haiwen Feng"
+      },
+      {
+        "field": "author",
+        "target": "Angjoo Kanazawa"
+      }
+    ],
+    "all_wikilinks": [
+      "policy gradient",
+      "on policy RL",
+      "Flow Matching for Generative Modeling",
+      "David McAllister",
+      "Songwei Ge",
+      "Brent Yi",
+      "Chung Min Kim",
+      "Ethan Weber",
+      "Hongsuk Choi",
+      "Haiwen Feng",
+      "Angjoo Kanazawa",
+      "proximal policy optimization"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\n\n'Sidesteps the need for exact likelihoods in [[proximal policy optimization|PPO]] while preserving generative capabilities'\n\n--- \n#source/paper"
+  },
+  {
     "doc_id": "Frank van Harmelen",
     "filename": "Frank van Harmelen.md",
     "note_type": "author",
@@ -1005,6 +1831,129 @@
       "17-10-2025"
     ],
     "body_preview": "--- \n#topic"
+  },
+  {
+    "doc_id": "Generating by understanding_ Neural visual generation with logical symbol groundings",
+    "filename": "Generating by understanding_ Neural visual generation with logical symbol groundings.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2310.17451",
+    "url": "https://arxiv.org/abs/2310.17451",
+    "year": 2025,
+    "aliases": [
+      "peng2025generatingunderstandingneuralvisual",
+      "AbdGen"
+    ],
+    "cite_key": "peng2025generatingunderstandingneuralvisual",
+    "frontmatter": {
+      "aliases": [
+        "peng2025generatingunderstandingneuralvisual",
+        "AbdGen"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[generative modeling]]",
+        "[[abductive reasoning]]",
+        "[[inductive logic programming|ILP]]",
+        "[[variational auto-encoder|VAE]]",
+        "[[discrete latent structures]]",
+        "[[Bridging Machine Learning and Logical Reasoning by Abductive Learning|abductive learning]]"
+      ],
+      "author": [
+        "[[Yifei Peng]]",
+        "[[Zijie Zha]]",
+        "[[Yu Jin]]",
+        "[[Zhexu Luo]]",
+        "[[Wang-Zhou Dai]]",
+        "[[Zhong Ren]]",
+        "[[Yao-Xiang Ding]]",
+        "[[Kun Zhou]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "peng2025generatingunderstandingneuralvisual",
+      "zoteroUri": "zotero://select/items/@peng2025generatingunderstandingneuralvisual",
+      "url": "https://arxiv.org/abs/2310.17451"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "generative modeling"
+      },
+      {
+        "field": "hasTopic",
+        "target": "abductive reasoning"
+      },
+      {
+        "field": "hasTopic",
+        "target": "inductive logic programming"
+      },
+      {
+        "field": "hasTopic",
+        "target": "variational auto-encoder"
+      },
+      {
+        "field": "hasTopic",
+        "target": "discrete latent structures"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Bridging Machine Learning and Logical Reasoning by Abductive Learning"
+      },
+      {
+        "field": "author",
+        "target": "Yifei Peng"
+      },
+      {
+        "field": "author",
+        "target": "Zijie Zha"
+      },
+      {
+        "field": "author",
+        "target": "Yu Jin"
+      },
+      {
+        "field": "author",
+        "target": "Zhexu Luo"
+      },
+      {
+        "field": "author",
+        "target": "Wang-Zhou Dai"
+      },
+      {
+        "field": "author",
+        "target": "Zhong Ren"
+      },
+      {
+        "field": "author",
+        "target": "Yao-Xiang Ding"
+      },
+      {
+        "field": "author",
+        "target": "Kun Zhou"
+      }
+    ],
+    "all_wikilinks": [
+      "generative modeling",
+      "abductive reasoning",
+      "inductive logic programming",
+      "variational auto-encoder",
+      "discrete latent structures",
+      "Bridging Machine Learning and Logical Reasoning by Abductive Learning",
+      "Yifei Peng",
+      "Zijie Zha",
+      "Yu Jin",
+      "Zhexu Luo",
+      "Wang-Zhou Dai",
+      "Zhong Ren",
+      "Yao-Xiang Ding",
+      "Kun Zhou",
+      "VAEL_ Bridging Variational Autoencoders and Probabilistic Logic Programming"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nDoes the [[VAEL_ Bridging Variational Autoencoders and Probabilistic Logic Programming|VAEL]] thing. \n\n--- \n#source/paper"
   },
   {
     "doc_id": "generative models",
@@ -1377,14 +2326,128 @@
     "body_preview": "--- \n#institution #topic"
   },
   {
+    "doc_id": "Learning to see before seeing_ Demystifying LLM visual priors from language pre-training",
+    "filename": "Learning to see before seeing_ Demystifying LLM visual priors from language pre-training.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2509.26625",
+    "url": "https://arxiv.org/abs/2509.26625",
+    "year": 2025,
+    "aliases": [
+      "han2025learningseeingdemystifyingllm",
+      "MLE-Bench",
+      "Multi-Level Existence Bench"
+    ],
+    "cite_key": "han2025learningseeingdemystifyingllm",
+    "frontmatter": {
+      "aliases": [
+        "han2025learningseeingdemystifyingllm",
+        "MLE-Bench",
+        "Multi-Level Existence Bench"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[vision-language models|multimodal]]",
+        "[[vision-language models|VLM]]",
+        "[[visual prior]]"
+      ],
+      "author": [
+        "[[Junlin Han]]",
+        "[[Shengbang Tong]]",
+        "[[David Fan]]",
+        "[[Yufan Ren]]",
+        "[[Koustuv Sinha]]",
+        "[[Philip Torr]]",
+        "[[Filippos Kokkinos]]"
+      ],
+      "projects": [
+        "[[Commonsense knowledge transfer from LLMs as judges]]"
+      ],
+      "publishedIn": null,
+      "citeKey": "han2025learningseeingdemystifyingllm",
+      "zoteroUri": "zotero://select/items/@han2025learningseeingdemystifyingllm",
+      "url": "https://arxiv.org/abs/2509.26625"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "vision-language models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "vision-language models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "visual prior"
+      },
+      {
+        "field": "author",
+        "target": "Junlin Han"
+      },
+      {
+        "field": "author",
+        "target": "Shengbang Tong"
+      },
+      {
+        "field": "author",
+        "target": "David Fan"
+      },
+      {
+        "field": "author",
+        "target": "Yufan Ren"
+      },
+      {
+        "field": "author",
+        "target": "Koustuv Sinha"
+      },
+      {
+        "field": "author",
+        "target": "Philip Torr"
+      },
+      {
+        "field": "author",
+        "target": "Filippos Kokkinos"
+      }
+    ],
+    "all_wikilinks": [
+      "vision-language models",
+      "visual prior",
+      "Junlin Han",
+      "Shengbang Tong",
+      "David Fan",
+      "Yufan Ren",
+      "Koustuv Sinha",
+      "Philip Torr",
+      "Filippos Kokkinos",
+      "Commonsense knowledge transfer from LLMs as judges",
+      "large language model",
+      "Procedural knowledge in pretraining drives reasoning in large language models",
+      "A vision check-up for language models",
+      "instruction following",
+      "Frozen transformers in language models are effective visual encoder layers",
+      "LLaMa3",
+      "Demystifying clip data",
+      "visual question answering",
+      "OCR",
+      "Pasted image 20251001183114.png",
+      "Pasted image 20251001183228.png",
+      "Pasted image 20251001183334.png"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nConsider pure [[large language model|LLM]]s (not on vision!).\nThey develop [[visual prior]]s which can be separated into perception and reasoning priors. The latter is developed by pre-training on reasoning-centric data like code and math, and transfers to visual reasoning. \nThe perception prior instead emerges diffusely from the corpora and is sensitive to visual instruction tuning data. \n\nThis reminds me of [[Procedural knowledge in pretraining drives reasoning in large lang"
+  },
+  {
     "doc_id": "Logic tensor networks",
     "filename": "Logic tensor networks.md",
     "note_type": "paper",
     "tags": [
       "source/paper"
     ],
-    "arxiv_id": "2021.10364",
-    "url": "http://dx.doi.org/10.1016/j.artint.2021.103649",
+    "arxiv_id": "2012.13635",
+    "url": "https://arxiv.org/abs/2012.13635",
     "year": 2022,
     "aliases": [
       "Badreddine_2022",
@@ -1413,7 +2476,7 @@
       "publishedIn": "[[AI Journal]]",
       "citeKey": "Badreddine_2022",
       "zoteroUri": "zotero://select/items/@Badreddine_2022",
-      "url": "http://dx.doi.org/10.1016/j.artint.2021.103649"
+      "url": "https://arxiv.org/abs/2012.13635"
     },
     "typed_links": [
       {
@@ -2116,6 +3179,91 @@
     "body_preview": "![[Pasted image 20251017113420.png]]\n\n--- \n#source/paper"
   },
   {
+    "doc_id": "On the closed-form of flow matching_ Generalization does not arise from target stochasticity",
+    "filename": "On the closed-form of flow matching_ Generalization does not arise from target stochasticity.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2506.03719",
+    "url": "https://arxiv.org/abs/2506.03719",
+    "year": 2025,
+    "aliases": [
+      "bertrand2025closedformflowmatchinggeneralization"
+    ],
+    "cite_key": "bertrand2025closedformflowmatchinggeneralization",
+    "frontmatter": {
+      "aliases": [
+        "bertrand2025closedformflowmatchinggeneralization"
+      ],
+      "year": 2025,
+      "hasTopic": [
+        "[[Flow Matching_ Matching flows instead of scores|Flow Matching]]",
+        "[[generalisation]]"
+      ],
+      "author": [
+        "[[Quentin Bertrand]]",
+        "[[Anne Gagneux]]",
+        "[[Mathurin Massias]]",
+        "[[Rémi Emonet]]"
+      ],
+      "projects": [],
+      "publishedIn": [
+        "[[NeurIPS]]"
+      ],
+      "citeKey": "bertrand2025closedformflowmatchinggeneralization",
+      "zoteroUri": "zotero://select/items/@bertrand2025closedformflowmatchinggeneralization",
+      "url": "https://arxiv.org/abs/2506.03719",
+      "at": [
+        "[[EurIPS 2025]]"
+      ]
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "Flow Matching_ Matching flows instead of scores"
+      },
+      {
+        "field": "hasTopic",
+        "target": "generalisation"
+      },
+      {
+        "field": "author",
+        "target": "Quentin Bertrand"
+      },
+      {
+        "field": "author",
+        "target": "Anne Gagneux"
+      },
+      {
+        "field": "author",
+        "target": "Mathurin Massias"
+      },
+      {
+        "field": "author",
+        "target": "Rémi Emonet"
+      },
+      {
+        "field": "publishedIn",
+        "target": "NeurIPS"
+      }
+    ],
+    "all_wikilinks": [
+      "Flow Matching_ Matching flows instead of scores",
+      "generalisation",
+      "Quentin Bertrand",
+      "Anne Gagneux",
+      "Mathurin Massias",
+      "Rémi Emonet",
+      "NeurIPS",
+      "EurIPS 2025",
+      "random variable",
+      "variational auto-encoder",
+      "normalizing flow"
+    ],
+    "body_preview": "Where does generalization of generative models come from?\n\n\"[[random variable|pushforward]] generative modelling\"\n- map simple base distribution $p_0$ to $p_{data}$\n- Eg [[variational auto-encoder|VAE]], diffusion, etc. \n[[normalizing flow|continuous normalizing flow]]: integrate velocity field $u$. [[Flow Matching_ Matching flows instead of scores|conditional flow matching]] learns a linear path from noise to data. The closed form solution for the minimiser is\n$$\nu^*(\\bx, t) = \\mathbb{E}_{\\bx_0"
+  },
+  {
     "doc_id": "On the independence assumption in neurosymbolic learning",
     "filename": "On the independence assumption in neurosymbolic learning.md",
     "note_type": "paper",
@@ -2244,6 +3392,216 @@
       "17-10-2025"
     ],
     "body_preview": "---\n#author #topic"
+  },
+  {
+    "doc_id": "Plug-and-play controllable generation for discrete masked models",
+    "filename": "Plug-and-play controllable generation for discrete masked models.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2410.02143",
+    "url": "https://arxiv.org/abs/2410.02143",
+    "year": 2024,
+    "aliases": [
+      "guo2024plugandplaycontrollablegenerationdiscrete"
+    ],
+    "cite_key": "guo2024plugandplaycontrollablegenerationdiscrete",
+    "frontmatter": {
+      "aliases": [
+        "guo2024plugandplaycontrollablegenerationdiscrete"
+      ],
+      "year": 2024,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[masked language models|masked model]]",
+        "[[controlled generation|controllable]]",
+        "[[importance sampling]]"
+      ],
+      "author": [
+        "[[Wei Guo]]",
+        "[[Yuchen Zhu]]",
+        "[[Molei Tao]]",
+        "[[Yongxin Chen]]"
+      ],
+      "projects": [
+        "[[Discrete diffusion for NeSy]]"
+      ],
+      "publishedIn": null,
+      "citeKey": "guo2024plugandplaycontrollablegenerationdiscrete",
+      "zoteroUri": "zotero://select/items/@guo2024plugandplaycontrollablegenerationdiscrete",
+      "url": "https://arxiv.org/abs/2410.02143"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "masked language models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "controlled generation"
+      },
+      {
+        "field": "hasTopic",
+        "target": "importance sampling"
+      },
+      {
+        "field": "author",
+        "target": "Wei Guo"
+      },
+      {
+        "field": "author",
+        "target": "Yuchen Zhu"
+      },
+      {
+        "field": "author",
+        "target": "Molei Tao"
+      },
+      {
+        "field": "author",
+        "target": "Yongxin Chen"
+      }
+    ],
+    "all_wikilinks": [
+      "masked language models",
+      "controlled generation",
+      "importance sampling",
+      "Wei Guo",
+      "Yuchen Zhu",
+      "Molei Tao",
+      "Yongxin Chen",
+      "Discrete diffusion for NeSy",
+      "diffusion models",
+      "Diffusion posterior sampling for general noisy inverse problems",
+      "Loss-guided diffusion models for plug-and-play controllable generation",
+      "mean-field variational inference",
+      "Maskgit_ Masked generative image transformer",
+      "Your absorbing discrete diffusion secretly models the conditional distributions of clean data",
+      "Masked diffusion models are secretly time-agnostic masked models and exploit inaccurate categorical sampling",
+      "Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution",
+      "Pasted image 20241004103532.png",
+      "protein design",
+      "Is output factorization enough_"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nFramework for controllable generation of masked models, does not require task-specific fine-tuning. \n\nVery simple idea, just use the timestep 0 parameterisation, sample $K$ times, plug in reward function, renormalise, and sample from reweighted average. \n\n## Preliminaries\n### Masked models\nUse $U=\\Omega=\\{i: \\bx_i \\neq \\bm\\}$ for unmasked indices and $M$ for the masked indices.\n\n[[masked language models|masked model]]s output a matrix of probabilities $f_\\btheta(\\bx)\\in (\\Delt"
+  },
+  {
+    "doc_id": "Post-hoc probabilistic vision-language models",
+    "filename": "Post-hoc probabilistic vision-language models.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2412.06014",
+    "url": "https://arxiv.org/abs/2412.06014",
+    "year": 2025,
+    "aliases": [
+      "baumann2025posthocprobabilisticvisionlanguagemodels"
+    ],
+    "cite_key": "baumann2025posthocprobabilisticvisionlanguagemodels",
+    "frontmatter": {
+      "aliases": [
+        "baumann2025posthocprobabilisticvisionlanguagemodels"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[generative modeling|probabilistic model]]",
+        "[[vision-language models|VLM]]",
+        "[[Learning transferable visual models from natural language supervision|CLIP]]",
+        "[[Sigmoid loss for language image pre-training|SigLIP]]",
+        "[[Laplace approximation]]"
+      ],
+      "author": [
+        "[[Anton Baumann]]",
+        "[[Rui Li]]",
+        "[[Marcus Klasson]]",
+        "[[Santeri Mentu]]",
+        "[[Shyamgopal Karthik]]",
+        "[[Zeynep Akata]]",
+        "[[Arno Solin]]",
+        "[[Martin Trapp]]"
+      ],
+      "projects": [
+        "[[Commonsense knowledge transfer from LLMs as judges]]"
+      ],
+      "publishedIn": null,
+      "citeKey": "baumann2025posthocprobabilisticvisionlanguagemodels",
+      "zoteroUri": "zotero://select/items/@baumann2025posthocprobabilisticvisionlanguagemodels",
+      "url": "https://arxiv.org/abs/2412.06014"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "generative modeling"
+      },
+      {
+        "field": "hasTopic",
+        "target": "vision-language models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Learning transferable visual models from natural language supervision"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Sigmoid loss for language image pre-training"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Laplace approximation"
+      },
+      {
+        "field": "author",
+        "target": "Anton Baumann"
+      },
+      {
+        "field": "author",
+        "target": "Rui Li"
+      },
+      {
+        "field": "author",
+        "target": "Marcus Klasson"
+      },
+      {
+        "field": "author",
+        "target": "Santeri Mentu"
+      },
+      {
+        "field": "author",
+        "target": "Shyamgopal Karthik"
+      },
+      {
+        "field": "author",
+        "target": "Zeynep Akata"
+      },
+      {
+        "field": "author",
+        "target": "Arno Solin"
+      },
+      {
+        "field": "author",
+        "target": "Martin Trapp"
+      }
+    ],
+    "all_wikilinks": [
+      "generative modeling",
+      "vision-language models",
+      "Learning transferable visual models from natural language supervision",
+      "Sigmoid loss for language image pre-training",
+      "Laplace approximation",
+      "Anton Baumann",
+      "Rui Li",
+      "Marcus Klasson",
+      "Santeri Mentu",
+      "Shyamgopal Karthik",
+      "Zeynep Akata",
+      "Arno Solin",
+      "Martin Trapp",
+      "Commonsense knowledge transfer from LLMs as judges",
+      "Pasted image 20250919110602.png"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\n![[Pasted image 20250919110602.png]]\n\n\n--- \n#source/paper"
   },
   {
     "doc_id": "probabilistic circuits",
@@ -2448,6 +3806,114 @@
       "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts"
     ],
     "body_preview": "This is when in typical NeSy predictor setups, a NeSy predictor properly learned the input-output problem (to 100% accuracy), but did not learn the proper concept extractor. Happens because the problem is not [[identifiable]]\n\nIntroduced in [[Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts]], but we now have a larger journal article in [[Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts]]\n\n\n--- \n#topic"
+  },
+  {
+    "doc_id": "ReDiSC_ A reparameterized masked diffusion model for scalable node classification with structured predictions",
+    "filename": "ReDiSC_ A reparameterized masked diffusion model for scalable node classification with structured predictions.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2507.14484",
+    "url": "https://arxiv.org/abs/2507.14484",
+    "year": 2025,
+    "aliases": [
+      "li2025rediscreparameterizedmaskeddiffusion",
+      "ReDiSC",
+      "Reparameterized masked Diffusion model for Structured Classification"
+    ],
+    "cite_key": "li2025rediscreparameterizedmaskeddiffusion",
+    "frontmatter": {
+      "aliases": [
+        "li2025rediscreparameterizedmaskeddiffusion",
+        "ReDiSC",
+        "Reparameterized masked Diffusion model for Structured Classification"
+      ],
+      "year": 2025,
+      "annotation-target": null,
+      "hasTopic": [
+        "[[graph neural network|GNN]]",
+        "[[discrete diffusion]]",
+        "[[node classification]]",
+        "[[structured prediction]]",
+        "[[homophily|heterophily]]"
+      ],
+      "author": [
+        "[[Yule Li]]",
+        "[[Yifeng Lu]]",
+        "[[Zhen Wang]]",
+        "[[Zhewei Wei]]",
+        "[[Yaliang Li]]",
+        "[[Bolin Ding]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "li2025rediscreparameterizedmaskeddiffusion",
+      "zoteroUri": "zotero://select/items/@li2025rediscreparameterizedmaskeddiffusion",
+      "url": "https://arxiv.org/abs/2507.14484"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "graph neural network"
+      },
+      {
+        "field": "hasTopic",
+        "target": "discrete diffusion"
+      },
+      {
+        "field": "hasTopic",
+        "target": "node classification"
+      },
+      {
+        "field": "hasTopic",
+        "target": "structured prediction"
+      },
+      {
+        "field": "hasTopic",
+        "target": "homophily"
+      },
+      {
+        "field": "author",
+        "target": "Yule Li"
+      },
+      {
+        "field": "author",
+        "target": "Yifeng Lu"
+      },
+      {
+        "field": "author",
+        "target": "Zhen Wang"
+      },
+      {
+        "field": "author",
+        "target": "Zhewei Wei"
+      },
+      {
+        "field": "author",
+        "target": "Yaliang Li"
+      },
+      {
+        "field": "author",
+        "target": "Bolin Ding"
+      }
+    ],
+    "all_wikilinks": [
+      "graph neural network",
+      "discrete diffusion",
+      "node classification",
+      "structured prediction",
+      "homophily",
+      "Yule Li",
+      "Yifeng Lu",
+      "Zhen Wang",
+      "Zhewei Wei",
+      "Yaliang Li",
+      "Bolin Ding",
+      "Diffusion Probabilistic Models for Structured Node Classification",
+      "Unifying Generation and Prediction on Graphs with Latent Graph Diffusion"
+    ],
+    "body_preview": "> [!abstract]-\n> \n\nThe earlier work is [[Diffusion Probabilistic Models for Structured Node Classification]] and [[Unifying Generation and Prediction on Graphs with Latent Graph Diffusion]]\n\n--- \n#source/paper"
   },
   {
     "doc_id": "Robin Manhaeve",
@@ -3292,6 +4758,90 @@
     "body_preview": "--- \n#topic"
   },
   {
+    "doc_id": "Unified latents (UL)_ How to train your latents",
+    "filename": "Unified latents (UL)_ How to train your latents.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2602.17270",
+    "url": "https://arxiv.org/abs/2602.17270",
+    "year": 2026,
+    "aliases": [
+      "heek2026unifiedlatentsultrain",
+      "Unified latents",
+      "UL"
+    ],
+    "cite_key": "heek2026unifiedlatentsultrain",
+    "frontmatter": {
+      "aliases": [
+        "heek2026unifiedlatentsultrain",
+        "Unified latents",
+        "UL"
+      ],
+      "year": 2026,
+      "hasTopic": [
+        "[[variational auto-encoder|VAE]]",
+        "[[diffusion models|diffusion]]",
+        "[[latent variable models]]"
+      ],
+      "author": [
+        "[[Jonathan Heek]]",
+        "[[Emiel Hoogeboom]]",
+        "[[Thomas Mensink]]",
+        "[[Tim Salimans]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "heek2026unifiedlatentsultrain",
+      "zoteroUri": "zotero://select/items/@heek2026unifiedlatentsultrain",
+      "url": "https://arxiv.org/abs/2602.17270"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "variational auto-encoder"
+      },
+      {
+        "field": "hasTopic",
+        "target": "diffusion models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "latent variable models"
+      },
+      {
+        "field": "author",
+        "target": "Jonathan Heek"
+      },
+      {
+        "field": "author",
+        "target": "Emiel Hoogeboom"
+      },
+      {
+        "field": "author",
+        "target": "Thomas Mensink"
+      },
+      {
+        "field": "author",
+        "target": "Tim Salimans"
+      }
+    ],
+    "all_wikilinks": [
+      "variational auto-encoder",
+      "diffusion models",
+      "latent variable models",
+      "Jonathan Heek",
+      "Emiel Hoogeboom",
+      "Thomas Mensink",
+      "Tim Salimans",
+      "Pasted image 20260220140203.png",
+      "Pasted image 20260220140447.png",
+      "Pasted image 20260220140507.png"
+    ],
+    "body_preview": "A [[variational auto-encoder|VAE]] with both a [[diffusion models|diffusion]] prior and diffusion decoder. \nSo it's essentially a latent diffusion, ![[Pasted image 20260220140203.png]]\n![[Pasted image 20260220140447.png]]\n\nIe the generative story is ![[Pasted image 20260220140507.png]]\n\n\n--- \n#source/paper"
+  },
+  {
     "doc_id": "University of Amsterdam",
     "filename": "University of Amsterdam.md",
     "note_type": "institution",
@@ -3452,5 +5002,95 @@
       "institutions"
     ],
     "body_preview": "--- \n#institution/university #topic"
+  },
+  {
+    "doc_id": "Why are linear RNNs more parallelizable_",
+    "filename": "Why are linear RNNs more parallelizable_.md",
+    "note_type": "paper",
+    "tags": [
+      "source/paper"
+    ],
+    "arxiv_id": "2603.03612",
+    "url": "https://arxiv.org/abs/2603.03612",
+    "year": 2026,
+    "aliases": [
+      "merrill2026linearrnnsparallelizable"
+    ],
+    "cite_key": "merrill2026linearrnnsparallelizable",
+    "frontmatter": {
+      "aliases": [
+        "merrill2026linearrnnsparallelizable"
+      ],
+      "year": 2026,
+      "hasTopic": [
+        "[[expressivity of models|model expressivity]]",
+        "[[recurrent neural networks|RNN]]",
+        "[[Mamba_ Linear-Time Sequence Modeling with Selective State Spaces|Mamba]]",
+        "[[parallelization]]"
+      ],
+      "author": [
+        "[[William Merrill]]",
+        "[[Hongjian Jiang]]",
+        "[[Yanhong Li]]",
+        "[[Anthony Lin]]",
+        "[[Ashish Sabharwal]]"
+      ],
+      "projects": [],
+      "publishedIn": null,
+      "citeKey": "merrill2026linearrnnsparallelizable",
+      "zoteroUri": "zotero://select/items/@merrill2026linearrnnsparallelizable",
+      "url": "https://arxiv.org/abs/2603.03612"
+    },
+    "typed_links": [
+      {
+        "field": "hasTopic",
+        "target": "expressivity of models"
+      },
+      {
+        "field": "hasTopic",
+        "target": "recurrent neural networks"
+      },
+      {
+        "field": "hasTopic",
+        "target": "Mamba_ Linear-Time Sequence Modeling with Selective State Spaces"
+      },
+      {
+        "field": "hasTopic",
+        "target": "parallelization"
+      },
+      {
+        "field": "author",
+        "target": "William Merrill"
+      },
+      {
+        "field": "author",
+        "target": "Hongjian Jiang"
+      },
+      {
+        "field": "author",
+        "target": "Yanhong Li"
+      },
+      {
+        "field": "author",
+        "target": "Anthony Lin"
+      },
+      {
+        "field": "author",
+        "target": "Ashish Sabharwal"
+      }
+    ],
+    "all_wikilinks": [
+      "expressivity of models",
+      "recurrent neural networks",
+      "Mamba_ Linear-Time Sequence Modeling with Selective State Spaces",
+      "parallelization",
+      "William Merrill",
+      "Hongjian Jiang",
+      "Yanhong Li",
+      "Anthony Lin",
+      "Ashish Sabharwal",
+      "arithmetic circuit"
+    ],
+    "body_preview": "Theoretical proof that linear RNNs (ie with linear transitions) are more parallelisable, and can be viewed as log-depth [[arithmetic circuit]]s. This reveals fundamental tradeoffs between nonlinear RNNs. \n\n\n--- \n#source/paper"
   }
 ]

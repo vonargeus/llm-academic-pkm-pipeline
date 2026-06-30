@@ -1,0 +1,25 @@
+{
+  "evaluation_scope": "RQ3 - Link Prediction Reliability",
+  "level_a_global_citations": {
+    "description": "Evaluated on all 40 papers in the corpus against the Semantic Scholar citation graph.",
+    "metrics": {
+      "n_predicted": 189,
+      "n_gold": 42,
+      "true_positives": 28,
+      "precision": 0.14815,
+      "recall": 0.66667,
+      "f1": 0.24242
+    }
+  },
+  "level_b_personal_vault": {
+    "description": "Evaluated on the 22 overlapping papers against Emile's Obsidian vault paper-to-paper links.",
+    "metrics": {
+      "n_predicted": 89,
+      "n_gold": 1,
+      "true_positives": 1,
+      "precision": 0.01124,
+      "recall": 1.0,
+      "f1": 0.02222
+    }
+  }
+}

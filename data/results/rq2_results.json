@@ -1,0 +1,1083 @@
+{
+  "normalization_rules": "WikiLinks stripped using canonical target, lowercase, remove punctuation, collapse whitespace",
+  "openalex_record_matching": "Queried via filter=doi:https://doi.org/10.48550/arXiv.{arxiv_id}",
+  "Group_A_Bibliographic": {
+    "corpus_size": 40,
+    "matched_count": 40,
+    "unmatched_list": [],
+    "title_exact_match": 0.975,
+    "year_exact_match": 0.775,
+    "venue_fuzzy_match": 0.5,
+    "authors_precision": 0.822,
+    "authors_recall": 0.8287,
+    "authors_f1": 0.825,
+    "per_paper_results": [
+      {
+        "arxiv_id": "1711.11157",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 5,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2005.11401",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667,
+          "tp": 8,
+          "n_gold": 12,
+          "n_pred": 12
+        }
+      },
+      {
+        "arxiv_id": "2007.01282",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 2,
+          "n_gold": 2,
+          "n_pred": 2
+        }
+      },
+      {
+        "arxiv_id": "2012.13635",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1": 0.25,
+          "tp": 1,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2210.06726",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.9167,
+          "recall": 0.9167,
+          "f1": 0.9167,
+          "tp": 11,
+          "n_gold": 12,
+          "n_pred": 12
+        }
+      },
+      {
+        "arxiv_id": "2212.12393",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4,
+          "tp": 2,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2305.10250",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8,
+          "tp": 4,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2305.19951",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "tp": 3,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2306.07516",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 2,
+          "n_gold": 2,
+          "n_pred": 2
+        }
+      },
+      {
+        "arxiv_id": "2309.15217",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2310.08560",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.7143,
+          "recall": 0.8333,
+          "f1": 0.7692,
+          "tp": 5,
+          "n_gold": 6,
+          "n_pred": 7
+        }
+      },
+      {
+        "arxiv_id": "2310.11511",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 5,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2310.17451",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 8,
+          "n_gold": 8,
+          "n_pred": 8
+        }
+      },
+      {
+        "arxiv_id": "2312.04474",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "tp": 9,
+          "n_gold": 10,
+          "n_pred": 10
+        }
+      },
+      {
+        "arxiv_id": "2401.05224",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.5714,
+          "recall": 0.5714,
+          "f1": 0.5714,
+          "tp": 4,
+          "n_gold": 7,
+          "n_pred": 7
+        }
+      },
+      {
+        "arxiv_id": "2401.15884",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2401.18059",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 6,
+          "n_gold": 6,
+          "n_pred": 6
+        }
+      },
+      {
+        "arxiv_id": "2402.12240",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.8333,
+          "recall": 0.8333,
+          "f1": 0.8333,
+          "tp": 5,
+          "n_gold": 6,
+          "n_pred": 6
+        }
+      },
+      {
+        "arxiv_id": "2402.14207",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 6,
+          "n_gold": 6,
+          "n_pred": 6
+        }
+      },
+      {
+        "arxiv_id": "2402.17753",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.8333,
+          "recall": 0.8333,
+          "f1": 0.8333,
+          "tp": 5,
+          "n_gold": 6,
+          "n_pred": 6
+        }
+      },
+      {
+        "arxiv_id": "2404.16130",
+        "title_match": 0,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.6667,
+          "tp": 6,
+          "n_gold": 8,
+          "n_pred": 10
+        }
+      },
+      {
+        "arxiv_id": "2405.14831",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8,
+          "tp": 4,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2406.14177",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "tp": 3,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2409.05591",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 7,
+          "n_gold": 7,
+          "n_pred": 7
+        }
+      },
+      {
+        "arxiv_id": "2410.02143",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2410.05779",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 5,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2412.06014",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 8,
+          "n_gold": 8,
+          "n_pred": 8
+        }
+      },
+      {
+        "arxiv_id": "2502.01341",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.8636,
+          "recall": 0.8636,
+          "f1": 0.8636,
+          "tp": 19,
+          "n_gold": 22,
+          "n_pred": 22
+        }
+      },
+      {
+        "arxiv_id": "2502.03274",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 7,
+          "n_gold": 7,
+          "n_pred": 7
+        }
+      },
+      {
+        "arxiv_id": "2502.12110",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.8333,
+          "recall": 0.8333,
+          "f1": 0.8333,
+          "tp": 5,
+          "n_gold": 6,
+          "n_pred": 6
+        }
+      },
+      {
+        "arxiv_id": "2505.13138",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2505.23061",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 5,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2506.03719",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "tp": 3,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2507.14484",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 6,
+          "n_gold": 6,
+          "n_pred": 6
+        }
+      },
+      {
+        "arxiv_id": "2507.21053",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 8,
+          "n_gold": 8,
+          "n_pred": 8
+        }
+      },
+      {
+        "arxiv_id": "2509.26625",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.8571,
+          "recall": 0.8571,
+          "f1": 0.8571,
+          "tp": 6,
+          "n_gold": 7,
+          "n_pred": 7
+        }
+      },
+      {
+        "arxiv_id": "2510.14538",
+        "title_match": 1,
+        "year_match": 0,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.8889,
+          "recall": 0.8889,
+          "f1": 0.8889,
+          "tp": 8,
+          "n_gold": 9,
+          "n_pred": 9
+        }
+      },
+      {
+        "arxiv_id": "2602.17270",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 1,
+        "authors_prf": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "tp": 2,
+          "n_gold": 4,
+          "n_pred": 4
+        }
+      },
+      {
+        "arxiv_id": "2602.23878",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1": 0.6,
+          "tp": 3,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      },
+      {
+        "arxiv_id": "2603.03612",
+        "title_match": 1,
+        "year_match": 1,
+        "venue_match": 0,
+        "authors_prf": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8,
+          "tp": 4,
+          "n_gold": 5,
+          "n_pred": 5
+        }
+      }
+    ]
+  },
+  "Group_B_Semantic": {
+    "total_overlap_papers": 22,
+    "evaluated_count": 22,
+    "excluded_list": [],
+    "B1_strict": {
+      "precision": 0.0762,
+      "recall": 0.1508,
+      "f1": 0.0957,
+      "per_paper": [
+        {
+          "arxiv_id": "1711.11157",
+          "title": "A semantic loss function for deep learning with symbolic knowledge",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 3,
+            "n_pred": 4
+          }
+        },
+        {
+          "arxiv_id": "2012.13635",
+          "title": "Logic tensor networks",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 2,
+            "n_pred": 4
+          }
+        },
+        {
+          "arxiv_id": "2212.12393",
+          "title": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 3,
+            "n_pred": 4
+          }
+        },
+        {
+          "arxiv_id": "2305.19951",
+          "title": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 1,
+            "n_pred": 3
+          }
+        },
+        {
+          "arxiv_id": "2310.17451",
+          "title": "Generating by understanding_ Neural visual generation with logical symbol groundings",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 5,
+            "n_pred": 6
+          }
+        },
+        {
+          "arxiv_id": "2312.04474",
+          "title": "Chain of code_ Reasoning with a language model-augmented code emulator",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 3,
+            "n_pred": 6
+          }
+        },
+        {
+          "arxiv_id": "2401.05224",
+          "title": "Do vision and language encoders represent the world similarly_",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 3,
+            "n_pred": 6
+          }
+        },
+        {
+          "arxiv_id": "2402.12240",
+          "title": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+          "metrics": {
+            "precision": 0.1429,
+            "recall": 0.3333,
+            "f1": 0.2,
+            "tp": 1,
+            "n_gold": 3,
+            "n_pred": 7
+          }
+        },
+        {
+          "arxiv_id": "2410.02143",
+          "title": "Plug-and-play controllable generation for discrete masked models",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 4,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2412.06014",
+          "title": "Post-hoc probabilistic vision-language models",
+          "metrics": {
+            "precision": 0.1667,
+            "recall": 0.3333,
+            "f1": 0.2222,
+            "tp": 1,
+            "n_gold": 3,
+            "n_pred": 6
+          }
+        },
+        {
+          "arxiv_id": "2502.01341",
+          "title": "AlignVLM_ Bridging vision and language latent spaces for multimodal understanding",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333,
+            "tp": 1,
+            "n_gold": 1,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2502.03274",
+          "title": "A scalable approach to probabilistic neuro-symbolic verification",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 3,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2505.13138",
+          "title": "Neurosymbolic Diffusion Models",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 3,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2505.23061",
+          "title": "DINGO_ Constrained inference for diffusion LLMs",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 5,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2506.03719",
+          "title": "On the closed-form of flow matching_ Generalization does not arise from target stochasticity",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 1,
+            "n_pred": 4
+          }
+        },
+        {
+          "arxiv_id": "2507.14484",
+          "title": "ReDiSC_ A reparameterized masked diffusion model for scalable node classification with structured predictions",
+          "metrics": {
+            "precision": 0.4,
+            "recall": 0.4,
+            "f1": 0.4,
+            "tp": 2,
+            "n_gold": 5,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2507.21053",
+          "title": "Flow matching policy gradients",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 2,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2509.26625",
+          "title": "Learning to see before seeing_ Demystifying LLM visual priors from language pre-training",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 2,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2510.14538",
+          "title": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "n_gold": 1,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2602.17270",
+          "title": "Unified latents (UL)_ How to train your latents",
+          "metrics": {
+            "precision": 0.4,
+            "recall": 0.6667,
+            "f1": 0.5,
+            "tp": 2,
+            "n_gold": 3,
+            "n_pred": 5
+          }
+        },
+        {
+          "arxiv_id": "2602.23878",
+          "title": "A foundation for differentiable logics using dependent type theory",
+          "metrics": {
+            "precision": 0.1667,
+            "recall": 0.25,
+            "f1": 0.2,
+            "tp": 1,
+            "n_gold": 4,
+            "n_pred": 6
+          }
+        },
+        {
+          "arxiv_id": "2603.03612",
+          "title": "Why are linear RNNs more parallelizable_",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 0.3333,
+            "f1": 0.25,
+            "tp": 1,
+            "n_gold": 3,
+            "n_pred": 5
+          }
+        }
+      ]
+    },
+    "B2_supplementary": {
+      "average_openalex_support_rate": 0.0621,
+      "averages_breakdown": {
+        "matched_with_emile": 0.41,
+        "not_emile_but_supported_by_openalex": 0.27,
+        "unsupported": 4.36
+      },
+      "per_paper": [
+        {
+          "arxiv_id": "1711.11157",
+          "title": "A semantic loss function for deep learning with symbolic knowledge",
+          "support_rate": 0.5,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 2,
+            "unsupported": 2
+          }
+        },
+        {
+          "arxiv_id": "2012.13635",
+          "title": "Logic tensor networks",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 4
+          }
+        },
+        {
+          "arxiv_id": "2212.12393",
+          "title": "A-nesi_ A scalable approximate method for probabilistic neurosymbolic inference",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 4
+          }
+        },
+        {
+          "arxiv_id": "2305.19951",
+          "title": "Not all neuro-symbolic concepts are created equal_ Analysis and mitigation of reasoning shortcuts",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 3
+          }
+        },
+        {
+          "arxiv_id": "2310.17451",
+          "title": "Generating by understanding_ Neural visual generation with logical symbol groundings",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 6
+          }
+        },
+        {
+          "arxiv_id": "2312.04474",
+          "title": "Chain of code_ Reasoning with a language model-augmented code emulator",
+          "support_rate": 0.1667,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 1,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2401.05224",
+          "title": "Do vision and language encoders represent the world similarly_",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 6
+          }
+        },
+        {
+          "arxiv_id": "2402.12240",
+          "title": "BEARS make neuro-symbolic models aware of their reasoning shortcuts",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 1,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 6
+          }
+        },
+        {
+          "arxiv_id": "2410.02143",
+          "title": "Plug-and-play controllable generation for discrete masked models",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2412.06014",
+          "title": "Post-hoc probabilistic vision-language models",
+          "support_rate": 0.2,
+          "labels_breakdown": {
+            "matched_with_emile": 1,
+            "not_emile_but_supported_by_openalex": 1,
+            "unsupported": 4
+          }
+        },
+        {
+          "arxiv_id": "2502.01341",
+          "title": "AlignVLM_ Bridging vision and language latent spaces for multimodal understanding",
+          "support_rate": 0.25,
+          "labels_breakdown": {
+            "matched_with_emile": 1,
+            "not_emile_but_supported_by_openalex": 1,
+            "unsupported": 3
+          }
+        },
+        {
+          "arxiv_id": "2502.03274",
+          "title": "A scalable approach to probabilistic neuro-symbolic verification",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2505.13138",
+          "title": "Neurosymbolic Diffusion Models",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2505.23061",
+          "title": "DINGO_ Constrained inference for diffusion LLMs",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2506.03719",
+          "title": "On the closed-form of flow matching_ Generalization does not arise from target stochasticity",
+          "support_rate": 0.25,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 1,
+            "unsupported": 3
+          }
+        },
+        {
+          "arxiv_id": "2507.14484",
+          "title": "ReDiSC_ A reparameterized masked diffusion model for scalable node classification with structured predictions",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 2,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 3
+          }
+        },
+        {
+          "arxiv_id": "2507.21053",
+          "title": "Flow matching policy gradients",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2509.26625",
+          "title": "Learning to see before seeing_ Demystifying LLM visual priors from language pre-training",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2510.14538",
+          "title": "Symbol grounding in neuro-symbolic AI_ A gentle introduction to reasoning shortcuts",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 0,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2602.17270",
+          "title": "Unified latents (UL)_ How to train your latents",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 2,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 3
+          }
+        },
+        {
+          "arxiv_id": "2602.23878",
+          "title": "A foundation for differentiable logics using dependent type theory",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 1,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 5
+          }
+        },
+        {
+          "arxiv_id": "2603.03612",
+          "title": "Why are linear RNNs more parallelizable_",
+          "support_rate": 0.0,
+          "labels_breakdown": {
+            "matched_with_emile": 1,
+            "not_emile_but_supported_by_openalex": 0,
+            "unsupported": 4
+          }
+        }
+      ]
+    }
+  }
+}

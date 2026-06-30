@@ -14,6 +14,11 @@
     "chars": 23078,
     "path": "data\\extracted_text\\2007.01282.json"
   },
+  "2012.13635": {
+    "status": "ok",
+    "chars": 148620,
+    "path": "data\\extracted_text\\2012.13635.json"
+  },
   "2210.06726": {
     "status": "ok",
     "chars": 66591,
@@ -48,6 +53,31 @@
     "status": "ok",
     "chars": 54206,
     "path": "data\\extracted_text\\2310.08560.json"
+  },
+  "2310.11511": {
+    "status": "ok",
+    "chars": 105576,
+    "path": "data\\extracted_text\\2310.11511.json"
+  },
+  "2310.17451": {
+    "status": "ok",
+    "chars": 64483,
+    "path": "data\\extracted_text\\2310.17451.json"
+  },
+  "2312.04474": {
+    "status": "ok",
+    "chars": 74125,
+    "path": "data\\extracted_text\\2312.04474.json"
+  },
+  "2401.05224": {
+    "status": "ok",
+    "chars": 73500,
+    "path": "data\\extracted_text\\2401.05224.json"
+  },
+  "2401.15884": {
+    "status": "ok",
+    "chars": 61094,
+    "path": "data\\extracted_text\\2401.15884.json"
   },
   "2401.18059": {
     "status": "ok",
@@ -89,10 +119,30 @@
     "chars": 76681,
     "path": "data\\extracted_text\\2409.05591.json"
   },
+  "2410.02143": {
+    "status": "ok",
+    "chars": 51411,
+    "path": "data\\extracted_text\\2410.02143.json"
+  },
   "2410.05779": {
     "status": "ok",
     "chars": 61081,
     "path": "data\\extracted_text\\2410.05779.json"
+  },
+  "2412.06014": {
+    "status": "ok",
+    "chars": 134501,
+    "path": "data\\extracted_text\\2412.06014.json"
+  },
+  "2502.01341": {
+    "status": "ok",
+    "chars": 70419,
+    "path": "data\\extracted_text\\2502.01341.json"
+  },
+  "2502.03274": {
+    "status": "ok",
+    "chars": 46078,
+    "path": "data\\extracted_text\\2502.03274.json"
   },
   "2502.12110": {
     "status": "ok",
@@ -104,9 +154,49 @@
     "chars": 138583,
     "path": "data\\extracted_text\\2505.13138.json"
   },
+  "2505.23061": {
+    "status": "ok",
+    "chars": 88151,
+    "path": "data\\extracted_text\\2505.23061.json"
+  },
+  "2506.03719": {
+    "status": "ok",
+    "chars": 81276,
+    "path": "data\\extracted_text\\2506.03719.json"
+  },
+  "2507.14484": {
+    "status": "ok",
+    "chars": 64793,
+    "path": "data\\extracted_text\\2507.14484.json"
+  },
+  "2507.21053": {
+    "status": "ok",
+    "chars": 73862,
+    "path": "data\\extracted_text\\2507.21053.json"
+  },
+  "2509.26625": {
+    "status": "ok",
+    "chars": 113401,
+    "path": "data\\extracted_text\\2509.26625.json"
+  },
   "2510.14538": {
     "status": "ok",
     "chars": 246503,
     "path": "data\\extracted_text\\2510.14538.json"
+  },
+  "2602.17270": {
+    "status": "ok",
+    "chars": 40344,
+    "path": "data\\extracted_text\\2602.17270.json"
+  },
+  "2602.23878": {
+    "status": "ok",
+    "chars": 127331,
+    "path": "data\\extracted_text\\2602.23878.json"
+  },
+  "2603.03612": {
+    "status": "ok",
+    "chars": 113308,
+    "path": "data\\extracted_text\\2603.03612.json"
   }
 }

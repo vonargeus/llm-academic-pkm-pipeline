@@ -1,0 +1,634 @@
+[
+  {
+    "paper": "2310.17451",
+    "original_agent_label": "Neural Visual Generation",
+    "best_canonical_match": "graph neural network",
+    "cosine_similarity": 0.8308,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2310.17451",
+    "original_agent_label": "Logical Reasoning",
+    "best_canonical_match": "reasoning shortcuts",
+    "cosine_similarity": 0.8268,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2310.17451",
+    "original_agent_label": "Neurosymbolic AI",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.9051,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2310.17451",
+    "original_agent_label": "Symbol Grounding",
+    "best_canonical_match": "modality alignment",
+    "cosine_similarity": 0.7271,
+    "tau_m": 0.7361,
+    "decision": "DISCARDED"
+  },
+  {
+    "paper": "2310.17451",
+    "original_agent_label": "Controllable Generation",
+    "best_canonical_match": "controlled generation",
+    "cosine_similarity": 0.9451,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2310.17451",
+    "original_agent_label": "Abductive Learning",
+    "best_canonical_match": "abductive reasoning",
+    "cosine_similarity": 0.9215,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.23061",
+    "original_agent_label": "Diffusion Models",
+    "best_canonical_match": "diffusion models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.23061",
+    "original_agent_label": "Large Language Models",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.9349,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.23061",
+    "original_agent_label": "Constrained Decoding",
+    "best_canonical_match": "text encoder",
+    "cosine_similarity": 0.7929,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.23061",
+    "original_agent_label": "Formal Verification",
+    "best_canonical_match": "probabilistic verification",
+    "cosine_similarity": 0.8558,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.23061",
+    "original_agent_label": "Structured Output Generation",
+    "best_canonical_match": "structured prediction",
+    "cosine_similarity": 0.7935,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.14484",
+    "original_agent_label": "Graph Neural Networks",
+    "best_canonical_match": "graph neural network",
+    "cosine_similarity": 0.9941,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.14484",
+    "original_agent_label": "Diffusion Models",
+    "best_canonical_match": "diffusion models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.14484",
+    "original_agent_label": "Structured Prediction",
+    "best_canonical_match": "structured prediction",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.14484",
+    "original_agent_label": "Node Classification",
+    "best_canonical_match": "node classification",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.14484",
+    "original_agent_label": "Label Propagation",
+    "best_canonical_match": "generalisation",
+    "cosine_similarity": 0.7299,
+    "tau_m": 0.7361,
+    "decision": "DISCARDED"
+  },
+  {
+    "paper": "2602.23878",
+    "original_agent_label": "Formal Verification",
+    "best_canonical_match": "probabilistic verification",
+    "cosine_similarity": 0.8558,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.23878",
+    "original_agent_label": "Machine Learning",
+    "best_canonical_match": "recurrent neural networks",
+    "cosine_similarity": 0.8246,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.23878",
+    "original_agent_label": "Differentiable Logics",
+    "best_canonical_match": "differentiable logics",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.23878",
+    "original_agent_label": "Fuzzy Logics",
+    "best_canonical_match": "fuzzy logic",
+    "cosine_similarity": 0.9918,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.23878",
+    "original_agent_label": "Interactive Theorem Proving",
+    "best_canonical_match": "proving",
+    "cosine_similarity": 0.8395,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.23878",
+    "original_agent_label": "Logic and Semantics",
+    "best_canonical_match": "differentiable logics",
+    "cosine_similarity": 0.8456,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2603.03612",
+    "original_agent_label": "Computational Complexity Theory",
+    "best_canonical_match": "parallelization",
+    "cosine_similarity": 0.7573,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2603.03612",
+    "original_agent_label": "Recurrent Neural Networks",
+    "best_canonical_match": "recurrent neural networks",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2603.03612",
+    "original_agent_label": "Parallel Computing",
+    "best_canonical_match": "parallelization",
+    "cosine_similarity": 0.9334,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2603.03612",
+    "original_agent_label": "Language Modeling",
+    "best_canonical_match": "vision-language models",
+    "cosine_similarity": 0.8926,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2603.03612",
+    "original_agent_label": "Circuit Complexity",
+    "best_canonical_match": "probabilistic circuits",
+    "cosine_similarity": 0.8315,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2401.05224",
+    "original_agent_label": "Vision-Language Models",
+    "best_canonical_match": "vision-language models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2401.05224",
+    "original_agent_label": "Representation Learning",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.7837,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2401.05224",
+    "original_agent_label": "Zero-shot Learning",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.7379,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2401.05224",
+    "original_agent_label": "Cross-modal Retrieval",
+    "best_canonical_match": "modality alignment",
+    "cosine_similarity": 0.8049,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2401.05224",
+    "original_agent_label": "Graph Matching",
+    "best_canonical_match": "graph neural network",
+    "cosine_similarity": 0.8577,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2401.05224",
+    "original_agent_label": "Encoder Alignment",
+    "best_canonical_match": "visual encoder",
+    "cosine_similarity": 0.8588,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Neuro-Symbolic AI]]",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.8112,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Uncertainty]]",
+    "best_canonical_match": "uncertainty quantification",
+    "cosine_similarity": 0.8776,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Reasoning Shortcuts]]",
+    "best_canonical_match": "reasoning shortcuts",
+    "cosine_similarity": 0.9818,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Calibration]]",
+    "best_canonical_match": "uncertainty quantification",
+    "cosine_similarity": 0.7688,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Probabilistic Reasoning]]",
+    "best_canonical_match": "probabilistic logics",
+    "cosine_similarity": 0.9223,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Concept-Based Models]]",
+    "best_canonical_match": "expressivity of models",
+    "cosine_similarity": 0.7957,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2402.12240",
+    "original_agent_label": "[[Active Learning]]",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.7864,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.03274",
+    "original_agent_label": "Neuro-Symbolic Artificial Intelligence",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.837,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.03274",
+    "original_agent_label": "Formal Verification",
+    "best_canonical_match": "probabilistic verification",
+    "cosine_similarity": 0.8558,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.03274",
+    "original_agent_label": "Probabilistic Reasoning",
+    "best_canonical_match": "probabilistic logics",
+    "cosine_similarity": 0.9398,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.03274",
+    "original_agent_label": "Robustness",
+    "best_canonical_match": "uncertainty quantification",
+    "cosine_similarity": 0.7502,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.03274",
+    "original_agent_label": "AI Safety",
+    "best_canonical_match": "abductive reasoning",
+    "cosine_similarity": 0.7076,
+    "tau_m": 0.7361,
+    "decision": "DISCARDED"
+  },
+  {
+    "paper": "2505.13138",
+    "original_agent_label": "Neurosymbolic AI",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.9051,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.13138",
+    "original_agent_label": "Diffusion Models",
+    "best_canonical_match": "diffusion models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.13138",
+    "original_agent_label": "Uncertainty Quantification",
+    "best_canonical_match": "uncertainty quantification",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.13138",
+    "original_agent_label": "Symbolic Reasoning",
+    "best_canonical_match": "reasoning shortcuts",
+    "cosine_similarity": 0.8195,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2505.13138",
+    "original_agent_label": "Probabilistic Machine Learning",
+    "best_canonical_match": "probabilistic logics",
+    "cosine_similarity": 0.8713,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.21053",
+    "original_agent_label": "Reinforcement Learning",
+    "best_canonical_match": "recurrent neural networks",
+    "cosine_similarity": 0.8069,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.21053",
+    "original_agent_label": "Generative Modeling",
+    "best_canonical_match": "generative modeling",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.21053",
+    "original_agent_label": "Flow Matching",
+    "best_canonical_match": "modality alignment",
+    "cosine_similarity": 0.7249,
+    "tau_m": 0.7361,
+    "decision": "DISCARDED"
+  },
+  {
+    "paper": "2507.21053",
+    "original_agent_label": "Diffusion Models",
+    "best_canonical_match": "diffusion models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2507.21053",
+    "original_agent_label": "Continuous Control",
+    "best_canonical_match": "controlled generation",
+    "cosine_similarity": 0.8022,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.17270",
+    "original_agent_label": "Generative Models",
+    "best_canonical_match": "generative modeling",
+    "cosine_similarity": 0.9784,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.17270",
+    "original_agent_label": "Diffusion Models",
+    "best_canonical_match": "diffusion models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.17270",
+    "original_agent_label": "Representation Learning",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.7837,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.17270",
+    "original_agent_label": "Latent Variable Models",
+    "best_canonical_match": "latent variable models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2602.17270",
+    "original_agent_label": "Data Compression",
+    "best_canonical_match": "visual encoder",
+    "cosine_similarity": 0.7842,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2506.03719",
+    "original_agent_label": "Deep Generative Models",
+    "best_canonical_match": "deep generative models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2506.03719",
+    "original_agent_label": "Flow Matching",
+    "best_canonical_match": "modality alignment",
+    "cosine_similarity": 0.7249,
+    "tau_m": 0.7361,
+    "decision": "DISCARDED"
+  },
+  {
+    "paper": "2506.03719",
+    "original_agent_label": "Generalization",
+    "best_canonical_match": "generalisation",
+    "cosine_similarity": 0.9574,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2506.03719",
+    "original_agent_label": "Inductive Bias",
+    "best_canonical_match": "inductive logic programming",
+    "cosine_similarity": 0.8121,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2509.26625",
+    "original_agent_label": "Multimodal Large Language Models",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.9005,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2509.26625",
+    "original_agent_label": "Representation Learning",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.7837,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2509.26625",
+    "original_agent_label": "Foundation Models",
+    "best_canonical_match": "diffusion models",
+    "cosine_similarity": 0.7585,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2509.26625",
+    "original_agent_label": "Visual Reasoning",
+    "best_canonical_match": "visual prior",
+    "cosine_similarity": 0.8544,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2509.26625",
+    "original_agent_label": "Data-centric AI",
+    "best_canonical_match": "deep generative models",
+    "cosine_similarity": 0.7663,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.01341",
+    "original_agent_label": "Vision-Language Models",
+    "best_canonical_match": "vision-language models",
+    "cosine_similarity": 1.0,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.01341",
+    "original_agent_label": "Multimodal Document Understanding",
+    "best_canonical_match": "vision-language models",
+    "cosine_similarity": 0.7553,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.01341",
+    "original_agent_label": "Representation Learning",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.7837,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.01341",
+    "original_agent_label": "Natural Language Processing",
+    "best_canonical_match": "large language model reasoning",
+    "cosine_similarity": 0.8084,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2502.01341",
+    "original_agent_label": "Computer Vision",
+    "best_canonical_match": "vision-language models",
+    "cosine_similarity": 0.8176,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2510.14538",
+    "original_agent_label": "Neuro-symbolic AI",
+    "best_canonical_match": "neurosymbolic learning",
+    "cosine_similarity": 0.8366,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2510.14538",
+    "original_agent_label": "Symbol Grounding",
+    "best_canonical_match": "modality alignment",
+    "cosine_similarity": 0.7271,
+    "tau_m": 0.7361,
+    "decision": "DISCARDED"
+  },
+  {
+    "paper": "2510.14538",
+    "original_agent_label": "Trustworthy AI",
+    "best_canonical_match": "probabilistic verification",
+    "cosine_similarity": 0.7417,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2510.14538",
+    "original_agent_label": "Model Interpretability",
+    "best_canonical_match": "expressivity of models",
+    "cosine_similarity": 0.8685,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  },
+  {
+    "paper": "2510.14538",
+    "original_agent_label": "Statistical Learning Theory",
+    "best_canonical_match": "probabilistic logics",
+    "cosine_similarity": 0.7837,
+    "tau_m": 0.7361,
+    "decision": "MAPPED"
+  }
+]

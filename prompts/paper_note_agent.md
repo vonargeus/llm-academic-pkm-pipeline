@@ -64,11 +64,6 @@ by the authors or obvious from reading.}
 {Leave this section mostly empty for the Link Agent to fill in. You may suggest
 obvious connections using [[NoteTitle]] format if they are very clear from the text.}
 
-# Possible Relevance to My Thesis
-
-{1-3 sentences on how this paper could be cited or used in a thesis comparing
-flat RAG vs. structured interlinked Obsidian notes for academic knowledge management.}
-
 ---
 
 Important rules:

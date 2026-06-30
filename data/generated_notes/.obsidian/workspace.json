@@ -13,12 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2401.18059.md",
+                "file": "2505.13138.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "2401.18059"
+              "title": "2505.13138"
             }
           }
         ]
@@ -94,8 +104,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2401.18059.md",
-                "collapseAll": false,
+                "file": "1711.11157.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2401.18059"
+              "title": "Backlinks for 1711.11157"
             }
           },
           {
@@ -113,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2401.18059.md",
+                "file": "2405.14831.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2401.18059"
+              "title": "Outgoing links from 2405.14831"
             }
           },
           {
@@ -156,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2401.18059.md",
+                "file": "2405.14831.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2401.18059"
+              "title": "Outline of 2405.14831"
             }
           }
         ]
@@ -185,13 +195,30 @@
   },
   "active": "67ab1f5dd1e7cd8b",
   "lastOpenFiles": [
-    "2310.08560.md",
-    "RAPTOR.md",
-    "2401.18059.md",
-    "2210.06726.md",
-    "2305.19951.md",
     "2510.14538.md",
+    "2505.13138.md",
+    "2404.16130.md",
+    "2310.08560.md",
+    "2309.15217.md",
+    "2306.07516.md",
+    "2305.19951.md",
+    "2305.10250.md",
+    "2007.01282.md",
+    "2210.06726.md",
+    "2005.11401.md",
+    "1711.11157.md",
     "2410.05779.md",
-    "2402.14207.md"
+    "2212.12393.md",
+    "preference learning.md",
+    "Natural Language Processing.md",
+    "GraphRAG.md",
+    "Deep Learning.md",
+    "2409.05591.md",
+    "2401.18059.md",
+    "2402.12240.md",
+    "2402.14207.md",
+    "2406.14177.md",
+    "2405.14831.md",
+    "RAPTOR.md"
   ]
 }
