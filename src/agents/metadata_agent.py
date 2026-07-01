@@ -126,6 +126,11 @@ def _call_gemini(prompt: str, model: str = "gemini-2.5-flash") -> str:
                 print(f"\n[Quota/Rate Limit Exception] {e}. Sleeping 60s...")
                 time.sleep(60)
             else:
+                err_str_full = str(e)
+                # finish_reason 4 = copyright block — permanent, never retry
+                if "finish_reason" in err_str_full and "] is 4" in err_str_full:
+                    print(f"\n[Copyright Block] Gemini refused content (finish_reason=4). Skipping this paper.")
+                    return ""
                 if attempt == max_retries - 1:
                     raise e
                 print(f"\n[Transient Error] {e}. Sleeping 10s...")
