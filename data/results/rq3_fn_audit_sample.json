@@ -1,0 +1,879 @@
+[
+  {
+    "sample_index": 1,
+    "arxiv_id": "2505.13138",
+    "gold_reference": {
+      "s2_paper_id": "445664274ca9760734a36ff092bafd13ca7810e4",
+      "title": "Storchastic: A Framework for General Stochastic Automatic Differentiation",
+      "doi": null,
+      "arxiv_id": "2104.00428",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "24609. Curran Associates, Inc., 2023. [82] Emile van Krieken, Jakub Tomczak, and Annette Ten Teije. Storchastic: A framework for general stochastic automatic differentiation. Advances in Neural Information Processing Systems, 34:7574–7587, 2021. [83] Antonio Vergari, YooJu"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Adam: A Method for Stochastic Optimization",
+      "jaccard_similarity": 0.2727272727272727
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 89265,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 56
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 2,
+    "arxiv_id": "2210.06726",
+    "gold_reference": {
+      "s2_paper_id": "c21a4d70d83e0f6eb2a9e1c41d034842dd561e47",
+      "title": "CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge",
+      "doi": "10.18653/v1/N19-1421",
+      "arxiv_id": "1811.00937",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "e 11700. Springer Nature. Alon Talmor, Jonathan Herzig, Nicholas Lourie, and Jonathan Berant. 2019. CommonsenseQA: A question answering challenge targeting commonsense knowledge. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computa"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 29241,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 3,
+    "arxiv_id": "2005.11401",
+    "gold_reference": {
+      "s2_paper_id": "85e07116316e686bf787114ba10ca60f4ea7c5b2",
+      "title": "Passage Re-ranking with BERT",
+      "doi": null,
+      "arxiv_id": "1901.04085",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "URL http://ceur-ws.org/Vol-1773/CoCoNIPS_ 2016_paper9.pdf. [44] Rodrigo Nogueira and Kyunghyun Cho. Passage re-ranking with BERT. arXiv preprint arXiv:1901.04085, 2019. URL https://arxiv.org/abs/1901.04085. [45] Myle Ott, Sergey"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Billion-scale similarity search with gpus",
+      "jaccard_similarity": 0.1
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 31711,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 38
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 4,
+    "arxiv_id": "2509.26625",
+    "gold_reference": {
+      "s2_paper_id": "c729e2bc9361e8182671d1b2d22d6726d86d00c8",
+      "title": "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+      "doi": "10.48550/arXiv.2505.05464",
+      "arxiv_id": "2505.05464",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "hiqi Chen, Jinghan Zhang, Tongyao Zhu, Wei Liu, Siyang Gao, Miao Xiong, Manling Li, and Junxian He. Bring reason to vision: Understanding perception and reasoning through model merging. arXiv preprint arXiv:2505.05464, 2025. Wei-Lin Chiang, Lianmin Zheng, Ying Sheng, Anastasios Nikol"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "LLMs as strong vision encoders",
+      "jaccard_similarity": 0.06666666666666667
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 108803,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 56
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 5,
+    "arxiv_id": "2310.17451",
+    "gold_reference": {
+      "s2_paper_id": "4ace72f12491a7c06967a6011c4bef004192d767",
+      "title": "StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks",
+      "doi": "10.1109/TPAMI.2018.2856256",
+      "arxiv_id": "1710.10916",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "closest_prediction": {
+      "title": "Generative adversarial nets",
+      "jaccard_similarity": 0.2
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 13701,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 36
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 6,
+    "arxiv_id": "2310.11511",
+    "gold_reference": {
+      "s2_paper_id": "659bf9ce7175e1ec266ff54359e2bd76e0b7ff31",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "doi": null,
+      "arxiv_id": "2005.11401",
+      "in_local_corpus": true
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "l, Heinrich K¨uttler, Mike Lewis, Wen-tau Yih, Tim Rockt¨aschel, Sebastian Riedel, and Douwe Kiela. Retrieval-augmented generation for knowledge-intensive nlp tasks. In Advances in Neural Information Processing Systems, 2020. URL https://proceedings.neurips.cc/pap"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "REFERENCES",
+      "ref_section_length_chars": 60622,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 7,
+    "arxiv_id": "2310.11511",
+    "gold_reference": {
+      "s2_paper_id": "381ab7a640f5b46b62f7e08d1af4a8e0d3eadd55",
+      "title": "G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment",
+      "doi": "10.18653/v1/2023.emnlp-main.153",
+      "arxiv_id": "2303.16634",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "REFERENCES",
+      "ref_section_length_chars": 60622,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 8,
+    "arxiv_id": "2212.12393",
+    "gold_reference": {
+      "s2_paper_id": "edaf14777326d374f691b6c10df0ab720e2026a3",
+      "title": "From statistical relational to neurosymbolic artificial intelligence: A survey",
+      "doi": "10.1016/j.artint.2023.104062",
+      "arxiv_id": "2108.11451",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Partial Match",
+      "snippet": "10.24963/kr.2021/45. [38] Giuseppe Marra, Sebastijan Dumanˇci´c, Robin Manhaeve, and Luc De Raedt. From Statistical Relational to Neural Symbolic Artificial Intelligence: A Survey. arXiv:2108.11451 [cs], August 2021. [39] Thomas"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Visual sudoku puzzle classification: A suite of collective neuro-symbolic tasks",
+      "jaccard_similarity": 0.05263157894736842
+    },
+    "audit_diagnostics": {
+      "detected_heading": "Reference",
+      "ref_section_length_chars": 109563,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 5
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 9,
+    "arxiv_id": "2509.26625",
+    "gold_reference": {
+      "s2_paper_id": "0f44d786fa9f89b013c6363b4b917caecda41db1",
+      "title": "Transformers Pretrained on Procedural Data Contain Modular Structures for Algorithmic Reasoning",
+      "doi": "10.48550/arXiv.2505.22308",
+      "arxiv_id": "2505.22308",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "31  Zachary Shinnick, Liangze Jiang, Hemanth Saratchandran, Anton van den Hengel, and Damien Teney. Transformers pretrained on procedural data contain modular structures for algorithmic reasoning. arXiv preprint arXiv:2505.22308, 2025. Mustafa Shukor, Louis Bethune, Dan Busbridge, David Grangie"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Data-efficient visual adaptation",
+      "jaccard_similarity": 0.07142857142857142
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 108803,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 56
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 10,
+    "arxiv_id": "2210.06726",
+    "gold_reference": {
+      "s2_paper_id": "6dbe700f79ebff749c89dc63e7127b810f64881f",
+      "title": "Teaching Pretrained Models with Commonsense Reasoning: A Preliminary KB-Based Approach",
+      "doi": null,
+      "arxiv_id": "1909.09743",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "n from explanations in context? ArXiv, abs/2204.02329. Shiyang Li, Jianshu Chen, and Dian Yu. 2019. Teaching pretrained models with commonsense reasoning: A preliminary kb-based approach. ArXiv, abs/1909.09743. Li Lucy and David Bamman. 2021. Gender and representation bias in GPT-3 gen"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 29241,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 11,
+    "arxiv_id": "2505.23061",
+    "gold_reference": {
+      "s2_paper_id": null,
+      "title": "There are {t} trees in the {g}",
+      "doi": null,
+      "arxiv_id": null,
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "scribed below: Let ’s think step by step. <reasoning > The final answer is <<symbolic expression >> There are {t} trees in the {g}. {g} workers will plant trees in the {g} today . After they are done , there will be {tf} trees. Ho"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Gsm-symbolic: Understanding the limitations of mathematical reasoning in large language models",
+      "jaccard_similarity": 0.11764705882352941
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 52789,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 31
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 12,
+    "arxiv_id": "2509.26625",
+    "gold_reference": {
+      "s2_paper_id": "b187fa7d7fdb3f8e1c3f5fe91209febd4f25c634",
+      "title": "Crosslingual Reasoning through Test-Time Scaling",
+      "doi": "10.48550/arXiv.2505.05408",
+      "arxiv_id": "2505.05408",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "nighoff, Carsten Eickhoff, Genta Indra Winata, Julia Kreutzer, Stephen H Bach, and Alham Fikri Aji. Crosslingual reasoning through test-time scaling. arXiv preprint arXiv:2505.05408, 2025. Xiang Yue, Yuansheng Ni, Kai Zhang, Tianyu Zheng, Ruoqi Liu"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 108803,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 56
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 13,
+    "arxiv_id": "2412.06014",
+    "gold_reference": {
+      "s2_paper_id": "4ae0c4a511697e960c477ea3e37b3e11bf3e0e02",
+      "title": "Learning Robust Global Representations by Penalizing Local Predictive Power",
+      "doi": null,
+      "arxiv_id": "1905.13549",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "orks (IJCNN), pp. 112–119. IEEE, 2014. 18 Haohan Wang, Songwei Ge, Zachary Lipton, and Eric P Xing. Learning robust global representations by penalizing local predictive power. In Advances in Neural Information Processing Systems, pp. 10506–10518. Curran Associates, Inc., 20"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Active learning by acquiring contrastive examples",
+      "jaccard_similarity": 0.15384615384615385
+    },
+    "audit_diagnostics": {
+      "detected_heading": "REFERENCES",
+      "ref_section_length_chars": 89989,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 52
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 14,
+    "arxiv_id": "2210.06726",
+    "gold_reference": {
+      "s2_paper_id": "d6045d2ccc9c09ca1671348de86d07da6bc28eea",
+      "title": "Training Verifiers to Solve Math Word Problems",
+      "doi": null,
+      "arxiv_id": "2110.14168",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 29241,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 15,
+    "arxiv_id": "2502.01341",
+    "gold_reference": {
+      "s2_paper_id": "d4b00e52fa9d60474517ed32d402448d492e0c31",
+      "title": "VCR: Visual Caption Restoration",
+      "doi": "10.48550/arXiv.2406.06462",
+      "arxiv_id": null,
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "15343. T. Zhang, S. Wang, L. Li, G. Zhang, P. Taslakian, S. Rajeswar, J. Fu, B. Liu, and Y. Bengio. Vcr: Visual caption restoration. arXiv preprint arXiv: 2406.06462, 2024. Y. Zhao, J. Huang, J. Hu, X. Wang, Y. Mao, D. Zhang, Z. Ji"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Flamingo: a visual language model for few-shot learning",
+      "jaccard_similarity": 0.08333333333333333
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 32196,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 22
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 16,
+    "arxiv_id": "2402.17753",
+    "gold_reference": {
+      "s2_paper_id": "1dc04035b9926c46ded436e5762f3924ab29516e",
+      "title": "Dialogue Natural Language Inference",
+      "doi": "10.18653/v1/P19-1363",
+      "arxiv_id": "1811.00671",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "arXiv preprint arXiv:2310.00835. Sean Welleck, Jason Weston, Arthur Szlam, and Kyunghyun Cho. 2019. Dialogue natural language inference. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, pages"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Making large language models better data creators",
+      "jaccard_similarity": 0.1
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 40714,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 45
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 17,
+    "arxiv_id": "2005.11401",
+    "gold_reference": {
+      "s2_paper_id": "b1d24e8e08435b7c52335485a0d635abf9bc604c",
+      "title": "FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+      "doi": "10.18653/v1/N18-1074",
+      "arxiv_id": "1803.05355",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Partial Match",
+      "snippet": "etworks.pdf. 14  [56] James Thorne, Andreas Vlachos, Christos Christodoulopoulos, and Arpit Mittal. FEVER: a large-scale dataset for fact extraction and VERiﬁcation. In Proceedings of the 2018 Conference of the North American Ch"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+      "jaccard_similarity": 0.3125
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 31711,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 38
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 18,
+    "arxiv_id": "2005.11401",
+    "gold_reference": {
+      "s2_paper_id": "f7df82c5417b9ec7582def05b79ca080a07c4f3b",
+      "title": "R3: Reinforced Ranker-Reader for Open-Domain Question Answering",
+      "doi": "10.1609/aaai.v32i1.12053",
+      "arxiv_id": null,
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "o Guo, Zhiguo Wang, Tim Klinger, Wei Zhang, Shiyu Chang, Gerry Tesauro, Bowen Zhou, and Jing Jiang. R3: Reinforced ranker-reader for open-domain question answering. In Sheila A. McIlraith and Kilian Q. Weinberger, editors, Proceedings of the Thirty-Second AAAI Co"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Dense passage retrieval for open-domain question answering",
+      "jaccard_similarity": 0.4166666666666667
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 31711,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 38
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 19,
+    "arxiv_id": "2210.06726",
+    "gold_reference": {
+      "s2_paper_id": "4c2733d191e347753bb28afa46a1c55c65e085be",
+      "title": "Persistent Anti-Muslim Bias in Large Language Models",
+      "doi": "10.1145/3461702.3462624",
+      "arxiv_id": "2101.05783",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "References Abubakar Abid, Maheen Saleem Farooqi, and James Y. Zou. 2021. Persistent anti-muslim bias in large language models. Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society. Tom Brown, Benjamin Mann,"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 29241,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 20,
+    "arxiv_id": "2310.11511",
+    "gold_reference": {
+      "s2_paper_id": "acf90b4d165690fe27c62c4af1a28d540c784000",
+      "title": "Automatic Evaluation of Attribution by Large Language Models",
+      "doi": "10.48550/arXiv.2305.06311",
+      "arxiv_id": "2305.06311",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "https://arxiv.org/abs/2310.01558. Xiang Yue, Boshi Wang, Kai Zhang, Ziru Chen, Yu Su, and Huan Sun. Automatic evaluation of attribution by large language models. arXiv preprint arXiv:2305.06311, 2023. URL https: //arxiv.org/abs/2305.06311. Tianhua Zhang, Hongy"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "REFERENCES",
+      "ref_section_length_chars": 60622,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 21,
+    "arxiv_id": "2310.11511",
+    "gold_reference": {
+      "s2_paper_id": "87c5b281fa43e6f27191b20a8dd694eda1126336",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "doi": "10.52202/068431-1189",
+      "arxiv_id": "2205.14135",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "REFERENCES",
+      "ref_section_length_chars": 60622,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 0
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 22,
+    "arxiv_id": "2405.14831",
+    "gold_reference": {
+      "s2_paper_id": "43517286be948a72d8f8fe2357450cb25f3a2345",
+      "title": "The hippocampal indexing theory and episodic memory: Updating the index",
+      "doi": "10.1002/HIPO.20350",
+      "arxiv_id": null,
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "100 2:147–54, 1986. URL https://pubmed.ncbi.nlm.nih.gov/3008780/. [76] T. J. Teyler and J. W. Rudy. The hippocampal indexing theory and episodic memory: Updating the index. Hippocampus, 17, 2007. URL https://pubmed.ncbi.nlm.nih.gov/ 17696170/. [77] H. Trivedi, N. Balasub"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Google and the mind",
+      "jaccard_similarity": 0.18181818181818182
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 64460,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 42
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 23,
+    "arxiv_id": "2502.01341",
+    "gold_reference": {
+      "s2_paper_id": null,
+      "title": "If the contribution is primarily a new model architecture, the paper should describe the architecture clearly and fully",
+      "doi": null,
+      "arxiv_id": null,
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Absent",
+      "snippet": "Not found"
+    },
+    "closest_prediction": {
+      "title": "The foundation model transparency index",
+      "jaccard_similarity": 0.1111111111111111
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 32196,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 22
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 24,
+    "arxiv_id": "2005.11401",
+    "gold_reference": {
+      "s2_paper_id": "fb0f20a356ba6160f4728c1f18594300ac4d1d00",
+      "title": "Towards a Better Metric for Evaluating Question Generation Systems",
+      "doi": "10.18653/v1/D18-1429",
+      "arxiv_id": "1808.10192",
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "v1/D18-1255. URL https://www.aclweb.org/anthology/D18-1255. [42] Preksha Nema and Mitesh M. Khapra. Towards a better metric for evaluating question generation systems. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 3"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": "Natural Questions: a Benchmark for Question Answering Research",
+      "jaccard_similarity": 0.21428571428571427
+    },
+    "audit_diagnostics": {
+      "detected_heading": "References",
+      "ref_section_length_chars": 31711,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 38
+    },
+    "matching_diagnostics": {
+      "review_flags": [],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  },
+  {
+    "sample_index": 25,
+    "arxiv_id": "2412.06014",
+    "gold_reference": {
+      "s2_paper_id": null,
+      "title": "Burr Settles",
+      "doi": null,
+      "arxiv_id": null,
+      "in_local_corpus": false
+    },
+    "reference_section_evidence": {
+      "presence": "Present",
+      "snippet": "networks: A core-set approach. In International Conference on Learning Representations, 2018. 3, 18 Burr Settles. Active learning literature survey. Technical report, University of Wisconsin-Madison Department of"
+    },
+    "supplementary_full_text_evidence": {
+      "presence": "Not Searched",
+      "snippet": ""
+    },
+    "closest_prediction": {
+      "title": null,
+      "jaccard_similarity": 0.0
+    },
+    "audit_diagnostics": {
+      "detected_heading": "REFERENCES",
+      "ref_section_length_chars": 89989,
+      "is_fallback_used": false,
+      "predictions_loaded_count": 52
+    },
+    "matching_diagnostics": {
+      "review_flags": [
+        "very_short_title"
+      ],
+      "potential_matching_failure": false
+    },
+    "final_label": "",
+    "review_note": ""
+  }
+]

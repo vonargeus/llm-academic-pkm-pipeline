@@ -10,6 +10,7 @@
     "transitive_deduplication": true,
     "invalid_agent_outputs_filtered": 0,
     "excluded_gold_unusable_papers": [
+      "2305.19951",
       "2510.14538",
       "2602.23878"
     ],

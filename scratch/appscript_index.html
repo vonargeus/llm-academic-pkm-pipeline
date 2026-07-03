@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <!-- Import Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Marked.js for Markdown Rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --accent-light: rgba(59, 130, 246, 0.1);
+      --success: #10b981;
+      --border: #475569;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: var(--bg-secondary);
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+
+    .main-container {
+      display: flex;
+      flex-grow: 1;
+      overflow: hidden;
+      height: calc(100vh - 65px);
+    }
+
+    /* Left Side: Note Preview */
+    .left-panel {
+      width: 55%;
+      height: 100%;
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      background-color: #0b0f19;
+    }
+
+    .paper-meta {
+      padding: 1.5rem;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .paper-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .paper-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-right: 1rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .paper-links a:hover {
+      text-decoration: underline;
+    }
+
+    .note-content-viewer {
+      padding: 2rem;
+      overflow-y: auto;
+      flex-grow: 1;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      color: #e2e8f0;
+    }
+
+    /* Markdown styling inside note content */
+    .note-content-viewer h1, .note-content-viewer h2, .note-content-viewer h3 {
+      color: #fff;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+    .note-content-viewer h1 { font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem;}
+    .note-content-viewer h2 { font-size: 1.2rem; }
+    .note-content-viewer h3 { font-size: 1.05rem; }
+    .note-content-viewer p { margin-bottom: 1rem; }
+    .note-content-viewer ul, .note-content-viewer ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+    .note-content-viewer li { margin-bottom: 0.25rem; }
+    .note-content-viewer hr { border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+    .note-content-viewer code { background-color: var(--bg-secondary); padding: 2px 4px; border-radius: 4px; font-family: monospace; font-size: 0.85rem; }
+    .note-content-viewer pre { background-color: var(--bg-secondary); padding: 1rem; border-radius: 6px; overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border); }
+    .note-content-viewer pre code { background: none; padding: 0; }
+
+    /* Right Side: Form Panel */
+    .right-panel {
+      width: 45%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-primary);
+    }
+
+    .tabs-bar {
+      display: flex;
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+      flex-shrink: 0;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 1rem;
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      background-color: rgba(59, 130, 246, 0.05);
+    }
+
+    .form-scroll-container {
+      padding: 2rem;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .intro-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    .intro-card h3 {
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .question-group {
+      margin-bottom: 2rem;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .question-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .question-help {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    /* 1-5 scale buttons */
+    .scale-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .scale-btn {
+      flex: 1;
+      padding: 0.75rem 0;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .scale-btn:hover {
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .scale-btn.selected {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+    }
+    
+    .scale-label {
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: inherit;
+      opacity: 0.8;
+    }
+
+    .comment-area {
+      width: 100%;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: #fff;
+      padding: 0.75rem;
+      font-family: inherit;
+      font-size: 0.875rem;
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .comment-area:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    /* Actions Bar */
+    .actions-bar {
+      padding: 1.25rem 2rem;
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-primary:disabled {
+      background-color: var(--border);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    /* Toast notification */
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      background-color: var(--success);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.875rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: none;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>RQ4: Expert Evaluation Portal</h1>
+      <div class="subtitle">Assessor: Emile van Krieken (Supervisor &amp; Domain Expert)</div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Left panel (Note Viewer) -->
+    <div class="left-panel">
+      <div class="paper-meta">
+        <div class="paper-title" id="meta-title">Loading...</div>
+        <div class="paper-links">
+          <a href="#" id="meta-arxiv" target="_blank">🔗 arXiv Link</a>
+          <a href="#" id="meta-pdf" target="_blank">📄 PDF Download</a>
+        </div>
+      </div>
+      <div class="note-content-viewer" id="note-viewer">
+        <!-- Rendered markdown goes here -->
+      </div>
+    </div>
+
+    <!-- Right panel (Questionnaire Form) -->
+    <div class="right-panel">
+      <div class="tabs-bar" id="tabs-bar">
+        <!-- Tab buttons populated by JS -->
+      </div>
+
+      <div class="form-scroll-container">
+        <!-- Welcome Card -->
+        <div class="intro-card">
+          <h3>Hello Emile,</h3>
+          <p style="margin-bottom: 0.5rem;">Thank you for evaluating the generated summaries. For each of the 5 papers, please review the <strong>generated Obsidian Markdown note</strong> on the left, and fill out the ratings on the right.</p>
+          <p>Once you have rated all 5 papers, click the <strong>Submit All Evaluations</strong> button at the bottom. This will automatically record your responses in a Google Sheet.</p>
+        </div>
+
+        <div id="questions-container">
+          <!-- Active paper's questions -->
+          
+          <div class="question-group">
+            <div class="question-title">Q1. Factual Faithfulness</div>
+            <div class="question-help">Does the agent-generated note contain false claims, incorrect attributions, or hallucinations compared to the original paper?</div>
+            <div class="scale-container">
+              <button class="scale-btn" onclick="setScore('q1', 1)">1 <span class="scale-label">Hallucinated</span></button>
+              <button class="scale-btn" onclick="setScore('q1', 2)">2 <span class="scale-label">Poor</span></button>
+              <button class="scale-btn" onclick="setScore('q1', 3)">3 <span class="scale-label">Fair</span></button>
+              <button class="scale-btn" onclick="setScore('q1', 4)">4 <span class="scale-label">Good</span></button>
+              <button class="scale-btn" onclick="setScore('q1', 5)">5 <span class="scale-label">Faithful</span></button>
+            </div>
+          </div>
+
+          <div class="question-group">
+            <div class="question-title">Q2. Core Contribution Coverage</div>
+            <div class="question-help">Did the note successfully capture the core research problem, methodology, and primary evaluation results?</div>
+            <div class="scale-container">
+              <button class="scale-btn" onclick="setScore('q2', 1)">1 <span class="scale-label">Missed All</span></button>
+              <button class="scale-btn" onclick="setScore('q2', 2)">2 <span class="scale-label">Poor</span></button>
+              <button class="scale-btn" onclick="setScore('q2', 3)">3 <span class="scale-label">Fair</span></button>
+              <button class="scale-btn" onclick="setScore('q2', 4)">4 <span class="scale-label">Good</span></button>
+              <button class="scale-btn" onclick="setScore('q2', 5)">5 <span class="scale-label">Complete</span></button>
+            </div>
+          </div>
+
+          <div class="question-group">
+            <div class="question-title">Q3. Structure and Readability</div>
+            <div class="question-help">Is the generated note well-organized, coherent, and easy for a researcher to read and comprehend quickly?</div>
+            <div class="scale-container">
+              <button class="scale-btn" onclick="setScore('q3', 1)">1 <span class="scale-label">Unreadable</span></button>
+              <button class="scale-btn" onclick="setScore('q3', 2)">2 <span class="scale-label">Poor</span></button>
+              <button class="scale-btn" onclick="setScore('q3', 3)">3 <span class="scale-label">Fair</span></button>
+              <button class="scale-btn" onclick="setScore('q3', 4)">4 <span class="scale-label">Good</span></button>
+              <button class="scale-btn" onclick="setScore('q3', 5)">5 <span class="scale-label">Excellent</span></button>
+            </div>
+          </div>
+
+          <div class="question-group">
+            <div class="question-title">Q4. Utility for Rediscovery</div>
+            <div class="question-help">Does this generated note provide significant added utility compared to reading the paper's abstract alone (e.g. as a memory aid)?</div>
+            <div class="scale-container">
+              <button class="scale-btn" onclick="setScore('q4', 1)">1 <span class="scale-label">No Utility</span></button>
+              <button class="scale-btn" onclick="setScore('q4', 2)">2 <span class="scale-label">Low</span></button>
+              <button class="scale-btn" onclick="setScore('q4', 3)">3 <span class="scale-label">Fair</span></button>
+              <button class="scale-btn" onclick="setScore('q4', 4)">4 <span class="scale-label">Good</span></button>
+              <button class="scale-btn" onclick="setScore('q4', 5)">5 <span class="scale-label">High</span></button>
+            </div>
+          </div>
+
+          <div class="question-group">
+            <div class="question-title">Optional Feedback / Comments</div>
+            <textarea class="comment-area" id="feedback-field" placeholder="Provide any qualitative comments, discovered errors, or layout notes here..." oninput="updateFeedback()"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions-bar">
+        <button class="btn btn-secondary" id="prev-btn" onclick="prevTab()">Back</button>
+        <div style="font-size: 0.85rem; color: var(--text-secondary);" id="progress-text">Paper 1 of 5</div>
+        <button class="btn btn-primary" id="next-btn" onclick="nextTab()">Next Paper</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast">Evaluation submitted successfully!</div>
+
+  <script>
+    // Embed the notes and metadata
+    var papersData = [
+  {
+    "id": "2305.19951",
+    "title": "Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts",
+    "arxiv_url": "https://arxiv.org/abs/2305.19951",
+    "pdf_url": "https://arxiv.org/pdf/2305.19951.pdf",
+    "note_content": "# Summary\n\nThis paper investigates the phenomenon of [[reasoning shortcuts]] (RSs) in [[Neuro-Symbolic AI]] (NeSy) systems, where models achieve high task accuracy by learning concepts with unintended semantics. The authors formalize RSs as unintended optima of the learning objective and identify four key root causes behind their occurrence: the structure of the prior knowledge, the data distribution, the learning objective, and the architecture of the neural concept extractor. Their main finding is that reasoning shortcuts are highly pervasive across diverse NeSy architectures, and unsupervised mitigation strategies are largely insufficient, highlighting a critical bottleneck for the trustworthiness and interpretability of NeSy predictors.\n\n# Main Contribution\n\n- **Formalization of Reasoning Shortcuts**: Mathematically defines [[reasoning shortcuts]] as unintended optima in the parameter space and identifies four key root causes behind their occurrence.\n- **Generality Analysis**: Demonstrates that RSs are a widespread issue impacting multiple state-of-the-art NeSy predictors, including [[DeepProbLog]], [[Semantic Loss]], and [[Logic Tensor Networks]].\n- **Mitigation Strategy Evaluation**: Identifies and theoretically analyzes several supervised and unsupervised mitigation strategies.\n- **Empirical Validation**: Evaluates these mitigation strategies on NeSy benchmarks, demonstrating the severe limitations of unsupervised remedies and the necessity of targeted supervision.\n\n# Key Results\n\n- **Pervasiveness of Shortcuts**: RSs occur consistently across different NeSy frameworks, including [[DeepProbLog]] (probabilistic), [[Semantic Loss]] (entropy-based), and [[Logic Tensor Networks]] (fuzzy logic).\n- **Failure of Unsupervised Mitigations**: Unsupervised strategies, such as entropy regularization or standard architectural constraints, are often insufficient to prevent RSs because the shortcut solutions are mathematically indistinguishable from the intended solutions without external semantic grounding.\n- **Efficacy of Concept Supervision**: Even a small amount of concept-level supervision (e.g., labeling a tiny fraction of the concept states during training) dramatically mitigates RSs and forces the [[neural concept extractor]] to align with the intended semantics.\n\n# Limitations\n\nThe primary limitation is that [[reasoning shortcuts]] are highly persistent and difficult to eliminate without explicit, costly concept-level supervision. The study highlights that there is currently no universal, unsupervised \"silver bullet\" remedy, which casts doubt on the out-of-the-box trustworthiness and unsupervised interpretability of existing NeSy architectures in complex real-world domains."
+  },
+  {
+    "id": "2005.11401",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "arxiv_url": "https://arxiv.org/abs/2005.11401",
+    "pdf_url": "https://arxiv.org/pdf/2005.11401.pdf",
+    "note_content": "# Summary\n\nThis paper introduces [[Retrieval-Augmented Generation]] (RAG), a general-purpose fine-tuning framework that combines pre-trained [[parametric memory]] (a sequence-to-sequence model) with [[non-parametric memory]] (a dense vector index of Wikipedia accessed via a neural retriever). The authors propose two formulations, [[RAG-Sequence]] and [[RAG-Token]], which treat retrieved documents as latent variables and marginalize over them in different ways. By combining these components, the model can dynamically retrieve relevant documents to generate more factual, specific, and diverse text. RAG achieves state-of-the-art results on several knowledge-intensive tasks, including open-domain [[Question Answering]], while allowing the external knowledge base to be easily swapped or updated without retraining the generator.\n\n# Main Contribution\n\n- Introduced [[Retrieval-Augmented Generation]] (RAG), a novel end-to-end differentiable framework combining pre-trained [[parametric memory]] and [[non-parametric memory]] for [[sequence-to-sequence]] generation.\n- Proposed two distinct probabilistic formulations for marginalizing over retrieved documents: [[RAG-Sequence]] (using the same document for the entire sequence) and [[RAG-Token]] (allowing different documents to inform different tokens).\n- Demonstrated state-of-the-art performance on multiple open-domain [[Question Answering]] benchmarks, outperforming both purely parametric models and traditional retrieve-and-extract architectures.\n- Showed that the non-parametric memory index can be swapped dynamically at test time to update the model's knowledge base without requiring parameter retraining.\n\n# Key Results\n\n- **Open-Domain QA**: RAG sets a new state-of-the-art on [[Natural Questions]] (44.5% EM), [[WebQuestions]] (45.5% EM), and [[CuratedTrec]] (60.1% EM), outperforming both parametric-only models (e.g., [[T5]] at 32.6% on NQ) and retrieve-and-extract models. On [[TriviaQA]], RAG achieves 56.8% EM, outperforming contemporary models.\n- **Generation Quality**: On [[MS-MARCO]] and [[Jeopardy]] generation, RAG models generate more specific, diverse, and factual language than a parametric-only [[BART]] baseline, as measured by human evaluation and overlap metrics.\n- **Fact Verification**: On [[FEVER]], RAG achieves 76.8% label accuracy, which is within 4.3% of state-of-the-art pipeline models that use strong, explicit retrieval supervision.\n- **Knowledge Hot-Swapping**: The authors demonstrate that by replacing the December 2018 Wikipedia index with a newer index, RAG can instantly update its world knowledge (e.g., correctly identifying a new world leader) without retraining any parameters.\n\n# Limitations\n\nThe model relies on a top-$K$ approximation to marginalize over the latent documents, which may miss relevant documents outside the top-$K$ retrieval pool. Additionally, keeping the document encoder fixed during training prevents the representation of documents from adapting to the generation task, which is a compromise made to avoid the high computational cost of rebuilding the [[dense vector index]] during training."
+  },
+  {
+    "id": "2402.12240",
+    "title": "bears MAKE NEURO-SYMBOLIC MODELS AWARE OF THEIR REASONING SHORTCUTS",
+    "arxiv_url": "https://arxiv.org/abs/2402.12240",
+    "pdf_url": "https://arxiv.org/pdf/2402.12240.pdf",
+    "note_content": "# Summary\n\n[[Neuro-Symbolic (NeSy) predictors]] often exhibit [[overconfidence]] in [[concepts]] affected by [[Reasoning Shortcuts (RSs)]], which compromises their [[reliability]] and [[generalization]]. This paper introduces [[bears (BE Aware of Reasoning Shortcuts)]], an [[ensembling technique]] designed to make [[NeSy models]] aware of these [[RSs]] by calibrating their [[concept-level confidence]] without requiring costly [[dense supervision]]. [[bears]] encourages models to be uncertain about [[concepts]] impacted by [[semantic ambiguity]], thereby improving [[RS-awareness]] and facilitating more efficient [[active learning]] for [[concept supervision]].\n\n# Main Contribution\n\n- Shift focus from [[RS mitigation]] to [[RS awareness]] and demonstrate that state-of-the-art [[NeSy predictors]] are not [[RS-aware]].\n- Propose [[bears]], a method that improves [[RS-awareness]] of [[NeSy predictors]] without relying on [[dense supervision]].\n- Show that [[bears]] outperforms state-of-the-art [[uncertainty calibration]] methods across various tasks and architectures.\n- Enable intelligent acquisition of [[concept annotations]], thereby lowering the cost of supervised [[RS mitigation]].\n\n# Key Results\n\n- State-of-the-art [[NeSy predictors]] were empirically shown to lack [[RS-awareness]], predicting [[concepts]] affected by [[RSs]] with high [[confidence]].\n- [[bears]] successfully improved the [[RS-awareness]] of three state-of-the-art [[NeSy architectures]] across four [[NeSy data sets]], including the [[BDD-OIA]] autonomous driving task.\n- [[bears]] demonstrated superior performance compared to existing state-of-the-art [[uncertainty calibration]] methods in improving [[RS-awareness]].\n- The method enables a simple but effective [[active learning]] strategy for acquiring [[concept annotations]], thereby reducing the cost associated with supervised [[RS mitigation]].\n\n# Limitations\n\nWhile [[bears]] significantly improves [[RS-awareness]], it does not aim to *avoid* [[Reasoning Shortcuts]] altogether, but rather to make the model *aware* of them. The ultimate goal of full [[RS mitigation]] still often requires [[concept supervision]], though [[bears]] facilitates its intelligent acquisition. Furthermore, the effectiveness of [[bears]] relies on the ability of the diversified [[ensemble]] to capture and express [[semantic ambiguity]], which might be challenging in highly complex or subtle [[RS]] scenarios."
+  },
+  {
+    "id": "2401.15884",
+    "title": "Corrective Retrieval Augmented Generation",
+    "arxiv_url": "https://arxiv.org/abs/2401.15884",
+    "pdf_url": "https://arxiv.org/pdf/2401.15884.pdf",
+    "note_content": "# Summary\n\nThis paper addresses the problem of [[Large Language Models (LLMs)]] exhibiting [[hallucinations]] and the heavy reliance of [[Retrieval-Augmented Generation (RAG)]] on the relevance of retrieved documents. The authors propose [[Corrective Retrieval Augmented Generation (CRAG)]], a method to improve RAG's robustness when initial retrieval fails. [[CRAG]] employs a [[lightweight retrieval evaluator]] to assess document quality, triggers [[large-scale web searches]] for correction, and utilizes a [[decompose-then-recompose algorithm]] to refine retrieved content. Experiments demonstrate that [[CRAG]] significantly enhances the performance of [[RAG-based approaches]] across both [[short-form generation]] and [[long-form generation]] tasks.\n\n# Main Contribution\n\n-   Studies scenarios where the [[retriever]] returns inaccurate results and designs corrective strategies for [[RAG]] to improve its robustness.\n-   Proposes [[CRAG]], a plug-and-play method for automatic [[self-correction]] and efficient utilization of retrieved documents.\n-   Demonstrates [[CRAG]]\u2019s adaptability to [[RAG-based approaches]] and generalizability across [[short-form generation]] and [[long-form generation]] tasks through extensive experimental results.\n\n# Key Results\n\n-   [[CRAG]] significantly improves the performance of standard [[RAG]] and state-of-the-art [[Self-RAG]].\n-   The method demonstrates strong adaptability to various [[RAG-based approaches]].\n-   [[CRAG]] exhibits generalizability across both [[short-form generation]] and [[long-form generation]] tasks.\n-   Performance improvements were observed across all four tested datasets: [[PopQA]], [[Biography]], [[Pub Health]], and [[Arc-Challenge]].\n\n# Limitations\n\nThe paper does not explicitly list limitations. However, potential limitations could include the computational overhead introduced by [[large-scale web searches]] and the reliance on the accuracy and effectiveness of the [[lightweight retrieval evaluator]] itself. If the evaluator misjudges document quality, the corrective actions might not be optimal."
+  },
+  {
+    "id": "2401.05224",
+    "title": "Do Vision and Language Encoders Represent the World Similarly?",
+    "arxiv_url": "https://arxiv.org/abs/2401.05224",
+    "pdf_url": "https://arxiv.org/pdf/2401.05224.pdf",
+    "note_content": "# Summary\n\nThis paper investigates whether unaligned uni-modal [[vision encoders]] and [[language encoders]] can communicate in a [[zero-shot]] manner by leveraging their inherent [[semantic similarity]] in representing the physical world. The authors use [[Centered Kernel Alignment (CKA)]] to demonstrate that the [[latent spaces]] of unaligned encoders exhibit comparable semantic similarity to [[aligned encoders]] like [[CLIP]]. They propose two [[training-free]] methods\u2014a [[Fast Quadratic Assignment Problem (QAP) optimization]] and a [[Localized CKA metric-based matching/retrieval]]\u2014to connect these encoders. The main finding is that [[zero-shot communication]] between unaligned [[encoder]] [[latent spaces]] is achievable for various [[cross-modal retrieval]] and classification tasks.\n\n# Main Contribution\n\n- Proposing a matching method that maximizes [[CKA]] by formulating it as a [[Quadratic Assignment Problem (QAP)]] with improved transformations and normalizations.\n- Introducing a novel [[local CKA metric]] for retrieval between unaligned [[embedding spaces]], demonstrating superior performance on [[COCO]] caption image retrieval.\n- Benchmarking the method on [[COCO]], [[NoCaps]], and [[ImageNet-100]], demonstrating [[zero-shot communication]] between [[encoder]] [[latent spaces]] for various downstream tasks.\n- Demonstrating a practical application for [[cross-lingual image retrieval]] using [[Sentence Transformers]] and a [[CLIP]] [[vision encoder]].\n\n# Key Results\n\n-   [[CKA]] analysis revealed that the [[representation spaces]] of unaligned [[vision]] and [[language encoders]] (e.g., [[DINOv2]] and [[All-Roberta-large-v1]]) exhibit [[semantic similarity]] comparable to that of [[aligned encoders]] like [[CLIP]] on [[COCO]] image-caption pairs.\n-   The [[CKA]] score is highly sensitive to data ordering; for [[DINOv2]] and [[All-Roberta-large-v1]] on [[COCO]], the [[CKA]] score dropped from 0.72 (0% shuffling) to 0.01 (100% shuffling), demonstrating its ability to identify correct pairings.\n-   The proposed [[Localized CKA metric-based matching/retrieval]] method demonstrated superior performance compared to [[relative representations]] on the [[COCO]] caption image retrieval task.\n-   The methods achieved [[zero-shot communication]] between [[encoder]] [[latent spaces]] across various downstream tasks, including [[cross-domain caption retrieval]] on [[NoCaps]] and [[image classification]] on [[ImageNet-100]], despite not being explicitly optimized for alignment.\n-   A practical application was successfully demonstrated for [[cross-lingual image retrieval]] by combining [[Sentence Transformers]] trained in various languages with a [[CLIP]] [[vision encoder]] trained only in English.\n\n# Limitations\n\nThe paper does not explicitly list limitations or failure modes."
+  }
+];
+    var activeIndex = 0;
+
+    // Track user inputs
+    var scores = papersData.map(function(p) {
+      return {
+        id: p.id,
+        title: p.title,
+        q1: null,
+        q2: null,
+        q3: null,
+        q4: null,
+        feedback: ""
+      };
+    });
+
+    // Populate Tab Buttons
+    var tabsBar = document.getElementById('tabs-bar');
+    papersData.forEach(function(p, index) {
+      var btn = document.createElement('button');
+      btn.className = 'tab-btn' + (index === 0 ? ' active' : '');
+      btn.innerText = 'Paper ' + (index + 1);
+      btn.id = 'tab-' + index;
+      btn.onclick = function() { selectTab(index); };
+      tabsBar.appendChild(btn);
+    });
+
+    // Initialize display
+    selectTab(0);
+
+    // Render markdown and update view
+    function selectTab(index) {
+      document.getElementById('tab-' + activeIndex).classList.remove('active');
+      activeIndex = index;
+      document.getElementById('tab-' + activeIndex).classList.add('active');
+
+      // Update metadata & notes view
+      var paper = papersData[activeIndex];
+      document.getElementById('meta-title').innerText = paper.title;
+      document.getElementById('meta-arxiv').href = paper.arxiv_url;
+      document.getElementById('meta-pdf').href = paper.pdf_url;
+      
+      // Render markdown using Marked.js
+      document.getElementById('note-viewer').innerHTML = marked.parse(paper.note_content);
+
+      // Restore scores for the form buttons
+      restoreButtons();
+
+      // Restore comment text
+      document.getElementById('feedback-field').value = scores[activeIndex].feedback;
+
+      // Update progress text
+      document.getElementById('progress-text').innerText = 'Paper ' + (activeIndex + 1) + ' of ' + papersData.length;
+
+      // Update Navigation Buttons
+      var prevBtn = document.getElementById('prev-btn');
+      var nextBtn = document.getElementById('next-btn');
+
+      if (activeIndex === 0) {
+        prevBtn.style.visibility = 'hidden';
+      } else {
+        prevBtn.style.visibility = 'visible';
+      }
+
+      if (activeIndex === papersData.length - 1) {
+        nextBtn.innerText = 'Submit Evaluations';
+        nextBtn.classList.add('btn-success');
+      } else {
+        nextBtn.innerText = 'Next Paper';
+        nextBtn.classList.remove('btn-success');
+      }
+    }
+
+    function setScore(q, val) {
+      scores[activeIndex][q] = val;
+      
+      // Visual feedback: select correct button
+      var btnGroupIndex = {'q1': 0, 'q2': 1, 'q3': 2, 'q4': 3}[q];
+      var containers = document.querySelectorAll('.question-group')[btnGroupIndex].querySelectorAll('.scale-btn');
+      containers.forEach(function(btn, i) {
+        if (i + 1 === val) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
+      });
+    }
+
+    function restoreButtons() {
+      var current = scores[activeIndex];
+      var qFields = ['q1', 'q2', 'q3', 'q4'];
+      
+      qFields.forEach(function(q, qIdx) {
+        var val = current[q];
+        var containers = document.querySelectorAll('.question-group')[qIdx].querySelectorAll('.scale-btn');
+        containers.forEach(function(btn, btnIdx) {
+          if (val && btnIdx + 1 === val) {
+            btn.classList.add('selected');
+          } else {
+            btn.classList.remove('selected');
+          }
+        });
+      });
+    }
+
+    function updateFeedback() {
+      scores[activeIndex].feedback = document.getElementById('feedback-field').value;
+    }
+
+    function prevTab() {
+      if (activeIndex > 0) {
+        selectTab(activeIndex - 1);
+      }
+    }
+
+    function nextTab() {
+      if (activeIndex < papersData.length - 1) {
+        selectTab(activeIndex + 1);
+      } else {
+        submitAll();
+      }
+    }
+
+    function submitAll() {
+      // Validate all scores are filled
+      for (var i = 0; i < scores.length; i++) {
+        var s = scores[i];
+        if (s.q1 === null || s.q2 === null || s.q3 === null || s.q4 === null) {
+          alert('Please answer all 4 Likert scale questions for Paper ' + (i + 1) + ' before submitting.');
+          selectTab(i);
+          return;
+        }
+      }
+
+      var submitBtn = document.getElementById('next-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Submitting...';
+
+      // Call Google Apps Script backend
+      google.script.run
+        .withSuccessHandler(function(result) {
+          if (result.success) {
+            var toast = document.getElementById('toast');
+            toast.innerText = 'Submitted successfully! Google Sheet generated in your Drive.';
+            toast.style.display = 'block';
+            setTimeout(function() { toast.style.display = 'none'; }, 6000);
+            
+            submitBtn.innerText = 'Submitted ✅';
+            alert('Thank you Emile! Your evaluation has been saved. You can close this tab now.');
+          } else {
+            alert('Submission failed: ' + result.error);
+            submitBtn.disabled = false;
+            submitBtn.innerText = 'Submit Evaluations';
+          }
+        })
+        .withFailureHandler(function(err) {
+          alert('Submission failed with server error: ' + err.toString());
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Submit Evaluations';
+        })
+        .submitEvaluation(JSON.stringify(scores));
+    }
+  </script>
+</body>
+</html>

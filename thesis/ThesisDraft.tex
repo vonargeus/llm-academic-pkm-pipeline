@@ -139,150 +139,45 @@ Existing advanced retrieval architectures optimize large-scale enterprise or web
 % ============================================================
 \section{Methodology}
 \label{sec:methodology}
+% Placeholder for Section 3: Methodology
+% Guideline: Describe the approach taken to investigate the research question, including 
+% methods, models, or frameworks applied. Present research process steps and reasoning, 
+% making assumptions explicit. Detail the data used (structure, preprocessing, limitations).
 
-The system architecture implemented in this thesis divides the ingestion and retrieval processes into two primary components: a multi-agent knowledge base construction pipeline and a graph-augmented Retrieval-Augmented Generation (RAG) search engine.
-
-\subsection{Multi-Agent Ingestion Pipeline}
-The ingestion pipeline converts a raw collection of PDF documents into a structured, Obsidian-compatible Personal Knowledge Graph (PKG). The pipeline operates recursively over each PDF using a modular multi-agent structure:
-\begin{enumerate}
-    \item \textbf{Text Extraction:} Raw PDF text is extracted using \texttt{PyMuPDF}.
-    \item \textbf{Metadata Agent:} Extracts core bibliographic metadata (title, authors, publication year, and venue) and the central research problem from the first 8,000 characters of the paper's text.
-    \item \textbf{Note Agent:} Generates a structured abstractive summary of the paper's contributions, methodologies, datasets, and limitations, outputting a standardized Markdown note.
-    \item \textbf{Inter-Document Link Construction Agent:} This agent executes two distinct relational tasks:
-    \begin{itemize}
-        \item \textit{Explicit Reference Extraction:} Locates the bibliography section of the paper using regular expressions, extracts listed references (titles, DOIs, arXiv IDs), and resolves matching records to existing local notes using Obsidian wiki-links (\texttt{[[Existing Note Title]]}) to map citation directions~\cite{tkaczyk2015cermine,councill2008parscit}.
-        \item \textit{Semantic Related-Paper Linking:} Reasons over note summaries to identify conceptual relations (such as \texttt{comparesTo} or \texttt{extends}) between papers, constructing semantic edges in the local knowledge graph.
-    \end{itemize}
-\end{enumerate}
-
-\subsection{Link-Expanded RAG Engine}
-To leverage the structured personal knowledge graph during search, we implement a topological retrieval expansion. Let $q$ represent the user query, and $N$ be the set of generated paper notes.
-\begin{enumerate}
-    \item \textbf{Vector Retrieval:} The query $q$ is embedded using a dense bi-encoder. Initial vector search retrieves the top-$k$ notes based on cosine similarity, establishing a base score $S_{vec}(n)$ for each retrieved note $n$.
-    \item \textbf{Graph score propagation:} Scores are propagated along the directed graph edges (wiki-links) to neighboring nodes. For a note $n_i$ linked to note $n_j$, a propagated score is calculated:
-    \[
-    S_{prop}(n_j) = S_{vec}(n_i) \cdot \tau_d
-    \]
-    where $\tau_d \in [0, 1]$ is a decay coefficient. The final relevance score for any note is the sum of its direct vector score and all incoming propagated scores:
-    \[
-    S_{final}(n) = S_{vec}(n) + \sum_{n' \in \text{incoming}(n)} S_{vec}(n') \cdot \tau_d
-    \]
-    This formulation boosts the rank of highly interlinked, relevant hub papers in the local database.
-\end{enumerate}
 
 % ============================================================
 \section{Results}
 \label{sec:results}
+% Placeholder for Section 4: Results
+% Guideline: Present the main results of analysis/implementation, explaining how they 
+% address the problem. Situate results in the context of reviewed literature, supporting 
+% conclusions with clear arguments and evidence.
 
-We present the experimental results addressing each of the three completed research questions, followed by the design of our qualitative evaluation protocol.
-
-\subsection{RQ1: Retrieval Performance}
-Table~\ref{tab:rq1_results} reports the retrieval performance of the Flat RAG baseline (sequential character chunks) compared with the Structured RAG configuration (single agent-generated note per paper) over our corpus.
-
-\begin{table}[h]
-\centering
-\caption{Retrieval performance comparison for RQ1.}
-\label{tab:rq1_results}
-\begin{tabular}{lccc}
-\toprule
-\textbf{Configuration} & \textbf{Recall@5} & \textbf{Precision@5} & \textbf{MRR@5} \\
-\midrule
-Flat RAG Baseline & 0.6958 & 0.2350 & 0.7292 \\
-Structured RAG (Notes) & 0.6958 & 0.2250 & \textbf{0.7438} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{RQ2: Metadata Extraction Accuracy}
-Metadata accuracy is split into bibliographic metadata extracted by the Metadata Agent (Group A, evaluated against OpenAlex) and semantic topic labels (Group B, evaluated against expert-curated annotations).
-
-\begin{table}[h]
-\centering
-\caption{Bibliographic metadata extraction accuracy (Group A).}
-\label{tab:rq2_group_a}
-\begin{tabular}{lc}
-\toprule
-\textbf{Metadata Field} & \textbf{Accuracy / F1-Score} \\
-\midrule
-Title Exact Match & 0.9750 \\
-Year Exact Match & 0.7750 \\
-Venue Fuzzy Match & 0.5000 \\
-Author Set F1-score & 0.8250 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-For semantic labels (Group B), the agent's classifications were matched using strict string equivalence (B1) and soft embedding cosine-similarity thresholds (B1s, evaluated over the test partition). Table~\ref{tab:rq2_group_b} shows the results.
-
-\begin{table}[h]
-\centering
-\caption{Semantic topic overlap and classification accuracy (Group B).}
-\label{tab:rq2_group_b}
-\begin{tabular}{lccc}
-\toprule
-\textbf{Matching Metric} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
-\midrule
-Strict Label Match (B1) & 0.3389 & 0.4756 & 0.3831 \\
-Soft Cosine Match (B1s) & \textbf{0.8443} & \textbf{0.8811} & \textbf{0.8614} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{RQ3: Citation Link Extraction Accuracy}
-We evaluate the Citation Link Agent's ability to extract explicit bibliography citations against the complete Semantic Scholar outgoing reference graph~\cite{lo2020s2orc,kinney2023semantic}. We exclude two papers (`2510.14538` and `2602.23878`) because Semantic Scholar returned zero references due to database harvesting holes (gold unusable), and three papers (`2309.15217`, `2401.15884`, and `2409.05591`) where the Gemini API refused generation due to safety blocks.
-
-Table~\ref{tab:rq3_results} shows the primary evaluation results computed over the remaining 35 successfully processed papers with valid gold references.
-
-\begin{table}[h]
-\centering
-\caption{Citation Link Agent reference extraction performance (Corrected Corpus).}
-\label{tab:rq3_results}
-\begin{tabular}{lcccccc}
-\toprule
-\textbf{Metric} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
-\midrule
-Citation Extraction & 1,192 & 186 & 825 & \textbf{0.8650} & \textbf{0.5910} & \textbf{0.7022} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The exact identifier match breakdown for the 1,192 True Positives was: 0 S2 paper IDs, 64 DOIs, 340 arXiv IDs, and 788 exact normalized titles. The system successfully removed 22 malformed agent outputs (lacking any identity fields) during validation.
-
-\subsection{RQ4: Qualitative Summary Quality Protocol}
-To evaluate summary quality, we established an expert rating protocol to be performed by the supervisor. Five papers are randomly sampled from the corpus. For each paper, the supervisor evaluates the agent-generated note on a 5-point Likert scale across four dimensions:
-\begin{enumerate}
-    \item \textbf{Factual Faithfulness:} Measures the absence of hallucinations or factual errors in the summary.
-    \item \textbf{Core Contribution Coverage:} Measures if the note captures the central methodology, datasets, and findings.
-    \item \textbf{Structure and Readability:} Evaluates formatting, flow, and overall coherence.
-    \item \textbf{Utility for Rediscovery:} Evaluates the structured added value compared to reading the paper abstract alone.
-\end{enumerate}
 
 % ============================================================
 \section{Discussion}
 \label{sec:discussion}
+% Placeholder for Section 5: Discussion
+% Guideline: Discuss assumptions, limitations, and reflect on alternatives. Consider what 
+% could be improved (methodology, code, data quality). Critically evaluate pros/cons compared 
+% to other approaches. Relate findings to the wider academic/practical context.
 
-\subsection{Information Retrieval and Context Preservation}
-The RQ1 results indicate that Structured RAG over summarized notes achieves a higher Mean Reciprocal Rank (MRR@5 = 0.7438) than Flat RAG (0.7292), while maintaining an identical Recall@5 (0.6958). This supports our hypothesis (H1) that consolidating a paper's content into a unified, agent-generated note preserves document-level context. It reduces noise and ensures that when a paper contains the answer, the vector space correctly ranks that specific document higher.
-
-\subsection{Semantic Mapping Discrepancies}
-The strict semantic evaluation against Emile's vault (Group B, B1 F1 = 9.57\%) highlighted a domain discrepancy. Emile's personal vault focused primarily on neuro-symbolic learning baselines, while the 40-paper corpus focuses heavily on RAG and knowledge graph architectures. When evaluated using soft embedding similarity (B1s F1 = 86.14%), the agent's semantic topic extraction showed high conceptual alignment, proving that the low strict F1 was caused by synonym differences (e.g., "GNNs" vs. "graph neural networks") rather than extraction errors.
-
-\subsection{API Copyright Barriers and Database Holes in Citation Extraction}
-The evaluation of reference extraction (RQ3) revealed that copyright-related safety filters in commercial LLMs and database indexing holes represent two distinct bottlenecks for automated scholarly workflows. The Gemini API returned `finish_reason: 4` (copyright block) for three papers, refusing to parse their bibliographies. Meanwhile, Semantic Scholar returned zero-reference metadata responses for two valid papers (creating data holes). Excluding these unusable cases yields a robust extraction precision of **86.50%** and an F1-score of **70.22%**, indicating that LLM agents are highly accurate citation extractors when supplied with complete gold standard records and not restricted by provider safety blocks.
 
 % ============================================================
 \section{Conclusion}
 \label{sec:conclusion}
-
-This thesis demonstrated that LLM agents can successfully automate the construction of structured personal knowledge bases. Restructuring a flat PDF collection into a graph of summarized notes and wiki-links improves search ranking quality (MRR). The agents extract bibliographic metadata with high accuracy (97.5\% title alignment) and achieve a 70.22\% F1-score in extracting explicit references. Future work will explore chunked bibliographies and open-source models to mitigate API safety filters.
+% Placeholder for Section 6: Conclusion
+% Guideline: Summarize findings, reflect on how well RQs were answered, highlight core 
+% contributions, and suggest future research directions.
 
 
 % ============================================================
 \section*{Addendum: Reflection}
 \label{sec:reflection}
-
-Developing this project required balancing software engineering with academic rigour. Creating a multi-agent pipeline revealed that LLMs can automate knowledge organization, but commercial API constraints (rate limits, safety blocks) dictate system reliability. The process highlighted the value of structured evaluations over simple user tests and provided key lessons in developing reproducible agentic architectures.
-
+% Placeholder for Addendum: Reflection (personal, subjective tone)
+% Guideline: Personal reflection on the process. Discuss planning, time management, 
+% adaptations, independent work, supervisor consultations, shift in style of thought, 
+% and academic/personal lessons.
 
 \bibliographystyle{splncs04}
 \bibliography{refs}
