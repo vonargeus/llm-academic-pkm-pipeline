@@ -1,70 +1,115 @@
-# Project Handoff State: Evaluation Status & Next Steps
+# Project Handoff State: Evaluation Status
 
-This document serves as the single source of truth for the next AI agent session. It summarizes the current state of the thesis evaluations, frozen results, and the clean workspace setup.
+Updated 2026-07-04. This file is a project-management handoff note, not a thesis source. Use the result JSON files listed below as the authoritative evidence.
 
 ---
 
 ## 1. Thesis Evaluation Status Overview
 
-| Research Question | Status | Reference Document | Output JSON |
+| Research Question | Status | Reference Document | Authoritative Output |
 |:---|:---:|:---|:---|
-| **RQ1: Retrieval Performance** | **Complete & Frozen** | `docs/rq1_evaluation_report.md` | `data/results/retrieval_metrics.json` |
-| **RQ2: Metadata Accuracy** | **Complete & Frozen** | `docs/rq2_report.md` | `data/results/rq2_results.json` |
-| **RQ3: Link Quality** | **Next Task** | `docs/reproducibility.md` | `data/results/link_run.json` |
-| **RQ4: Qualitative Summary** | **Next Task** | — | — |
+| **RQ1: Retrieval Performance** | **Complete & Frozen** | `docs/rq1_evaluation_report.md` | `data/results/retrieval_metrics.json`, `data/results/cv_report.json` |
+| **RQ2: Metadata and Topic Evaluation** | **Complete & Frozen** | `docs/rq2_report.md` | `data/results/rq2_results.json`, `data/results/b1c_test_results.json` |
+| **RQ3: Citation Reference Evaluation** | **Complete & Frozen** | `docs/reproducibility.md` | `rq3_final_results.json` |
+| **RQ4: Expert Evaluation** | **Complete** | `C:\Users\jubam\Downloads\RQ4_Evaluation_Responses.xlsx` | same spreadsheet |
 
 ---
 
 ## 2. Final Frozen Results
 
-### RQ1 — Retrieval Metrics (k = 5)
-Evaluated over the **40-paper corpus** using 40 queries. Link-Expanded RAG uses 5-fold cross-validated alpha selection.
+### RQ1 - Retrieval Metrics (k = 5)
 
-- **Baseline RAG:** Recall@5 = **0.6958**, Precision@5 = **0.2350**, MRR@5 = **0.7292**
+Evaluated over the 40-paper corpus using 40 queries. Link-Expanded RAG uses 5-fold cross-validated alpha selection.
+
+- **Flat RAG:** Recall@5 = **0.6958**, Precision@5 = **0.2350**, MRR@5 = **0.7292**
 - **Structured RAG:** Recall@5 = **0.6958**, Precision@5 = **0.2250**, MRR@5 = **0.7438**
-- **Link-Expanded RAG (CV-Optimized):** Recall@5 = **0.7188**, Precision@5 = **0.2300**, MRR@5 = **0.7425**
+- **Link-Expanded RAG:** Recall@5 = **0.7188**, Precision@5 = **0.2300**, MRR@5 = **0.7425**
 
----
+### RQ2 - Bibliographic and Topic Evaluation
 
-### RQ2 — Bibliographic & Semantic Alignment
-
-- **Group A (Bibliographic, n = 40):**
-  - Title Exact Match: **0.9750**
-  - Year Exact Match: **0.7750**
-  - Venue Fuzzy Match: **0.5000** (using arXiv/preprint canonical mapping)
+- **Bibliographic metadata (n = 40):**
+  - Title exact match: **0.9750**
+  - Year exact match: **0.7750**
+  - Venue fuzzy match: **0.5000**
   - Authors F1: **0.8250**
 
-- **Group B (Semantic Topics):**
-  - **B1 Strict (n=22):** P = 0.0762, R = 0.1508, F1 = **0.0957** (Primary semantic result)
-  - **B1-hT-15 Baseline (n=15):** P = 0.1006, R = 0.1989, F1 = **0.1256** (Same-subset control baseline)
-  - **B1c Calibrated (n=15):** P = 0.3389, R = 0.4756, F1 = **0.3831** (Secondary calibrated exact match)
+- **Strict topic evaluation (n = 22):**
+  - Precision = **0.0762**
+  - Recall = **0.1508**
+  - F1 = **0.0957**
+
+- **Canonicalised topic evaluation / calibrated vocabulary-mapping sensitivity analysis:**
+  - Development/test split: **7 development papers / 15 held-out test papers**
+  - Frozen parameters: tau_m = **0.7361**, best_k = **4**, tau_d = **0.85**
+  - Held-out exact scores: Precision = **0.3389**, Recall = **0.4756**, F1 = **0.3831**
+
+Do not use the internal experiment name `B1c` in the thesis body unless it appears in a reproducibility footnote or appendix. In the thesis, call this the **canonicalised topic evaluation** or **calibrated vocabulary-mapping evaluation**.
+
+### RQ3 - Citation Reference Evaluation
+
+Use the revised final pipeline only. The older `rq3_citation_link_evaluation.ipynb` and `data/results/rq3_citation_link_evaluation.json` are superseded and should be treated only as provenance/comparison artefacts.
+
+Final revised run:
+
+- Corpus papers considered: **40**
+- Scored papers: **37**
+- Excluded because usable gold references were unavailable: **3 papers**
+- Provider-block exclusions: **0**
+- In-scope extraction failures counted as false negatives: **2 papers**
+- Invalid agent outputs filtered before scoring: **57**
+- True positives: **1514**
+- False positives: **283**
+- False negatives: **534**
+- Precision = **0.8425**
+- Recall = **0.7393**
+- F1 = **0.7875**
+
+The RQ3 gold standard is the complete outgoing Semantic Scholar reference list for each scored paper, including external citations. It is not restricted to references pointing to papers in the local corpus.
+
+### RQ4 - Expert Evaluation
+
+The expert evaluation spreadsheet contains five rated generated notes and one expert evaluator.
+
+- Faithfulness mean: **3.8**
+- Coverage mean: **3.0**
+- Readability mean: **3.4**
+- Utility mean: **3.2**
+- Overall mean across 20 ratings: **3.35**
+
+Frame RQ4 as exploratory because it uses one expert and five papers.
 
 ---
 
-## 3. Renamed Gold Standard Files
-To make their origins clear, the gold files have been renamed:
-*   `data/gold_labels/emile_vault_gold.json` (expert topics, formerly `metadata_gold.json`)
-*   `data/gold_labels/emile_vault_arxiv_ids.json` (arXiv ID map, formerly `vault_arxiv_ids.json`)
+## 3. Gold Standard Files
 
-All references in `rq2_metadata_evaluation.ipynb`, `rq2_calibration.ipynb`, `docs/reproducibility.md`, and `scripts/parse_emile_vault.py` point to these new names.
+The expert-vault gold files are:
 
----
-
-## 4. Final Output JSON File Map
-These JSON files contain the exact metrics and should be used to populate any tables:
-*   **RQ1 CV Optimization:** `data/results/cv_report.json`
-*   **RQ1 Core Metrics:** `data/results/retrieval_metrics.json`
-*   **RQ2 Primary & B1 Results:** `data/results/rq2_results.json`
-*   **RQ2 Calibrated B1c/B1s Results:** `data/results/b1c_test_results.json`
-*   **RQ2 B1c Mapping Decisions:** `data/results/b1c_mappings.json`
-*   **RQ2 Frozen τ_m Threshold Details:** `data/results/b1c_vocab_threshold.json`
+- `data/gold_labels/emile_vault_gold.json` - expert topics, formerly `metadata_gold.json`
+- `data/gold_labels/emile_vault_arxiv_ids.json` - arXiv ID map, formerly `vault_arxiv_ids.json`
 
 ---
 
-## 5. Next Steps for the Next Agent (RQ3 Link Quality)
+## 4. Final Output File Map
 
-When starting the next session, the agent should:
-1.  Read `docs/reproducibility.md` to see the planned pipeline parameters.
-2.  Develop a clean script to evaluate **LLM link prediction accuracy** (comparing the agent's links against the gold link graph in `data/gold_labels/link_gold.json`).
-3.  The uncalibrated link metrics will likely be low due to the extreme sparsity of Emile's vault (only 2 paper-to-paper links in gold vs. 90 predicted links).
-4.  Frame the link density mismatch clearly (validating H3). Do not attempt to tune links to fit the sparse manual vault; explain the difference and reference the fact that the agent's denser graph improved search quality in RQ1 (+3.3% Recall).
+Use these files to populate thesis tables and result text:
+
+- **RQ1 CV optimization:** `data/results/cv_report.json`
+- **RQ1 core retrieval metrics:** `data/results/retrieval_metrics.json`
+- **RQ1 runs:** `data/results/baseline_run.json`, `data/results/structured_run.json`, `data/results/link_run.json`
+- **RQ2 bibliographic and strict topic results:** `data/results/rq2_results.json`
+- **RQ2 canonicalised topic results:** `data/results/b1c_test_results.json`
+- **RQ2 canonicalised mapping decisions:** `data/results/b1c_mappings.json`
+- **RQ2 frozen threshold details:** `data/results/b1c_vocab_threshold.json`
+- **RQ3 final metrics:** `rq3_final_results.json`
+- **RQ3 final predictions:** `rq3_final_predictions.json`
+- **RQ3 final raw responses:** `rq3_final_raw_responses.json`
+- **RQ4 expert responses:** `C:\Users\jubam\Downloads\RQ4_Evaluation_Responses.xlsx`
+
+---
+
+## 5. Thesis Writing Notes
+
+- Remove the old table row `RQ3 primary pipeline comparison - Common subset of 34 papers` from the methodology table. Keep only the final RQ3 row: `RQ3 citation-reference evaluation - 37 scored papers`.
+- The old 34-paper RQ3 comparison can be mentioned only as implementation provenance if needed; it should not be presented as the main RQ3 dataset.
+- The canonicalised topic evaluation is defensible as a secondary sensitivity analysis: it tests whether poor strict topic overlap is partly caused by vocabulary mismatch between agent labels and expert labels.
+- Keep RQ1/RQ2 artefacts frozen when describing RQ3. The revised RQ3 pipeline should not imply that earlier RQ1/RQ2 results were regenerated.

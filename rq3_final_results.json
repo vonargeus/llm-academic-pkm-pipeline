@@ -10,6 +10,7 @@
     "transitive_deduplication": true,
     "invalid_agent_outputs_filtered": 57,
     "excluded_gold_unusable_papers": [
+      "2305.19951",
       "2510.14538",
       "2602.23878"
     ],
@@ -22,7 +23,21 @@
     "llm_extraction_success_count": 31,
     "fallback_parser_used_count": 4,
     "unrecoverable_output_failure_count": 2,
-    "implementation_notes": "Batching and fallback parsing are implementation mechanisms used to support complete bibliography processing."
+    "implementation_notes": "Batching and fallback parsing are implementation mechanisms used to support complete bibliography processing.",
+    "requested_initial_model_alias": "gemini-flash-latest",
+    "configured_model_pool": [
+      "gemini-flash-latest",
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-3-flash-preview",
+      "gemini-2.0-flash-001",
+      "gemini-3.5-flash",
+      "gemini-3.1-flash-lite",
+      "gemini-2.5-flash-lite",
+      "gemini-2.0-flash-lite-001"
+    ],
+    "resolved_endpoint_per_request_logged": false,
+    "model_rotation_note": "Availability mechanism for quota/rate-limit failures; not an experimental model-comparison variable. Resolved endpoint was not logged for every request."
   },
   "overall_metrics": {
     "true_positives": 1514,
