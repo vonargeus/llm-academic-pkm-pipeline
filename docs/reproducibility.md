@@ -1,7 +1,6 @@
 # Reproducibility Guide
 
-This document provides all information needed to reproduce the thesis experiments.
-All parameters listed here are verified against the actual source code and result JSON files.
+This document provides the parameters and artefacts needed to reproduce the thesis experiments. Values listed here were checked against the local source code and result files on 2026-07-15.
 
 ---
 
@@ -9,16 +8,16 @@ All parameters listed here are verified against the actual source code and resul
 
 - Python 3.10+
 - Windows 10/11 or Linux
-- ~4 GB disk space for PDFs + indexes
-- Google Gemini API key (see below)
+- Approximately 4 GB disk space for PDFs and indexes
+- Google Gemini API key
 
 ---
 
 ## Installation
 
 ```bash
-git clone https://github.com/[TBD]/thesis-obsidian-agent.git
-cd thesis-obsidian-agent
+git clone https://github.com/vonargeus/llm-academic-pkm-pipeline.git
+cd llm-academic-pkm-pipeline
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 pip install -r requirements.txt
@@ -28,88 +27,84 @@ pip install -r requirements.txt
 
 ## LLM Configuration
 
-All LLM components use the Google Gemini API. Set your key as an environment variable:
+All LLM components use the Google Gemini API. Set the key as an environment variable:
 
 ```bash
 set GEMINI_API_KEY=your_key_here
 set LLM_PROVIDER=gemini
 ```
 
-### Model Pool
-
-The pipeline uses a rotating pool of Google Gemini Flash models to handle per-model
-daily rate limits (20 requests/day on free tier). Models are tried in order; if one
-exhausts its daily quota, the next is used automatically:
-
-```
-gemini-flash-latest   ← tried first
-gemini-2.5-flash
-gemini-2.0-flash
-gemini-3-flash-preview
-gemini-2.0-flash-001
-gemini-3.5-flash
-gemini-3.1-flash-lite
-gemini-2.5-flash-lite
-gemini-2.0-flash-lite-001
-```
-
-This is defined in `src/agents/metadata_agent.py` (MODEL_POOL list).
-All models in the pool use `temperature=0.0`.
+The ingestion agents use a shared Google Gemini Flash-family wrapper with `temperature=0.0`. The configured pool starts with `gemini-flash-latest` and can rotate to other Gemini Flash-family endpoints after provider-side quota or rate-limit errors. This rotation is an availability mechanism, not an experimental model-comparison variable. The final RQ3 artefacts record the configured pool and explicitly note that the resolved endpoint was not logged for every request.
 
 ---
 
 ## Verified Fixed Parameters
 
-All values verified from source code and result JSON files.
-
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Embedding model | `nomic-ai/nomic-embed-text-v1.5` | `src/retrieval/baseline.py`, `rq1_experimental_suite.ipynb` |
-| Chunk size | 512 tokens | `rq1_experimental_suite.ipynb` (tokenizer-based) |
-| Chunk overlap | 50 tokens | `rq1_experimental_suite.ipynb` |
-| Retrieval similarity | Cosine | `src/retrieval/baseline.py` |
-| Primary k value evaluated | 5 | `data/results/retrieval_metrics.json` |
-| LLM temperature (all components) | 0.0 | `src/agents/metadata_agent.py` line 107, 146 |
-| Note generation input length | first 12,000 characters of extracted text | `src/agents/note_agent.py` line 35 |
-| Link candidate input | target note frontmatter + summary (first 2,000 chars) + candidate summaries (first 500 chars each) | `src/agents/link_agent.py` lines 33, 41 |
-| RQ2 strict topic overlap papers | 22 (full set) | `data/results/rq2_results.json` |
-| RQ2 B1c dev/test split | 7 dev / 15 test | `data/results/b1c_test_results.json` |
-| RQ2 B1c embedding threshold (tau_m) | 0.7361 (frozen on dev set) | `data/results/b1c_test_results.json` |
-| RQ2 B1c best_k (top mappings kept) | 4 | `data/results/b1c_test_results.json` |
-| RQ2 B1c deduplication threshold (tau_d) | 0.85 | `data/results/b1c_test_results.json` |
-| RQ3 scored papers | 34 (of 40; 3 excluded: unusable gold; 3 excluded: provider block) | `data/results/rq3_citation_link_evaluation.json` |
-| RQ3 excluded (unusable gold) | 2305.19951, 2510.14538, 2602.23878 | `data/results/rq3_citation_link_evaluation.json` |
-| RQ3 excluded (provider blocked) | 2309.15217, 2401.15884, 2409.05591 | `data/results/rq3_citation_link_evaluation.json` |
-| Link-Expanded RAG CV folds | 5 (stratified by query category) | `data/results/cv_report.json` |
+| Embedding model | `nomic-ai/nomic-embed-text-v1.5` | `src/retrieval/baseline.py`, `src/retrieval/structured.py` |
+| Embedding prefixes | `search_document:` and `search_query:` | `src/retrieval/baseline.py`, `src/retrieval/structured.py` |
+| Chunk size for Flat RAG | 512 tokens | `src/retrieval/baseline.py` |
+| Chunk overlap for Flat RAG | 50 tokens | `src/retrieval/baseline.py` |
+| Retrieval similarity | cosine similarity over normalised embeddings | `src/retrieval/baseline.py`, `src/retrieval/structured.py` |
+| Primary retrieval cutoff | k = 5 | `data/results/retrieval_metrics.json`, `data/results/cv_report.json` |
+| Link-Expanded RAG CV folds | 5, stratified by query category | `data/results/cv_report.json` |
+| RQ1 query categories | 24 simple factual, 8 comparison, 8 neurosymbolic | `data/queries/queries.json` |
+| LLM temperature | 0.0 | `src/agents/metadata_agent.py`, `rq3_final_predictions.json` |
+| RQ3 requested initial LLM alias | `gemini-flash-latest` | `rq3_final_predictions.json` |
+| RQ3 LLM execution mechanism | Gemini Flash-family model pool with availability-driven rotation | `rq3_final_predictions.json`, `src/agents/metadata_agent.py` |
+| RQ3 per-request resolved endpoint logging | not logged | `rq3_final_predictions.json` |
+| RQ2 strict topic overlap papers | 22 papers | `data/results/rq2_results.json` |
+| RQ2 canonicalised topic split | 7 development / 15 test papers; test papers held out from selection of tau_d and k | `data/results/b1c_test_results.json` |
+| RQ2 canonicalised tau_m | 0.7361, derived from the 49-label vocabulary across all 22 papers and frozen before agent-label mapping | `data/results/b1c_vocab_threshold.json` |
+| RQ2 canonicalised best_k | 4 | `data/results/b1c_test_results.json` |
+| RQ2 canonicalised tau_d | 0.85 | `data/results/b1c_test_results.json` |
+| RQ3 final scored papers | 37 of 40 corpus papers | `rq3_final_results.json` |
+| RQ3 unusable-gold exclusions | 3 papers: `2305.19951`, `2510.14538`, `2602.23878` | `rq3_final_results.json` per-paper statuses |
+| RQ3 provider-block exclusions | 0 papers | `rq3_final_results.json` |
+| RQ3 in-scope extraction failures | 2 output-truncated papers counted as false negatives: `1711.11157`, `2007.01282` | `rq3_final_results.json` |
+| RQ3 invalid agent outputs filtered | 57 records | `rq3_final_results.json` |
+| RQ3 final metrics | Precision = 0.8425, Recall = 0.7393, F1 = 0.7875 | `rq3_final_results.json` |
+| RQ4 expert evaluation | 5 generated notes, 1 expert evaluator | Local expert-response workbook retained separately |
+| RQ4 mean scores | Faithfulness = 3.8, Coverage = 3.0, Readability = 3.4, Utility = 3.2, overall = 3.35 | Local expert-response workbook retained separately |
+
+The RQ3 audit metadata and per-paper statuses both record the same three unusable-gold exclusions.
 
 ---
 
-## Execution Order (All Stages Manually Triggered)
+## Execution Order
 
-Each stage is a separate batch process, run sequentially by the researcher.
-No autonomous orchestration exists between stages.
+Each stage is a separate batch process run by the researcher. There is no autonomous orchestration between stages.
 
-```
+```text
 Stage 1: PDF text extraction
-  → python scripts/extract_pdfs.py
+  -> scripts/extract_pdfs.py
+  -> produces extracted PDF text under data/extracted_text/
 
-Stage 2: Metadata extraction (metadata_agent.py)
-  → Produces YAML frontmatter per paper (title, year, venue, authors, DOI, arXiv ID, topics)
+Stage 2: Metadata extraction
+  -> src/agents/metadata_agent.py
+  -> produces YAML frontmatter fields such as title, year, venue, authors, DOI, arXiv ID, and topics
 
-Stage 3: Note generation (note_agent.py)
-  → Uses extracted text + Stage 2 metadata
-  → Produces structured Markdown body (problem, methodology, datasets, findings, limitations)
+Stage 3: Note generation
+  -> src/agents/note_agent.py
+  -> uses extracted PDF text plus metadata
+  -> produces structured Markdown notes
 
-Stage 4: Semantic link generation (link_agent.py)
-  → Uses all generated notes from Stage 3
-  → Produces [[wiki-links]] between related papers
+Stage 4: Semantic link generation
+  -> src/agents/link_agent.py
+  -> uses generated notes
+  -> produces wiki-links between related notes
 
-[RQ1 + RQ2 artefacts FROZEN here]
+RQ1 and RQ2 artefacts are frozen after Stage 4.
 
-Stage 5 (RQ3 only): Citation link extraction (link_agent.extract_citation_links)
-  → Uses extracted PDF text (bibliography section)
-  → Produces structured reference records resolved against Semantic Scholar
+Stage 5: Citation reference extraction for RQ3
+  -> rq3_final.ipynb
+  -> uses the batched citation-extraction pipeline with deterministic per-entry fallback parsing
+  -> extracts explicit bibliography/reference records from PDFs
+  -> compares extracted references with Semantic Scholar outgoing reference lists
 ```
+
+RQ3 evaluates citation-reference extraction against full outgoing Semantic Scholar reference lists, including external citations. The RQ3 gold standard is not restricted to references between papers in the local corpus.
 
 ---
 
@@ -117,37 +112,49 @@ Stage 5 (RQ3 only): Citation link extraction (link_agent.extract_citation_links)
 
 | Artefact | Shared? | Format | Location |
 |----------|---------|--------|----------|
-| Paper corpus (arXiv IDs) | ✅ Yes | JSON | `data/raw_pdfs/manifest.json` |
-| Raw PDFs | ❌ No (copyright) | — | Download via `scripts/download_papers.py` |
-| Extracted text | ✅ Yes | JSON | `data/extracted_text/` |
-| Generated notes | ✅ Yes | Markdown | `data/generated_notes/` |
-| Query set | ✅ Yes | JSON | `data/queries/queries.json` |
-| Gold labels (retrieval) | ✅ Yes | JSON | `data/gold_labels/gold_labels.json` |
-| Gold labels (expert topics) | ✅ Yes | JSON | `data/gold_labels/emile_vault_gold.json` |
-| Evaluation results | ✅ Yes | JSON | `data/results/` |
-| Prompts | ✅ Yes | Markdown | `prompts/` |
-| Code | ✅ Yes | Python | `src/`, `scripts/` |
-| Thesis LaTeX | ✅ Yes | TeX | `Thesis_Draft/` |
+| Paper corpus manifest | Yes | JSON | `data/raw_pdfs/manifest.json` |
+| Raw PDFs | No, due to copyright | PDF | Download via `scripts/download_papers.py` |
+| Extracted text | Yes | JSON | `data/extracted_text/` |
+| Generated notes | Yes | Markdown | `data/generated_notes/` |
+| Query set | Yes | JSON | `data/queries/queries.json` |
+| Gold labels for retrieval | Yes | JSON | `data/gold_labels/gold_labels.json` |
+| Expert topic annotations | Yes | JSON | `data/gold_labels/emile_vault_gold.json` |
+| RQ1/RQ2 evaluation results | Yes | JSON | `data/results/` |
+| RQ3 final metrics | Yes | JSON | `rq3_final_results.json` |
+| RQ3 final predictions | Yes | JSON | `rq3_final_predictions.json` |
+| RQ3 raw LLM responses | Optional audit artefact | JSON | `rq3_final_raw_responses.json` |
+| RQ4 expert responses | Local evidence file | XLSX | Retained separately as a local evaluation artefact |
+| Prompts | Yes | Markdown | `prompts/` |
+| Code | Yes | Python / Notebook | `src/`, `scripts/`, selected notebooks |
+| Thesis LaTeX | Yes | TeX | `thesis/` |
 
-> Note: `data/gold_labels/link_gold.json` exists but was not used as the primary
-> gold standard for RQ3. RQ3 uses Semantic Scholar outgoing reference lists instead.
+`data/gold_labels/link_gold.json` exists for local vault-link analysis, but it is not the primary RQ3 gold standard. RQ3 uses Semantic Scholar outgoing reference lists.
+
+---
+
+## Superseded Artefacts
+
+The following artefacts are retained only for provenance or implementation comparison and should not be used as the final RQ3 thesis evidence:
+
+- `rq3_citation_link_evaluation.ipynb`
+- `data/results/rq3_citation_link_evaluation.json`
+
+The final RQ3 evidence is `rq3_final_results.json` and its companion prediction/response files.
 
 ---
 
 ## Known Limitations Affecting Reproducibility
 
-1. **LLM model rotation:** Results depend on which Gemini Flash model version
-   served each paper during ingestion. The exact model per paper is recorded in
-   the prediction cache (`_llm_provider` field in each metadata JSON).
+1. **LLM model rotation:** RQ3 records the configured Gemini Flash-family model pool and the first requested alias (`gemini-flash-latest`), but the resolved endpoint was not logged for every request. Exact replication of the hosted Gemini model build is therefore not guaranteed.
 
-2. **LLM non-determinism:** Even at temperature=0.0, minor output variations may
-   occur across API versions and dates.
+2. **LLM non-determinism:** Even at `temperature=0.0`, minor output variations may occur across API versions and dates.
 
-3. **arXiv rate limits:** The download script includes a 3-second delay between
-   requests. Do not remove this.
+3. **arXiv rate limits:** The download script includes delays between requests. Do not remove these delays when rebuilding the corpus.
 
-4. **PDF extraction quality:** Some PDFs (scanned, two-column layouts) may extract
-   poorly. See `data/extracted_text/_extraction_summary.json` for per-paper quality.
+4. **PDF extraction quality:** Some PDFs, especially two-column or scanned documents, may extract poorly. See `data/extracted_text/_extraction_summary.json` for per-paper extraction status.
 
-5. **Semantic Scholar availability:** RQ3 gold reference lists depend on Semantic
-   Scholar API availability. Three papers had no usable reference records returned.
+5. **Semantic Scholar availability:** RQ3 gold reference lists depend on Semantic Scholar API availability. Three papers were excluded because usable gold references were unavailable.
+
+6. **RQ3 extraction failures:** Two in-scope RQ3 papers produced output-truncated extraction failures. They remained in the evaluation and contributed false negatives.
+
+7. **RQ4 scope:** RQ4 uses one expert and five generated notes, so it should be reported as an exploratory expert assessment rather than a generalisable user study.

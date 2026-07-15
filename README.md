@@ -159,8 +159,8 @@ parameter and artefact map.
 Python 3.10 or later is recommended.
 
 ```powershell
-git clone https://github.com/vonargeus/Bsc_Project.git
-cd Bsc_Project
+git clone https://github.com/vonargeus/llm-academic-pkm-pipeline.git
+cd llm-academic-pkm-pipeline
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
